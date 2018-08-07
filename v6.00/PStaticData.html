@@ -1,0 +1,801 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!--                                             -->
+<!-- Author: ROOT team (rootdev@cern.ch)         -->
+<!--                                             -->
+<!--   Date: Mon Apr 24 17:39:54 2017            -->
+<!--                                             -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>PStaticData</title>
+<meta name="rating" content="General" />
+<meta name="objecttype" content="Manual" />
+<meta name="keywords" content="software development, oo, object oriented, unix, x11, windows, c++, html, rene brun, fons rademakers, cern" />
+<meta name="description" content="ROOT - An Object Oriented Framework For Large Scale Data Analysis." />
+<link rel="stylesheet" type="text/css" href="ROOT.css" id="ROOTstyle" />
+<script type="text/javascript" src="ROOT.js"></script>
+</head>
+<body  onload="javascript:SetValuesFromCookie();"><div id="body_content">
+<div id="root_header"></div>
+<a name="TopOfPage"></a>
+<script type="text/javascript">WriteFollowPageBox('class PStaticData','libPluto','PStaticData.h');</script>
+<div id="toplinks">
+<div class="descrhead"><div class="descrheadcontent">
+<span class="descrtitle">Quick Links:</span>
+<a class="descrheadentry" href="http://root.cern.ch">ROOT Homepage</a>
+<a class="descrheadentry" href="./ClassIndex.html">Class Index</a>
+<a class="descrheadentry" href="./ClassHierarchy.html">Class Hierarchy</a></div>
+<script type="text/javascript">
+function onSearch() {
+var s='http://www.google.com/search?q=%s+site%3A%u+-site%3A%u%2Fsrc%2F+-site%3A%u%2Fexamples%2F';
+var ref=String(document.location.href).replace(/https?:\/\//,'').replace(/\/[^\/]*$/,'').replace(/\//g,'%2F');
+window.location.href=s.replace(/%u/ig,ref).replace(/%s/ig,escape(document.searchform.t.value));
+return false;}
+</script>
+<form id="searchform" name="searchform" onsubmit="return onSearch()" action="javascript:onSearch();" method="post">
+<input name="t" size="30" value="Search documentation..." onfocus="if (document.searchform.t.value=='Search documentation...') document.searchform.t.value='';"></input>
+<a id="searchlink"  title="www.google.com"  href="javascript:onSearch();" onclick="return onSearch()">Search</a></form>
+</div>
+<div class="descrhead"><div class="descrheadcontent">
+<span class="descrtitle">Source:</span>
+<a class="descrheadentry" href="src/PStaticData.h.html">header file</a>
+<a class="descrheadentry" href="src/PStaticData.cxx.html">source file</a>
+<a class="descrheadentry" href="http://root.cern.ch/viewcvs/trunk/PStaticData.h?view=log">viewVC header</a> <a class="descrheadentry" href="http://root.cern.ch/viewcvs/trunk//u/hadeshyp/ingo/pluto6_official_documentation_gitlab/src/PStaticData.cc?view=log">viewVC source</a> 
+</div></div>
+<div class="descrhead"><div class="descrheadcontent">
+<span class="descrtitle">Sections:</span>
+<a class="descrheadentry" href="#PStaticData:description">class description</a> 
+<a class="descrheadentry" href="#PStaticData:Function_Members">function members</a>
+<a class="descrheadentry" href="#PStaticData:Data_Members">data members</a>
+<a class="descrheadentry" href="#PStaticData:Class_Charts">class charts</a>
+</div></div>
+</div>
+<div class="location">
+<a class="locationlevel" href="index.html">(UNKNOWN PRODUCT)</a>
+ &#187; <a class="locationlevel" href="./INCLUDE_Index.html">INCLUDE</a>
+ &#187; <a class="locationlevel" href="#TopOfPage">PStaticData</a>
+</div>
+<div class="dropshadow"><div class="withshadow"><h1><a name="PStaticData:description"></a>class PStaticData: public TObject</h1>
+<div class="classdescr">
+<pre>
+  Pluto Data Wrapper
+  Provides a lot of helpfull wrapper function to deal with the data
+  base.
+
+
+                             Author:  M.A. Kagarlis
+                             Written: 31/01/99
+                             Revised: 24/05/2004 R.H.
+                             Reimplemented: 3/5/2007 IF
+
+
+</pre></div>
+</div></div>
+
+<div id="functions">
+<h2><a id="PStaticData:Function_Members"></a>Function Members (Methods)</h2>
+<div class="access" id="funcpubl"><b>public:</b>
+<table class="func" id="tabfuncpubl" cellspacing="0">
+<tr class="func"><td class="funcret"> virtual</td><td class="funcname"><a class="funcname" href="#PStaticData:_PStaticData">~PStaticData</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:AbstractMethod"><span class="baseclass">TObject::</span>AbstractMethod</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#PStaticData:AddAlias">AddAlias</a>(<span class="keyword">const</span> <span class="keyword">char</span>* old_name, <span class="keyword">const</span> <span class="keyword">char</span>* new_name)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#PStaticData:AddDecay@2">AddDecay</a>(<span class="keyword">int</span>* ipid, <span class="keyword">int</span> n)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#PStaticData:AddDecay@1">AddDecay</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name, <span class="keyword">const</span> <span class="keyword">char</span>* parent, <span class="keyword">const</span> <span class="keyword">char</span>* daughters, <span class="keyword">double</span> br)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#PStaticData:AddDecay">AddDecay</a>(<span class="keyword">int</span> didx, <span class="keyword">const</span> <span class="keyword">char</span>* name, <span class="keyword">const</span> <span class="keyword">char</span>* parent, <span class="keyword">const</span> <span class="keyword">char</span>* daughters, <span class="keyword">double</span> br)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#PStaticData:AddParticle">AddParticle</a>(<span class="keyword">int</span> pid, <span class="keyword">const</span> <span class="keyword">char</span>* name, <span class="keyword">double</span> mass)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:AppendPad"><span class="baseclass">TObject::</span>AppendPad</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Browse"><span class="baseclass">TObject::</span>Browse</a>(TBrowser* b)</td></tr>
+<tr class="func"><td class="funcret">static TClass*</td><td class="funcname"><a class="funcname" href="#PStaticData:Class">Class</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#TObject:ClassName"><span class="baseclass">TObject::</span>ClassName</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Clear"><span class="baseclass">TObject::</span>Clear</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* = <span class="string">""</span>)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PStaticData:clearFreezeOut">clearFreezeOut</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>*</td><td class="funcname"><a class="funcname" href="#TObject:Clone"><span class="baseclass">TObject::</span>Clone</a>(<span class="keyword">const</span> <span class="keyword">char</span>* newname = <span class="string">""</span>) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Compare"><span class="baseclass">TObject::</span>Compare</a>(<span class="keyword">const</span> <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>* obj) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Copy"><span class="baseclass">TObject::</span>Copy</a>(<a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>&amp; object) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Delete"><span class="baseclass">TObject::</span>Delete</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)<span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PStaticData:DisableAllChannelBR">DisableAllChannelBR</a>(<span class="keyword">const</span> <span class="keyword">char</span>* parent)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:DistancetoPrimitive"><span class="baseclass">TObject::</span>DistancetoPrimitive</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> px, <a href="./ListOfTypes.html#Int_t">Int_t</a> py)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Draw"><span class="baseclass">TObject::</span>Draw</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:DrawClass"><span class="baseclass">TObject::</span>DrawClass</a>() <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>*</td><td class="funcname"><a class="funcname" href="#TObject:DrawClone"><span class="baseclass">TObject::</span>DrawClone</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>) <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Dump"><span class="baseclass">TObject::</span>Dump</a>() <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Error"><span class="baseclass">TObject::</span>Error</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Execute"><span class="baseclass">TObject::</span>Execute</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* params, <a href="./ListOfTypes.html#Int_t">Int_t</a>* error = 0)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Execute@1"><span class="baseclass">TObject::</span>Execute</a>(TMethod* method, TObjArray* params, <a href="./ListOfTypes.html#Int_t">Int_t</a>* error = 0)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:ExecuteEvent"><span class="baseclass">TObject::</span>ExecuteEvent</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> event, <a href="./ListOfTypes.html#Int_t">Int_t</a> px, <a href="./ListOfTypes.html#Int_t">Int_t</a> py)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Fatal"><span class="baseclass">TObject::</span>Fatal</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>*</td><td class="funcname"><a class="funcname" href="#TObject:FindObject"><span class="baseclass">TObject::</span>FindObject</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>*</td><td class="funcname"><a class="funcname" href="#TObject:FindObject@1"><span class="baseclass">TObject::</span>FindObject</a>(<span class="keyword">const</span> <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>* obj) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PStaticData:FreezeDecayBR">FreezeDecayBR</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> id, <a href="./ListOfTypes.html#Int_t">Int_t</a> brn)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#PStaticData:GetAliasParent">GetAliasParent</a>(<span class="keyword">const</span> <span class="keyword">char</span>* alias_name)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#PStaticData:GetAliasParent@1">GetAliasParent</a>(<span class="keyword">int</span> key)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Double_t">Double_t</a>*</td><td class="funcname"><a class="funcname" href="#PStaticData:GetBatchValue">GetBatchValue</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name, <a href="./ListOfTypes.html#Int_t">Int_t</a> make_val = 1)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Double_t">Double_t</a></td><td class="funcname"><a class="funcname" href="#PStaticData:GetDecayBR">GetDecayBR</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> id)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#PStaticData:GetDecayBRFlag">GetDecayBRFlag</a>(<span class="keyword">int</span> didx)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">double</span></td><td class="funcname"><a class="funcname" href="#PStaticData:GetDecayEmin">GetDecayEmin</a>(<span class="keyword">const</span> <span class="keyword">int</span>&amp; idx)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#PStaticData:GetDecayIdx">GetDecayIdx</a>(<span class="keyword">int</span>* pid, <span class="keyword">int</span> n)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#PStaticData:GetDecayIdx@1">GetDecayIdx</a>(<span class="keyword">const</span> <span class="keyword">char</span>* parent, <span class="keyword">const</span> <span class="keyword">char</span>* daughters)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#PStaticData:GetDecayIdxByKey">GetDecayIdxByKey</a>(<span class="keyword">int</span> key)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#PStaticData:GetDecayKey@1">GetDecayKey</a>(<span class="keyword">const</span> <span class="keyword">int</span>&amp; id)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#PStaticData:GetDecayKey">GetDecayKey</a>(<span class="keyword">int</span>* pid, <span class="keyword">int</span> n)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PStaticData:GetDecayMode">GetDecayMode</a>(<span class="keyword">const</span> <span class="keyword">int</span>, <span class="keyword">int</span>* n)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PStaticData:GetDecayModeByKey">GetDecayModeByKey</a>(<span class="keyword">const</span> <span class="keyword">int</span>, <span class="keyword">int</span>* n)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#PStaticData:GetDecayName">GetDecayName</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> id)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#PStaticData:GetDecayNameByKey">GetDecayNameByKey</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> key)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#PStaticData:GetDecayNProducts">GetDecayNProducts</a>(<span class="keyword">const</span> <span class="keyword">int</span>&amp;)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#PStaticData:GetDecayNProducts@1">GetDecayNProducts</a>(<span class="keyword">const</span> <span class="keyword">char</span>*)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#PStaticData:GetDecayNProductsByKey">GetDecayNProductsByKey</a>(<span class="keyword">const</span> <span class="keyword">int</span>&amp; key)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#PStaticData:GetDecayParent">GetDecayParent</a>(<span class="keyword">const</span> <span class="keyword">int</span>&amp;)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#PStaticData:GetDecayParentByKey">GetDecayParentByKey</a>(<span class="keyword">const</span> <span class="keyword">int</span>&amp;)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Double_t">Double_t</a></td><td class="funcname"><a class="funcname" href="#PStaticData:GetDecayPartialWidth">GetDecayPartialWidth</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> id)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Double_t">Double_t</a></td><td class="funcname"><a class="funcname" href="#PStaticData:GetDecayPartialWidthByKey">GetDecayPartialWidthByKey</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> id)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Option_t">Option_t</a>*</td><td class="funcname"><a class="funcname" href="#TObject:GetDrawOption"><span class="baseclass">TObject::</span>GetDrawOption</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">static <a href="./ListOfTypes.html#Long_t">Long_t</a></td><td class="funcname"><a class="funcname" href="#TObject:GetDtorOnly"><span class="baseclass">TObject::</span>GetDtorOnly</a>()</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Double_t">Double_t</a></td><td class="funcname"><a class="funcname" href="#PStaticData:GetEnhanceChannelBR">GetEnhanceChannelBR</a>(<span class="keyword">const</span> <span class="keyword">int</span> id)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">bool</span></td><td class="funcname"><a class="funcname" href="#PStaticData:GetFreezeOut">GetFreezeOut</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#PStaticData:GetHDepth">GetHDepth</a>(<span class="keyword">const</span> <span class="keyword">int</span>&amp;)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#TObject:GetIconName"><span class="baseclass">TObject::</span>GetIconName</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#TObject:GetName"><span class="baseclass">TObject::</span>GetName</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#TObject:GetObjectInfo"><span class="baseclass">TObject::</span>GetObjectInfo</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> px, <a href="./ListOfTypes.html#Int_t">Int_t</a> py) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">static <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:GetObjectStat"><span class="baseclass">TObject::</span>GetObjectStat</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Option_t">Option_t</a>*</td><td class="funcname"><a class="funcname" href="#TObject:GetOption"><span class="baseclass">TObject::</span>GetOption</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#PStaticData:GetParticleBaryon">GetParticleBaryon</a>(<span class="keyword">const</span> <span class="keyword">int</span>&amp; id)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#PStaticData:GetParticleCharge">GetParticleCharge</a>(<span class="keyword">const</span> <span class="keyword">int</span>&amp; id)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#PStaticData:GetParticleCharge@1">GetParticleCharge</a>(<span class="keyword">const</span> <span class="keyword">char</span>* id)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">double</span></td><td class="funcname"><a class="funcname" href="#PStaticData:GetParticleEmin">GetParticleEmin</a>(<span class="keyword">const</span> <span class="keyword">int</span>&amp; id)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#PStaticData:GetParticleID">GetParticleID</a>(<span class="keyword">const</span> <span class="keyword">char</span>* id, <span class="keyword">int</span> warn = 1)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#PStaticData:GetParticleIDByKey">GetParticleIDByKey</a>(<span class="keyword">int</span> key)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#PStaticData:GetParticleIDbyKF">GetParticleIDbyKF</a>(<span class="keyword">const</span> <span class="keyword">int</span> kf)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#PStaticData:GetParticleIsospin">GetParticleIsospin</a>(<span class="keyword">const</span> <span class="keyword">int</span>&amp; id)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#PStaticData:GetParticleIsospin@1">GetParticleIsospin</a>(<span class="keyword">const</span> <span class="keyword">char</span>* id)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#PStaticData:GetParticleKey">GetParticleKey</a>(<span class="keyword">const</span> <span class="keyword">int</span>&amp; id)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#PStaticData:GetParticleKey@1">GetParticleKey</a>(<span class="keyword">const</span> <span class="keyword">char</span>* id)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#PStaticData:GetParticleKF">GetParticleKF</a>(<span class="keyword">const</span> <span class="keyword">int</span> Id)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#PStaticData:GetParticleLepton">GetParticleLepton</a>(<span class="keyword">const</span> <span class="keyword">int</span>&amp; id)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">double</span></td><td class="funcname"><a class="funcname" href="#PStaticData:GetParticleLMass">GetParticleLMass</a>(<span class="keyword">const</span> <span class="keyword">int</span>&amp; id)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">double</span></td><td class="funcname"><a class="funcname" href="#PStaticData:GetParticleLMass@1">GetParticleLMass</a>(<span class="keyword">const</span> <span class="keyword">char</span>* id)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">double</span></td><td class="funcname"><a class="funcname" href="#PStaticData:GetParticleMass">GetParticleMass</a>(<span class="keyword">const</span> <span class="keyword">int</span>&amp; id)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">double</span></td><td class="funcname"><a class="funcname" href="#PStaticData:GetParticleMass@1">GetParticleMass</a>(<span class="keyword">const</span> <span class="keyword">char</span>* id)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">double</span></td><td class="funcname"><a class="funcname" href="#PStaticData:GetParticleMassByKey">GetParticleMassByKey</a>(<span class="keyword">const</span> <span class="keyword">int</span>&amp; id)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#PStaticData:GetParticleName">GetParticleName</a>(<span class="keyword">const</span> <span class="keyword">int</span>&amp; id)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#PStaticData:GetParticleNChannels">GetParticleNChannels</a>(<span class="keyword">const</span> <span class="keyword">int</span>&amp; id)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#PStaticData:GetParticleNChannels@1">GetParticleNChannels</a>(<span class="keyword">const</span> <span class="keyword">char</span>* id)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#PStaticData:GetParticleNChannelsByKey">GetParticleNChannelsByKey</a>(<span class="keyword">int</span> id)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#PStaticData:GetParticleParity">GetParticleParity</a>(<span class="keyword">const</span> <span class="keyword">int</span>&amp; id)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#PStaticData:GetParticleParity@1">GetParticleParity</a>(<span class="keyword">const</span> <span class="keyword">char</span>* id)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#PStaticData:GetParticleSpin">GetParticleSpin</a>(<span class="keyword">const</span> <span class="keyword">int</span>&amp; id)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#PStaticData:GetParticleSpin@1">GetParticleSpin</a>(<span class="keyword">const</span> <span class="keyword">char</span>* id)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">double</span></td><td class="funcname"><a class="funcname" href="#PStaticData:GetParticleTotalWidth">GetParticleTotalWidth</a>(<span class="keyword">const</span> <span class="keyword">int</span>&amp; id)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">double</span></td><td class="funcname"><a class="funcname" href="#PStaticData:GetParticleTotalWidth@1">GetParticleTotalWidth</a>(<span class="keyword">const</span> <span class="keyword">char</span>* id)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">double</span></td><td class="funcname"><a class="funcname" href="#PStaticData:GetParticleTotalWidthByKey">GetParticleTotalWidthByKey</a>(<span class="keyword">const</span> <span class="keyword">int</span>&amp; id)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">double</span></td><td class="funcname"><a class="funcname" href="#PStaticData:GetParticleUMass">GetParticleUMass</a>(<span class="keyword">const</span> <span class="keyword">int</span>&amp; id)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">double</span></td><td class="funcname"><a class="funcname" href="#PStaticData:GetParticleUMass@1">GetParticleUMass</a>(<span class="keyword">const</span> <span class="keyword">char</span>* id)</td></tr>
+<tr class="func"><td class="funcret"><a href="./PMesh.html">PMesh</a>*</td><td class="funcname"><a class="funcname" href="#PStaticData:GetPWidthMesh">GetPWidthMesh</a>(<span class="keyword">const</span> <span class="keyword">int</span>&amp;)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#PStaticData:GetPWidx">GetPWidx</a>(<span class="keyword">const</span> <span class="keyword">int</span>&amp;)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#PStaticData:GetSecondaryKey">GetSecondaryKey</a>(<span class="keyword">int</span> key, <span class="keyword">int</span> defkey)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#PStaticData:GetTDepth">GetTDepth</a>(<span class="keyword">const</span> <span class="keyword">int</span>&amp;)</td></tr>
+<tr class="func"><td class="funcret">TF1*</td><td class="funcname"><a class="funcname" href="#PStaticData:GetTF1">GetTF1</a>(<span class="keyword">const</span> <span class="keyword">int</span>&amp;)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#TObject:GetTitle"><span class="baseclass">TObject::</span>GetTitle</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./PMesh.html">PMesh</a>*</td><td class="funcname"><a class="funcname" href="#PStaticData:GetTWidthMesh">GetTWidthMesh</a>(<span class="keyword">const</span> <span class="keyword">int</span>&amp;)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#PStaticData:GetTWidx">GetTWidx</a>(<span class="keyword">const</span> <span class="keyword">int</span>&amp;)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#UInt_t">UInt_t</a></td><td class="funcname"><a class="funcname" href="#TObject:GetUniqueID"><span class="baseclass">TObject::</span>GetUniqueID</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:HandleTimer"><span class="baseclass">TObject::</span>HandleTimer</a>(TTimer* timer)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#ULong_t">ULong_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Hash"><span class="baseclass">TObject::</span>Hash</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Info"><span class="baseclass">TObject::</span>Info</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:InheritsFrom"><span class="baseclass">TObject::</span>InheritsFrom</a>(<span class="keyword">const</span> <span class="keyword">char</span>* classname) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:InheritsFrom@1"><span class="baseclass">TObject::</span>InheritsFrom</a>(<span class="keyword">const</span> TClass* cl) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Inspect"><span class="baseclass">TObject::</span>Inspect</a>() <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:InvertBit"><span class="baseclass">TObject::</span>InvertBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f)</td></tr>
+<tr class="func"><td class="funcret">virtual TClass*</td><td class="funcname"><a class="funcname" href="#PStaticData:IsA">IsA</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#PStaticData:IsDecayHadronic">IsDecayHadronic</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> didx)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:IsEqual"><span class="baseclass">TObject::</span>IsEqual</a>(<span class="keyword">const</span> <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>* obj) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:IsFolder"><span class="baseclass">TObject::</span>IsFolder</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:IsOnHeap"><span class="baseclass">TObject::</span>IsOnHeap</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#PStaticData:IsParticle">IsParticle</a>(<span class="keyword">const</span> <span class="keyword">int</span>&amp; id, <span class="keyword">const</span> <span class="keyword">char</span>* name)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#PStaticData:IsParticleHadron">IsParticleHadron</a>(<span class="keyword">const</span> <span class="keyword">int</span>&amp; id)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#PStaticData:IsParticleMeson">IsParticleMeson</a>(<span class="keyword">const</span> <span class="keyword">int</span>&amp; id)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#PStaticData:IsParticleValid">IsParticleValid</a>(<span class="keyword">const</span> <span class="keyword">int</span>&amp; id)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#PStaticData:IsParticleValid@1">IsParticleValid</a>(<span class="keyword">const</span> <span class="keyword">char</span>* n)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:IsSortable"><span class="baseclass">TObject::</span>IsSortable</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:IsZombie"><span class="baseclass">TObject::</span>IsZombie</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:ls"><span class="baseclass">TObject::</span>ls</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#PStaticData:MakeDirectoryEntry">MakeDirectoryEntry</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name, <span class="keyword">const</span> <span class="keyword">char</span>* n, <span class="keyword">const</span> <span class="keyword">char</span>* l, <span class="keyword">const</span> <span class="keyword">char</span>* ename)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:MayNotUse"><span class="baseclass">TObject::</span>MayNotUse</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">bool</span></td><td class="funcname"><a class="funcname" href="#PStaticData:NormParticleBR">NormParticleBR</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> id)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">bool</span></td><td class="funcname"><a class="funcname" href="#PStaticData:NormParticleBRbyKey">NormParticleBRbyKey</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> key)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Notify"><span class="baseclass">TObject::</span>Notify</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Obsolete"><span class="baseclass">TObject::</span>Obsolete</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* asOfVers, <span class="keyword">const</span> <span class="keyword">char</span>* removedFromVers) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:operator_delete"><span class="baseclass">TObject::</span>operator delete</a>(<span class="keyword">void</span>* ptr)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:operator_delete@1"><span class="baseclass">TObject::</span>operator delete</a>(<span class="keyword">void</span>* ptr, <span class="keyword">void</span>* vp)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:operator_delete[]"><span class="baseclass">TObject::</span>operator delete[]</a>(<span class="keyword">void</span>* ptr)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:operator_delete[]@1"><span class="baseclass">TObject::</span>operator delete[]</a>(<span class="keyword">void</span>* ptr, <span class="keyword">void</span>* vp)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span>*</td><td class="funcname"><a class="funcname" href="#TObject:operator_new"><span class="baseclass">TObject::</span>operator new</a>(<a href="./ListOfTypes.html#size_t">size_t</a> sz)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span>*</td><td class="funcname"><a class="funcname" href="#TObject:operator_new@1"><span class="baseclass">TObject::</span>operator new</a>(<a href="./ListOfTypes.html#size_t">size_t</a> sz, <span class="keyword">void</span>* vp)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span>*</td><td class="funcname"><a class="funcname" href="#TObject:operator_new[]"><span class="baseclass">TObject::</span>operator new[]</a>(<a href="./ListOfTypes.html#size_t">size_t</a> sz)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span>*</td><td class="funcname"><a class="funcname" href="#TObject:operator_new[]@1"><span class="baseclass">TObject::</span>operator new[]</a>(<a href="./ListOfTypes.html#size_t">size_t</a> sz, <span class="keyword">void</span>* vp)</td></tr>
+<tr class="func"><td class="funcret"><a href="./PStaticData.html">PStaticData</a>&amp;</td><td class="funcname"><a class="funcname" href="#PStaticData:operator_">operator=</a>(<span class="keyword">const</span> <a href="./PStaticData.html">PStaticData</a>&amp;)</td></tr>
+<tr class="func"><td class="funcret"><a href="./PStaticData.html">PStaticData</a>&amp;</td><td class="funcname"><a class="funcname" href="#PStaticData:operator_@1">operator=</a>(<a href="./PStaticData.html">PStaticData</a>&amp;&amp;)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Paint"><span class="baseclass">TObject::</span>Paint</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Pop"><span class="baseclass">TObject::</span>Pop</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Print"><span class="baseclass">TObject::</span>Print</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PStaticData:PrintDecayByKey">PrintDecayByKey</a>(<span class="keyword">int</span> key)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PStaticData:PrintParticle">PrintParticle</a>(<span class="keyword">int</span> pid)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PStaticData:PrintParticle@1">PrintParticle</a>(<span class="keyword">const</span> <span class="keyword">char</span>* id)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PStaticData:PrintParticleByKey">PrintParticleByKey</a>(<span class="keyword">int</span> pid)</td></tr>
+<tr class="func"><td class="funcret"></td><td class="funcname"><a class="funcname" href="#PStaticData:PStaticData">PStaticData</a>()</td></tr>
+<tr class="func"><td class="funcret"></td><td class="funcname"><a class="funcname" href="#PStaticData:PStaticData@1">PStaticData</a>(<a href="./PStaticData.html">PStaticData</a>&amp;&amp;)</td></tr>
+<tr class="func"><td class="funcret"></td><td class="funcname"><a class="funcname" href="#PStaticData:PStaticData@2">PStaticData</a>(<span class="keyword">const</span> <a href="./PStaticData.html">PStaticData</a>&amp;)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Read"><span class="baseclass">TObject::</span>Read</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:RecursiveRemove"><span class="baseclass">TObject::</span>RecursiveRemove</a>(<a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>* obj)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:ResetBit"><span class="baseclass">TObject::</span>ResetBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SaveAs"><span class="baseclass">TObject::</span>SaveAs</a>(<span class="keyword">const</span> <span class="keyword">char</span>* filename = <span class="string">""</span>, <a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>) <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SavePrimitive"><span class="baseclass">TObject::</span>SavePrimitive</a>(<a href="./ListOfTypes.html#ostream">ostream</a>&amp; out, <a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">bool</span></td><td class="funcname"><a class="funcname" href="#PStaticData:SetBatchValue">SetBatchValue</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name, <a href="./ListOfTypes.html#Double_t">Double_t</a> val)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetBit@1"><span class="baseclass">TObject::</span>SetBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetBit"><span class="baseclass">TObject::</span>SetBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f, <a href="./ListOfTypes.html#Bool_t">Bool_t</a> set)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">bool</span></td><td class="funcname"><a class="funcname" href="#PStaticData:SetDecayBR">SetDecayBR</a>(<span class="keyword">int</span> didx, <span class="keyword">double</span> br, <span class="keyword">int</span> mode)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">bool</span></td><td class="funcname"><a class="funcname" href="#PStaticData:SetDecayBR@1">SetDecayBR</a>(<span class="keyword">const</span> <span class="keyword">char</span>* parent, <span class="keyword">const</span> <span class="keyword">char</span>* daughters, <span class="keyword">double</span> br, <span class="keyword">int</span> mode)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">bool</span></td><td class="funcname"><a class="funcname" href="#PStaticData:SetDecayBRByKey">SetDecayBRByKey</a>(<span class="keyword">int</span> key, <span class="keyword">double</span> br, <span class="keyword">int</span> mode)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PStaticData:SetDecayBRFlag">SetDecayBRFlag</a>(<span class="keyword">int</span> didx, <span class="keyword">int</span> flag)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PStaticData:SetDecayEmin">SetDecayEmin</a>(<span class="keyword">const</span> <span class="keyword">int</span>&amp; idx, <span class="keyword">const</span> <span class="keyword">double</span> v)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetDrawOption"><span class="baseclass">TObject::</span>SetDrawOption</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)<span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetDtorOnly"><span class="baseclass">TObject::</span>SetDtorOnly</a>(<span class="keyword">void</span>* obj)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PStaticData:SetEnhanceChannelBR">SetEnhanceChannelBR</a>(<span class="keyword">const</span> <span class="keyword">int</span> id, <span class="keyword">const</span> <span class="keyword">double</span> factor)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PStaticData:SetEnhanceChannelBR@1">SetEnhanceChannelBR</a>(<span class="keyword">const</span> <span class="keyword">char</span>* parent, <span class="keyword">const</span> <span class="keyword">char</span>* decay, <a href="./ListOfTypes.html#Double_t">Double_t</a> factor = 1.)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PStaticData:SetFreezeOut">SetFreezeOut</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PStaticData:SetHDepth">SetHDepth</a>(<span class="keyword">const</span> <span class="keyword">int</span>&amp;, <span class="keyword">const</span> <span class="keyword">int</span>&amp;)</td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetObjectStat"><span class="baseclass">TObject::</span>SetObjectStat</a>(<a href="./ListOfTypes.html#Bool_t">Bool_t</a> stat)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PStaticData:SetParticleBaryon">SetParticleBaryon</a>(<span class="keyword">const</span> <span class="keyword">char</span>* id, <a href="./ListOfTypes.html#Int_t">Int_t</a> num = 1)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PStaticData:SetParticleCharge">SetParticleCharge</a>(<span class="keyword">const</span> <span class="keyword">char</span>* id, <a href="./ListOfTypes.html#Int_t">Int_t</a> charge)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PStaticData:SetParticleEmin">SetParticleEmin</a>(<span class="keyword">const</span> <span class="keyword">int</span>&amp; id, <span class="keyword">const</span> <span class="keyword">double</span> v)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PStaticData:SetParticleIsospin">SetParticleIsospin</a>(<span class="keyword">const</span> <span class="keyword">char</span>* id, <a href="./ListOfTypes.html#Int_t">Int_t</a> isospin)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PStaticData:SetParticleLepton">SetParticleLepton</a>(<span class="keyword">const</span> <span class="keyword">char</span>* id, <a href="./ListOfTypes.html#Int_t">Int_t</a> num = 1)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PStaticData:SetParticleLMass">SetParticleLMass</a>(<span class="keyword">const</span> <span class="keyword">int</span>&amp; id, <span class="keyword">const</span> <span class="keyword">double</span> v)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PStaticData:SetParticleLMass@1">SetParticleLMass</a>(<span class="keyword">const</span> <span class="keyword">char</span>* id, <span class="keyword">const</span> <span class="keyword">double</span> v)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PStaticData:SetParticleMass">SetParticleMass</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> id, <a href="./ListOfTypes.html#Float_t">Float_t</a> mass)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PStaticData:SetParticleMass@1">SetParticleMass</a>(<span class="keyword">const</span> <span class="keyword">char</span>* id, <a href="./ListOfTypes.html#Float_t">Float_t</a> mass)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PStaticData:SetParticleMeson">SetParticleMeson</a>(<span class="keyword">const</span> <span class="keyword">char</span>* id, <a href="./ListOfTypes.html#Int_t">Int_t</a> num = 1)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PStaticData:SetParticleParity">SetParticleParity</a>(<span class="keyword">const</span> <span class="keyword">char</span>* id, <a href="./ListOfTypes.html#Int_t">Int_t</a> parity)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PStaticData:SetParticleSpin">SetParticleSpin</a>(<span class="keyword">const</span> <span class="keyword">char</span>* id, <a href="./ListOfTypes.html#Int_t">Int_t</a> spin)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PStaticData:SetParticleTotalWidth">SetParticleTotalWidth</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> id, <a href="./ListOfTypes.html#Float_t">Float_t</a> wid)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PStaticData:SetParticleTotalWidth@1">SetParticleTotalWidth</a>(<span class="keyword">const</span> <span class="keyword">char</span>* id, <a href="./ListOfTypes.html#Float_t">Float_t</a> wid)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PStaticData:SetParticleUMass">SetParticleUMass</a>(<span class="keyword">const</span> <span class="keyword">int</span>&amp; id, <span class="keyword">const</span> <span class="keyword">double</span> v)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PStaticData:SetParticleUMass@1">SetParticleUMass</a>(<span class="keyword">const</span> <span class="keyword">char</span>* id, <span class="keyword">const</span> <span class="keyword">double</span> v)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PStaticData:SetPWidthMesh">SetPWidthMesh</a>(<span class="keyword">const</span> <span class="keyword">int</span>&amp;, <a href="./PMesh.html">PMesh</a>* mesh)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PStaticData:SetPWidx">SetPWidx</a>(<span class="keyword">const</span> <span class="keyword">int</span>&amp;, <span class="keyword">const</span> <span class="keyword">int</span>&amp;)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PStaticData:SetTDepth">SetTDepth</a>(<span class="keyword">const</span> <span class="keyword">int</span>&amp;, <span class="keyword">const</span> <span class="keyword">int</span>&amp;)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PStaticData:SetTF1">SetTF1</a>(<span class="keyword">const</span> <span class="keyword">int</span>&amp;, TF1* mesh)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PStaticData:SetTotalNormalization">SetTotalNormalization</a>(<span class="keyword">char</span>* p, <span class="keyword">int</span> flag = 1)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PStaticData:SetTWidthMesh">SetTWidthMesh</a>(<span class="keyword">const</span> <span class="keyword">int</span>&amp;, <a href="./PMesh.html">PMesh</a>* mesh)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PStaticData:SetTWidx">SetTWidx</a>(<span class="keyword">const</span> <span class="keyword">int</span>&amp;, <span class="keyword">const</span> <span class="keyword">int</span>&amp;)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetUniqueID"><span class="baseclass">TObject::</span>SetUniqueID</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> uid)</td></tr>
+<tr class="func"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PStaticData:ShowMembers">ShowMembers</a>(TMemberInspector&amp; insp) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PStaticData:Streamer">Streamer</a>(TBuffer&amp;)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PStaticData:StreamerNVirtual">StreamerNVirtual</a>(TBuffer&amp; ClassDef_StreamerNVirtual_b)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SysError"><span class="baseclass">TObject::</span>SysError</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:TestBit"><span class="baseclass">TObject::</span>TestBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:TestBits"><span class="baseclass">TObject::</span>TestBits</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:UseCurrentStyle"><span class="baseclass">TObject::</span>UseCurrentStyle</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Warning"><span class="baseclass">TObject::</span>Warning</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Write"><span class="baseclass">TObject::</span>Write</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> option = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> bufsize = 0)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Write@1"><span class="baseclass">TObject::</span>Write</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> option = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> bufsize = 0) <span class="keyword">const</span></td></tr>
+
+</table></div>
+<div class="access" id="funcprot"><b>protected:</b>
+<table class="func" id="tabfuncprot" cellspacing="0">
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:DoError"><span class="baseclass">TObject::</span>DoError</a>(<span class="keyword">int</span> level, <span class="keyword">const</span> <span class="keyword">char</span>* location, <span class="keyword">const</span> <span class="keyword">char</span>* fmt, <a href="./ListOfTypes.html#va_list">va_list</a> va) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:MakeZombie"><span class="baseclass">TObject::</span>MakeZombie</a>()</td></tr>
+
+</table></div>
+</div>
+
+<div id="datamembers">
+<h2><a name="PStaticData:Data_Members"></a>Data Members</h2>
+<div class="access" id="datapubl"><b>public:</b>
+<table class="data" id="tabdatapubl" cellspacing="0">
+<tr class="datainh"><td class="datatype">static <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>::(anonymous)</td><td class="dataname"><a href="#TObject:kBitMask"><span class="baseclass">TObject::</span>kBitMask</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>::EStatusBits</td><td class="dataname"><a href="#TObject:kCanDelete"><span class="baseclass">TObject::</span>kCanDelete</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>::EStatusBits</td><td class="dataname"><a href="#TObject:kCannotPick"><span class="baseclass">TObject::</span>kCannotPick</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>::EStatusBits</td><td class="dataname"><a href="#TObject:kHasUUID"><span class="baseclass">TObject::</span>kHasUUID</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>::EStatusBits</td><td class="dataname"><a href="#TObject:kInvalidObject"><span class="baseclass">TObject::</span>kInvalidObject</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>::(anonymous)</td><td class="dataname"><a href="#TObject:kIsOnHeap"><span class="baseclass">TObject::</span>kIsOnHeap</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>::EStatusBits</td><td class="dataname"><a href="#TObject:kIsReferenced"><span class="baseclass">TObject::</span>kIsReferenced</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>::EStatusBits</td><td class="dataname"><a href="#TObject:kMustCleanup"><span class="baseclass">TObject::</span>kMustCleanup</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>::EStatusBits</td><td class="dataname"><a href="#TObject:kNoContextMenu"><span class="baseclass">TObject::</span>kNoContextMenu</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>::(anonymous)</td><td class="dataname"><a href="#TObject:kNotDeleted"><span class="baseclass">TObject::</span>kNotDeleted</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>::EStatusBits</td><td class="dataname"><a href="#TObject:kObjInCanvas"><span class="baseclass">TObject::</span>kObjInCanvas</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>::(anonymous)</td><td class="dataname"><a href="#TObject:kOverwrite"><span class="baseclass">TObject::</span>kOverwrite</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>::(anonymous)</td><td class="dataname"><a href="#TObject:kSingleKey"><span class="baseclass">TObject::</span>kSingleKey</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>::(anonymous)</td><td class="dataname"><a href="#TObject:kWriteDelete"><span class="baseclass">TObject::</span>kWriteDelete</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>::(anonymous)</td><td class="dataname"><a href="#TObject:kZombie"><span class="baseclass">TObject::</span>kZombie</a></td><td></td></tr>
+
+</table></div>
+<div class="access" id="datapriv"><b>private:</b>
+<table class="data" id="tabdatapriv" cellspacing="0">
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PStaticData:baryon_param"></a>baryon_param</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PStaticData:br_param"></a>br_param</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PStaticData:brflag_param"></a>brflag_param</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PStaticData:brorig_param"></a>brorig_param</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="dataname"><a name="PStaticData:c_result"></a>c_result</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PStaticData:charge_param"></a>charge_param</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PStaticData:count_param"></a>count_param</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PStaticData:d1_param"></a>d1_param</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PStaticData:d2_param"></a>d2_param</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PStaticData:d3_param"></a>d3_param</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PStaticData:d4_param"></a>d4_param</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PStaticData:d5_param"></a>d5_param</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PStaticData:d6_param"></a>d6_param</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PStaticData:d7_param"></a>d7_param</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Double_t">Double_t</a>*</td><td class="dataname"><a name="PStaticData:d_result"></a>d_result</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PStaticData:defkey_param"></a>defkey_param</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PStaticData:didx_param"></a>didx_param</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PStaticData:enhance_br_param"></a>enhance_br_param</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PStaticData:ethreshold_param"></a>ethreshold_param</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="dataname"><a name="PStaticData:freeze"></a>freeze</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PStaticData:hdepth_param"></a>hdepth_param</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a>*</td><td class="dataname"><a name="PStaticData:i_result"></a>i_result</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PStaticData:ispin_param"></a>ispin_param</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PStaticData:lalias_param"></a>lalias_param</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PStaticData:lepton_param"></a>lepton_param</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PStaticData:lmass_param"></a>lmass_param</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PStaticData:mass_param"></a>mass_param</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PStaticData:mesh_param"></a>mesh_param</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PStaticData:meson_param"></a>meson_param</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PStaticData:nalias_param"></a>nalias_param</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PStaticData:name_param"></a>name_param</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PStaticData:parity_param"></a>parity_param</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PStaticData:pid_param"></a>pid_param</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PStaticData:pkf_param"></a>pkf_param</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PStaticData:pnmodes_param"></a>pnmodes_param</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PStaticData:ppid_param"></a>ppid_param</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PStaticData:spin_param"></a>spin_param</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Double_t">Double_t</a>*</td><td class="dataname"><a name="PStaticData:system_alloc_verbosity"></a>system_alloc_verbosity</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>*</td><td class="dataname"><a name="PStaticData:t_result"></a>t_result</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PStaticData:tdepth_param"></a>tdepth_param</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PStaticData:tf1_param"></a>tf1_param</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PStaticData:umass_param"></a>umass_param</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PStaticData:width_param"></a>width_param</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PStaticData:widx_param"></a>widx_param</td><td></td></tr>
+
+</table></div>
+</div>
+<h2><a id="PStaticData:Class_Charts"></a>Class Charts</h2>
+<map name="MapPStaticData_Lib" id="MapPStaticData_Lib">
+<area shape="rect" id="node1" href="LibraryDependencies.html" title="All Libraries" alt="" coords="340,44,454,92"/>
+</map>
+<div class="tabs">
+<a id="imgPStaticData_Inh" class="tabsel" href="inh/PStaticData_Inh.png" onclick="javascript:return SetImg('Charts','inh/PStaticData_Inh.png');">Inheritance</a>
+<a id="imgPStaticData_InhMem" class="tab" href="inhmem/PStaticData_InhMem.png" onclick="javascript:return SetImg('Charts','inhmem/PStaticData_InhMem.png');">Inherited Members</a>
+<a id="imgPStaticData_Incl" class="tab" href="incl/PStaticData_Incl.png" onclick="javascript:return SetImg('Charts','incl/PStaticData_Incl.png');">Includes</a>
+<a id="imgPStaticData_Lib" class="tab" href="lib/PStaticData_Lib.png" onclick="javascript:return SetImg('Charts','lib/PStaticData_Lib.png');">Libraries</a><br/>
+</div><div class="classcharts"><div class="classchartswidth"></div>
+<img id="Charts" alt="Class Charts" class="classcharts" usemap="#MapPStaticData_Inh" src="inh/PStaticData_Inh.png"/></div>
+<h2>Function documentation</h2>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="PStaticData:PStaticData" href="src/PStaticData.cxx.html#NdZulE">PStaticData</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="PStaticData:MakeDirectoryEntry" href="src/PStaticData.cxx.html#Zx4stC">MakeDirectoryEntry</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name, <span class="keyword">const</span> <span class="keyword">char</span>* n, <span class="keyword">const</span> <span class="keyword">char</span>* l, <span class="keyword">const</span> <span class="keyword">char</span>* ename)</span><br />
+<div class="funccomm"><pre> Adds an entry of the form <span class="string">"dir"</span>
+ if entry/dir is existing, the key w/o warning is returned
+ n and l are the data base columns of the list
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Double_t">Double_t</a> * <a class="funcname" name="PStaticData:GetBatchValue" href="src/PStaticData.cxx.html#xdlTf">GetBatchValue</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name, <a href="./ListOfTypes.html#Int_t">Int_t</a> make_val = 1)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="PStaticData:GetParticleID" href="src/PStaticData.cxx.html#JZFTWD">GetParticleID</a>(<span class="keyword">const</span> <span class="keyword">char</span>* id, <span class="keyword">int</span> warn = 1)</span><br />
+<div class="funccomm"><pre> pid by name
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">const</span> <span class="keyword">char</span> * <a class="funcname" name="PStaticData:GetParticleName" href="src/PStaticData.cxx.html#MS3efD">GetParticleName</a>(<span class="keyword">const</span> <span class="keyword">int</span>&amp; id)</span><br />
+<div class="funccomm"><pre> name by pid
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="PStaticData:GetParticleIDByKey" href="src/PStaticData.cxx.html#oHZnpE">GetParticleIDByKey</a>(<span class="keyword">int</span> key)</span><br />
+<div class="funccomm"><pre> pid by key
+ -1 if unvalid
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="PStaticData:GetParticleKey" href="src/PStaticData.cxx.html#fVv2eC">GetParticleKey</a>(<span class="keyword">const</span> <span class="keyword">int</span>&amp; id)</span><br />
+<div class="funccomm"><pre> data base key by pid
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="PStaticData:GetDecayKey@1" href="src/PStaticData.cxx.html#j1Vg2B">GetDecayKey</a>(<span class="keyword">const</span> <span class="keyword">int</span>&amp; id)</span><br />
+<div class="funccomm"><pre> data base key by pid
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="PStaticData:IsParticle" href="src/PStaticData.cxx.html#do.MB">IsParticle</a>(<span class="keyword">const</span> <span class="keyword">int</span>&amp; id, <span class="keyword">const</span> <span class="keyword">char</span>* name)</span><br />
+<div class="funccomm"><pre> does pid correspond to given name?
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="PStaticData:IsParticleValid" href="src/PStaticData.cxx.html#uyP3W">IsParticleValid</a>(<span class="keyword">const</span> <span class="keyword">int</span>&amp; id)</span><br />
+<div class="funccomm"><pre> check id range by id
+ Returns a <span class="string">"1"</span> in any case if data base is filled with id
+ <a href="./PFireball.html">PFireball</a> particles return 0;
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="PStaticData:IsParticleValid@1" href="src/PStaticData.cxx.html#XeauvB">IsParticleValid</a>(<span class="keyword">const</span> <span class="keyword">char</span>* n)</span><br />
+<div class="funccomm"><pre> check id range by name
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="PStaticData:AddAlias" href="src/PStaticData.cxx.html#KF55HD">AddAlias</a>(<span class="keyword">const</span> <span class="keyword">char</span>* old_name, <span class="keyword">const</span> <span class="keyword">char</span>* new_name)</span><br />
+<div class="funccomm"><pre>adds an alias to primary_key, ret value is alias key
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="PStaticData:GetAliasParent" href="src/PStaticData.cxx.html#PaH3FD">GetAliasParent</a>(<span class="keyword">const</span> <span class="keyword">char</span>* alias_name)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="PStaticData:GetAliasParent@1" href="src/PStaticData.cxx.html#AZxfYB">GetAliasParent</a>(<span class="keyword">int</span> key)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="PStaticData:GetSecondaryKey" href="src/PStaticData.cxx.html#NrYaaE">GetSecondaryKey</a>(<span class="keyword">int</span> key, <span class="keyword">int</span> defkey)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="PStaticData:AddParticle" href="src/PStaticData.cxx.html#RNvCXB">AddParticle</a>(<span class="keyword">int</span> pid, <span class="keyword">const</span> <span class="keyword">char</span>* name, <span class="keyword">double</span> mass)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PStaticData:PrintParticle" href="src/PStaticData.cxx.html#n01chC">PrintParticle</a>(<span class="keyword">int</span> pid)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PStaticData:PrintParticleByKey" href="src/PStaticData.cxx.html#YAQgJD">PrintParticleByKey</a>(<span class="keyword">int</span> pid)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="PStaticData:GetParticleKF" href="src/PStaticData.cxx.html#xElJsD">GetParticleKF</a>(<span class="keyword">const</span> <span class="keyword">int</span> Id)</span><br />
+<div class="funccomm"><pre> return Pythia6 kf code
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="PStaticData:GetParticleIDbyKF" href="src/PStaticData.cxx.html#ph560E">GetParticleIDbyKF</a>(<span class="keyword">const</span> <span class="keyword">int</span> kf)</span><br />
+<div class="funccomm"><pre> return Id corresponding to Pythia6 kf code
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="PStaticData:IsParticleMeson" href="src/PStaticData.cxx.html#Ykizi">IsParticleMeson</a>(<span class="keyword">const</span> <span class="keyword">int</span>&amp; id)</span><br />
+<div class="funccomm"><pre> is meson?, by pid
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="PStaticData:IsParticleHadron" href="src/PStaticData.cxx.html#K.GtNE">IsParticleHadron</a>(<span class="keyword">const</span> <span class="keyword">int</span>&amp; id)</span><br />
+<div class="funccomm"><pre> is hadron?, by pid
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="PStaticData:GetParticleBaryon" href="src/PStaticData.cxx.html#O0lY.D">GetParticleBaryon</a>(<span class="keyword">const</span> <span class="keyword">int</span>&amp; id)</span><br />
+<div class="funccomm"><pre> baryon number by pid
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PStaticData:SetParticleBaryon" href="src/PStaticData.cxx.html#I6ACiE">SetParticleBaryon</a>(<span class="keyword">const</span> <span class="keyword">char</span>* id, <a href="./ListOfTypes.html#Int_t">Int_t</a> num = 1)</span><br />
+<div class="funccomm"><pre> baryon number by name
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PStaticData:SetParticleMeson" href="src/PStaticData.cxx.html#H7NrLB">SetParticleMeson</a>(<span class="keyword">const</span> <span class="keyword">char</span>* id, <a href="./ListOfTypes.html#Int_t">Int_t</a> num = 1)</span><br />
+<div class="funccomm"><pre> set meson number
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PStaticData:SetParticleLepton" href="src/PStaticData.cxx.html#WNt9mE">SetParticleLepton</a>(<span class="keyword">const</span> <span class="keyword">char</span>* id, <a href="./ListOfTypes.html#Int_t">Int_t</a> num = 1)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PStaticData:SetParticleCharge" href="src/PStaticData.cxx.html#epEaTC">SetParticleCharge</a>(<span class="keyword">const</span> <span class="keyword">char</span>* id, <a href="./ListOfTypes.html#Int_t">Int_t</a> charge)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PStaticData:SetParticleSpin" href="src/PStaticData.cxx.html#oteAkC">SetParticleSpin</a>(<span class="keyword">const</span> <span class="keyword">char</span>* id, <a href="./ListOfTypes.html#Int_t">Int_t</a> spin)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PStaticData:SetParticleIsospin" href="src/PStaticData.cxx.html#MoKu5D">SetParticleIsospin</a>(<span class="keyword">const</span> <span class="keyword">char</span>* id, <a href="./ListOfTypes.html#Int_t">Int_t</a> isospin)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PStaticData:SetParticleParity" href="src/PStaticData.cxx.html#ijor.B">SetParticleParity</a>(<span class="keyword">const</span> <span class="keyword">char</span>* id, <a href="./ListOfTypes.html#Int_t">Int_t</a> parity)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="PStaticData:GetParticleLepton" href="src/PStaticData.cxx.html#uCrLEE">GetParticleLepton</a>(<span class="keyword">const</span> <span class="keyword">int</span>&amp; id)</span><br />
+<div class="funccomm"><pre> lepton number by pid
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="PStaticData:GetParticleCharge" href="src/PStaticData.cxx.html#o9F_aC">GetParticleCharge</a>(<span class="keyword">const</span> <span class="keyword">int</span>&amp; id)</span><br />
+<div class="funccomm"><pre> charge by pid
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="PStaticData:GetParticleCharge@1" href="src/PStaticData.cxx.html#MbtzgD">GetParticleCharge</a>(<span class="keyword">const</span> <span class="keyword">char</span>* id)</span><br />
+<div class="funccomm"><pre> charge by name
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="PStaticData:GetParticleSpin" href="src/PStaticData.cxx.html#MxBhF">GetParticleSpin</a>(<span class="keyword">const</span> <span class="keyword">int</span>&amp; id)</span><br />
+<div class="funccomm"><pre> 2 x J by pid
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="PStaticData:GetParticleSpin@1" href="src/PStaticData.cxx.html#ukn.8B">GetParticleSpin</a>(<span class="keyword">const</span> <span class="keyword">char</span>* id)</span><br />
+<div class="funccomm"><pre> 2 x J by name
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="PStaticData:GetParticleIsospin" href="src/PStaticData.cxx.html#kqhVdE">GetParticleIsospin</a>(<span class="keyword">const</span> <span class="keyword">int</span>&amp; id)</span><br />
+<div class="funccomm"><pre> 2 x I by pid
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="PStaticData:GetParticleIsospin@1" href="src/PStaticData.cxx.html#hdsEhC">GetParticleIsospin</a>(<span class="keyword">const</span> <span class="keyword">char</span>* id)</span><br />
+<div class="funccomm"><pre> 2 x I by name
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="PStaticData:GetParticleParity" href="src/PStaticData.cxx.html#zHSs_C">GetParticleParity</a>(<span class="keyword">const</span> <span class="keyword">int</span>&amp; id)</span><br />
+<div class="funccomm"><pre> parity (0 if irrelevant)
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="PStaticData:GetParticleParity@1" href="src/PStaticData.cxx.html#nR5hkB">GetParticleParity</a>(<span class="keyword">const</span> <span class="keyword">char</span>* id)</span><br />
+<div class="funccomm"><pre> parity (0 if irrelevant)
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">double</span> <a class="funcname" name="PStaticData:GetParticleMass" href="src/PStaticData.cxx.html#pCncNC">GetParticleMass</a>(<span class="keyword">const</span> <span class="keyword">int</span>&amp; id)</span><br />
+<div class="funccomm"><pre> mass by id
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">double</span> <a class="funcname" name="PStaticData:GetParticleMass@1" href="src/PStaticData.cxx.html#vqxwu">GetParticleMass</a>(<span class="keyword">const</span> <span class="keyword">char</span>* id)</span><br />
+<div class="funccomm"><pre> mass by name
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">double</span> <a class="funcname" name="PStaticData:GetParticleMassByKey" href="src/PStaticData.cxx.html#vIWAmC">GetParticleMassByKey</a>(<span class="keyword">const</span> <span class="keyword">int</span>&amp; id)</span><br />
+<div class="funccomm"><pre> mass by key
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PStaticData:SetParticleMass" href="src/PStaticData.cxx.html#jfnL">SetParticleMass</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> id, <a href="./ListOfTypes.html#Float_t">Float_t</a> mass)</span><br />
+<div class="funccomm"><pre>reset mass
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PStaticData:SetParticleMass@1" href="src/PStaticData.cxx.html#JOfaqC">SetParticleMass</a>(<span class="keyword">const</span> <span class="keyword">char</span>* id, <a href="./ListOfTypes.html#Float_t">Float_t</a> mass)</span><br />
+<div class="funccomm"><pre>reset mass
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">const</span> <span class="keyword">char</span> * <a class="funcname" name="PStaticData:GetDecayName" href="src/PStaticData.cxx.html#odtTeB">GetDecayName</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> id)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">const</span> <span class="keyword">char</span> * <a class="funcname" name="PStaticData:GetDecayNameByKey" href="src/PStaticData.cxx.html#ITGsEE">GetDecayNameByKey</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> key)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PStaticData:SetParticleTotalWidth@1" href="src/PStaticData.cxx.html#Hc5_sC">SetParticleTotalWidth</a>(<span class="keyword">const</span> <span class="keyword">char</span>* id, <a href="./ListOfTypes.html#Float_t">Float_t</a> wid)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PStaticData:SetParticleTotalWidth" href="src/PStaticData.cxx.html#FFxiWC">SetParticleTotalWidth</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> id, <a href="./ListOfTypes.html#Float_t">Float_t</a> wid)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="PStaticData:GetTWidx" href="src/PStaticData.cxx.html#VEbRUE">GetTWidx</a>(<span class="keyword">const</span> <span class="keyword">int</span>&amp; )</span><br />
+<div class="funccomm"><pre> width flag from index
+ 0: static width only
+ 1: use dynamic width
+-1: Disabled
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="PStaticData:GetPWidx" href="src/PStaticData.cxx.html#d6kHeE">GetPWidx</a>(<span class="keyword">const</span> <span class="keyword">int</span>&amp; )</span><br />
+<div class="funccomm"><pre> width flag from index
+ 0: static width only
+ 1: use dynamic width
+-1: Disabled
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PStaticData:SetTWidx" href="src/PStaticData.cxx.html#mtD2CD">SetTWidx</a>(<span class="keyword">const</span> <span class="keyword">int</span>&amp; , <span class="keyword">const</span> <span class="keyword">int</span>&amp; )</span><br />
+<div class="funccomm"><pre> width flag from index
+ 0: static width only
+ 1: use dynamic width
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PStaticData:SetPWidx" href="src/PStaticData.cxx.html#HTu0aC">SetPWidx</a>(<span class="keyword">const</span> <span class="keyword">int</span>&amp; , <span class="keyword">const</span> <span class="keyword">int</span>&amp; )</span><br />
+<div class="funccomm"><pre> width flag from index
+ 0: static width only
+ 1: use dynamic width
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PStaticData:SetTWidthMesh" href="src/PStaticData.cxx.html#WVrasB">SetTWidthMesh</a>(<span class="keyword">const</span> <span class="keyword">int</span>&amp; , <a href="./PMesh.html">PMesh</a>* mesh)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./PMesh.html">PMesh</a> * <a class="funcname" name="PStaticData:GetTWidthMesh" href="src/PStaticData.cxx.html#InhfiD">GetTWidthMesh</a>(<span class="keyword">const</span> <span class="keyword">int</span>&amp; )</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PStaticData:SetPWidthMesh" href="src/PStaticData.cxx.html#GpXuYB">SetPWidthMesh</a>(<span class="keyword">const</span> <span class="keyword">int</span>&amp; , <a href="./PMesh.html">PMesh</a>* mesh)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./PMesh.html">PMesh</a> * <a class="funcname" name="PStaticData:GetPWidthMesh" href="src/PStaticData.cxx.html#cO6G7C">GetPWidthMesh</a>(<span class="keyword">const</span> <span class="keyword">int</span>&amp; )</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PStaticData:SetTF1" href="src/PStaticData.cxx.html#BnyARD">SetTF1</a>(<span class="keyword">const</span> <span class="keyword">int</span>&amp; , TF1* mesh)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname">TF1 * <a class="funcname" name="PStaticData:GetTF1" href="src/PStaticData.cxx.html#wuTyxE">GetTF1</a>(<span class="keyword">const</span> <span class="keyword">int</span>&amp; )</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Double_t">Double_t</a> <a class="funcname" name="PStaticData:GetDecayEmin" href="src/PStaticData.cxx.html#gtWocC">GetDecayEmin</a>(<span class="keyword">const</span> <span class="keyword">int</span>&amp; idx)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="PStaticData:GetDecayBRFlag" href="src/PStaticData.cxx.html#Q1f23D">GetDecayBRFlag</a>(<span class="keyword">int</span> didx)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PStaticData:SetDecayBRFlag" href="src/PStaticData.cxx.html#pLvYME">SetDecayBRFlag</a>(<span class="keyword">int</span> didx, <span class="keyword">int</span> flag)</span><br />
+<div class="funccomm"><pre>Set the BR flag for the <span class="string">"didx"</span>, thus the total normalization
+is used (when flag=1) instead of the pole mass
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PStaticData:SetTotalNormalization" href="src/PStaticData.cxx.html#OB7S_C">SetTotalNormalization</a>(<span class="keyword">char</span>* p, <span class="keyword">int</span> flag = 1)</span><br />
+<div class="funccomm"><pre>Wrapper function which enables the total normalization
+for a particle <span class="string">"p"</span>
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PStaticData:SetDecayEmin" href="src/PStaticData.cxx.html#UP18dC">SetDecayEmin</a>(<span class="keyword">const</span> <span class="keyword">int</span>&amp; idx, <span class="keyword">const</span> <span class="keyword">double</span> v)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Double_t">Double_t</a> <a class="funcname" name="PStaticData:GetParticleEmin" href="src/PStaticData.cxx.html#XVm4L">GetParticleEmin</a>(<span class="keyword">const</span> <span class="keyword">int</span>&amp; id)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PStaticData:SetParticleEmin" href="src/PStaticData.cxx.html#rVxPsD">SetParticleEmin</a>(<span class="keyword">const</span> <span class="keyword">int</span>&amp; id, <span class="keyword">const</span> <span class="keyword">double</span> v)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Double_t">Double_t</a> <a class="funcname" name="PStaticData:GetParticleLMass" href="src/PStaticData.cxx.html#aPub6E">GetParticleLMass</a>(<span class="keyword">const</span> <span class="keyword">int</span>&amp; id)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PStaticData:SetParticleLMass@1" href="src/PStaticData.cxx.html#Ud26kD">SetParticleLMass</a>(<span class="keyword">const</span> <span class="keyword">char</span>* id, <span class="keyword">const</span> <span class="keyword">double</span> v)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Double_t">Double_t</a> <a class="funcname" name="PStaticData:GetParticleUMass" href="src/PStaticData.cxx.html#eXLy3">GetParticleUMass</a>(<span class="keyword">const</span> <span class="keyword">int</span>&amp; id)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PStaticData:SetParticleUMass@1" href="src/PStaticData.cxx.html#Qix.lD">SetParticleUMass</a>(<span class="keyword">const</span> <span class="keyword">char</span>* id, <span class="keyword">const</span> <span class="keyword">double</span> v)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="PStaticData:GetTDepth" href="src/PStaticData.cxx.html#h.gmND">GetTDepth</a>(<span class="keyword">const</span> <span class="keyword">int</span>&amp; )</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PStaticData:SetTDepth" href="src/PStaticData.cxx.html#n5tMS">SetTDepth</a>(<span class="keyword">const</span> <span class="keyword">int</span>&amp; , <span class="keyword">const</span> <span class="keyword">int</span>&amp; )</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="PStaticData:GetHDepth" href="src/PStaticData.cxx.html#PdgygB">GetHDepth</a>(<span class="keyword">const</span> <span class="keyword">int</span>&amp; )</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PStaticData:SetHDepth" href="src/PStaticData.cxx.html#AOeRp">SetHDepth</a>(<span class="keyword">const</span> <span class="keyword">int</span>&amp; , <span class="keyword">const</span> <span class="keyword">int</span>&amp; )</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Double_t">Double_t</a> <a class="funcname" name="PStaticData:GetDecayBR" href="src/PStaticData.cxx.html#ByUm5E">GetDecayBR</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> id)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Double_t">Double_t</a> <a class="funcname" name="PStaticData:GetDecayPartialWidth" href="src/PStaticData.cxx.html#N_nwoD">GetDecayPartialWidth</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> id)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Double_t">Double_t</a> <a class="funcname" name="PStaticData:GetDecayPartialWidthByKey" href="src/PStaticData.cxx.html#f3539B">GetDecayPartialWidthByKey</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> id)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">bool</span> <a class="funcname" name="PStaticData:SetDecayBR" href="src/PStaticData.cxx.html#vUB4B">SetDecayBR</a>(<span class="keyword">int</span> didx, <span class="keyword">double</span> br, <span class="keyword">int</span> mode)</span><br />
+<div class="funccomm"><pre>Mode: see <a href="./PStaticData.html#PStaticData:SetDecayBR" title="bool PStaticData::SetDecayBR(int didx, double br, int mode) or overloads">SetDecayBR</a>(const <a href="./ListOfTypes.html#char">char</a> *parent, const <a href="./ListOfTypes.html#char">char</a> *daughters)
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">bool</span> <a class="funcname" name="PStaticData:SetDecayBRByKey" href="src/PStaticData.cxx.html#lX0FW">SetDecayBRByKey</a>(<span class="keyword">int</span> key, <span class="keyword">double</span> br, <span class="keyword">int</span> mode)</span><br />
+<div class="funccomm"><pre>Mode: see <a href="./PStaticData.html#PStaticData:SetDecayBR" title="bool PStaticData::SetDecayBR(int didx, double br, int mode) or overloads">SetDecayBR</a>(const <a href="./ListOfTypes.html#char">char</a> *parent, const <a href="./ListOfTypes.html#char">char</a> *daughters)
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">bool</span> <a class="funcname" name="PStaticData:SetDecayBR@1" href="src/PStaticData.cxx.html#BHmfqD">SetDecayBR</a>(<span class="keyword">const</span> <span class="keyword">char</span>* parent, <span class="keyword">const</span> <span class="keyword">char</span>* daughters, <span class="keyword">double</span> br, <span class="keyword">int</span> mode)</span><br />
+<div class="funccomm"><pre> Resets the decay branching ratio of an existing decay
+ Handle this functon with care!
+ Do not use this function to change the weighting etc.
+ because the change of the decay b.r. will affect the
+ shape of the parent resonance
+
+ If you have really physics arguments to change the b.r.
+ (e.g. update of PDG values)
+ you *must* use this function at the very beginning of your macro,
+ but at least before the <span class="string">"GetWidth"</span> is called
+
+ Mode flag:
+ 0: Add the new b.r. to the existing ones + re-weighting
+ 1: No re-weighting (in this case br must be &lt;1.)
+get parent key
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">bool</span> <a class="funcname" name="PStaticData:NormParticleBR" href="src/PStaticData.cxx.html#RrWPiB">NormParticleBR</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> id)</span><br />
+<div class="funccomm"><pre> normalize branching ratios for particle id
+TODO: check if this works
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">bool</span> <a class="funcname" name="PStaticData:NormParticleBRbyKey" href="src/PStaticData.cxx.html#H0W.1C">NormParticleBRbyKey</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> key)</span><br />
+<div class="funccomm"><pre> normalize branching ratios for particle id
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PStaticData:FreezeDecayBR" href="src/PStaticData.cxx.html#aqsau">FreezeDecayBR</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> id, <a href="./ListOfTypes.html#Int_t">Int_t</a> brn)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="PStaticData:GetParticleNChannels" href="src/PStaticData.cxx.html#FOfNOE">GetParticleNChannels</a>(<span class="keyword">const</span> <span class="keyword">int</span>&amp; id)</span><br />
+<div class="funccomm"><pre> number of decay channels by pid
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="PStaticData:GetParticleNChannels@1" href="src/PStaticData.cxx.html#YFHt4">GetParticleNChannels</a>(<span class="keyword">const</span> <span class="keyword">char</span>* id)</span><br />
+<div class="funccomm"><pre> number of decay channels by name
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="PStaticData:GetParticleNChannelsByKey" href="src/PStaticData.cxx.html#Nf78I">GetParticleNChannelsByKey</a>(<span class="keyword">int</span> id)</span><br />
+<div class="funccomm"><pre> number of decay channels by key
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="PStaticData:IsDecayHadronic" href="src/PStaticData.cxx.html#MiBtY">IsDecayHadronic</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> didx)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="PStaticData:AddDecay@2" href="src/PStaticData.cxx.html#aNf0XE">AddDecay</a>(<span class="keyword">int</span>* ipid, <span class="keyword">int</span> n)</span><br />
+<div class="funccomm"><pre>For internal use, e.g. <a href="./PChannel.html">PChannel</a>
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="PStaticData:AddDecay" href="src/PStaticData.cxx.html#f2ZjcB">AddDecay</a>(<span class="keyword">int</span> didx, <span class="keyword">const</span> <span class="keyword">char</span>* name, <span class="keyword">const</span> <span class="keyword">char</span>* parent, <span class="keyword">const</span> <span class="keyword">char</span>* daughters, <span class="keyword">double</span> br)</span><br />
+<div class="funccomm"><pre>make new decay with decay index <span class="string">"didx"</span>
+the didx should be a free number (or set to -1 for auto-alloc)
+parent particle is <span class="string">"parent"</span>, which must be existing
+<span class="string">"name"</span> is the new unique string identifier of the decay
+daughers is an particle array of the format <span class="string">"p1,p2,p3,..."</span>
+br is the branching ratio
+all branching ratios are re-normalized
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PStaticData:PrintDecayByKey" href="src/PStaticData.cxx.html#aS13Z">PrintDecayByKey</a>(<span class="keyword">int</span> key)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="PStaticData:GetDecayNProductsByKey" href="src/PStaticData.cxx.html#fN5mXE">GetDecayNProductsByKey</a>(<span class="keyword">const</span> <span class="keyword">int</span>&amp; key)</span><br />
+<div class="funccomm"><pre> retrieve number of products by mode key
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="PStaticData:GetDecayNProducts" href="src/PStaticData.cxx.html#VzUrfE">GetDecayNProducts</a>(<span class="keyword">const</span> <span class="keyword">int</span>&amp; )</span><br />
+<div class="funccomm"><pre> retrieve number of products by mode index
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="PStaticData:GetDecayNProducts@1" href="src/PStaticData.cxx.html#QpZbuB">GetDecayNProducts</a>(<span class="keyword">const</span> <span class="keyword">char</span>* )</span><br />
+<div class="funccomm"><pre> number of products by name
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="PStaticData:GetDecayParent" href="src/PStaticData.cxx.html#I610b">GetDecayParent</a>(<span class="keyword">const</span> <span class="keyword">int</span>&amp; )</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="PStaticData:GetDecayParentByKey" href="src/PStaticData.cxx.html#OUrNxB">GetDecayParentByKey</a>(<span class="keyword">const</span> <span class="keyword">int</span>&amp; )</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="PStaticData:GetDecayIdxByKey" href="src/PStaticData.cxx.html#bAn3LE">GetDecayIdxByKey</a>(<span class="keyword">int</span> key)</span><br />
+<div class="funccomm"><pre> return value is -1 on failure
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="PStaticData:GetDecayIdx" href="src/PStaticData.cxx.html#esDgS">GetDecayIdx</a>(<span class="keyword">int</span>* pid, <span class="keyword">int</span> n)</span><br />
+<div class="funccomm"><pre> decay-mode index from parent and product ids;
+ n is the size of the array
+ arguments: pointer to pid array of parent &amp; products,
+            number of products
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="PStaticData:GetDecayIdx@1" href="src/PStaticData.cxx.html#kGFIbE">GetDecayIdx</a>(<span class="keyword">const</span> <span class="keyword">char</span>* parent, <span class="keyword">const</span> <span class="keyword">char</span>* daughters)</span><br />
+<div class="funccomm"><pre>get parent key
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="PStaticData:GetDecayKey" href="src/PStaticData.cxx.html#yOrgS">GetDecayKey</a>(<span class="keyword">int</span>* pid, <span class="keyword">int</span> n)</span><br />
+<div class="funccomm"><pre> decay-mode key from parent and product ids;
+ n is the size of the daughters array
+ arguments: pointer to pid array of parent &amp; products,
+            number of products
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PStaticData:GetDecayMode" href="src/PStaticData.cxx.html#qoKA6B">GetDecayMode</a>(<span class="keyword">const</span> <span class="keyword">int</span> , <span class="keyword">int</span>* n)</span><br />
+<div class="funccomm"><pre> Retrieves the decay mode info for a given channel n.
+
+ ARGUMENTS: 1. decay-mode index (PPosition),
+ 2. pointer to existing integer array (must have large
+ enough dimension), 3. pointer to existing <a href="./ListOfTypes.html#double">double</a> (optional).
+
+ RETURNS: <a href="./ListOfTypes.html#int">int</a> array with N, i_1, i_2,..., i_N, where N is
+ the number of products for the decay mode with index n,
+ followed by the pids of these products
+
+ N should contain the maximum number of the array-size of before
+ calling this function
+ if the maximum is exceeded, or any other error occurs, N is set to 0
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PStaticData:GetDecayModeByKey" href="src/PStaticData.cxx.html#Or.YgE">GetDecayModeByKey</a>(<span class="keyword">const</span> <span class="keyword">int</span> , <span class="keyword">int</span>* n)</span><br />
+<div class="funccomm"><pre>same as above, but by data base key
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">double</span> <a class="funcname" name="PStaticData:GetParticleTotalWidth" href="src/PStaticData.cxx.html#mmWWrB">GetParticleTotalWidth</a>(<span class="keyword">const</span> <span class="keyword">int</span>&amp; id)</span><br />
+<div class="funccomm"><pre> PWidth[id]
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">double</span> <a class="funcname" name="PStaticData:GetParticleTotalWidthByKey" href="src/PStaticData.cxx.html#cISKHB">GetParticleTotalWidthByKey</a>(<span class="keyword">const</span> <span class="keyword">int</span>&amp; id)</span><br />
+<div class="funccomm"><pre> PWidth[id]
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PStaticData:SetEnhanceChannelBR" href="src/PStaticData.cxx.html#A1wi3">SetEnhanceChannelBR</a>(<span class="keyword">const</span> <span class="keyword">int</span> id, <span class="keyword">const</span> <span class="keyword">double</span> factor)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PStaticData:SetEnhanceChannelBR@1" href="src/PStaticData.cxx.html#q1v9WB">SetEnhanceChannelBR</a>(<span class="keyword">const</span> <span class="keyword">char</span>* parent, <span class="keyword">const</span> <span class="keyword">char</span>* decay, <a href="./ListOfTypes.html#Double_t">Double_t</a> factor = 1.)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PStaticData:DisableAllChannelBR" href="src/PStaticData.cxx.html#YMjNI">DisableAllChannelBR</a>(<span class="keyword">const</span> <span class="keyword">char</span>* parent)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Double_t">Double_t</a> <a class="funcname" name="PStaticData:GetEnhanceChannelBR" href="src/PStaticData.cxx.html#ma8TM">GetEnhanceChannelBR</a>(<span class="keyword">const</span> <span class="keyword">int</span> id)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="PStaticData:PStaticData" href="src/PStaticData.h.html#ZDUtPD">PStaticData</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PStaticData:SetFreezeOut" href="src/PStaticData.h.html#Zq9e0C">SetFreezeOut</a>(<span class="keyword">void</span>)</span><br />
+<div class="funccomm"><pre>Freeze out -&gt; Important to check this
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PStaticData:clearFreezeOut" href="src/PStaticData.h.html#bxRQzC">clearFreezeOut</a>(<span class="keyword">void</span>)</span><br />
+<div class="funccomm"><pre>re-loop <a href="./PStdModels.html">PStdModels</a>
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">bool</span> <a class="funcname" name="PStaticData:GetFreezeOut" href="src/PStaticData.h.html#kClByC">GetFreezeOut</a>(<span class="keyword">void</span>)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">bool</span> <a class="funcname" name="PStaticData:SetBatchValue" href="src/PStaticData.h.html#OW4aME">SetBatchValue</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name, <a href="./ListOfTypes.html#Double_t">Double_t</a> val)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="PStaticData:GetParticleKey" href="src/PStaticData.h.html#Q7qx0C">GetParticleKey</a>(<span class="keyword">const</span> <span class="keyword">int</span>&amp; id)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PStaticData:PrintParticle" href="src/PStaticData.h.html#tgtDeC">PrintParticle</a>(<span class="keyword">int</span> pid)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">double</span> <a class="funcname" name="PStaticData:GetParticleTotalWidth" href="src/PStaticData.h.html#VBPzoD">GetParticleTotalWidth</a>(<span class="keyword">const</span> <span class="keyword">int</span>&amp; id)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">double</span> <a class="funcname" name="PStaticData:GetParticleLMass" href="src/PStaticData.h.html#fFUygD">GetParticleLMass</a>(<span class="keyword">const</span> <span class="keyword">int</span>&amp; id)</span><br />
+<div class="funccomm"><pre>Change particle range:
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">double</span> <a class="funcname" name="PStaticData:GetParticleUMass" href="src/PStaticData.h.html#PZpygD">GetParticleUMass</a>(<span class="keyword">const</span> <span class="keyword">int</span>&amp; id)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PStaticData:SetParticleLMass" href="src/PStaticData.h.html#r9zXwB">SetParticleLMass</a>(<span class="keyword">const</span> <span class="keyword">int</span>&amp; id, <span class="keyword">const</span> <span class="keyword">double</span> v)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PStaticData:SetParticleUMass" href="src/PStaticData.h.html#YvCJvD">SetParticleUMass</a>(<span class="keyword">const</span> <span class="keyword">int</span>&amp; id, <span class="keyword">const</span> <span class="keyword">double</span> v)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="PStaticData:AddDecay" href="src/PStaticData.h.html#beDbxD">AddDecay</a>(<span class="keyword">int</span> didx, <span class="keyword">const</span> <span class="keyword">char</span>* name, <span class="keyword">const</span> <span class="keyword">char</span>* parent, <span class="keyword">const</span> <span class="keyword">char</span>* daughters, <span class="keyword">double</span> br)</span><br />
+</div>
+
+<br />
+<!--SIGNATURE-->
+<div id="footer">
+
+<em>&raquo; Last changed: Mon Apr 24 17:39:55 2017 </em><em>&raquo; Last generated: 2017-04-24 17:39</em><br />
+<em>This page has been automatically generated. For comments or suggestions regarding the documentation or ROOT in general please send a mail to <a href="mailto:rootdev@cern.ch">ROOT support</a>.</em>
+</div>
+</div>
+</body>
+</html>

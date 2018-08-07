@@ -1,0 +1,771 @@
+ Decay Manager
+   ------------------------------------------------------------
+  | Welcome to ROOT 6.06/02                http://root.cern.ch |
+  |                               (c) 1995-2014, The ROOT Team |
+  | Built for linuxx8664gcc                                    |
+  | From tag v6-06-02, 3 March 2016                            |
+  | Try '.help', '.demo', '.license', '.credits', '.quit'/'.q' |
+   ------------------------------------------------------------
+
+
+  *********************************************************
+  * The Pluto event generator                              
+  * Developed by HADES and all contributing AUTHORS        
+  * www-hades.gsi.de/computing/pluto/html/PlutoIndex.html  
+  * Version: 6.00
+  * Compiled on 17 May 2017
+  *********************************************************
+Shared library Pluto.so loaded
+
+Processing obl_test_dp_He3.C...
+/u/hadeshyp/ingo/pluto6_official_documentation_gitlab/test/./obl_test_dp_He3.C:38:20: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+    pdm->Do(histo1,"_x = counter");
+                   ^
+Info in <PStdData::PStdData()>: (CONSTRUCTOR)
+Info in <PDataBase::PDataBase()>: (CONSTRUCTOR)
+Info in <PStdModels::PStdModels()>: (CONSTRUCTOR), Standard model filler
+Info in <PDynamicData::PDynamicData()>: (CONSTRUCTOR)
+Info in <PStdModels::GetModels>: Read std models
+Info in <PDistributionManager::PDistributionManager>: Rare eta decays are enabled
+Info in <PDistributionManager::PDistributionManager>: Baryonic resonances with strangeness available
+Info in <PDistributionManager::PDistributionManager>: Pion beam plugin available
+Info in <PDistributionManager::PDistributionManager>: Beam line simulation classes available
+Info in <PDistributionManager::PDistributionManager>: PDG/UNIGEN classes available
+Info in <PDistributionManager::PDistributionManager>: Elementary plugin available
+Info in <PDistributionManager::PDistributionManager>: Plugin for Dalitz decay (generator & new D Dalitz) available
+Info in <PDistributionManager::PDistributionManager>: Dalitz decays of N* activated
+Info in <PDistributionManager::PDistributionManager>: HADES classes available
+Info in <PDistributionManager::PDistributionManager()>: (CONSTRUCTOR)
+Info in <PStaticData::AddDecay>: (ALLOCATION) Decay index 544: eta -> dilepton + dilepton
+Info in <PStaticData::AddDecay>: (ALLOCATION) Decay index 545: eta -> e+ + e- + pi+ + pi-
+Info in <PStaticData::AddDecay>: (ALLOCATION) Decay index 1248: N*(1520)+ -> p + dilepton
+Info in <PStaticData::AddDecay>: (ALLOCATION) Decay index 1216: N*(1440)+ -> p + dilepton
+Info in <PStaticData::AddDecay>: (ALLOCATION) Decay index 1280: N*(1535)+ -> p + dilepton
+Info in <PStaticData::AddDecay>: (ALLOCATION) Decay index 2080: N*(1520)0 -> n + dilepton
+Info in <PStaticData::AddDecay>: (ALLOCATION) Decay index 2048: N*(1440)0 -> n + dilepton
+Info in <PStaticData::AddDecay>: (ALLOCATION) Decay index 2112: N*(1535)0 -> n + dilepton
+Info in <PDecayManager::PDecayManager()>: (CONSTRUCTOR)
+
+Setting defaults for particle #7, pi0
+Information found:
+Database key=15
+Database name=pi0 
+Pluto particle ID=7 
+Particle static width [GeV]=0.000000 
+Particle pole mass [GeV]=0.134976 
+
+This particle decays via the following modes:
+Database key=143
+Database name=pi0 --> photon + photon 
+Decay index=3 
+Branching ratio=0.988000 
+Decay product 1->Database name=g 
+Decay product 2->Database name=g 
+
+Database key=144
+Database name=pi0 --> dilepton + photon (Dalitz) 
+Decay index=4 
+Branching ratio=0.012000 
+Decay product 1->Database name=g 
+Decay product 2->Database name=dilepton 
+
+
+Setting defaults for particle #51, dilepton
+Information found:
+Database key=103
+Database name=dilepton 
+Pluto particle ID=51 
+Particle static width [GeV]=0.000000 
+Particle pole mass [GeV]=0.001022 
+
+Alias: dielectron
+
+This particle decays via the following modes:
+Database key=230
+Info in <PParticle::operator+>: (ALLOCATION) Keeping beam and target particle for further reference
+Info in <PParticle::operator+>: (ALLOCATION) The composite p + d has been added
+Database name=dilepton --> e+ + e- 
+Decay index=90 
+Branching ratio=1.000000 
+Decay product 1->Database name=e- 
+Decay product 2->Database name=e+ 
+
+
+processing decay:
+Info in <PStaticData::AddDecay>: (ALLOCATION) Decay index 45014: p + d --> He3 + eta
+Next channel for p + d, weight: 1.00e+00
+p + d --> He3 + eta
+Info in <PStdModels::GetModels>: Read std models
+Info in <PDistributionManager::Attach>: Re-iteration of std plugin done
+        Interaction model(s):
+Next channel for eta, weight: 1.00e+00
+eta --> pi0 + pi0 + pi0
+        Interaction model(s):
+Next channel for pi0, weight: 9.88e-01
+pi0 --> photon + photon
+        Interaction model(s):
+Next channel for pi0, weight: 9.76e-01
+pi0 --> photon + photon
+        Interaction model(s):
+Next channel for pi0, weight: 9.64e-01
+pi0 --> photon + photon
+        Interaction model(s):
+Next channel for pi0, weight: 1.20e-02
+pi0 --> dilepton + photon (Dalitz)
+        Interaction model(s):
+Next channel for pi0, weight: 1.19e-02
+pi0 --> photon + photon
+        Interaction model(s):
+Next channel for pi0, weight: 1.17e-02
+pi0 --> photon + photon
+        Interaction model(s):
+Next channel for pi0, weight: 9.88e-01
+pi0 --> photon + photon
+        Interaction model(s):
+Next channel for pi0, weight: 1.19e-02
+pi0 --> dilepton + photon (Dalitz)
+        Interaction model(s):
+Next channel for pi0, weight: 1.17e-02
+pi0 --> photon + photon
+        Interaction model(s):
+Next channel for pi0, weight: 1.20e-02
+pi0 --> dilepton + photon (Dalitz)
+        Interaction model(s):
+Next channel for pi0, weight: 1.44e-04
+pi0 --> dilepton + photon (Dalitz)
+        Interaction model(s):
+Next channel for pi0, weight: 1.42e-04
+pi0 --> photon + photon
+        Interaction model(s):
+Next channel for pi0, weight: 9.88e-01
+pi0 --> photon + photon
+        Interaction model(s):
+Next channel for pi0, weight: 9.76e-01
+pi0 --> photon + photon
+        Interaction model(s):
+Next channel for pi0, weight: 1.17e-02
+pi0 --> dilepton + photon (Dalitz)
+        Interaction model(s):
+Next channel for pi0, weight: 1.20e-02
+pi0 --> dilepton + photon (Dalitz)
+        Interaction model(s):
+Next channel for pi0, weight: 1.19e-02
+pi0 --> photon + photon
+        Interaction model(s):
+Next channel for pi0, weight: 1.42e-04
+pi0 --> dilepton + photon (Dalitz)
+        Interaction model(s):
+Next channel for pi0, weight: 9.88e-01
+pi0 --> photon + photon
+        Interaction model(s):
+Next channel for pi0, weight: 1.19e-02
+pi0 --> dilepton + photon (Dalitz)
+        Interaction model(s):
+Next channel for pi0, weight: 1.42e-04
+pi0 --> dilepton + photon (Dalitz)
+        Interaction model(s):
+Next channel for pi0, weight: 1.20e-02
+pi0 --> dilepton + photon (Dalitz)
+        Interaction model(s):
+Next channel for pi0, weight: 1.44e-04
+pi0 --> dilepton + photon (Dalitz)
+        Interaction model(s):
+Next channel for pi0, weight: 1.73e-06
+pi0 --> dilepton + photon (Dalitz)
+        Interaction model(s):
+Next channel for dilepton, weight: 1.73e-06
+dilepton --> e+ + e-
+        Interaction model(s):
+Next channel for dilepton, weight: 1.73e-06
+dilepton --> e+ + e-
+        Interaction model(s):
+Next channel for dilepton, weight: 1.73e-06
+dilepton --> e+ + e-
+        Interaction model(s):
+Next channel for dilepton, weight: 1.17e-02
+dilepton --> e+ + e-
+        Interaction model(s):
+Next channel for dilepton, weight: 1.17e-02
+dilepton --> e+ + e-
+        Interaction model(s):
+Next channel for dilepton, weight: 1.42e-04
+dilepton --> e+ + e-
+        Interaction model(s):
+Next channel for dilepton, weight: 1.42e-04
+dilepton --> e+ + e-
+        Interaction model(s):
+Next channel for dilepton, weight: 1.17e-02
+dilepton --> e+ + e-
+        Interaction model(s):
+Next channel for dilepton, weight: 1.42e-04
+dilepton --> e+ + e-
+        Interaction model(s):
+Next channel for dilepton, weight: 1.42e-04
+dilepton --> e+ + e-
+        Interaction model(s):
+Next channel for dilepton, weight: 1.42e-04
+dilepton --> e+ + e-
+        Interaction model(s):
+Next channel for dilepton, weight: 1.42e-04
+dilepton --> e+ + e-
+        Interaction model(s):
+Particle Decay List:
+--------------------
+pi0                 1e+02 %: g, g, 1e+00 %: g, dilepton
+eta                 1e+02 %: pi0, pi0, pi0
+dilepton            1e+02 %: e-, e+
+-----
+Decay chain #1, probability 1e+00
+  d + p        --> He3 eta 
+    eta          --> pi0 pi0 pi0 
+      pi0          --> g g 
+      pi0          --> g g 
+      pi0          --> g g 
+-----
+Decay chain #2, probability 1e-02
+  d + p        --> He3 eta 
+    eta          --> pi0 pi0 pi0 
+      pi0          --> g dilepton 
+        dilepton     --> e- e+ 
+      pi0          --> g g 
+      pi0          --> g g 
+-----
+Decay chain #3, probability 1e-02
+  d + p        --> He3 eta 
+    eta          --> pi0 pi0 pi0 
+      pi0          --> g g 
+      pi0          --> g dilepton 
+        dilepton     --> e- e+ 
+      pi0          --> g g 
+-----
+Decay chain #4, probability 1e-04
+  d + p        --> He3 eta 
+    eta          --> pi0 pi0 pi0 
+      pi0          --> g dilepton 
+        dilepton     --> e- e+ 
+      pi0          --> g dilepton 
+        dilepton     --> e- e+ 
+      pi0          --> g g 
+-----
+Decay chain #5, probability 1e-02
+  d + p        --> He3 eta 
+    eta          --> pi0 pi0 pi0 
+      pi0          --> g g 
+      pi0          --> g g 
+      pi0          --> g dilepton 
+        dilepton     --> e- e+ 
+-----
+Decay chain #6, probability 1e-04
+  d + p        --> He3 eta 
+    eta          --> pi0 pi0 pi0 
+      pi0          --> g dilepton 
+        dilepton     --> e- e+ 
+      pi0          --> g g 
+      pi0          --> g dilepton 
+        dilepton     --> e- e+ 
+-----
+Decay chain #7, probability 1e-04
+  d + p        --> He3 eta 
+    eta          --> pi0 pi0 pi0 
+      pi0          --> g g 
+      pi0          --> g dilepton 
+        dilepton     --> e- e+ 
+      pi0          --> g dilepton 
+        dilepton     --> e- e+ 
+-----
+Decay chain #8, probability 2e-06
+  d + p        --> He3 eta 
+    eta          --> pi0 pi0 pi0 
+      pi0          --> g dilepton 
+        dilepton     --> e- e+ 
+      pi0          --> g dilepton 
+        dilepton     --> e- e+ 
+      pi0          --> g dilepton 
+        dilepton     --> e- e+ 
+Selecting next reaction:
+
+This is reaction #1
+ Weight of reaction is 1e+00
+
+ Reaction of 12 Particles interacting via 5 Channels
+   Reaction Particles:
+     0. quasi-particle (p beam and d target)
+     1. He3 (tracked particle 0)
+     2. eta
+     3. pi0
+     4. pi0
+     5. pi0
+     6. g (tracked particle 1)
+     7. g (tracked particle 2)
+     8. g (tracked particle 3)
+     9. g (tracked particle 4)
+     10. g (tracked particle 5)
+     11. g (tracked particle 6)
+   Reaction Channels:
+     1. p + d --> He3 + eta
+        Interaction model(s):
+        [p + d_fix_He3_eta] 2-body fixed mass, partial width {/}
+        [p + d_genbod_He3_eta] Pluto build-in genbod {/genbod}
+     2. eta --> pi0 + pi0 + pi0
+        Interaction model(s):
+        [eta_fixed_pi0_pi0_pi0] Fixed product masses {/}
+        [eta_genbod_pi0_pi0_pi0] Pluto build-in genbod {/genbod}
+     3. pi0 --> photon + photon
+        Interaction model(s):
+        [pi0_fixed_g_g] Fixed product masses {/}
+        [pi0_genbod_g_g] Pluto build-in genbod {/genbod}
+     4. pi0 --> photon + photon
+        Interaction model(s):
+        [pi0_fixed_g_g] Fixed product masses {/}
+        [pi0_genbod_g_g] Pluto build-in genbod {/genbod}
+     5. pi0 --> photon + photon
+        Interaction model(s):
+        [pi0_fixed_g_g] Fixed product masses {/}
+        [pi0_genbod_g_g] Pluto build-in genbod {/genbod}
+   Bulk Classes:
+     Epilogue: <PProjector> 
+   Output File(s):
+     Root : 'pd_eta_3pi0.root', tracked particles on file.
+     ASCII: 'pd_eta_3pi0_001.evt', tracked particles on file
+ Weight of this channel is 1e+00
+Warning in <TTree::Bronch>: Using split mode on a class: PParticle with a custom Streamer
+Info in <PUtilsREngine::PUtilsREngine>: Random seed set to 1566839792
+PReaction: calculating widths in PData...
+ 20% done in 4.321675 sec
+ 40% done in 7.432139 sec
+ 60% done in 10.543044 sec
+ 80% done in 13.653507 sec
+ 100% done in 16.568076 sec
+ Event loop finished after 16.574386 sec
+ CPU time 15.550000 sec
+Selecting next reaction:
+
+This is reaction #2
+ Weight of reaction is 1e-02
+
+ Reaction of 14 Particles interacting via 6 Channels
+   Reaction Particles:
+     0. quasi-particle (p beam and d target)
+     1. He3 (tracked particle 0)
+     2. eta
+     3. pi0
+     4. pi0
+     5. pi0
+     6. g (tracked particle 1)
+     7. g (tracked particle 2)
+     8. g (tracked particle 3)
+     9. g (tracked particle 4)
+     10. g (tracked particle 5)
+     11. dilepton
+     12. e- (tracked particle 6)
+     13. e+ (tracked particle 7)
+   Reaction Channels:
+     1. p + d --> He3 + eta
+        Interaction model(s):
+        [p + d_fix_He3_eta] 2-body fixed mass, partial width {/}
+        [p + d_genbod_He3_eta] Pluto build-in genbod {/genbod}
+     2. eta --> pi0 + pi0 + pi0
+        Interaction model(s):
+        [eta_fixed_pi0_pi0_pi0] Fixed product masses {/}
+        [eta_genbod_pi0_pi0_pi0] Pluto build-in genbod {/genbod}
+     3. pi0 --> photon + photon
+        Interaction model(s):
+        [pi0_fixed_g_g] Fixed product masses {/}
+        [pi0_genbod_g_g] Pluto build-in genbod {/genbod}
+     4. pi0 --> photon + photon
+        Interaction model(s):
+        [pi0_fixed_g_g] Fixed product masses {/}
+        [pi0_genbod_g_g] Pluto build-in genbod {/genbod}
+     5. pi0 --> dilepton + photon (Dalitz)
+        Interaction model(s):
+        [pi0_dalitz] Dalitz decay {/}
+        [pi0_genbod_g_dilepton] Pluto build-in genbod {/genbod}
+     6. dilepton --> e+ + e-
+        Interaction model(s):
+        [dilepton_fixed_e-_e+] Fixed product masses {/}
+        [dilepton_genbod_e-_e+] Pluto build-in genbod {/genbod}
+        [pi0_dilepton_helicity] Helicity angle of the dilepton decay of pi0
+   Bulk Classes:
+     Epilogue: <PProjector> 
+   Output File(s):
+     Root : 'pd_eta_3pi0.root', tracked particles on file.
+     ASCII: 'pd_eta_3pi0_002.evt', tracked particles on file
+ Weight of this channel is 1e-02
+PReaction: calculating widths in PData...
+ Event loop finished after 1.305677 sec
+ CPU time 0.290000 sec
+Selecting next reaction:
+
+This is reaction #3
+ Weight of reaction is 1e-02
+
+ Reaction of 14 Particles interacting via 6 Channels
+   Reaction Particles:
+     0. quasi-particle (p beam and d target)
+     1. He3 (tracked particle 0)
+     2. eta
+     3. pi0
+     4. pi0
+     5. pi0
+     6. g (tracked particle 1)
+     7. g (tracked particle 2)
+     8. g (tracked particle 3)
+     9. dilepton
+     10. e- (tracked particle 4)
+     11. e+ (tracked particle 5)
+     12. g (tracked particle 6)
+     13. g (tracked particle 7)
+   Reaction Channels:
+     1. p + d --> He3 + eta
+        Interaction model(s):
+        [p + d_fix_He3_eta] 2-body fixed mass, partial width {/}
+        [p + d_genbod_He3_eta] Pluto build-in genbod {/genbod}
+     2. eta --> pi0 + pi0 + pi0
+        Interaction model(s):
+        [eta_fixed_pi0_pi0_pi0] Fixed product masses {/}
+        [eta_genbod_pi0_pi0_pi0] Pluto build-in genbod {/genbod}
+     3. pi0 --> photon + photon
+        Interaction model(s):
+        [pi0_fixed_g_g] Fixed product masses {/}
+        [pi0_genbod_g_g] Pluto build-in genbod {/genbod}
+     4. pi0 --> dilepton + photon (Dalitz)
+        Interaction model(s):
+        [pi0_dalitz] Dalitz decay {/}
+        [pi0_genbod_g_dilepton] Pluto build-in genbod {/genbod}
+     5. dilepton --> e+ + e-
+        Interaction model(s):
+        [dilepton_fixed_e-_e+] Fixed product masses {/}
+        [dilepton_genbod_e-_e+] Pluto build-in genbod {/genbod}
+        [pi0_dilepton_helicity] Helicity angle of the dilepton decay of pi0
+     6. pi0 --> photon + photon
+        Interaction model(s):
+        [pi0_fixed_g_g] Fixed product masses {/}
+        [pi0_genbod_g_g] Pluto build-in genbod {/genbod}
+   Bulk Classes:
+     Epilogue: <PProjector> 
+   Output File(s):
+     Root : 'pd_eta_3pi0.root', tracked particles on file.
+     ASCII: 'pd_eta_3pi0_003.evt', tracked particles on file
+ Weight of this channel is 1e-02
+PReaction: calculating widths in PData...
+ Event loop finished after 1.254287 sec
+ CPU time 0.260000 sec
+Selecting next reaction:
+
+This is reaction #4
+ Weight of reaction is 1e-04
+
+ Reaction of 16 Particles interacting via 7 Channels
+   Reaction Particles:
+     0. quasi-particle (p beam and d target)
+     1. He3 (tracked particle 0)
+     2. eta
+     3. pi0
+     4. pi0
+     5. pi0
+     6. g (tracked particle 1)
+     7. g (tracked particle 2)
+     8. g (tracked particle 3)
+     9. dilepton
+     10. e- (tracked particle 4)
+     11. e+ (tracked particle 5)
+     12. g (tracked particle 6)
+     13. dilepton
+     14. e- (tracked particle 7)
+     15. e+ (tracked particle 8)
+   Reaction Channels:
+     1. p + d --> He3 + eta
+        Interaction model(s):
+        [p + d_fix_He3_eta] 2-body fixed mass, partial width {/}
+        [p + d_genbod_He3_eta] Pluto build-in genbod {/genbod}
+     2. eta --> pi0 + pi0 + pi0
+        Interaction model(s):
+        [eta_fixed_pi0_pi0_pi0] Fixed product masses {/}
+        [eta_genbod_pi0_pi0_pi0] Pluto build-in genbod {/genbod}
+     3. pi0 --> photon + photon
+        Interaction model(s):
+        [pi0_fixed_g_g] Fixed product masses {/}
+        [pi0_genbod_g_g] Pluto build-in genbod {/genbod}
+     4. pi0 --> dilepton + photon (Dalitz)
+        Interaction model(s):
+        [pi0_dalitz] Dalitz decay {/}
+        [pi0_genbod_g_dilepton] Pluto build-in genbod {/genbod}
+     5. dilepton --> e+ + e-
+        Interaction model(s):
+        [dilepton_fixed_e-_e+] Fixed product masses {/}
+        [dilepton_genbod_e-_e+] Pluto build-in genbod {/genbod}
+        [pi0_dilepton_helicity] Helicity angle of the dilepton decay of pi0
+     6. pi0 --> dilepton + photon (Dalitz)
+        Interaction model(s):
+        [pi0_dalitz] Dalitz decay {/}
+        [pi0_genbod_g_dilepton] Pluto build-in genbod {/genbod}
+     7. dilepton --> e+ + e-
+        Interaction model(s):
+        [dilepton_fixed_e-_e+] Fixed product masses {/}
+        [dilepton_genbod_e-_e+] Pluto build-in genbod {/genbod}
+        [pi0_dilepton_helicity] Helicity angle of the dilepton decay of pi0
+   Bulk Classes:
+     Epilogue: <PProjector> 
+   Output File(s):
+     Root : 'pd_eta_3pi0.root', tracked particles on file.
+     ASCII: 'pd_eta_3pi0_004.evt', tracked particles on file
+ Weight of this channel is 1e-04
+PReaction: calculating widths in PData...
+ Event loop finished after 1.003729 sec
+ CPU time 0.000000 sec
+Selecting next reaction:
+
+This is reaction #5
+ Weight of reaction is 1e-02
+
+ Reaction of 14 Particles interacting via 6 Channels
+   Reaction Particles:
+     0. quasi-particle (p beam and d target)
+     1. He3 (tracked particle 0)
+     2. eta
+     3. pi0
+     4. pi0
+     5. pi0
+     6. g (tracked particle 1)
+     7. dilepton
+     8. e- (tracked particle 2)
+     9. e+ (tracked particle 3)
+     10. g (tracked particle 4)
+     11. g (tracked particle 5)
+     12. g (tracked particle 6)
+     13. g (tracked particle 7)
+   Reaction Channels:
+     1. p + d --> He3 + eta
+        Interaction model(s):
+        [p + d_fix_He3_eta] 2-body fixed mass, partial width {/}
+        [p + d_genbod_He3_eta] Pluto build-in genbod {/genbod}
+     2. eta --> pi0 + pi0 + pi0
+        Interaction model(s):
+        [eta_fixed_pi0_pi0_pi0] Fixed product masses {/}
+        [eta_genbod_pi0_pi0_pi0] Pluto build-in genbod {/genbod}
+     3. pi0 --> dilepton + photon (Dalitz)
+        Interaction model(s):
+        [pi0_dalitz] Dalitz decay {/}
+        [pi0_genbod_g_dilepton] Pluto build-in genbod {/genbod}
+     4. dilepton --> e+ + e-
+        Interaction model(s):
+        [dilepton_fixed_e-_e+] Fixed product masses {/}
+        [dilepton_genbod_e-_e+] Pluto build-in genbod {/genbod}
+        [pi0_dilepton_helicity] Helicity angle of the dilepton decay of pi0
+     5. pi0 --> photon + photon
+        Interaction model(s):
+        [pi0_fixed_g_g] Fixed product masses {/}
+        [pi0_genbod_g_g] Pluto build-in genbod {/genbod}
+     6. pi0 --> photon + photon
+        Interaction model(s):
+        [pi0_fixed_g_g] Fixed product masses {/}
+        [pi0_genbod_g_g] Pluto build-in genbod {/genbod}
+   Bulk Classes:
+     Epilogue: <PProjector> 
+   Output File(s):
+     Root : 'pd_eta_3pi0.root', tracked particles on file.
+     ASCII: 'pd_eta_3pi0_005.evt', tracked particles on file
+ Weight of this channel is 1e-02
+PReaction: calculating widths in PData...
+ Event loop finished after 1.235554 sec
+ CPU time 0.230000 sec
+Selecting next reaction:
+
+This is reaction #6
+ Weight of reaction is 1e-04
+
+ Reaction of 16 Particles interacting via 7 Channels
+   Reaction Particles:
+     0. quasi-particle (p beam and d target)
+     1. He3 (tracked particle 0)
+     2. eta
+     3. pi0
+     4. pi0
+     5. pi0
+     6. g (tracked particle 1)
+     7. dilepton
+     8. e- (tracked particle 2)
+     9. e+ (tracked particle 3)
+     10. g (tracked particle 4)
+     11. g (tracked particle 5)
+     12. g (tracked particle 6)
+     13. dilepton
+     14. e- (tracked particle 7)
+     15. e+ (tracked particle 8)
+   Reaction Channels:
+     1. p + d --> He3 + eta
+        Interaction model(s):
+        [p + d_fix_He3_eta] 2-body fixed mass, partial width {/}
+        [p + d_genbod_He3_eta] Pluto build-in genbod {/genbod}
+     2. eta --> pi0 + pi0 + pi0
+        Interaction model(s):
+        [eta_fixed_pi0_pi0_pi0] Fixed product masses {/}
+        [eta_genbod_pi0_pi0_pi0] Pluto build-in genbod {/genbod}
+     3. pi0 --> dilepton + photon (Dalitz)
+        Interaction model(s):
+        [pi0_dalitz] Dalitz decay {/}
+        [pi0_genbod_g_dilepton] Pluto build-in genbod {/genbod}
+     4. dilepton --> e+ + e-
+        Interaction model(s):
+        [dilepton_fixed_e-_e+] Fixed product masses {/}
+        [dilepton_genbod_e-_e+] Pluto build-in genbod {/genbod}
+        [pi0_dilepton_helicity] Helicity angle of the dilepton decay of pi0
+     5. pi0 --> photon + photon
+        Interaction model(s):
+        [pi0_fixed_g_g] Fixed product masses {/}
+        [pi0_genbod_g_g] Pluto build-in genbod {/genbod}
+     6. pi0 --> dilepton + photon (Dalitz)
+        Interaction model(s):
+        [pi0_dalitz] Dalitz decay {/}
+        [pi0_genbod_g_dilepton] Pluto build-in genbod {/genbod}
+     7. dilepton --> e+ + e-
+        Interaction model(s):
+        [dilepton_fixed_e-_e+] Fixed product masses {/}
+        [dilepton_genbod_e-_e+] Pluto build-in genbod {/genbod}
+        [pi0_dilepton_helicity] Helicity angle of the dilepton decay of pi0
+   Bulk Classes:
+     Epilogue: <PProjector> 
+   Output File(s):
+     Root : 'pd_eta_3pi0.root', tracked particles on file.
+     ASCII: 'pd_eta_3pi0_006.evt', tracked particles on file
+ Weight of this channel is 1e-04
+PReaction: calculating widths in PData...
+ Event loop finished after 1.003616 sec
+ CPU time 0.000000 sec
+Selecting next reaction:
+
+This is reaction #7
+ Weight of reaction is 1e-04
+
+ Reaction of 16 Particles interacting via 7 Channels
+   Reaction Particles:
+     0. quasi-particle (p beam and d target)
+     1. He3 (tracked particle 0)
+     2. eta
+     3. pi0
+     4. pi0
+     5. pi0
+     6. g (tracked particle 1)
+     7. dilepton
+     8. e- (tracked particle 2)
+     9. e+ (tracked particle 3)
+     10. g (tracked particle 4)
+     11. dilepton
+     12. e- (tracked particle 5)
+     13. e+ (tracked particle 6)
+     14. g (tracked particle 7)
+     15. g (tracked particle 8)
+   Reaction Channels:
+     1. p + d --> He3 + eta
+        Interaction model(s):
+        [p + d_fix_He3_eta] 2-body fixed mass, partial width {/}
+        [p + d_genbod_He3_eta] Pluto build-in genbod {/genbod}
+     2. eta --> pi0 + pi0 + pi0
+        Interaction model(s):
+        [eta_fixed_pi0_pi0_pi0] Fixed product masses {/}
+        [eta_genbod_pi0_pi0_pi0] Pluto build-in genbod {/genbod}
+     3. pi0 --> dilepton + photon (Dalitz)
+        Interaction model(s):
+        [pi0_dalitz] Dalitz decay {/}
+        [pi0_genbod_g_dilepton] Pluto build-in genbod {/genbod}
+     4. dilepton --> e+ + e-
+        Interaction model(s):
+        [dilepton_fixed_e-_e+] Fixed product masses {/}
+        [dilepton_genbod_e-_e+] Pluto build-in genbod {/genbod}
+        [pi0_dilepton_helicity] Helicity angle of the dilepton decay of pi0
+     5. pi0 --> dilepton + photon (Dalitz)
+        Interaction model(s):
+        [pi0_dalitz] Dalitz decay {/}
+        [pi0_genbod_g_dilepton] Pluto build-in genbod {/genbod}
+     6. dilepton --> e+ + e-
+        Interaction model(s):
+        [dilepton_fixed_e-_e+] Fixed product masses {/}
+        [dilepton_genbod_e-_e+] Pluto build-in genbod {/genbod}
+        [pi0_dilepton_helicity] Helicity angle of the dilepton decay of pi0
+     7. pi0 --> photon + photon
+        Interaction model(s):
+        [pi0_fixed_g_g] Fixed product masses {/}
+        [pi0_genbod_g_g] Pluto build-in genbod {/genbod}
+   Bulk Classes:
+     Epilogue: <PProjector> 
+   Output File(s):
+     Root : 'pd_eta_3pi0.root', tracked particles on file.
+     ASCII: 'pd_eta_3pi0_007.evt', tracked particles on file
+ Weight of this channel is 1e-04
+PReaction: calculating widths in PData...
+ Event loop finished after 1.003596 sec
+ CPU time 0.000000 sec
+Selecting next reaction:
+
+This is reaction #8
+ Weight of reaction is 2e-06
+
+ Reaction of 18 Particles interacting via 8 Channels
+   Reaction Particles:
+     0. quasi-particle (p beam and d target)
+     1. He3 (tracked particle 0)
+     2. eta
+     3. pi0
+     4. pi0
+     5. pi0
+     6. g (tracked particle 1)
+     7. dilepton
+     8. e- (tracked particle 2)
+     9. e+ (tracked particle 3)
+     10. g (tracked particle 4)
+     11. dilepton
+     12. e- (tracked particle 5)
+     13. e+ (tracked particle 6)
+     14. g (tracked particle 7)
+     15. dilepton
+     16. e- (tracked particle 8)
+     17. e+ (tracked particle 9)
+   Reaction Channels:
+     1. p + d --> He3 + eta
+        Interaction model(s):
+        [p + d_fix_He3_eta] 2-body fixed mass, partial width {/}
+        [p + d_genbod_He3_eta] Pluto build-in genbod {/genbod}
+     2. eta --> pi0 + pi0 + pi0
+        Interaction model(s):
+        [eta_fixed_pi0_pi0_pi0] Fixed product masses {/}
+        [eta_genbod_pi0_pi0_pi0] Pluto build-in genbod {/genbod}
+     3. pi0 --> dilepton + photon (Dalitz)
+        Interaction model(s):
+        [pi0_dalitz] Dalitz decay {/}
+        [pi0_genbod_g_dilepton] Pluto build-in genbod {/genbod}
+     4. dilepton --> e+ + e-
+        Interaction model(s):
+        [dilepton_fixed_e-_e+] Fixed product masses {/}
+        [dilepton_genbod_e-_e+] Pluto build-in genbod {/genbod}
+        [pi0_dilepton_helicity] Helicity angle of the dilepton decay of pi0
+     5. pi0 --> dilepton + photon (Dalitz)
+        Interaction model(s):
+        [pi0_dalitz] Dalitz decay {/}
+        [pi0_genbod_g_dilepton] Pluto build-in genbod {/genbod}
+     6. dilepton --> e+ + e-
+        Interaction model(s):
+        [dilepton_fixed_e-_e+] Fixed product masses {/}
+        [dilepton_genbod_e-_e+] Pluto build-in genbod {/genbod}
+        [pi0_dilepton_helicity] Helicity angle of the dilepton decay of pi0
+     7. pi0 --> dilepton + photon (Dalitz)
+        Interaction model(s):
+        [pi0_dalitz] Dalitz decay {/}
+        [pi0_genbod_g_dilepton] Pluto build-in genbod {/genbod}
+     8. dilepton --> e+ + e-
+        Interaction model(s):
+        [dilepton_fixed_e-_e+] Fixed product masses {/}
+        [dilepton_genbod_e-_e+] Pluto build-in genbod {/genbod}
+        [pi0_dilepton_helicity] Helicity angle of the dilepton decay of pi0
+   Bulk Classes:
+     Epilogue: <PProjector> 
+   Output File(s):
+     Root : 'pd_eta_3pi0.root', tracked particles on file.
+     ASCII: 'pd_eta_3pi0_008.evt', tracked particles on file
+ Weight of this channel is 2e-06
+PReaction: calculating widths in PData...
+ Event loop finished after 1.000005 sec
+ CPU time 0.000000 sec
+Selecting next reaction:
+ No reaction left.
+Sum of weights is 1e+00
+Info in <TCanvas::Print>: png file obl_test_dp_He3@pdm:_Particle_multiplicity_in_dp_to_He3+X.png has been created

@@ -1,0 +1,120 @@
+<HTML>
+<HEAD>
+   <TITLE>PLUTO Tutorials</TITLE>
+   <META NAME="rating" CONTENT="General">
+   <META NAME="objecttype" CONTENT="Manual">
+   <META NAME="keywords" CONTENT="plut event generator">
+   <META NAME="description" CONTENT="A Monte Carlo simulation tool for hadronic physics">
+   <META NAME="GENERATOR" CONTENT="Mozilla/3.0Gold (X11; I; HP-UX B.10.20 9000/819) [Netscape]">
+</HEAD>
+
+<BODY TEXT="#000000" BGCOLOR="#FFFFFF" LINK="#0000FF" VLINK="#551A8B" ALINK="#FF0000">
+
+<H1 ALIGN=CENTER><FONT SIZE=+4>PLUTO Tutorials</FONT></H1>
+
+<P>
+<HR></P>
+
+<OL>
+
+<LI><A HREF="hello_world.C.html"> <b>Hello World</b></A></LI>
+<LI><A HREF="printParticle.C.html"> Access and print basic particle properties</A></LI>
+<LI><A HREF="parse_eta.C.html"> <b>Setting up reactions:</b> Use the one-liner parser to produce eta Dalitz events</A></LI>
+<LI><A HREF="analyze_eta_dalitz.C.html"> Analyze the eta Dalitz output file</A></LI>
+<LI><A HREF="complete_eta.C.html"> Use the long example to produce eta Dalitz events</A></LI>
+<LI><A HREF="w_dalitz.C.html"> Use the long example to produce omega Dalitz events</A></LI>
+<LI><A HREF="dp_delta_dalitz.C.html"> Produce Delta Dalitz events in the quasi-free n+p (d+p) collision</A></LI>
+<LI><A HREF="dp_w_dalitz.C.html"> Omega Dalitz with decay manager in the p+d reaction</A></LI>
+<LI><A HREF="thermal_rho.C.html"> <b>Thermal macros (PFireball):</b> Test thermal source of rho's</A></LI>
+<LI><A HREF="useAngularDistribution.C.html"> <b>Angular distribution interface:</b> Add user-defined angular distributions</A></LI>
+<LI><A HREF="anaAngularDistribution.C.html"> Analyze the polar angle as created with useAngularDistribution</A></LI>
+<LI><A HREF="test_batch.C.html"> <b>The event loop interface:</b> Make histograms in one single line without ana macro with the PBatch script language</A></LI>
+<LI><A HREF="batch_filters.C.html"> Demonstrate how batch scripting can be used to define filters</A></LI>
+<LI><A HREF="batch_write_ntuple.C.html"> Writing TNtuple(s) and ASCII files</A></LI>
+<LI><A HREF="batch_read_ntuple.C.html"> Re-read an TNtuple (from the example above) and make a histogram</A></LI>
+<LI><A HREF="batch_read_ASCII.C.html"> Re-read the ASCII-file from batch_write_ntuple.C and make a bulk decay</A></LI>
+<LI><A HREF="ntuple_to_pparticle.C.html"> Convert an TNtuple (from the example above) to a PParticle and make a bulk decay</A></LI>
+<LI><A HREF="eta_pileup.C.html"> Using a batch script to simulate pileup</A></LI>
+<LI><A HREF="PHadesAcc.C.html"> <UserClass> Very small acceptance filter (setting variables for batch) including opening angle.</A></LI>
+<LI><A HREF="embeddedParticles.C.html"> <PEmbeddedParticles> Adds embedded particles in the eta Dalitz decay</A></LI>
+<LI><A HREF="bulk_decay.C.html"> <PPlutoBulkDecay> Demonstrates the bulk decay option</A></LI>
+<LI><A HREF="use_DensityMatrix.C.html"> Using the density matrix</A></LI>
+<LI><A HREF="use_Do_in_PChannel.C.html"> Using scripting in a PChannel</A></LI>
+<LI><A HREF="beamsmearing_example.C.html"> <b>Usage of Pluto build-in templates:</b> beam smearing</A></LI>
+<LI><A HREF="pp_collider_elastic.C.html"> pp elastic scattering with different beam tilts</A></LI>
+<LI><A HREF="user_mass.C.html"> Play with the mass shape of a dummy resonance</A></LI>
+<LI><A HREF="user_w_dalitz_ff.C.html"> Demo using the batch syntax to change the omega form factor</A></LI>
+<LI><A HREF="user_eta_3pi_decay.C.html"> Demo using the batch syntax to change the Dalitz plot eta -> 3pi</A></LI>
+<LI><A HREF="user_eta_3pi_decay_histo.C.html"> Demo using a histogram to change the Dalitz plot eta -> 3pi</A></LI>
+<LI><A HREF="use_eta_generator.C.html"> <b>Usage of weights/generators:</B> another way of eta Dalitz simulation</A></LI>
+<LI><A HREF="ana_eta_generator.C.html"> Compare eta Dalitz using weights with parse_eta.C</A></LI>
+<LI><A HREF="rho_mass_shape.C.html"> Choosing the rho0 -> e+e- partial width model</A></LI>
+<LI><A HREF="PFermiNucleus.C.html"> <b>Quasi-free reactions:</b> A (dummy) model for fermi samping inside a nucleus</A></LI>
+<LI><A HREF="piA.C.html"> <PFermiNucleus, PBeamSmearing> Quasi-free pi+A scattering, including beam smearing</A></LI>
+<LI><A HREF="fermi_dd.C.html"> <PFermiMomentumDD> The scattering of two nucleons inside deuterons</A></LI>
+<LI><A HREF="pp_cocktail_1.25.C.html"> <b>Total cross sections:</b> The pp cocktail at 1.25GeV</A></LI>
+<LI><A HREF="dp_cocktail_1.25.C.html"> <b>Total cross sections:</b> The dp cocktail at 1.25AGeV</A></LI>
+<LI><A HREF="pp_cocktail_35.C.html"> <b>Cocktails for 3.5GeV:</b> the pp reaction</A></LI>
+<LI><A HREF="pA_cocktail_35.C.html"> Thermal source model of p+nucleus 3.5 AGeV </A></LI>
+<LI><A HREF="make_demo_pfilter.C.html"> <b>Virtual detectors and batch packs</b> This macro makes a demo filter root file</A></LI>
+<LI><A HREF="use_demo_pfilter.C.html"> Use the filter file from above</A></LI>
+<LI><A HREF="multiple_branches.C.html"> Using more than one ROOT TBranch to store undistorted sim particles</A></LI>
+<H2> ../plugins/beamline/:
+<A HREF="../PBeamLineSimulation.html">A class to simulate beam particle transport in the beam line</A>
+</H2>
+<H2> ../plugins/brems/:
+<A HREF="../PBremsstrahlungPlugin.html">Virtual photon emission</A>
+</H2>
+<H2> ../plugins/dalitz_mod/:
+<A HREF="../PDalitzModPlugin.html">Modifications of the Dalitz decays (mainly D Dalitz)</A>
+</H2>
+<H2> ../plugins/elementary/:
+<A HREF="../PElementaryPlugin.html">A collection of cross sections, particles for elementary reactions</A>
+</H2>
+<H2> ../plugins/eta_decays/:
+<A HREF="../plugins/eta_decays/_README"></A>
+</H2>
+<H2> ../plugins/fairroot/:
+<A HREF="../plugins/fairroot/_README">Plugin for adding pluto to FAIRROOT</A>
+</H2>
+<H2> ../plugins/hades/:
+<A HREF="../plugins/hades/_README">HADES detector specific classes</A>
+</H2>
+<LI><A HREF="plugin_makeEmbeddedParticlesVertexHGeant.C.html"> <UserClass> Embedded particles with vertex info and seq-nr for HADES</A></LI>
+<LI><A HREF="plugin_urqmd_f15_input.C.html"></A></LI>
+<H2> ../plugins/nucleus_fermi/:
+<A HREF="../plugins/nucleus_fermi/_README">Plugin for physics with nuclear targets</A>
+</H2>
+<LI><A HREF="plugin_Li7_breakup_macro.C.html"> Breakup Reaction for Li7</A></LI>
+<LI><A HREF="plugin_proton_Li7_macro.C.html"> Example for a p + 7Li reaction</A></LI>
+<LI><A HREF="plugin_fermi_rescattering.C.html"> Two-step process (phi in medium -> K K -> K K_scatter)</A></LI>
+<H2> ../plugins/pdg_unigen/:
+<A HREF="../plugins/pdg_unigen/_README">Plugin for:</A>
+</H2>
+<LI><A HREF="plugin_unigen_input.C.html"> Reading an UniGen file</A></LI>
+<LI><A HREF="plugin_using_pdg_code.C.html"> Using the pdg-code</A></LI>
+<H2> ../plugins/pion_beam/:
+<A HREF="../PPionBeamPlugin.html">The plugin for pion beams</A>
+</H2>
+<LI><A HREF="plugin_pion_beam_example.C.html"> Example how to use the pion beam plugin</A></LI>
+<H2> ../plugins/scatter_mod/:
+<A HREF="../plugins/scatter_mod/_README">A plugin for a new pp elastic scattering angle</A>
+</H2>
+<LI><A HREF="plugin_pp_ela_4e.C.html"> Low-energy pp scattering</A></LI>
+<LI><A HREF="plugin_cross_section_example.C.html"> Example for a 2-body scattering with total and differential cross sections</A></LI>
+<H2> ../plugins/strangeness/:
+<A HREF="../PStrangenessPlugin.html">Plugin to add new particles with strangeness and their decays</A>
+</H2>
+<H2> ../plugins/tools/:
+<A HREF="../plugins/tools/_README"></A>
+</H2>
+<H2> ../plugins/w_decays/:
+<A HREF="../POmega3Pi.html">A plugin including a realistic omega -> pi+pi-pi0 Dalitz plane</A>
+</H2>
+<LI><A HREF="plugin_w_hadronic_test.C.html"> Test macro for omega -> pi+pi-pi0</A></LI>
+</OL>
+
+
+
+</BODY>
+</HTML>

@@ -1,0 +1,948 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!--                                             -->
+<!-- Author: ROOT team (rootdev@cern.ch)         -->
+<!--                                             -->
+<!--   Date: Mon Apr 24 17:39:46 2017            -->
+<!--                                             -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>PParticle</title>
+<meta name="rating" content="General" />
+<meta name="objecttype" content="Manual" />
+<meta name="keywords" content="software development, oo, object oriented, unix, x11, windows, c++, html, rene brun, fons rademakers, cern" />
+<meta name="description" content="ROOT - An Object Oriented Framework For Large Scale Data Analysis." />
+<link rel="stylesheet" type="text/css" href="ROOT.css" id="ROOTstyle" />
+<script type="text/javascript" src="ROOT.js"></script>
+</head>
+<body  onload="javascript:SetValuesFromCookie();"><div id="body_content">
+<div id="root_header"></div>
+<a name="TopOfPage"></a>
+<script type="text/javascript">WriteFollowPageBox('class PParticle','libPluto','PParticle.h');</script>
+<div id="toplinks">
+<div class="descrhead"><div class="descrheadcontent">
+<span class="descrtitle">Quick Links:</span>
+<a class="descrheadentry" href="http://root.cern.ch">ROOT Homepage</a>
+<a class="descrheadentry" href="./ClassIndex.html">Class Index</a>
+<a class="descrheadentry" href="./ClassHierarchy.html">Class Hierarchy</a></div>
+<script type="text/javascript">
+function onSearch() {
+var s='http://www.google.com/search?q=%s+site%3A%u+-site%3A%u%2Fsrc%2F+-site%3A%u%2Fexamples%2F';
+var ref=String(document.location.href).replace(/https?:\/\//,'').replace(/\/[^\/]*$/,'').replace(/\//g,'%2F');
+window.location.href=s.replace(/%u/ig,ref).replace(/%s/ig,escape(document.searchform.t.value));
+return false;}
+</script>
+<form id="searchform" name="searchform" onsubmit="return onSearch()" action="javascript:onSearch();" method="post">
+<input name="t" size="30" value="Search documentation..." onfocus="if (document.searchform.t.value=='Search documentation...') document.searchform.t.value='';"></input>
+<a id="searchlink"  title="www.google.com"  href="javascript:onSearch();" onclick="return onSearch()">Search</a></form>
+</div>
+<div class="descrhead"><div class="descrheadcontent">
+<span class="descrtitle">Source:</span>
+<a class="descrheadentry" href="src/PParticle.h.html">header file</a>
+<a class="descrheadentry" href="src/PParticle.cxx.html">source file</a>
+<a class="descrheadentry" href="http://root.cern.ch/viewcvs/trunk/PParticle.h?view=log">viewVC header</a> <a class="descrheadentry" href="http://root.cern.ch/viewcvs/trunk//u/hadeshyp/ingo/pluto6_official_documentation_gitlab/src/PParticle.cc?view=log">viewVC source</a> 
+</div></div>
+<div class="descrhead"><div class="descrheadcontent">
+<span class="descrtitle">Sections:</span>
+<a class="descrheadentry" href="#PParticle:description">class description</a> 
+<a class="descrheadentry" href="#PParticle:Function_Members">function members</a>
+<a class="descrheadentry" href="#PParticle:Data_Members">data members</a>
+<a class="descrheadentry" href="#PParticle:Class_Charts">class charts</a>
+</div></div>
+</div>
+<div class="location">
+<a class="locationlevel" href="index.html">(UNKNOWN PRODUCT)</a>
+ &#187; <a class="locationlevel" href="./INCLUDE_Index.html">INCLUDE</a>
+ &#187; <a class="locationlevel" href="#TopOfPage">PParticle</a>
+</div>
+<div class="dropshadow"><div class="withshadow"><h1><a name="PParticle:description"></a>class PParticle: public TLorentzVector</h1>
+<div class="classdescr">
+<pre>
+  Particle <a href="./PParticle.html#PParticle:Class" title="TClass* PParticle::Class()">Class</a> implementation file
+
+  A <a href="./PParticle.html">PParticle</a> <a href="./PParticle.html#PParticle:is" title="Int_t PParticle::is(const char* id)">is</a> a <a href="./#TLorentzVector:TLorentzVector" title="TLorentzVector TLorentzVector::TLorentzVector() or overloads">TLorentzVector</a> with id and weight.
+  Static particle properties from the permanent data
+  base in <a href="./PStaticData.html">PStaticData</a> are used. Additional external particles
+  and decay modes may be loaded. See also <a href="./PData.html">PData</a>.
+
+                    Author:  <a href="./#TLorentzVector:M" title="Double_t TLorentzVector::M() const">M</a>.A. Kagarlis
+                    Written: 15.11.98
+                    Revised: 15.12.2000  <a href="./PParticle.html#PParticle:R" title="Double_t PParticle::R() const">R</a>. Holzmann
+                    Revised: 22.03.2005  <a href="./PParticle.html#PParticle:R" title="Double_t PParticle::R() const">R</a>. Holzmann
+                    Revised: 23.07.2007  IF (new framework)
+
+
+</pre></div>
+</div></div>
+
+<div id="functions">
+<h2><a id="PParticle:Function_Members"></a>Function Members (Methods)</h2>
+<div class="access" id="funcpubl"><b>public:</b>
+<table class="func" id="tabfuncpubl" cellspacing="0">
+<tr class="func"><td class="funcret"> virtual</td><td class="funcname"><a class="funcname" href="#PParticle:_PParticle">~PParticle</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:AbstractMethod"><span class="baseclass">TObject::</span>AbstractMethod</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PParticle:addDebugString">addDebugString</a>(<span class="keyword">char</span>* s)</td></tr>
+<tr class="func"><td class="funcret"><a href="./PParticle.html">PParticle</a>&amp;</td><td class="funcname"><a class="funcname" href="#PParticle:AddTmp">AddTmp</a>(<span class="keyword">const</span> <a href="./PParticle.html">PParticle</a>&amp; p)</td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Double_t">Double_t</a></td><td class="funcname"><a class="funcname" href="#TLorentzVector:Angle"><span class="baseclass">TLorentzVector::</span>Angle</a>(<span class="keyword">const</span> TVector3&amp; v) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:AppendPad"><span class="baseclass">TObject::</span>AppendPad</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#PParticle:BaryonN">BaryonN</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Double_t">Double_t</a></td><td class="funcname"><a class="funcname" href="#TLorentzVector:Beta"><span class="baseclass">TLorentzVector::</span>Beta</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TLorentzVector:Boost@1"><span class="baseclass">TLorentzVector::</span>Boost</a>(<span class="keyword">const</span> TVector3&amp;)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TLorentzVector:Boost"><span class="baseclass">TLorentzVector::</span>Boost</a>(<a href="./ListOfTypes.html#Double_t">Double_t</a>, <a href="./ListOfTypes.html#Double_t">Double_t</a>, <a href="./ListOfTypes.html#Double_t">Double_t</a>)</td></tr>
+<tr class="funcinh"><td class="funcret">TVector3</td><td class="funcname"><a class="funcname" href="#TLorentzVector:BoostVector"><span class="baseclass">TLorentzVector::</span>BoostVector</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Browse"><span class="baseclass">TObject::</span>Browse</a>(TBrowser* b)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#PParticle:Charge">Charge</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret">static TClass*</td><td class="funcname"><a class="funcname" href="#PParticle:Class">Class</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#TObject:ClassName"><span class="baseclass">TObject::</span>ClassName</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Clear"><span class="baseclass">TObject::</span>Clear</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* = <span class="string">""</span>)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PParticle:clearDebugString">clearDebugString</a>()</td></tr>
+<tr class="func"><td class="funcret">virtual <a href="./PParticle.html">PParticle</a>*</td><td class="funcname"><a class="funcname" href="#PParticle:Clone">Clone</a>(<span class="keyword">const</span> <span class="keyword">char</span>* delme = __null) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Compare"><span class="baseclass">TObject::</span>Compare</a>(<span class="keyword">const</span> <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>* obj) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Copy"><span class="baseclass">TObject::</span>Copy</a>(<a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>&amp; object) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Double_t">Double_t</a></td><td class="funcname"><a class="funcname" href="#TLorentzVector:CosTheta"><span class="baseclass">TLorentzVector::</span>CosTheta</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Delete"><span class="baseclass">TObject::</span>Delete</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)<span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Double_t">Double_t</a></td><td class="funcname"><a class="funcname" href="#TLorentzVector:DeltaPhi"><span class="baseclass">TLorentzVector::</span>DeltaPhi</a>(<span class="keyword">const</span> <a href="./#TLorentzVector:TLorentzVector" title="TLorentzVector TLorentzVector::TLorentzVector() or overloads">TLorentzVector</a>&amp;) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Double_t">Double_t</a></td><td class="funcname"><a class="funcname" href="#TLorentzVector:DeltaR"><span class="baseclass">TLorentzVector::</span>DeltaR</a>(<span class="keyword">const</span> <a href="./#TLorentzVector:TLorentzVector" title="TLorentzVector TLorentzVector::TLorentzVector() or overloads">TLorentzVector</a>&amp;) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:DistancetoPrimitive"><span class="baseclass">TObject::</span>DistancetoPrimitive</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> px, <a href="./ListOfTypes.html#Int_t">Int_t</a> py)</td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Double_t">Double_t</a></td><td class="funcname"><a class="funcname" href="#TLorentzVector:Dot"><span class="baseclass">TLorentzVector::</span>Dot</a>(<span class="keyword">const</span> <a href="./#TLorentzVector:TLorentzVector" title="TLorentzVector TLorentzVector::TLorentzVector() or overloads">TLorentzVector</a>&amp;) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Draw"><span class="baseclass">TObject::</span>Draw</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:DrawClass"><span class="baseclass">TObject::</span>DrawClass</a>() <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>*</td><td class="funcname"><a class="funcname" href="#TObject:DrawClone"><span class="baseclass">TObject::</span>DrawClone</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>) <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Double_t">Double_t</a></td><td class="funcname"><a class="funcname" href="#TLorentzVector:DrEtaPhi"><span class="baseclass">TLorentzVector::</span>DrEtaPhi</a>(<span class="keyword">const</span> <a href="./#TLorentzVector:TLorentzVector" title="TLorentzVector TLorentzVector::TLorentzVector() or overloads">TLorentzVector</a>&amp;) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Dump"><span class="baseclass">TObject::</span>Dump</a>() <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Double_t">Double_t</a></td><td class="funcname"><a class="funcname" href="#TLorentzVector:E"><span class="baseclass">TLorentzVector::</span>E</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Double_t">Double_t</a></td><td class="funcname"><a class="funcname" href="#TLorentzVector:Energy"><span class="baseclass">TLorentzVector::</span>Energy</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Error"><span class="baseclass">TObject::</span>Error</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Double_t">Double_t</a></td><td class="funcname"><a class="funcname" href="#TLorentzVector:Et"><span class="baseclass">TLorentzVector::</span>Et</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Double_t">Double_t</a></td><td class="funcname"><a class="funcname" href="#TLorentzVector:Et@1"><span class="baseclass">TLorentzVector::</span>Et</a>(<span class="keyword">const</span> TVector3&amp;) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Double_t">Double_t</a></td><td class="funcname"><a class="funcname" href="#TLorentzVector:Et2"><span class="baseclass">TLorentzVector::</span>Et2</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Double_t">Double_t</a></td><td class="funcname"><a class="funcname" href="#TLorentzVector:Et2@1"><span class="baseclass">TLorentzVector::</span>Et2</a>(<span class="keyword">const</span> TVector3&amp;) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Double_t">Double_t</a></td><td class="funcname"><a class="funcname" href="#TLorentzVector:Eta"><span class="baseclass">TLorentzVector::</span>Eta</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">TVector2</td><td class="funcname"><a class="funcname" href="#TLorentzVector:EtaPhiVector"><span class="baseclass">TLorentzVector::</span>EtaPhiVector</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Execute"><span class="baseclass">TObject::</span>Execute</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* params, <a href="./ListOfTypes.html#Int_t">Int_t</a>* error = 0)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Execute@1"><span class="baseclass">TObject::</span>Execute</a>(TMethod* method, TObjArray* params, <a href="./ListOfTypes.html#Int_t">Int_t</a>* error = 0)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:ExecuteEvent"><span class="baseclass">TObject::</span>ExecuteEvent</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> event, <a href="./ListOfTypes.html#Int_t">Int_t</a> px, <a href="./ListOfTypes.html#Int_t">Int_t</a> py)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Fatal"><span class="baseclass">TObject::</span>Fatal</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>*</td><td class="funcname"><a class="funcname" href="#TObject:FindObject"><span class="baseclass">TObject::</span>FindObject</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>*</td><td class="funcname"><a class="funcname" href="#TObject:FindObject@1"><span class="baseclass">TObject::</span>FindObject</a>(<span class="keyword">const</span> <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>* obj) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Double_t">Double_t</a></td><td class="funcname"><a class="funcname" href="#TLorentzVector:Gamma"><span class="baseclass">TLorentzVector::</span>Gamma</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Double_t">Double_t</a></td><td class="funcname"><a class="funcname" href="#PParticle:GenW">GenW</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./PParticle.html">PParticle</a>*</td><td class="funcname"><a class="funcname" href="#PParticle:GetBeam">GetBeam</a>()</td></tr>
+<tr class="func"><td class="funcret"><a href="./PParticle.html">PParticle</a>*</td><td class="funcname"><a class="funcname" href="#PParticle:GetDaughter">GetDaughter</a>(<span class="keyword">int</span> i)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#PParticle:GetDaughterIndex">GetDaughterIndex</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Double_t">Double_t</a></td><td class="funcname"><a class="funcname" href="#PParticle:GetDBDouble">GetDBDouble</a>(<span class="keyword">char</span>* name)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#PParticle:GetDBInt">GetDBInt</a>(<span class="keyword">char</span>* name)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">char</span></td><td class="funcname"><a class="funcname" href="#PParticle:GetDBString">GetDBString</a>(<span class="keyword">char</span>* name) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret">TString*</td><td class="funcname"><a class="funcname" href="#PParticle:GetDebugString">GetDebugString</a>()</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#PParticle:GetDecayModeIndex">GetDecayModeIndex</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> opt = 0) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Option_t">Option_t</a>*</td><td class="funcname"><a class="funcname" href="#TObject:GetDrawOption"><span class="baseclass">TObject::</span>GetDrawOption</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">static <a href="./ListOfTypes.html#Long_t">Long_t</a></td><td class="funcname"><a class="funcname" href="#TObject:GetDtorOnly"><span class="baseclass">TObject::</span>GetDtorOnly</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#TObject:GetIconName"><span class="baseclass">TObject::</span>GetIconName</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#PParticle:GetIndex">GetIndex</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./PParticle.html">PParticle</a>*</td><td class="funcname"><a class="funcname" href="#PParticle:GetInput">GetInput</a>()</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Double_t">Double_t</a></td><td class="funcname"><a class="funcname" href="#PParticle:GetMultiplicity">GetMultiplicity</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#TObject:GetName"><span class="baseclass">TObject::</span>GetName</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#TObject:GetObjectInfo"><span class="baseclass">TObject::</span>GetObjectInfo</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> px, <a href="./ListOfTypes.html#Int_t">Int_t</a> py) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">static <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:GetObjectStat"><span class="baseclass">TObject::</span>GetObjectStat</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Option_t">Option_t</a>*</td><td class="funcname"><a class="funcname" href="#TObject:GetOption"><span class="baseclass">TObject::</span>GetOption</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./PParticle.html">PParticle</a>*</td><td class="funcname"><a class="funcname" href="#PParticle:GetParent">GetParent</a>()</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#PParticle:GetParentId">GetParentId</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#PParticle:GetParentIndex">GetParentIndex</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Double_t">Double_t</a></td><td class="funcname"><a class="funcname" href="#PParticle:GetProperTime">GetProperTime</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#PParticle:GetScatterClone">GetScatterClone</a>()</td></tr>
+<tr class="func"><td class="funcret"><a href="./PParticle.html">PParticle</a>*</td><td class="funcname"><a class="funcname" href="#PParticle:GetScattering">GetScattering</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> i)</td></tr>
+<tr class="func"><td class="funcret"><a href="./PParticle.html">PParticle</a>*</td><td class="funcname"><a class="funcname" href="#PParticle:GetSibling">GetSibling</a>()</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#PParticle:GetSiblingIndex">GetSiblingIndex</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#PParticle:GetSourceId">GetSourceId</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#PParticle:getSourceId">getSourceId</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#PParticle:GetStatus">GetStatus</a>()</td></tr>
+<tr class="func"><td class="funcret"><a href="./PParticle.html">PParticle</a>*</td><td class="funcname"><a class="funcname" href="#PParticle:GetTarget">GetTarget</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#TObject:GetTitle"><span class="baseclass">TObject::</span>GetTitle</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#UInt_t">UInt_t</a></td><td class="funcname"><a class="funcname" href="#TObject:GetUniqueID"><span class="baseclass">TObject::</span>GetUniqueID</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">bool</span></td><td class="funcname"><a class="funcname" href="#PParticle:GetValue">GetValue</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> id, <a href="./ListOfTypes.html#Double_t">Double_t</a>* val)</td></tr>
+<tr class="func"><td class="funcret">TVector3&amp;</td><td class="funcname"><a class="funcname" href="#PParticle:GetVertex">GetVertex</a>()</td></tr>
+<tr class="func"><td class="funcret">TVector3&amp;</td><td class="funcname"><a class="funcname" href="#PParticle:getVertex">getVertex</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TLorentzVector:GetXYZT"><span class="baseclass">TLorentzVector::</span>GetXYZT</a>(<a href="./ListOfTypes.html#Double_t">Double_t</a>* carray) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TLorentzVector:GetXYZT@1"><span class="baseclass">TLorentzVector::</span>GetXYZT</a>(<a href="./ListOfTypes.html#Float_t">Float_t</a>* carray) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:HandleTimer"><span class="baseclass">TObject::</span>HandleTimer</a>(TTimer* timer)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#ULong_t">ULong_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Hash"><span class="baseclass">TObject::</span>Hash</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#PParticle:HasID">HasID</a>(<span class="keyword">const</span> <a href="./ListOfTypes.html#Int_t">Int_t</a> id)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#PParticle:HasNotID">HasNotID</a>(<span class="keyword">const</span> <a href="./ListOfTypes.html#Int_t">Int_t</a> id)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#PParticle:ID">ID</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Info"><span class="baseclass">TObject::</span>Info</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:InheritsFrom"><span class="baseclass">TObject::</span>InheritsFrom</a>(<span class="keyword">const</span> <span class="keyword">char</span>* classname) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:InheritsFrom@1"><span class="baseclass">TObject::</span>InheritsFrom</a>(<span class="keyword">const</span> TClass* cl) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Inspect"><span class="baseclass">TObject::</span>Inspect</a>() <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Double_t">Double_t</a></td><td class="funcname"><a class="funcname" href="#PParticle:InvariantT">InvariantT</a>(<a href="./ListOfTypes.html#Double_t">Double_t</a> m3, <a href="./ListOfTypes.html#Double_t">Double_t</a> m4, <a href="./ListOfTypes.html#Double_t">Double_t</a> cos_th_cm)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:InvertBit"><span class="baseclass">TObject::</span>InvertBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Double_t">Double_t</a></td><td class="funcname"><a class="funcname" href="#PParticle:InvGenW">InvGenW</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#PParticle:Is">Is</a>(<span class="keyword">const</span> <span class="keyword">char</span>* id)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#PParticle:is">is</a>(<span class="keyword">const</span> <span class="keyword">char</span>* id)</td></tr>
+<tr class="func"><td class="funcret">virtual TClass*</td><td class="funcname"><a class="funcname" href="#PParticle:IsA">IsA</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#PParticle:IsActive">IsActive</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#PParticle:IsDelta">IsDelta</a>()</td></tr>
+<tr class="func"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#PParticle:IsDilepton">IsDilepton</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:IsEqual"><span class="baseclass">TObject::</span>IsEqual</a>(<span class="keyword">const</span> <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>* obj) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#PParticle:IsFileInput">IsFileInput</a>()</td></tr>
+<tr class="func"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#PParticle:IsFireball">IsFireball</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:IsFolder"><span class="baseclass">TObject::</span>IsFolder</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#PParticle:IsHadron">IsHadron</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#PParticle:IsMeson">IsMeson</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#PParticle:IsNucleon">IsNucleon</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:IsOnHeap"><span class="baseclass">TObject::</span>IsOnHeap</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#PParticle:IsPi">IsPi</a>()</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#PParticle:IsRho">IsRho</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:IsSortable"><span class="baseclass">TObject::</span>IsSortable</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#PParticle:IsSpectator">IsSpectator</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:IsZombie"><span class="baseclass">TObject::</span>IsZombie</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret">virtual <a href="./ListOfTypes.html#Double_t">Double_t</a></td><td class="funcname"><a class="funcname" href="#PParticle:KE">KE</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#PParticle:Key">Key</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#PParticle:LeptonN">LeptonN</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Double_t">Double_t</a></td><td class="funcname"><a class="funcname" href="#PParticle:Life">Life</a>(<a href="./ListOfTypes.html#Double_t">Double_t</a> m = 0., <a href="./ListOfTypes.html#Int_t">Int_t</a> idx = -1)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:ls"><span class="baseclass">TObject::</span>ls</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Double_t">Double_t</a></td><td class="funcname"><a class="funcname" href="#TLorentzVector:M"><span class="baseclass">TLorentzVector::</span>M</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Double_t">Double_t</a></td><td class="funcname"><a class="funcname" href="#TLorentzVector:M2"><span class="baseclass">TLorentzVector::</span>M2</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Double_t">Double_t</a></td><td class="funcname"><a class="funcname" href="#TLorentzVector:Mag"><span class="baseclass">TLorentzVector::</span>Mag</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Double_t">Double_t</a></td><td class="funcname"><a class="funcname" href="#TLorentzVector:Mag2"><span class="baseclass">TLorentzVector::</span>Mag2</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:MayNotUse"><span class="baseclass">TObject::</span>MayNotUse</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Double_t">Double_t</a></td><td class="funcname"><a class="funcname" href="#TLorentzVector:Minus"><span class="baseclass">TLorentzVector::</span>Minus</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Double_t">Double_t</a></td><td class="funcname"><a class="funcname" href="#TLorentzVector:Mt"><span class="baseclass">TLorentzVector::</span>Mt</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Double_t">Double_t</a></td><td class="funcname"><a class="funcname" href="#TLorentzVector:Mt2"><span class="baseclass">TLorentzVector::</span>Mt2</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#PParticle:Name">Name</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Notify"><span class="baseclass">TObject::</span>Notify</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Obsolete"><span class="baseclass">TObject::</span>Obsolete</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* asOfVers, <span class="keyword">const</span> <span class="keyword">char</span>* removedFromVers) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:operator_delete"><span class="baseclass">TObject::</span>operator delete</a>(<span class="keyword">void</span>* ptr)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:operator_delete@1"><span class="baseclass">TObject::</span>operator delete</a>(<span class="keyword">void</span>* ptr, <span class="keyword">void</span>* vp)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:operator_delete[]"><span class="baseclass">TObject::</span>operator delete[]</a>(<span class="keyword">void</span>* ptr)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:operator_delete[]@1"><span class="baseclass">TObject::</span>operator delete[]</a>(<span class="keyword">void</span>* ptr, <span class="keyword">void</span>* vp)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span>*</td><td class="funcname"><a class="funcname" href="#TObject:operator_new"><span class="baseclass">TObject::</span>operator new</a>(<a href="./ListOfTypes.html#size_t">size_t</a> sz)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span>*</td><td class="funcname"><a class="funcname" href="#TObject:operator_new@1"><span class="baseclass">TObject::</span>operator new</a>(<a href="./ListOfTypes.html#size_t">size_t</a> sz, <span class="keyword">void</span>* vp)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span>*</td><td class="funcname"><a class="funcname" href="#TObject:operator_new[]"><span class="baseclass">TObject::</span>operator new[]</a>(<a href="./ListOfTypes.html#size_t">size_t</a> sz)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span>*</td><td class="funcname"><a class="funcname" href="#TObject:operator_new[]@1"><span class="baseclass">TObject::</span>operator new[]</a>(<a href="./ListOfTypes.html#size_t">size_t</a> sz, <span class="keyword">void</span>* vp)</td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TLorentzVector:operator!_"><span class="baseclass">TLorentzVector::</span>operator!=</a>(<span class="keyword">const</span> <a href="./#TLorentzVector:TLorentzVector" title="TLorentzVector TLorentzVector::TLorentzVector() or overloads">TLorentzVector</a>&amp;) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Double_t">Double_t</a></td><td class="funcname"><a class="funcname" href="#TLorentzVector:operator()"><span class="baseclass">TLorentzVector::</span>operator()</a>(<span class="keyword">int</span> i) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Double_t">Double_t</a>&amp;</td><td class="funcname"><a class="funcname" href="#TLorentzVector:operator()@1"><span class="baseclass">TLorentzVector::</span>operator()</a>(<span class="keyword">int</span> i)</td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./#TLorentzVector:TLorentzVector" title="TLorentzVector TLorentzVector::TLorentzVector() or overloads">TLorentzVector</a></td><td class="funcname"><a class="funcname" href="#TLorentzVector:operator*"><span class="baseclass">TLorentzVector::</span>operator*</a>(<a href="./ListOfTypes.html#Double_t">Double_t</a> a) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Double_t">Double_t</a></td><td class="funcname"><a class="funcname" href="#TLorentzVector:operator*@1"><span class="baseclass">TLorentzVector::</span>operator*</a>(<span class="keyword">const</span> <a href="./#TLorentzVector:TLorentzVector" title="TLorentzVector TLorentzVector::TLorentzVector() or overloads">TLorentzVector</a>&amp;) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./PParticle.html">PParticle</a>&amp;</td><td class="funcname"><a class="funcname" href="#PParticle:operator*_">operator*=</a>(<span class="keyword">const</span> TRotation&amp;)</td></tr>
+<tr class="func"><td class="funcret"><a href="./PParticle.html">PParticle</a>&amp;</td><td class="funcname"><a class="funcname" href="#PParticle:operator*_@1">operator*=</a>(<span class="keyword">const</span> TLorentzRotation&amp;)</td></tr>
+<tr class="func"><td class="funcret"><a href="./PParticle.html">PParticle</a></td><td class="funcname"><a class="funcname" href="#PParticle:operator+">operator+</a>(<span class="keyword">const</span> <a href="./PParticle.html">PParticle</a>&amp; b) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./PParticle.html">PParticle</a>&amp;</td><td class="funcname"><a class="funcname" href="#PParticle:operator+_">operator+=</a>(<span class="keyword">const</span> <a href="./PParticle.html">PParticle</a>&amp;)</td></tr>
+<tr class="func"><td class="funcret"><a href="./PParticle.html">PParticle</a></td><td class="funcname"><a class="funcname" href="#PParticle:operator-">operator-</a>(<span class="keyword">const</span> <a href="./PParticle.html">PParticle</a>&amp; b) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./PParticle.html">PParticle</a>&amp;</td><td class="funcname"><a class="funcname" href="#PParticle:operator-_">operator-=</a>(<span class="keyword">const</span> <a href="./PParticle.html">PParticle</a>&amp;)</td></tr>
+<tr class="func"><td class="funcret"><a href="./PParticle.html">PParticle</a>&amp;</td><td class="funcname"><a class="funcname" href="#PParticle:operator_">operator=</a>(<span class="keyword">const</span> <a href="./PParticle.html">PParticle</a>&amp;)</td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TLorentzVector:operator__"><span class="baseclass">TLorentzVector::</span>operator==</a>(<span class="keyword">const</span> <a href="./#TLorentzVector:TLorentzVector" title="TLorentzVector TLorentzVector::TLorentzVector() or overloads">TLorentzVector</a>&amp;) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Double_t">Double_t</a></td><td class="funcname"><a class="funcname" href="#TLorentzVector:operator[]"><span class="baseclass">TLorentzVector::</span>operator[]</a>(<span class="keyword">int</span> i) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Double_t">Double_t</a>&amp;</td><td class="funcname"><a class="funcname" href="#TLorentzVector:operator[]@1"><span class="baseclass">TLorentzVector::</span>operator[]</a>(<span class="keyword">int</span> i)</td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Double_t">Double_t</a></td><td class="funcname"><a class="funcname" href="#TLorentzVector:P"><span class="baseclass">TLorentzVector::</span>P</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Paint"><span class="baseclass">TObject::</span>Paint</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)</td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Double_t">Double_t</a></td><td class="funcname"><a class="funcname" href="#TLorentzVector:Perp"><span class="baseclass">TLorentzVector::</span>Perp</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Double_t">Double_t</a></td><td class="funcname"><a class="funcname" href="#TLorentzVector:Perp@1"><span class="baseclass">TLorentzVector::</span>Perp</a>(<span class="keyword">const</span> TVector3&amp; v) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Double_t">Double_t</a></td><td class="funcname"><a class="funcname" href="#TLorentzVector:Perp2"><span class="baseclass">TLorentzVector::</span>Perp2</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Double_t">Double_t</a></td><td class="funcname"><a class="funcname" href="#TLorentzVector:Perp2@1"><span class="baseclass">TLorentzVector::</span>Perp2</a>(<span class="keyword">const</span> TVector3&amp; v) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Double_t">Double_t</a></td><td class="funcname"><a class="funcname" href="#TLorentzVector:Phi"><span class="baseclass">TLorentzVector::</span>Phi</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Double_t">Double_t</a></td><td class="funcname"><a class="funcname" href="#TLorentzVector:Plus"><span class="baseclass">TLorentzVector::</span>Plus</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Pop"><span class="baseclass">TObject::</span>Pop</a>()</td></tr>
+<tr class="func"><td class="funcret"></td><td class="funcname"><a class="funcname" href="#PParticle:PParticle@7">PParticle</a>(<span class="keyword">const</span> <a href="./PParticle.html">PParticle</a>&amp;)</td></tr>
+<tr class="func"><td class="funcret"></td><td class="funcname"><a class="funcname" href="#PParticle:PParticle@8">PParticle</a>(<span class="keyword">const</span> <a href="./PParticle.html">PParticle</a>*)</td></tr>
+<tr class="func"><td class="funcret"></td><td class="funcname"><a class="funcname" href="#PParticle:PParticle">PParticle</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> id = 0, <a href="./ListOfTypes.html#Double_t">Double_t</a> <a href="./PParticle.html#PParticle:T" title="Double_t PParticle::T() const">T</a> = 0., <a href="./ListOfTypes.html#Double_t">Double_t</a> w = 1.)</td></tr>
+<tr class="func"><td class="funcret"></td><td class="funcname"><a class="funcname" href="#PParticle:PParticle@1">PParticle</a>(<span class="keyword">const</span> <span class="keyword">char</span>*, <a href="./ListOfTypes.html#Double_t">Double_t</a> <a href="./PParticle.html#PParticle:T" title="Double_t PParticle::T() const">T</a> = 0., <a href="./ListOfTypes.html#Double_t">Double_t</a> w = 1.)</td></tr>
+<tr class="func"><td class="funcret"></td><td class="funcname"><a class="funcname" href="#PParticle:PParticle@5">PParticle</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a>, <a href="./ListOfTypes.html#Double_t">Double_t</a>*, <a href="./ListOfTypes.html#Double_t">Double_t</a> w = 1.)</td></tr>
+<tr class="func"><td class="funcret"></td><td class="funcname"><a class="funcname" href="#PParticle:PParticle@6">PParticle</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a>, <span class="keyword">float</span>*, <a href="./ListOfTypes.html#Double_t">Double_t</a> w = 1.)</td></tr>
+<tr class="func"><td class="funcret"></td><td class="funcname"><a class="funcname" href="#PParticle:PParticle@4">PParticle</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a>, <span class="keyword">const</span> TVector3&amp;, <a href="./ListOfTypes.html#Double_t">Double_t</a> m = 0., <a href="./ListOfTypes.html#Double_t">Double_t</a> w = 1.)</td></tr>
+<tr class="func"><td class="funcret"></td><td class="funcname"><a class="funcname" href="#PParticle:PParticle@2">PParticle</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a>, <a href="./ListOfTypes.html#Double_t">Double_t</a>, <a href="./ListOfTypes.html#Double_t">Double_t</a>, <a href="./ListOfTypes.html#Double_t">Double_t</a>, <a href="./ListOfTypes.html#Double_t">Double_t</a> m = 0., <a href="./ListOfTypes.html#Double_t">Double_t</a> w = 1.)</td></tr>
+<tr class="func"><td class="funcret"></td><td class="funcname"><a class="funcname" href="#PParticle:PParticle@3">PParticle</a>(<span class="keyword">const</span> <span class="keyword">char</span>*, <a href="./ListOfTypes.html#Double_t">Double_t</a>, <a href="./ListOfTypes.html#Double_t">Double_t</a>, <a href="./ListOfTypes.html#Double_t">Double_t</a>, <a href="./ListOfTypes.html#Double_t">Double_t</a> m = 0., <a href="./ListOfTypes.html#Double_t">Double_t</a> w = 1.)</td></tr>
+<tr class="func"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PParticle:Print">Print</a>(<span class="keyword">const</span> <a href="./ListOfTypes.html#Option_t">Option_t</a>* delme = __null) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Double_t">Double_t</a></td><td class="funcname"><a class="funcname" href="#TLorentzVector:PseudoRapidity"><span class="baseclass">TLorentzVector::</span>PseudoRapidity</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Double_t">Double_t</a></td><td class="funcname"><a class="funcname" href="#TLorentzVector:Pt"><span class="baseclass">TLorentzVector::</span>Pt</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Double_t">Double_t</a></td><td class="funcname"><a class="funcname" href="#TLorentzVector:Pt@1"><span class="baseclass">TLorentzVector::</span>Pt</a>(<span class="keyword">const</span> TVector3&amp; v) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Double_t">Double_t</a></td><td class="funcname"><a class="funcname" href="#TLorentzVector:Px"><span class="baseclass">TLorentzVector::</span>Px</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Double_t">Double_t</a></td><td class="funcname"><a class="funcname" href="#TLorentzVector:Py"><span class="baseclass">TLorentzVector::</span>Py</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Double_t">Double_t</a></td><td class="funcname"><a class="funcname" href="#TLorentzVector:Pz"><span class="baseclass">TLorentzVector::</span>Pz</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Double_t">Double_t</a></td><td class="funcname"><a class="funcname" href="#PParticle:R">R</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Double_t">Double_t</a></td><td class="funcname"><a class="funcname" href="#TLorentzVector:Rapidity"><span class="baseclass">TLorentzVector::</span>Rapidity</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Read"><span class="baseclass">TObject::</span>Read</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PParticle:Reconstruct">Reconstruct</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:RecursiveRemove"><span class="baseclass">TObject::</span>RecursiveRemove</a>(<a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>* obj)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PParticle:Reset@2">Reset</a>(<span class="keyword">const</span> <a href="./PParticle.html">PParticle</a>&amp; p)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PParticle:Reset">Reset</a>(<span class="keyword">const</span> <a href="./ListOfTypes.html#Int_t">Int_t</a> id, <span class="keyword">const</span> <a href="./#TLorentzVector:TLorentzVector" title="TLorentzVector TLorentzVector::TLorentzVector() or overloads">TLorentzVector</a>&amp; v, <span class="keyword">const</span> <a href="./ListOfTypes.html#Double_t">Double_t</a> w = 1.)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PParticle:Reset@1">Reset</a>(<span class="keyword">const</span> <a href="./ListOfTypes.html#Int_t">Int_t</a> id = 0, <span class="keyword">const</span> <a href="./ListOfTypes.html#Double_t">Double_t</a> px = 0., <span class="keyword">const</span> <a href="./ListOfTypes.html#Double_t">Double_t</a> py = 0., <span class="keyword">const</span> <a href="./ListOfTypes.html#Double_t">Double_t</a> pz = 0., <span class="keyword">const</span> <a href="./ListOfTypes.html#Double_t">Double_t</a> e = 0., <span class="keyword">const</span> <a href="./ListOfTypes.html#Double_t">Double_t</a> w = 1.)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:ResetBit"><span class="baseclass">TObject::</span>ResetBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PParticle:ResetDaughters">ResetDaughters</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PParticle:ResetE">ResetE</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Double_t">Double_t</a></td><td class="funcname"><a class="funcname" href="#TLorentzVector:Rho"><span class="baseclass">TLorentzVector::</span>Rho</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TLorentzVector:Rotate"><span class="baseclass">TLorentzVector::</span>Rotate</a>(<a href="./ListOfTypes.html#Double_t">Double_t</a>, <span class="keyword">const</span> TVector3&amp;)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TLorentzVector:RotateUz"><span class="baseclass">TLorentzVector::</span>RotateUz</a>(TVector3&amp; newUzVector)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TLorentzVector:RotateX"><span class="baseclass">TLorentzVector::</span>RotateX</a>(<a href="./ListOfTypes.html#Double_t">Double_t</a> angle)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TLorentzVector:RotateY"><span class="baseclass">TLorentzVector::</span>RotateY</a>(<a href="./ListOfTypes.html#Double_t">Double_t</a> angle)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TLorentzVector:RotateZ"><span class="baseclass">TLorentzVector::</span>RotateZ</a>(<a href="./ListOfTypes.html#Double_t">Double_t</a> angle)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Double_t">Double_t</a></td><td class="funcname"><a class="funcname" href="#PParticle:Sample">Sample</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SaveAs"><span class="baseclass">TObject::</span>SaveAs</a>(<span class="keyword">const</span> <span class="keyword">char</span>* filename = <span class="string">""</span>, <a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>) <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SavePrimitive"><span class="baseclass">TObject::</span>SavePrimitive</a>(<a href="./ListOfTypes.html#ostream">ostream</a>&amp; out, <a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PParticle:Scatter">Scatter</a>(<a href="./PParticle.html">PParticle</a>* p1, <a href="./PParticle.html">PParticle</a>* p2)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PParticle:SetActive">SetActive</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetBit@1"><span class="baseclass">TObject::</span>SetBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetBit"><span class="baseclass">TObject::</span>SetBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f, <a href="./ListOfTypes.html#Bool_t">Bool_t</a> set)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PParticle:SetDaughter">SetDaughter</a>(<a href="./PParticle.html">PParticle</a>* d)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PParticle:SetDaughterIndex">SetDaughterIndex</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> dInd)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PParticle:SetDecayModeIndex">SetDecayModeIndex</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> pInd, <a href="./ListOfTypes.html#Int_t">Int_t</a> i = 0)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetDrawOption"><span class="baseclass">TObject::</span>SetDrawOption</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)<span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetDtorOnly"><span class="baseclass">TObject::</span>SetDtorOnly</a>(<span class="keyword">void</span>* obj)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TLorentzVector:SetE"><span class="baseclass">TLorentzVector::</span>SetE</a>(<a href="./ListOfTypes.html#Double_t">Double_t</a> a)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PParticle:SetGenW">SetGenW</a>(<a href="./ListOfTypes.html#Double_t">Double_t</a> w = 1.)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PParticle:SetID">SetID</a>(<span class="keyword">const</span> <a href="./ListOfTypes.html#Int_t">Int_t</a> id)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PParticle:SetInActive">SetInActive</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PParticle:SetIndex">SetIndex</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> Ind)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PParticle:SetInput">SetInput</a>(<a href="./PParticle.html">PParticle</a>* p)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PParticle:SetInvGenW">SetInvGenW</a>(<a href="./ListOfTypes.html#Double_t">Double_t</a> w = 1.)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PParticle:SetKE">SetKE</a>(<a href="./ListOfTypes.html#Double_t">Double_t</a> <a href="./PParticle.html#PParticle:T" title="Double_t PParticle::T() const">T</a> = 0.)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PParticle:SetM">SetM</a>(<a href="./ListOfTypes.html#Double_t">Double_t</a> m = 0.)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PParticle:SetMom">SetMom</a>(<a href="./ListOfTypes.html#Double_t">Double_t</a> mom = 0.)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PParticle:SetMultiplicity">SetMultiplicity</a>(<a href="./ListOfTypes.html#Double_t">Double_t</a> w = 1.)</td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetObjectStat"><span class="baseclass">TObject::</span>SetObjectStat</a>(<a href="./ListOfTypes.html#Bool_t">Bool_t</a> stat)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PParticle:SetParent">SetParent</a>(<a href="./PParticle.html">PParticle</a>* p)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PParticle:SetParentId">SetParentId</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> pId)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PParticle:SetParentIndex">SetParentIndex</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> pInd)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TLorentzVector:SetPerp"><span class="baseclass">TLorentzVector::</span>SetPerp</a>(<a href="./ListOfTypes.html#Double_t">Double_t</a>)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TLorentzVector:SetPhi"><span class="baseclass">TLorentzVector::</span>SetPhi</a>(<a href="./ListOfTypes.html#Double_t">Double_t</a> phi)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PParticle:SetProperTime">SetProperTime</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PParticle:SetProperTime@1">SetProperTime</a>(<a href="./ListOfTypes.html#Double_t">Double_t</a> t)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TLorentzVector:SetPtEtaPhiE"><span class="baseclass">TLorentzVector::</span>SetPtEtaPhiE</a>(<a href="./ListOfTypes.html#Double_t">Double_t</a> pt, <a href="./ListOfTypes.html#Double_t">Double_t</a> eta, <a href="./ListOfTypes.html#Double_t">Double_t</a> phi, <a href="./ListOfTypes.html#Double_t">Double_t</a> e)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TLorentzVector:SetPtEtaPhiM"><span class="baseclass">TLorentzVector::</span>SetPtEtaPhiM</a>(<a href="./ListOfTypes.html#Double_t">Double_t</a> pt, <a href="./ListOfTypes.html#Double_t">Double_t</a> eta, <a href="./ListOfTypes.html#Double_t">Double_t</a> phi, <a href="./ListOfTypes.html#Double_t">Double_t</a> m)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TLorentzVector:SetPx"><span class="baseclass">TLorentzVector::</span>SetPx</a>(<a href="./ListOfTypes.html#Double_t">Double_t</a> a)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TLorentzVector:SetPxPyPzE"><span class="baseclass">TLorentzVector::</span>SetPxPyPzE</a>(<a href="./ListOfTypes.html#Double_t">Double_t</a> px, <a href="./ListOfTypes.html#Double_t">Double_t</a> py, <a href="./ListOfTypes.html#Double_t">Double_t</a> pz, <a href="./ListOfTypes.html#Double_t">Double_t</a> e)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TLorentzVector:SetPy"><span class="baseclass">TLorentzVector::</span>SetPy</a>(<a href="./ListOfTypes.html#Double_t">Double_t</a> a)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TLorentzVector:SetPz"><span class="baseclass">TLorentzVector::</span>SetPz</a>(<a href="./ListOfTypes.html#Double_t">Double_t</a> a)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TLorentzVector:SetRho"><span class="baseclass">TLorentzVector::</span>SetRho</a>(<a href="./ListOfTypes.html#Double_t">Double_t</a> rho)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PParticle:SetScatterClone">SetScatterClone</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> t)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PParticle:SetSibling">SetSibling</a>(<a href="./PParticle.html">PParticle</a>* p)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PParticle:SetSiblingIndex">SetSiblingIndex</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> sInd)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PParticle:SetSourceId">SetSourceId</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> sId)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PParticle:SetSpectator">SetSpectator</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> s)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PParticle:SetStatus">SetStatus</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> st)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PParticle:SetT">SetT</a>(<a href="./ListOfTypes.html#Double_t">Double_t</a> time)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TLorentzVector:SetTheta"><span class="baseclass">TLorentzVector::</span>SetTheta</a>(<a href="./ListOfTypes.html#Double_t">Double_t</a> theta)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetUniqueID"><span class="baseclass">TObject::</span>SetUniqueID</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> uid)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">bool</span></td><td class="funcname"><a class="funcname" href="#PParticle:SetValue@1">SetValue</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> id)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">bool</span></td><td class="funcname"><a class="funcname" href="#PParticle:SetValue">SetValue</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> id, <a href="./ListOfTypes.html#Double_t">Double_t</a> val)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TLorentzVector:SetVect"><span class="baseclass">TLorentzVector::</span>SetVect</a>(<span class="keyword">const</span> TVector3&amp; vect3)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PParticle:SetVect4">SetVect4</a>(<span class="keyword">const</span> <a href="./#TLorentzVector:TLorentzVector" title="TLorentzVector TLorentzVector::TLorentzVector() or overloads">TLorentzVector</a>&amp; v)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TLorentzVector:SetVectM"><span class="baseclass">TLorentzVector::</span>SetVectM</a>(<span class="keyword">const</span> TVector3&amp; spatial, <a href="./ListOfTypes.html#Double_t">Double_t</a> mass)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TLorentzVector:SetVectMag"><span class="baseclass">TLorentzVector::</span>SetVectMag</a>(<span class="keyword">const</span> TVector3&amp; spatial, <a href="./ListOfTypes.html#Double_t">Double_t</a> magnitude)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PParticle:SetVertex@2">SetVertex</a>(TVector3&amp; v, <a href="./ListOfTypes.html#Double_t">Double_t</a> t)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PParticle:SetVertex@1">SetVertex</a>(<a href="./ListOfTypes.html#Double_t">Double_t</a> x, <a href="./ListOfTypes.html#Double_t">Double_t</a> y, <a href="./ListOfTypes.html#Double_t">Double_t</a> z)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PParticle:SetVertex">SetVertex</a>(<a href="./ListOfTypes.html#Double_t">Double_t</a> x, <a href="./ListOfTypes.html#Double_t">Double_t</a> y, <a href="./ListOfTypes.html#Double_t">Double_t</a> z, <a href="./ListOfTypes.html#Double_t">Double_t</a> t)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PParticle:SetW">SetW</a>(<a href="./ListOfTypes.html#Double_t">Double_t</a> w = 1.)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TLorentzVector:SetX"><span class="baseclass">TLorentzVector::</span>SetX</a>(<a href="./ListOfTypes.html#Double_t">Double_t</a> a)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TLorentzVector:SetXYZM"><span class="baseclass">TLorentzVector::</span>SetXYZM</a>(<a href="./ListOfTypes.html#Double_t">Double_t</a> x, <a href="./ListOfTypes.html#Double_t">Double_t</a> y, <a href="./ListOfTypes.html#Double_t">Double_t</a> z, <a href="./ListOfTypes.html#Double_t">Double_t</a> m)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TLorentzVector:SetXYZT"><span class="baseclass">TLorentzVector::</span>SetXYZT</a>(<a href="./ListOfTypes.html#Double_t">Double_t</a> x, <a href="./ListOfTypes.html#Double_t">Double_t</a> y, <a href="./ListOfTypes.html#Double_t">Double_t</a> z, <a href="./ListOfTypes.html#Double_t">Double_t</a> t)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TLorentzVector:SetY"><span class="baseclass">TLorentzVector::</span>SetY</a>(<a href="./ListOfTypes.html#Double_t">Double_t</a> a)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TLorentzVector:SetZ"><span class="baseclass">TLorentzVector::</span>SetZ</a>(<a href="./ListOfTypes.html#Double_t">Double_t</a> a)</td></tr>
+<tr class="func"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PParticle:ShowMembers">ShowMembers</a>(TMemberInspector&amp; insp) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#PParticle:size">size</a>()</td></tr>
+<tr class="func"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PParticle:Streamer">Streamer</a>(TBuffer&amp;)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PParticle:StreamerNVirtual">StreamerNVirtual</a>(TBuffer&amp; ClassDef_StreamerNVirtual_b)</td></tr>
+<tr class="func"><td class="funcret"><a href="./PParticle.html">PParticle</a>&amp;</td><td class="funcname"><a class="funcname" href="#PParticle:SubTmp">SubTmp</a>(<span class="keyword">const</span> <a href="./PParticle.html">PParticle</a>&amp; p)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SysError"><span class="baseclass">TObject::</span>SysError</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Double_t">Double_t</a></td><td class="funcname"><a class="funcname" href="#PParticle:T">T</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:TestBit"><span class="baseclass">TObject::</span>TestBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:TestBits"><span class="baseclass">TObject::</span>TestBits</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Double_t">Double_t</a></td><td class="funcname"><a class="funcname" href="#TLorentzVector:Theta"><span class="baseclass">TLorentzVector::</span>Theta</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./PParticle.html">PParticle</a>&amp;</td><td class="funcname"><a class="funcname" href="#PParticle:Transform">Transform</a>(<span class="keyword">const</span> TRotation&amp;)</td></tr>
+<tr class="func"><td class="funcret"><a href="./PParticle.html">PParticle</a>&amp;</td><td class="funcname"><a class="funcname" href="#PParticle:Transform@1">Transform</a>(<span class="keyword">const</span> TLorentzRotation&amp;)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:UseCurrentStyle"><span class="baseclass">TObject::</span>UseCurrentStyle</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">TVector3</td><td class="funcname"><a class="funcname" href="#TLorentzVector:Vect"><span class="baseclass">TLorentzVector::</span>Vect</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./#TLorentzVector:TLorentzVector" title="TLorentzVector TLorentzVector::TLorentzVector() or overloads">TLorentzVector</a></td><td class="funcname"><a class="funcname" href="#PParticle:Vect4">Vect4</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Double_t">Double_t</a></td><td class="funcname"><a class="funcname" href="#PParticle:W">W</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Warning"><span class="baseclass">TObject::</span>Warning</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Write"><span class="baseclass">TObject::</span>Write</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> option = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> bufsize = 0)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Write@1"><span class="baseclass">TObject::</span>Write</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> option = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> bufsize = 0) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Double_t">Double_t</a></td><td class="funcname"><a class="funcname" href="#PParticle:X">X</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Double_t">Double_t</a></td><td class="funcname"><a class="funcname" href="#PParticle:Y">Y</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Double_t">Double_t</a></td><td class="funcname"><a class="funcname" href="#PParticle:Z">Z</a>() <span class="keyword">const</span></td></tr>
+
+</table></div>
+<div class="access" id="funcprot"><b>protected:</b>
+<table class="func" id="tabfuncprot" cellspacing="0">
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PParticle:defaults">defaults</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:DoError"><span class="baseclass">TObject::</span>DoError</a>(<span class="keyword">int</span> level, <span class="keyword">const</span> <span class="keyword">char</span>* location, <span class="keyword">const</span> <span class="keyword">char</span>* fmt, <a href="./ListOfTypes.html#va_list">va_list</a> va) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:MakeZombie"><span class="baseclass">TObject::</span>MakeZombie</a>()</td></tr>
+
+</table></div>
+</div>
+
+<div id="datamembers">
+<h2><a name="PParticle:Data_Members"></a>Data Members</h2>
+<div class="access" id="datapubl"><b>public:</b>
+<table class="data" id="tabdatapubl" cellspacing="0">
+<tr class="datainh"><td class="datatype">static <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>::(anonymous)</td><td class="dataname"><a href="#TObject:kBitMask"><span class="baseclass">TObject::</span>kBitMask</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>::EStatusBits</td><td class="dataname"><a href="#TObject:kCanDelete"><span class="baseclass">TObject::</span>kCanDelete</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>::EStatusBits</td><td class="dataname"><a href="#TObject:kCannotPick"><span class="baseclass">TObject::</span>kCannotPick</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>::EStatusBits</td><td class="dataname"><a href="#TObject:kHasUUID"><span class="baseclass">TObject::</span>kHasUUID</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>::EStatusBits</td><td class="dataname"><a href="#TObject:kInvalidObject"><span class="baseclass">TObject::</span>kInvalidObject</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>::(anonymous)</td><td class="dataname"><a href="#TObject:kIsOnHeap"><span class="baseclass">TObject::</span>kIsOnHeap</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>::EStatusBits</td><td class="dataname"><a href="#TObject:kIsReferenced"><span class="baseclass">TObject::</span>kIsReferenced</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>::EStatusBits</td><td class="dataname"><a href="#TObject:kMustCleanup"><span class="baseclass">TObject::</span>kMustCleanup</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./#TLorentzVector:TLorentzVector" title="TLorentzVector TLorentzVector::TLorentzVector() or overloads">TLorentzVector</a>::(anonymous)</td><td class="dataname"><a href="#TLorentzVector:kNUM_COORDINATES"><span class="baseclass">TLorentzVector::</span>kNUM_COORDINATES</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>::EStatusBits</td><td class="dataname"><a href="#TObject:kNoContextMenu"><span class="baseclass">TObject::</span>kNoContextMenu</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>::(anonymous)</td><td class="dataname"><a href="#TObject:kNotDeleted"><span class="baseclass">TObject::</span>kNotDeleted</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>::EStatusBits</td><td class="dataname"><a href="#TObject:kObjInCanvas"><span class="baseclass">TObject::</span>kObjInCanvas</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>::(anonymous)</td><td class="dataname"><a href="#TObject:kOverwrite"><span class="baseclass">TObject::</span>kOverwrite</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./#TLorentzVector:TLorentzVector" title="TLorentzVector TLorentzVector::TLorentzVector() or overloads">TLorentzVector</a>::(anonymous)</td><td class="dataname"><a href="#TLorentzVector:kSIZE"><span class="baseclass">TLorentzVector::</span>kSIZE</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>::(anonymous)</td><td class="dataname"><a href="#TObject:kSingleKey"><span class="baseclass">TObject::</span>kSingleKey</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./#TLorentzVector:TLorentzVector" title="TLorentzVector TLorentzVector::TLorentzVector() or overloads">TLorentzVector</a>::(anonymous)</td><td class="dataname"><a href="#TLorentzVector:kT"><span class="baseclass">TLorentzVector::</span>kT</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>::(anonymous)</td><td class="dataname"><a href="#TObject:kWriteDelete"><span class="baseclass">TObject::</span>kWriteDelete</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./#TLorentzVector:TLorentzVector" title="TLorentzVector TLorentzVector::TLorentzVector() or overloads">TLorentzVector</a>::(anonymous)</td><td class="dataname"><a href="#TLorentzVector:kX"><span class="baseclass">TLorentzVector::</span>kX</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./#TLorentzVector:TLorentzVector" title="TLorentzVector TLorentzVector::TLorentzVector() or overloads">TLorentzVector</a>::(anonymous)</td><td class="dataname"><a href="#TLorentzVector:kY"><span class="baseclass">TLorentzVector::</span>kY</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./#TLorentzVector:TLorentzVector" title="TLorentzVector TLorentzVector::TLorentzVector() or overloads">TLorentzVector</a>::(anonymous)</td><td class="dataname"><a href="#TLorentzVector:kZ"><span class="baseclass">TLorentzVector::</span>kZ</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>::(anonymous)</td><td class="dataname"><a href="#TObject:kZombie"><span class="baseclass">TObject::</span>kZombie</a></td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Double_t">Double_t</a></td><td class="dataname"><a name="PParticle:weight_divisor"></a>weight_divisor</td><td class="datadesc">!Helper for PReaction</td></tr>
+
+</table></div>
+<div class="access" id="dataprot"><b>protected:</b>
+<table class="data" id="tabdataprot" cellspacing="0">
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="dataname"><a name="PParticle:active"></a>active</td><td class="datadesc">! internal activity flag</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PParticle:daughterIndex"></a>daughterIndex</td><td class="datadesc">daughter index</td></tr>
+<tr class="data"><td class="datatype"><a href="./PParticle.html">PParticle</a>*</td><td class="dataname"><a name="PParticle:daughters"></a>daughters[8]</td><td class="datadesc">!pointer to daughter array</td></tr>
+<tr class="data"><td class="datatype">TString</td><td class="dataname"><a name="PParticle:debug"></a>debug</td><td class="datadesc">! debug string</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PParticle:decayModeIndex"></a>decayModeIndex</td><td class="datadesc">decay Mode index (for decayAll option)</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Double_t">Double_t</a></td><td class="dataname"><a name="PParticle:decayTime"></a>decayTime</td><td class="datadesc">proper time until decay  (in mm/c)</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PParticle:destroyDecayModeIndex"></a>destroyDecayModeIndex</td><td class="datadesc">save only for data file</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Double_t">Double_t</a></td><td class="dataname"><a name="PParticle:fT"></a>fT</td><td class="datadesc">creation time (in mm/c)</td></tr>
+<tr class="data"><td class="datatype">TVector3</td><td class="dataname"><a name="PParticle:fV"></a>fV</td><td class="datadesc">creation vertex (in mm)</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Double_t">Double_t</a></td><td class="dataname"><a name="PParticle:genwt"></a>genwt</td><td class="datadesc">! generator weight</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PParticle:index"></a>index</td><td class="datadesc">! index in particle array</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Double_t">Double_t</a></td><td class="dataname"><a name="PParticle:invgenwt"></a>invgenwt</td><td class="datadesc">! inverted generator weight</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="dataname"><a name="PParticle:make_new_qParticle"></a>make_new_qParticle</td><td class="datadesc">! Workaround</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Double_t">Double_t</a></td><td class="dataname"><a name="PParticle:mult"></a>mult</td><td class="datadesc">! multiplicity</td></tr>
+<tr class="data"><td class="datatype"><a href="./PParticle.html">PParticle</a>*</td><td class="dataname"><a name="PParticle:pParticle"></a>pParticle</td><td class="datadesc">! pointer to particle object</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PParticle:parentId"></a>parentId</td><td class="datadesc">parent ID</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PParticle:parentIndex"></a>parentIndex</td><td class="datadesc">parent index in particle array</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PParticle:pid"></a>pid</td><td class="datadesc">particle code  (partially conforms with Geant 3)</td></tr>
+<tr class="data"><td class="datatype"><a href="./PParticle.html">PParticle</a>*</td><td class="dataname"><a name="PParticle:qParticle1"></a>qParticle1</td><td class="datadesc">!</td></tr>
+<tr class="data"><td class="datatype"><a href="./PParticle.html">PParticle</a>*</td><td class="dataname"><a name="PParticle:qParticle2"></a>qParticle2</td><td class="datadesc">!</td></tr>
+<tr class="data"><td class="datatype"><a href="./PParticle.html">PParticle</a>*</td><td class="dataname"><a name="PParticle:sParticle"></a>sParticle</td><td class="datadesc">! pointer to particle object</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PParticle:siblingIndex"></a>siblingIndex</td><td class="datadesc">sibling index</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PParticle:sourceId"></a>sourceId</td><td class="datadesc">Source ID</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PParticle:spectator"></a>spectator</td><td class="datadesc">! flag that forces particle to be treated as spectator</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PParticle:status"></a>status</td><td class="datadesc">! status of parent particle in PChannel::Decay</td></tr>
+<tr class="data"><td class="datatype"><a href="./PValues.html">PValues</a>*</td><td class="dataname"><a name="PParticle:values"></a>values</td><td class="datadesc">!pointer to value container</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Double_t">Double_t</a></td><td class="dataname"><a name="PParticle:wt"></a>wt</td><td class="datadesc">weight</td></tr>
+
+</table></div>
+</div>
+<h2><a id="PParticle:Class_Charts"></a>Class Charts</h2>
+<map name="MapPParticle_Inh" id="MapPParticle_Inh">
+<area shape="rect" id="node4" href="./PFileInput.html" title="PFileInput" alt="" coords="627,2,766,28"/>
+<area shape="rect" id="node5" href="./PFireball.html" title="PFireball" alt="" coords="627,28,766,55"/>
+<area shape="rect" id="node6" href="./PDiLepton.html" title="PDiLepton" alt="" coords="627,55,766,81"/>
+</map>
+<map name="MapPParticle_Lib" id="MapPParticle_Lib">
+<area shape="rect" id="node1" href="LibraryDependencies.html" title="All Libraries" alt="" coords="340,44,454,92"/>
+</map>
+<div class="tabs">
+<a id="imgPParticle_Inh" class="tabsel" href="inh/PParticle_Inh.png" onclick="javascript:return SetImg('Charts','inh/PParticle_Inh.png');">Inheritance</a>
+<a id="imgPParticle_InhMem" class="tab" href="inhmem/PParticle_InhMem.png" onclick="javascript:return SetImg('Charts','inhmem/PParticle_InhMem.png');">Inherited Members</a>
+<a id="imgPParticle_Incl" class="tab" href="incl/PParticle_Incl.png" onclick="javascript:return SetImg('Charts','incl/PParticle_Incl.png');">Includes</a>
+<a id="imgPParticle_Lib" class="tab" href="lib/PParticle_Lib.png" onclick="javascript:return SetImg('Charts','lib/PParticle_Lib.png');">Libraries</a><br/>
+</div><div class="classcharts"><div class="classchartswidth"></div>
+<img id="Charts" alt="Class Charts" class="classcharts" usemap="#MapPParticle_Inh" src="inh/PParticle_Inh.png"/></div>
+<h2>Function documentation</h2>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PParticle:defaults" href="src/PParticle.cxx.html#W.X4KB">defaults</a>(<span class="keyword">void</span>)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="PParticle:PParticle" href="src/PParticle.cxx.html#sMTWmB">PParticle</a>(<span class="keyword">int</span> id, <a href="./ListOfTypes.html#Double_t">Double_t</a> <a href="./PParticle.html#PParticle:T" title="Double_t PParticle::T() const">T</a>, <a href="./ListOfTypes.html#Double_t">Double_t</a> w)</span><br />
+<div class="funccomm"><pre> id, lab kinetic energy (GeV), weight
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="PParticle:PParticle@1" href="src/PParticle.cxx.html#pAhIpB">PParticle</a>(<span class="keyword">const</span> <span class="keyword">char</span>* , <a href="./ListOfTypes.html#Double_t">Double_t</a> <a href="./PParticle.html#PParticle:T" title="Double_t PParticle::T() const">T</a> = 0., <a href="./ListOfTypes.html#Double_t">Double_t</a> w = 1.)</span><br />
+<div class="funccomm"><pre> name, lab kinetic energy (GeV), weight
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="PParticle:PParticle" href="src/PParticle.cxx.html#zqPYRE">PParticle</a>(<span class="keyword">int</span> id, <a href="./ListOfTypes.html#Double_t">Double_t</a> px, <a href="./ListOfTypes.html#Double_t">Double_t</a> py, <a href="./ListOfTypes.html#Double_t">Double_t</a> pz, <a href="./ListOfTypes.html#Double_t">Double_t</a> m, <a href="./ListOfTypes.html#Double_t">Double_t</a> w)</span><br />
+<div class="funccomm"><pre> id, <a href="./#TLorentzVector:Px" title="Double_t TLorentzVector::Px() const">Px</a>, <a href="./#TLorentzVector:Py" title="Double_t TLorentzVector::Py() const">Py</a>, <a href="./#TLorentzVector:Pz" title="Double_t TLorentzVector::Pz() const">Pz</a> (GeV/c), mass (GeV/c**2) overrides default, weight
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="PParticle:PParticle@3" href="src/PParticle.cxx.html#AWDFnC">PParticle</a>(<span class="keyword">const</span> <span class="keyword">char</span>* , <a href="./ListOfTypes.html#Double_t">Double_t</a> , <a href="./ListOfTypes.html#Double_t">Double_t</a> , <a href="./ListOfTypes.html#Double_t">Double_t</a> , <a href="./ListOfTypes.html#Double_t">Double_t</a> m = 0., <a href="./ListOfTypes.html#Double_t">Double_t</a> w = 1.)</span><br />
+<div class="funccomm"><pre> name, <a href="./#TLorentzVector:Px" title="Double_t TLorentzVector::Px() const">Px</a>, <a href="./#TLorentzVector:Py" title="Double_t TLorentzVector::Py() const">Py</a>, <a href="./#TLorentzVector:Pz" title="Double_t TLorentzVector::Pz() const">Pz</a> (GeV/c), mass (GeV/c**2) overrides default, weight
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="PParticle:PParticle@4" href="src/PParticle.cxx.html#IbhCiD">PParticle</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> , <span class="keyword">const</span> TVector3&amp; , <a href="./ListOfTypes.html#Double_t">Double_t</a> m = 0., <a href="./ListOfTypes.html#Double_t">Double_t</a> w = 1.)</span><br />
+<div class="funccomm"><pre> id, 3-momentum vector (GeV/c), mass (GeV/c**2) overrides default, weight
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="PParticle:PParticle@5" href="src/PParticle.cxx.html#kpf1Y">PParticle</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> , <a href="./ListOfTypes.html#Double_t">Double_t</a>* , <a href="./ListOfTypes.html#Double_t">Double_t</a> w = 1.)</span><br />
+<div class="funccomm"><pre> id, pointer to 4-dim array (<a href="./#TLorentzVector:Px" title="Double_t TLorentzVector::Px() const">Px</a>, <a href="./#TLorentzVector:Py" title="Double_t TLorentzVector::Py() const">Py</a>, <a href="./#TLorentzVector:Pz" title="Double_t TLorentzVector::Pz() const">Pz</a>, <a href="./#TLorentzVector:E" title="Double_t TLorentzVector::E() const">E</a>) (GeV/c, GeV), weight
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="PParticle:PParticle@6" href="src/PParticle.cxx.html#Jo12pB">PParticle</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> , <span class="keyword">float</span>* , <a href="./ListOfTypes.html#Double_t">Double_t</a> w = 1.)</span><br />
+<div class="funccomm"><pre> id, pointer to 4-dim array (<a href="./#TLorentzVector:Px" title="Double_t TLorentzVector::Px() const">Px</a>, <a href="./#TLorentzVector:Py" title="Double_t TLorentzVector::Py() const">Py</a>, <a href="./#TLorentzVector:Pz" title="Double_t TLorentzVector::Pz() const">Pz</a>, <a href="./#TLorentzVector:E" title="Double_t TLorentzVector::E() const">E</a>) (GeV/c, GeV), weight
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="PParticle:PParticle@7" href="src/PParticle.cxx.html#FppGEC">PParticle</a>(<span class="keyword">const</span> <a href="./PParticle.html">PParticle</a>&amp; )</span><br />
+<div class="funccomm"><pre> copy constructor
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="PParticle:PParticle@8" href="src/PParticle.cxx.html#CkhyPB">PParticle</a>(<span class="keyword">const</span> <a href="./PParticle.html">PParticle</a>* )</span><br />
+<div class="funccomm"><pre> copy constructor
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PParticle:SetKE" href="src/PParticle.cxx.html#JanTsB">SetKE</a>(<a href="./ListOfTypes.html#Double_t">Double_t</a> <a href="./PParticle.html#PParticle:T" title="Double_t PParticle::T() const">T</a> = 0.)</span><br />
+<div class="funccomm"><pre> reset by kinetic energy
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PParticle:SetM" href="src/PParticle.cxx.html#fNaeFC">SetM</a>(<a href="./ListOfTypes.html#Double_t">Double_t</a> m = 0.)</span><br />
+<div class="funccomm"><pre> reset mass
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PParticle:SetMom" href="src/PParticle.cxx.html#ei8WSE">SetMom</a>(<a href="./ListOfTypes.html#Double_t">Double_t</a> mom = 0.)</span><br />
+<div class="funccomm"><pre> reset momentum
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Double_t">Double_t</a> <a class="funcname" name="PParticle:Life" href="src/PParticle.cxx.html#KxuJTE">Life</a>(<a href="./ListOfTypes.html#Double_t">Double_t</a> m = 0., <a href="./ListOfTypes.html#Int_t">Int_t</a> idx = -1)</span><br />
+<div class="funccomm"><pre> lifetime in lab frame
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PParticle:SetProperTime" href="src/PParticle.cxx.html#ZP31VE">SetProperTime</a>()</span><br />
+<div class="funccomm"><pre> lifetime in particle's frame  (in mm/c)
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Double_t">Double_t</a> <a class="funcname" name="PParticle:InvariantT" href="src/PParticle.cxx.html#BCCbAD">InvariantT</a>(<a href="./ListOfTypes.html#Double_t">Double_t</a> m3, <a href="./ListOfTypes.html#Double_t">Double_t</a> m4, <a href="./ListOfTypes.html#Double_t">Double_t</a> cos_th_cm)</span><br />
+<div class="funccomm"><pre> The Mandelstam invariant t in 1 + 2 --&gt; 3 + 4 scattering,
+ where cos_theta_cm must be between -1 and 1.
+ Use the same function for the Mandelstam variable u, with the
+ changes:  m3 &lt;--&gt; m4 &amp; cos_th_cm -&gt; -cos_th_cm
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./PParticle.html">PParticle</a> &amp; <a class="funcname" name="PParticle:AddTmp" href="src/PParticle.cxx.html#tU278B">AddTmp</a>(<span class="keyword">const</span> <a href="./PParticle.html">PParticle</a>&amp; p)</span><br />
+<div class="funccomm"><pre> Like <span class="string">"+"</span> but only for tmp reasons in the evtloop
+ No construction of beam+target objects
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./PParticle.html">PParticle</a> &amp; <a class="funcname" name="PParticle:SubTmp" href="src/PParticle.cxx.html#coiPGC">SubTmp</a>(<span class="keyword">const</span> <a href="./PParticle.html">PParticle</a>&amp; p)</span><br />
+<div class="funccomm"><pre> Like <span class="string">"-"</span> but only for tmp reasons in the evtloop
+ No construction of beam+target objects
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PParticle:Reconstruct" href="src/PParticle.cxx.html#vb_1X">Reconstruct</a>(<span class="keyword">void</span>)</span><br />
+<div class="funccomm"><pre>reconstruct composite from given beam+target
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PParticle:Scatter" href="src/PParticle.cxx.html#IvMHNC">Scatter</a>(<a href="./PParticle.html">PParticle</a>* p1, <a href="./PParticle.html">PParticle</a>* p2)</span><br />
+<div class="funccomm"><pre>Like the <span class="string">"+"</span> but without making new particles
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./PParticle.html">PParticle</a> &amp; <a class="funcname" name="PParticle:Transform" href="src/PParticle.cxx.html#gtzQrD">Transform</a>(<span class="keyword">const</span> TRotation&amp; )</span><br />
+<div class="funccomm"><pre> Rotation
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./PParticle.html">PParticle</a> &amp; <a class="funcname" name="PParticle:Transform@1" href="src/PParticle.cxx.html#KyJrlE">Transform</a>(<span class="keyword">const</span> TLorentzRotation&amp; )</span><br />
+<div class="funccomm"><pre> Lorentz-rotation
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./PParticle.html">PParticle</a>* <a class="funcname" name="PParticle:Clone" href="src/PParticle.cxx.html#KG11kE">Clone</a>(<span class="keyword">const</span> <span class="keyword">char</span>* delme = __null) const</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PParticle:Print" href="src/PParticle.cxx.html#Q3dmHB">Print</a>(<span class="keyword">const</span> <a href="./ListOfTypes.html#Option_t">Option_t</a>* delme = __null) const</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">virtual</span> <a class="funcname" name="PParticle:_PParticle" href="src/PParticle.h.html#mNkHEE">~PParticle</a>()</span><br />
+<div class="funccomm"><pre> copy constructor
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Int_t">Int_t</a> <a class="funcname" name="PParticle:Is" href="src/PParticle.h.html#qcuIrE">Is</a>(<span class="keyword">const</span> <span class="keyword">char</span>* id)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Int_t">Int_t</a> <a class="funcname" name="PParticle:is" href="src/PParticle.h.html#mhpIrE">is</a>(<span class="keyword">const</span> <span class="keyword">char</span>* id)</span><br />
+<div class="funccomm"><pre>kept for compatibility only
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Int_t">Int_t</a> <a class="funcname" name="PParticle:HasID" href="src/PParticle.h.html#BO1ciD">HasID</a>(<span class="keyword">const</span> <a href="./ListOfTypes.html#Int_t">Int_t</a> id)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Int_t">Int_t</a> <a class="funcname" name="PParticle:HasNotID" href="src/PParticle.h.html#SjIjU">HasNotID</a>(<span class="keyword">const</span> <a href="./ListOfTypes.html#Int_t">Int_t</a> id)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Int_t">Int_t</a> <a class="funcname" name="PParticle:size" href="src/PParticle.h.html#MiD4v">size</a>()</span><br />
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">return</span> (<a href="./PParticle.html#PParticle:pid" title="Int_t PParticle::pid">pid</a>&lt;1000)?1:2; }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Int_t">Int_t</a> <a class="funcname" name="PParticle:IsNucleon" href="src/PParticle.h.html#JEQmrC">IsNucleon</a>()</span><br />
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">return</span> (<a href="./PParticle.html#PParticle:Is" title="Int_t PParticle::Is(const char* id)">Is</a>(<span class="string">"p"</span>) || <a href="./PParticle.html#PParticle:Is" title="Int_t PParticle::Is(const char* id)">Is</a>(<span class="string">"n"</span>)); }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Int_t">Int_t</a> <a class="funcname" name="PParticle:IsDelta" href="src/PParticle.h.html#E_ypGE">IsDelta</a>()</span><br />
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">return</span> (<a href="./PParticle.html#PParticle:Is" title="Int_t PParticle::Is(const char* id)">Is</a>(<span class="string">"D0"</span>) || <a href="./PParticle.html#PParticle:Is" title="Int_t PParticle::Is(const char* id)">Is</a>(<span class="string">"D-"</span>) || <a href="./PParticle.html#PParticle:Is" title="Int_t PParticle::Is(const char* id)">Is</a>(<span class="string">"D+"</span>) || <a href="./PParticle.html#PParticle:Is" title="Int_t PParticle::Is(const char* id)">Is</a>(<span class="string">"D++"</span>)); }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Int_t">Int_t</a> <a class="funcname" name="PParticle:IsPi" href="src/PParticle.h.html#OLI7mB">IsPi</a>()</span><br />
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">return</span> (<a href="./PParticle.html#PParticle:Is" title="Int_t PParticle::Is(const char* id)">Is</a>(<span class="string">"pi0"</span>) || <a href="./PParticle.html#PParticle:Is" title="Int_t PParticle::Is(const char* id)">Is</a>(<span class="string">"pi+"</span>) || <a href="./PParticle.html#PParticle:Is" title="Int_t PParticle::Is(const char* id)">Is</a>(<span class="string">"pi-"</span>)); }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Int_t">Int_t</a> <a class="funcname" name="PParticle:IsRho" href="src/PParticle.h.html#pBNzGD">IsRho</a>()</span><br />
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">return</span> (<a href="./PParticle.html#PParticle:Is" title="Int_t PParticle::Is(const char* id)">Is</a>(<span class="string">"rho0"</span>) || <a href="./PParticle.html#PParticle:Is" title="Int_t PParticle::Is(const char* id)">Is</a>(<span class="string">"rho+"</span>) || <a href="./PParticle.html#PParticle:Is" title="Int_t PParticle::Is(const char* id)">Is</a>(<span class="string">"rho-"</span>)); }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Int_t">Int_t</a> <a class="funcname" name="PParticle:ID" href="src/PParticle.h.html#y6ETv">ID</a>() const</span><br />
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">return</span> <a href="./PParticle.html#PParticle:pid" title="Int_t PParticle::pid">pid</a>; }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">const</span> <span class="keyword">char</span> * <a class="funcname" name="PParticle:Name" href="src/PParticle.h.html#D_iHf">Name</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PParticle:SetSpectator" href="src/PParticle.h.html#K84O6E">SetSpectator</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> s)</span><br />
+<div class="funccomm"><pre>=0 don't care; =-1 never; =1 force
+</pre></div>
+
+<div class="code"><code class="inlinecode">{<a href="./PParticle.html#PParticle:spectator" title="Int_t PParticle::spectator">spectator</a>=s;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Int_t">Int_t</a> <a class="funcname" name="PParticle:IsSpectator" href="src/PParticle.h.html#c42gnD">IsSpectator</a>()</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> <a href="./PParticle.html#PParticle:spectator" title="Int_t PParticle::spectator">spectator</a>;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PParticle:SetID" href="src/PParticle.h.html#nQRIoB">SetID</a>(<span class="keyword">const</span> <a href="./ListOfTypes.html#Int_t">Int_t</a> id)</span><br />
+
+<div class="code"><code class="inlinecode">{ <a href="./PParticle.html#PParticle:pid" title="Int_t PParticle::pid">pid</a>=id; }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Double_t">Double_t</a> <a class="funcname" name="PParticle:W" href="src/PParticle.h.html#sJrC2C">W</a>() const</span><br />
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">return</span> <a href="./PParticle.html#PParticle:wt" title="Double_t PParticle::wt">wt</a>; }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PParticle:SetW" href="src/PParticle.h.html#eDZrtE">SetW</a>(<a href="./ListOfTypes.html#Double_t">Double_t</a> w = 1.)</span><br />
+
+<div class="code"><code class="inlinecode">{ <a href="./PParticle.html#PParticle:wt" title="Double_t PParticle::wt">wt</a>=w; }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PParticle:SetMultiplicity" href="src/PParticle.h.html#xjmeAB">SetMultiplicity</a>(<a href="./ListOfTypes.html#Double_t">Double_t</a> w = 1.)</span><br />
+
+<div class="code"><code class="inlinecode">{ <a href="./PParticle.html#PParticle:mult" title="Double_t PParticle::mult">mult</a>=w; }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Double_t">Double_t</a> <a class="funcname" name="PParticle:GetMultiplicity" href="src/PParticle.h.html#RKt_jB">GetMultiplicity</a>()</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> <a href="./PParticle.html#PParticle:mult" title="Double_t PParticle::mult">mult</a>;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Double_t">Double_t</a> <a class="funcname" name="PParticle:GenW" href="src/PParticle.h.html#mZw0jC">GenW</a>() const</span><br />
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">return</span> <a href="./PParticle.html#PParticle:genwt" title="Double_t PParticle::genwt">genwt</a>; }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PParticle:SetGenW" href="src/PParticle.h.html#GfHxuE">SetGenW</a>(<a href="./ListOfTypes.html#Double_t">Double_t</a> w = 1.)</span><br />
+
+<div class="code"><code class="inlinecode">{ <a href="./PParticle.html#PParticle:genwt" title="Double_t PParticle::genwt">genwt</a>=w; }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Double_t">Double_t</a> <a class="funcname" name="PParticle:InvGenW" href="src/PParticle.h.html#rCeCB">InvGenW</a>() const</span><br />
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">return</span> <a href="./PParticle.html#PParticle:invgenwt" title="Double_t PParticle::invgenwt">invgenwt</a>; }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PParticle:SetInvGenW" href="src/PParticle.h.html#Wf5EcD">SetInvGenW</a>(<a href="./ListOfTypes.html#Double_t">Double_t</a> w = 1.)</span><br />
+
+<div class="code"><code class="inlinecode">{ <a href="./PParticle.html#PParticle:invgenwt" title="Double_t PParticle::invgenwt">invgenwt</a>=w; }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Double_t">Double_t</a> <a class="funcname" name="PParticle:KE" href="src/PParticle.h.html#lRTeyD">KE</a>() const</span><br />
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">return</span> <a href="./#TLorentzVector:E" title="Double_t TLorentzVector::E() const">E</a>()-<a href="./#TLorentzVector:M" title="Double_t TLorentzVector::M() const">M</a>(); }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PParticle:ResetE" href="src/PParticle.h.html#s.s_tE">ResetE</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./#TLorentzVector:TLorentzVector" title="TLorentzVector TLorentzVector::TLorentzVector() or overloads">TLorentzVector</a> <a class="funcname" name="PParticle:Vect4" href="src/PParticle.h.html#KPp_CC">Vect4</a>() const</span><br />
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">return</span> <a href="./#TLorentzVector:TLorentzVector" title="TLorentzVector TLorentzVector::TLorentzVector() or overloads">TLorentzVector</a>(<a href="./#TLorentzVector:Vect" title="TVector3 TLorentzVector::Vect() const">Vect</a>(),<a href="./#TLorentzVector:E" title="Double_t TLorentzVector::E() const">E</a>()); }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PParticle:SetVect4" href="src/PParticle.h.html#bcE6gD">SetVect4</a>(<span class="keyword">const</span> <a href="./#TLorentzVector:TLorentzVector" title="TLorentzVector TLorentzVector::TLorentzVector() or overloads">TLorentzVector</a>&amp; v)</span><br />
+
+<div class="code"><code class="inlinecode">{ <a href="./#TLorentzVector:SetPxPyPzE" title="void TLorentzVector::SetPxPyPzE(Double_t px, Double_t py, Double_t pz, Double_t e)">SetPxPyPzE</a>(v[0],v[1],v[2],v[3]); }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Int_t">Int_t</a> <a class="funcname" name="PParticle:IsMeson" href="src/PParticle.h.html#jfa7uC">IsMeson</a>() const</span><br />
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">return</span> makeStaticData()-&gt;IsParticleMeson(<a href="./PParticle.html#PParticle:pid" title="Int_t PParticle::pid">pid</a>); }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Int_t">Int_t</a> <a class="funcname" name="PParticle:IsHadron" href="src/PParticle.h.html#d_6jtD">IsHadron</a>() const</span><br />
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">return</span> makeStaticData()-&gt;IsParticleHadron(<a href="./PParticle.html#PParticle:pid" title="Int_t PParticle::pid">pid</a>); }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Int_t">Int_t</a> <a class="funcname" name="PParticle:BaryonN" href="src/PParticle.h.html#YRMqNB">BaryonN</a>() const</span><br />
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">return</span> makeStaticData()-&gt;GetParticleBaryon(<a href="./PParticle.html#PParticle:pid" title="Int_t PParticle::pid">pid</a>); }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Int_t">Int_t</a> <a class="funcname" name="PParticle:LeptonN" href="src/PParticle.h.html#WGSXBB">LeptonN</a>() const</span><br />
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">return</span> makeStaticData()-&gt;GetParticleLepton(<a href="./PParticle.html#PParticle:pid" title="Int_t PParticle::pid">pid</a>); }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Int_t">Int_t</a> <a class="funcname" name="PParticle:Charge" href="src/PParticle.h.html#B0uYd">Charge</a>() const</span><br />
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">return</span> makeStaticData()-&gt;GetParticleCharge(<a href="./PParticle.html#PParticle:pid" title="Int_t PParticle::pid">pid</a>); }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Int_t">Int_t</a> <a class="funcname" name="PParticle:Key" href="src/PParticle.h.html#rbRnUB">Key</a>() const</span><br />
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">return</span> makeStaticData()-&gt;GetParticleKey(<a href="./PParticle.html#PParticle:pid" title="Int_t PParticle::pid">pid</a>); }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PParticle:Reset" href="src/PParticle.h.html#Lii9U">Reset</a>(<span class="keyword">const</span> <a href="./ListOfTypes.html#Int_t">Int_t</a> id, <span class="keyword">const</span> <a href="./#TLorentzVector:TLorentzVector" title="TLorentzVector TLorentzVector::TLorentzVector() or overloads">TLorentzVector</a>&amp; v, <span class="keyword">const</span> <a href="./ListOfTypes.html#Double_t">Double_t</a> w = 1.)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Int_t">Int_t</a> <a class="funcname" name="PParticle:IsFireball" href="src/PParticle.h.html#sNuzvD">IsFireball</a>()</span><br />
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">return</span> 0; }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Int_t">Int_t</a> <a class="funcname" name="PParticle:IsDilepton" href="src/PParticle.h.html#aYCm_B">IsDilepton</a>()</span><br />
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">return</span> 0; }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Int_t">Int_t</a> <a class="funcname" name="PParticle:IsFileInput" href="src/PParticle.h.html#eQR.eC">IsFileInput</a>()</span><br />
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">return</span> 0; }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PParticle:Reset@1" href="src/PParticle.h.html#ETLPT">Reset</a>(<span class="keyword">const</span> <a href="./ListOfTypes.html#Int_t">Int_t</a> id = 0, <span class="keyword">const</span> <a href="./ListOfTypes.html#Double_t">Double_t</a> px = 0., <span class="keyword">const</span> <a href="./ListOfTypes.html#Double_t">Double_t</a> py = 0., <span class="keyword">const</span> <a href="./ListOfTypes.html#Double_t">Double_t</a> pz = 0., <span class="keyword">const</span> <a href="./ListOfTypes.html#Double_t">Double_t</a> e = 0., <span class="keyword">const</span> <a href="./ListOfTypes.html#Double_t">Double_t</a> w = 1.)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PParticle:Reset@2" href="src/PParticle.h.html#w1quZB">Reset</a>(<span class="keyword">const</span> <a href="./PParticle.html">PParticle</a>&amp; p)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">bool</span> <a class="funcname" name="PParticle:SetValue" href="src/PParticle.h.html#Fr3HeD">SetValue</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> id, <a href="./ListOfTypes.html#Double_t">Double_t</a> val)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">return</span> <a href="./PParticle.html#PParticle:values" title="PValues* PParticle::values">values</a>-> <a class="funcname" name="PParticle:SetValue" href="src/PParticle.h.html#jH8eg">SetValue</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> id, <a href="./ListOfTypes.html#Double_t">Double_t</a> val)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">bool</span> <a class="funcname" name="PParticle:GetValue" href="src/PParticle.h.html#wMIDbB">GetValue</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> id, <a href="./ListOfTypes.html#Double_t">Double_t</a>* val)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Int_t">Int_t</a> <a class="funcname" name="PParticle:GetDBInt" href="src/PParticle.h.html#Ht.5PE">GetDBInt</a>(<span class="keyword">char</span>* name)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Double_t">Double_t</a> <a class="funcname" name="PParticle:GetDBDouble" href="src/PParticle.h.html#lhL5AE">GetDBDouble</a>(<span class="keyword">char</span>* name)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">char</span> <a class="funcname" name="PParticle:GetDBString" href="src/PParticle.h.html#CWb0HB">GetDBString</a>(<span class="keyword">char</span>* name) const</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PParticle:SetStatus" href="src/PParticle.h.html#nWS7uE">SetStatus</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> st)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Int_t">Int_t</a> <a class="funcname" name="PParticle:GetStatus" href="src/PParticle.h.html#qRQrwC">GetStatus</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PParticle:SetParentId" href="src/PParticle.h.html#PVVkEC">SetParentId</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> pId)</span><br />
+
+<div class="code"><code class="inlinecode">{<a href="./PParticle.html#PParticle:parentId" title="Int_t PParticle::parentId">parentId</a> = pId;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PParticle:SetSourceId" href="src/PParticle.h.html#tKg8.C">SetSourceId</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> sId)</span><br />
+
+<div class="code"><code class="inlinecode">{<a href="./PParticle.html#PParticle:sourceId" title="Int_t PParticle::sourceId">sourceId</a> = sId;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Int_t">Int_t</a> <a class="funcname" name="PParticle:GetParentId" href="src/PParticle.h.html#gI7OkE">GetParentId</a>() const</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> <a href="./PParticle.html#PParticle:parentId" title="Int_t PParticle::parentId">parentId</a>;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Int_t">Int_t</a> <a class="funcname" name="PParticle:GetSourceId" href="src/PParticle.h.html#revZAE">GetSourceId</a>() const</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> <a href="./PParticle.html#PParticle:sourceId" title="Int_t PParticle::sourceId">sourceId</a>;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Int_t">Int_t</a> <a class="funcname" name="PParticle:getSourceId" href="src/PParticle.h.html#Bj4SPE">getSourceId</a>() const</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> <a href="./PParticle.html#PParticle:sourceId" title="Int_t PParticle::sourceId">sourceId</a>;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PParticle:SetParentIndex" href="src/PParticle.h.html#YcHfo">SetParentIndex</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> pInd)</span><br />
+
+<div class="code"><code class="inlinecode">{<a href="./PParticle.html#PParticle:parentIndex" title="Int_t PParticle::parentIndex">parentIndex</a> = pInd;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Int_t">Int_t</a> <a class="funcname" name="PParticle:GetParentIndex" href="src/PParticle.h.html#eFupBB">GetParentIndex</a>() const</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> <a href="./PParticle.html#PParticle:parentIndex" title="Int_t PParticle::parentIndex">parentIndex</a>;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PParticle:SetDecayModeIndex" href="src/PParticle.h.html#ohVdS">SetDecayModeIndex</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> pInd, <a href="./ListOfTypes.html#Int_t">Int_t</a> i = 0)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Int_t">Int_t</a> <a class="funcname" name="PParticle:GetDecayModeIndex" href="src/PParticle.h.html#i24V.">GetDecayModeIndex</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> opt = 0) const</span><br />
+<div class="funccomm"><pre>Internal models should use opt=1, they will not get the <span class="string">"wrong"</span> getDecayModeIndex
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PParticle:SetDaughterIndex" href="src/PParticle.h.html#aliYrD">SetDaughterIndex</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> dInd)</span><br />
+
+<div class="code"><code class="inlinecode">{<a href="./PParticle.html#PParticle:daughterIndex" title="Int_t PParticle::daughterIndex">daughterIndex</a> = dInd;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Int_t">Int_t</a> <a class="funcname" name="PParticle:GetDaughterIndex" href="src/PParticle.h.html#Vs2_o">GetDaughterIndex</a>() const</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> <a href="./PParticle.html#PParticle:daughterIndex" title="Int_t PParticle::daughterIndex">daughterIndex</a>;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PParticle:SetSiblingIndex" href="src/PParticle.h.html#pyCSYB">SetSiblingIndex</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> sInd)</span><br />
+
+<div class="code"><code class="inlinecode">{<a href="./PParticle.html#PParticle:siblingIndex" title="Int_t PParticle::siblingIndex">siblingIndex</a> = sInd;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Int_t">Int_t</a> <a class="funcname" name="PParticle:GetSiblingIndex" href="src/PParticle.h.html#f88JjE">GetSiblingIndex</a>() const</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> <a href="./PParticle.html#PParticle:siblingIndex" title="Int_t PParticle::siblingIndex">siblingIndex</a>;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PParticle:SetIndex" href="src/PParticle.h.html#gdBAND">SetIndex</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> Ind)</span><br />
+
+<div class="code"><code class="inlinecode">{<a href="./PParticle.html#PParticle:index" title="Int_t PParticle::index">index</a> = Ind;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Int_t">Int_t</a> <a class="funcname" name="PParticle:GetIndex" href="src/PParticle.h.html#T2oYCC">GetIndex</a>() const</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> <a href="./PParticle.html#PParticle:index" title="Int_t PParticle::index">index</a>;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Bool_t">Bool_t</a> <a class="funcname" name="PParticle:IsActive" href="src/PParticle.h.html#oCyC4">IsActive</a>() const</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> <a href="./PParticle.html#PParticle:active" title="Bool_t PParticle::active">active</a>;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PParticle:SetActive" href="src/PParticle.h.html#owbFaD">SetActive</a>()</span><br />
+
+<div class="code"><code class="inlinecode">{<a href="./PParticle.html#PParticle:active" title="Bool_t PParticle::active">active</a> = <a href="./ListOfTypes.html#Bool_t">kTRUE</a>;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PParticle:SetInActive" href="src/PParticle.h.html#ojxEXC">SetInActive</a>()</span><br />
+
+<div class="code"><code class="inlinecode">{<a href="./PParticle.html#PParticle:active" title="Bool_t PParticle::active">active</a> = <a href="./ListOfTypes.html#Bool_t">kFALSE</a>;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PParticle:SetProperTime" href="src/PParticle.h.html#KJHxRE">SetProperTime</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Double_t">Double_t</a> <a class="funcname" name="PParticle:GetProperTime" href="src/PParticle.h.html#i0zBtC">GetProperTime</a>() const</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> <a href="./PParticle.html#PParticle:decayTime" title="Double_t PParticle::decayTime">decayTime</a>;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PParticle:SetVertex" href="src/PParticle.h.html#qJjPEE">SetVertex</a>(<a href="./ListOfTypes.html#Double_t">Double_t</a> x, <a href="./ListOfTypes.html#Double_t">Double_t</a> y, <a href="./ListOfTypes.html#Double_t">Double_t</a> z, <a href="./ListOfTypes.html#Double_t">Double_t</a> t)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PParticle:SetVertex@1" href="src/PParticle.h.html#ZO9hRE">SetVertex</a>(<a href="./ListOfTypes.html#Double_t">Double_t</a> x, <a href="./ListOfTypes.html#Double_t">Double_t</a> y, <a href="./ListOfTypes.html#Double_t">Double_t</a> z)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PParticle:SetVertex@2" href="src/PParticle.h.html#sYwzQB">SetVertex</a>(TVector3&amp; v, <a href="./ListOfTypes.html#Double_t">Double_t</a> t)</span><br />
+
+<div class="code"><code class="inlinecode">{<a href="./PParticle.html#PParticle:fV" title="TVector3 PParticle::fV">fV</a> = v; <a href="./PParticle.html#PParticle:fT" title="Double_t PParticle::fT">fT</a>=t;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname">TVector3&amp; <a class="funcname" name="PParticle:GetVertex" href="src/PParticle.h.html#PmvNvB">GetVertex</a>()</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> <a href="./PParticle.html#PParticle:fV" title="TVector3 PParticle::fV">fV</a>;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname">TVector3&amp; <a class="funcname" name="PParticle:getVertex" href="src/PParticle.h.html#v_uNvB">getVertex</a>()</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> <a href="./PParticle.html#PParticle:fV" title="TVector3 PParticle::fV">fV</a>;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Double_t">Double_t</a> <a class="funcname" name="PParticle:X" href="src/PParticle.h.html#N1ccT">X</a>() const</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> <a href="./PParticle.html#PParticle:fV" title="TVector3 PParticle::fV">fV</a>.<a href="./PParticle.html#PParticle:X" title="Double_t PParticle::X() const">X</a>();}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Double_t">Double_t</a> <a class="funcname" name="PParticle:Y" href="src/PParticle.h.html#xIpNiB">Y</a>() const</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> <a href="./PParticle.html#PParticle:fV" title="TVector3 PParticle::fV">fV</a>.<a href="./PParticle.html#PParticle:Y" title="Double_t PParticle::Y() const">Y</a>();}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Double_t">Double_t</a> <a class="funcname" name="PParticle:Z" href="src/PParticle.h.html#hc1_wC">Z</a>() const</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> <a href="./PParticle.html#PParticle:fV" title="TVector3 PParticle::fV">fV</a>.<a href="./PParticle.html#PParticle:Z" title="Double_t PParticle::Z() const">Z</a>();}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Double_t">Double_t</a> <a class="funcname" name="PParticle:R" href="src/PParticle.h.html#Pg28FB">R</a>() const</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> <a href="./PParticle.html#PParticle:fV" title="TVector3 PParticle::fV">fV</a>.<a href="./#TLorentzVector:Mag" title="Double_t TLorentzVector::Mag() const">Mag</a>();}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Double_t">Double_t</a> <a class="funcname" name="PParticle:T" href="src/PParticle.h.html#eodaV">T</a>() const</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> <a href="./PParticle.html#PParticle:fT" title="Double_t PParticle::fT">fT</a>;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PParticle:SetT" href="src/PParticle.h.html#enEeN">SetT</a>(<a href="./ListOfTypes.html#Double_t">Double_t</a> time)</span><br />
+
+<div class="code"><code class="inlinecode">{<a href="./PParticle.html#PParticle:fT" title="Double_t PParticle::fT">fT</a> = time;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PParticle:SetInput" href="src/PParticle.h.html#OSWqgC">SetInput</a>(<a href="./PParticle.html">PParticle</a>* p)</span><br />
+
+<div class="code"><code class="inlinecode">{<a href="./PParticle.html#PParticle:pParticle" title="PParticle* PParticle::pParticle">pParticle</a> = p;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./PParticle.html">PParticle</a>* <a class="funcname" name="PParticle:GetInput" href="src/PParticle.h.html#XnQ6iC">GetInput</a>()</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> <a href="./PParticle.html#PParticle:pParticle" title="PParticle* PParticle::pParticle">pParticle</a>;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PParticle:SetParent" href="src/PParticle.h.html#SSccBB">SetParent</a>(<a href="./PParticle.html">PParticle</a>* p)</span><br />
+
+<div class="code"><code class="inlinecode">{<a href="./PParticle.html#PParticle:pParticle" title="PParticle* PParticle::pParticle">pParticle</a> = p;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./PParticle.html">PParticle</a>* <a class="funcname" name="PParticle:GetParent" href="src/PParticle.h.html#NU5yS">GetParent</a>()</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> <a href="./PParticle.html#PParticle:pParticle" title="PParticle* PParticle::pParticle">pParticle</a>;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PParticle:SetSibling" href="src/PParticle.h.html#vu4VVC">SetSibling</a>(<a href="./PParticle.html">PParticle</a>* p)</span><br />
+
+<div class="code"><code class="inlinecode">{<a href="./PParticle.html#PParticle:sParticle" title="PParticle* PParticle::sParticle">sParticle</a> = p;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./PParticle.html">PParticle</a>* <a class="funcname" name="PParticle:GetSibling" href="src/PParticle.h.html#qMRxgE">GetSibling</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PParticle:ResetDaughters" href="src/PParticle.h.html#Ppu6hB">ResetDaughters</a>(<span class="keyword">void</span>)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PParticle:SetDaughter" href="src/PParticle.h.html#UOCqbB">SetDaughter</a>(<a href="./PParticle.html">PParticle</a>* d)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./PParticle.html">PParticle</a> * <a class="funcname" name="PParticle:GetDaughter" href="src/PParticle.h.html#RqkokE">GetDaughter</a>(<span class="keyword">int</span> i)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./PParticle.html">PParticle</a> * <a class="funcname" name="PParticle:GetScattering" href="src/PParticle.h.html#re3fF">GetScattering</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> i)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./PParticle.html">PParticle</a> * <a class="funcname" name="PParticle:GetBeam" href="src/PParticle.h.html#GsS2PE">GetBeam</a>(<span class="keyword">void</span>)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./PParticle.html">PParticle</a> * <a class="funcname" name="PParticle:GetTarget" href="src/PParticle.h.html#NEEhRC">GetTarget</a>(<span class="keyword">void</span>)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PParticle:addDebugString" href="src/PParticle.h.html#PnHCDE">addDebugString</a>(<span class="keyword">char</span>* s)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PParticle:clearDebugString" href="src/PParticle.h.html#J24laE">clearDebugString</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname">TString * <a class="funcname" name="PParticle:GetDebugString" href="src/PParticle.h.html#vbCvmB">GetDebugString</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Int_t">Int_t</a> <a class="funcname" name="PParticle:GetScatterClone" href="src/PParticle.h.html#aikxKE">GetScatterClone</a>(<span class="keyword">void</span>)</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> <a href="./PParticle.html#PParticle:make_new_qParticle" title="Bool_t PParticle::make_new_qParticle">make_new_qParticle</a>;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PParticle:SetScatterClone" href="src/PParticle.h.html#FV5uGB">SetScatterClone</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> t)</span><br />
+
+<div class="code"><code class="inlinecode">{<a href="./PParticle.html#PParticle:make_new_qParticle" title="Bool_t PParticle::make_new_qParticle">make_new_qParticle</a>=t;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Double_t">Double_t</a> <a class="funcname" name="PParticle:Sample" href="src/PParticle.h.html#FuFnLB">Sample</a>()</span><br />
+<div class="funccomm"><pre>Something for <a href="./PBatch.html">PBatch</a>:
+</pre></div>
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> <a href="./PUtils.html">PUtils</a>::<a href="./PUtils.html#PUtils:sampleFlat" title="Double_t PUtils::sampleFlat()">sampleFlat</a>();}</code></div>
+<div style="clear:both;"></div>
+</div>
+
+<br />
+<!--SIGNATURE-->
+<div id="footer">
+
+<em>&raquo; Last changed: Mon Apr 24 17:39:47 2017 </em><em>&raquo; Last generated: 2017-04-24 17:39</em><br />
+<em>This page has been automatically generated. For comments or suggestions regarding the documentation or ROOT in general please send a mail to <a href="mailto:rootdev@cern.ch">ROOT support</a>.</em>
+</div>
+</div>
+</body>
+</html>

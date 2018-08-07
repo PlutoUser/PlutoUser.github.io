@@ -1,0 +1,120 @@
+ Thermal pi0s
+   ------------------------------------------------------------
+  | Welcome to ROOT 6.06/02                http://root.cern.ch |
+  |                               (c) 1995-2014, The ROOT Team |
+  | Built for linuxx8664gcc                                    |
+  | From tag v6-06-02, 3 March 2016                            |
+  | Try '.help', '.demo', '.license', '.credits', '.quit'/'.q' |
+   ------------------------------------------------------------
+
+
+  *********************************************************
+  * The Pluto event generator                              
+  * Developed by HADES and all contributing AUTHORS        
+  * www-hades.gsi.de/computing/pluto/html/PlutoIndex.html  
+  * Version: 6.00
+  * Compiled on 17 May 2017
+  *********************************************************
+Shared library Pluto.so loaded
+
+Processing obl_test_thermal_pi0.C...
+Info in <PStdData::PStdData()>: (CONSTRUCTOR)
+Info in <PDataBase::PDataBase()>: (CONSTRUCTOR)
+Info in <PStdModels::PStdModels()>: (CONSTRUCTOR), Standard model filler
+Info in <PDynamicData::PDynamicData()>: (CONSTRUCTOR)
+Info in <PStdModels::GetModels>: Read std models
+Info in <PDistributionManager::PDistributionManager>: Rare eta decays are enabled
+Info in <PDistributionManager::PDistributionManager>: Baryonic resonances with strangeness available
+Info in <PDistributionManager::PDistributionManager>: Pion beam plugin available
+Info in <PDistributionManager::PDistributionManager>: Beam line simulation classes available
+Info in <PDistributionManager::PDistributionManager>: PDG/UNIGEN classes available
+Info in <PDistributionManager::PDistributionManager>: Elementary plugin available
+Info in <PDistributionManager::PDistributionManager>: Plugin for Dalitz decay (generator & new D Dalitz) available
+Info in <PDistributionManager::PDistributionManager>: Dalitz decays of N* activated
+Info in <PDistributionManager::PDistributionManager>: HADES classes available
+Info in <PDistributionManager::PDistributionManager()>: (CONSTRUCTOR)
+Info in <PFireball::SetW>: Use old weighting method (pure chain based)
+Info in <PStaticData::AddDecay>: (ALLOCATION) Decay index 544: eta -> dilepton + dilepton
+Info in <PStaticData::AddDecay>: (ALLOCATION) Decay index 545: eta -> e+ + e- + pi+ + pi-
+Info in <PStaticData::AddDecay>: (ALLOCATION) Decay index 1248: N*(1520)+ -> p + dilepton
+Info in <PStaticData::AddDecay>: (ALLOCATION) Decay index 1216: N*(1440)+ -> p + dilepton
+Info in <PStaticData::AddDecay>: (ALLOCATION) Decay index 1280: N*(1535)+ -> p + dilepton
+Info in <PStaticData::AddDecay>: (ALLOCATION) Decay index 2080: N*(1520)0 -> n + dilepton
+Info in <PStaticData::AddDecay>: (ALLOCATION) Decay index 2048: N*(1440)0 -> n + dilepton
+Info in <PStaticData::AddDecay>: (ALLOCATION) Decay index 2112: N*(1535)0 -> n + dilepton
+Info in <PStdModels::GetModels>: Read std models
+Info in <PDistributionManager::Attach>: Re-iteration of std plugin done
+  Thermal pi0 with:
+  T1=0.080  frac=1.000  T2=0.080  blast=0.000 
+  A2= 1.00  A4= 0.00  v1= 0.00  v2= 0.00
+  participant
+  rapidity=1.120805;  beta=0.807849;  weight=0.333333;  mult=1.000000
+  meanN=3.000000
+
+ Reaction of 20 Particles interacting via 1 Channels
+   Reaction Particles:
+     0. pi0
+     1. pi0
+     2. pi0
+     3. pi0
+     4. pi0
+     5. pi0
+     6. pi0
+     7. pi0
+     8. pi0
+     9. pi0
+     10. pi0
+     11. pi0
+     12. pi0
+     13. pi0
+     14. pi0
+     15. pi0
+     16. pi0
+     17. pi0
+     18. pi0
+     19. pi0
+   Reaction Channels:
+     1. Fireball --> pi0 + pi0 + pi0 + pi0 + pi0 + pi0 + pi0 + pi0 + pi0 + pi0 + pi0 + pi0 + pi0 + pi0 + pi0 + pi0 + pi0 + pi0 + pi0 + pi0
+        Interaction model(s):
+        Thermal pi0 with:
+        T1=0.080  frac=1.000  T2=0.080  blast=0.000 
+        A2= 1.00  A4= 0.00  v1= 0.00  v2= 0.00
+        participant
+        rapidity=1.120805;  beta=0.807849;  weight=0.333333;  mult=1.000000
+        meanN=3.000000
+   Bulk Classes:
+     Epilogue: <PPlutoBulkDecay> <PProjector> 
+Warning in <TTree::Bronch>: Using split mode on a class: PParticle with a custom Streamer
+Info in <PUtilsREngine::PUtilsREngine>: Random seed set to -1972261896
+Info in <PDalitzDecay::GetWidth>: Creating mesh in pi0 --> dilepton + photon (Dalitz) (0.001021,0.000000)
+Info in <PPlutoBulkDecay::Modify>: (ALLOCATION) Making new channel for didx 3
+   Output File(s):
+     Root : 'pA.root', all particles on file.
+PReaction: calculating widths in PData...
+pi0 --> photon + photon
+        Interaction model(s):
+        [pi0_fixed_g_g] Fixed product masses {/}
+        [pi0_genbod_g_g] Pluto build-in genbod {/genbod}
+Info in <PPlutoBulkDecay::Modify>: (ALLOCATION) Making new channel for didx 4
+pi0 --> dilepton + photon (Dalitz)
+        Interaction model(s):
+        [pi0_dalitz] Dalitz decay {/}
+        [pi0_genbod_g_dilepton] Pluto build-in genbod {/genbod}
+Info in <PPlutoBulkDecay::Modify>: (ALLOCATION) Making new channel for didx 90
+dilepton --> e+ + e-
+        Interaction model(s):
+        [dilepton_fixed_e-_e+] Fixed product masses {/}
+        [dilepton_genbod_e-_e+] Pluto build-in genbod {/genbod}
+        [pi0_dilepton_helicity] Helicity angle of the dilepton decay of pi0
+Info in <TCanvas::Print>: png file obl_test_thermal_pi0@Thermal_pi0:_pi0_multiplicity.png has been created
+Info in <TCanvas::Print>: png file obl_test_thermal_pi0@Thermal_pi0:_pi0_pt_vs_rapidity.png has been created
+Info in <TCanvas::Print>: png file obl_test_thermal_pi0@Thermal_pi0:_pi0_dalitz_decay_dielectron_mass.png has been created
+ 20% done in 2.686643 sec
+ 40% done in 4.107849 sec
+ 60% done in 5.526564 sec
+ 80% done in 6.926857 sec
+ 100% done in 8.348210 sec
+ Event loop finished after 8.733163 sec
+ CPU time 7.720000 sec
+ 1087 aborted events were repeated, error codes:
+ 80=1087 

@@ -1,0 +1,589 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!--                                             -->
+<!-- Author: ROOT team (rootdev@cern.ch)         -->
+<!--                                             -->
+<!--   Date: Tue May  2 17:42:19 2017            -->
+<!--                                             -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>PDecayManager</title>
+<meta name="rating" content="General" />
+<meta name="objecttype" content="Manual" />
+<meta name="keywords" content="software development, oo, object oriented, unix, x11, windows, c++, html, rene brun, fons rademakers, cern" />
+<meta name="description" content="ROOT - An Object Oriented Framework For Large Scale Data Analysis." />
+<link rel="stylesheet" type="text/css" href="ROOT.css" id="ROOTstyle" />
+<script type="text/javascript" src="ROOT.js"></script>
+</head>
+<body  onload="javascript:SetValuesFromCookie();"><div id="body_content">
+<div id="root_header"></div>
+<a name="TopOfPage"></a>
+<script type="text/javascript">WriteFollowPageBox('class PDecayManager','libPluto','PDecayManager.h');</script>
+<div id="toplinks">
+<div class="descrhead"><div class="descrheadcontent">
+<span class="descrtitle">Quick Links:</span>
+<a class="descrheadentry" href="http://root.cern.ch">ROOT Homepage</a>
+<a class="descrheadentry" href="./ClassIndex.html">Class Index</a>
+<a class="descrheadentry" href="./ClassHierarchy.html">Class Hierarchy</a></div>
+<script type="text/javascript">
+function onSearch() {
+var s='http://www.google.com/search?q=%s+site%3A%u+-site%3A%u%2Fsrc%2F+-site%3A%u%2Fexamples%2F';
+var ref=String(document.location.href).replace(/https?:\/\//,'').replace(/\/[^\/]*$/,'').replace(/\//g,'%2F');
+window.location.href=s.replace(/%u/ig,ref).replace(/%s/ig,escape(document.searchform.t.value));
+return false;}
+</script>
+<form id="searchform" name="searchform" onsubmit="return onSearch()" action="javascript:onSearch();" method="post">
+<input name="t" size="30" value="Search documentation..." onfocus="if (document.searchform.t.value=='Search documentation...') document.searchform.t.value='';"></input>
+<a id="searchlink"  title="www.google.com"  href="javascript:onSearch();" onclick="return onSearch()">Search</a></form>
+</div>
+<div class="descrhead"><div class="descrheadcontent">
+<span class="descrtitle">Source:</span>
+<a class="descrheadentry" href="src/PDecayManager.h.html">header file</a>
+<a class="descrheadentry" href="src/PDecayManager.cxx.html">source file</a>
+<a class="descrheadentry" href="http://root.cern.ch/viewcvs/trunk/PDecayManager.h?view=log">viewVC header</a> <a class="descrheadentry" href="http://root.cern.ch/viewcvs/trunk//u/hadeshyp/ingo/pluto6_official_documentation_gitlab/src/PDecayManager.cc?view=log">viewVC source</a> 
+</div></div>
+<div class="descrhead"><div class="descrheadcontent">
+<span class="descrtitle">Sections:</span>
+<a class="descrheadentry" href="#PDecayManager:description">class description</a> 
+<a class="descrheadentry" href="#PDecayManager:Function_Members">function members</a>
+<a class="descrheadentry" href="#PDecayManager:Data_Members">data members</a>
+<a class="descrheadentry" href="#PDecayManager:Class_Charts">class charts</a>
+</div></div>
+</div>
+<div class="location">
+<a class="locationlevel" href="index.html">(UNKNOWN PRODUCT)</a>
+ &#187; <a class="locationlevel" href="./INCLUDE_Index.html">INCLUDE</a>
+ &#187; <a class="locationlevel" href="#TopOfPage">PDecayManager</a>
+</div>
+<div class="dropshadow"><div class="withshadow"><h1><a name="PDecayManager:description"></a>class PDecayManager: public TObject</h1>
+<div class="classdescr">
+<pre>
+  <a href="./PDecayManager.html">PDecayManager</a>
+
+  Author:   Volker Hejny
+  Written:  Sep. 99
+  Revised:  21.03.05 RH (writing parent indices to ascii file implemented)
+  Revised:  10.12.04 RH (beam smearing/skewing implemented)
+  Revised:  28.08.03 RH (random decays implemented)
+  Revised:  04.07.03 RH (adjusted for multiple Root <a href="./PDecayManager.html#PDecayManager:files" title="PFileOutput* PDecayManager::files">files</a>: 1.9Gb limit!)
+  Revised:  15.12.00 RH (adjustments for Pythia decay routines)
+  Revised:  26.09.00 R. Holzmann (adjusted to gcc 2.95.2 20000220)
+  Revised:  08.08.00 R. Holzmann (weight treatment fixed)
+  Revised:  21.06.00 MK (adjustments for decay modes from <a href="./PData.html">PData</a>)
+  Revised:  14.04.00 R. Holzmann (minor adjustments for
+                                  <a href="./PFireball.html">PFireball</a> and HGeant operation)
+  Revised:  27.07.07 IF: Changes for the new framework,
+                         Removed beam smearing as covered by the Distr.Manager
+
+  The purpose of <a href="./PDecayManager.html">PDecayManager</a> is to produce a set of possible
+  decay branches of a initial particle using a list of particle
+  decay modes. The list of decay modes is empty by default. The
+  user has to take care about the filling of this list. This can
+  be done using the defaults supplied by this file (at end) or
+  by hand.
+
+
+
+  The following templates and the class PReactionList are
+  private members of <a href="./PDecayManager.html">PDecayManager</a>, but I due to problems using
+  ClassImp() and ClassDef() with nested classes, they are not
+  derived from <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a> and not known inside ROOT. The members are
+  all public for better use inside <a href="./PDecayManager.html">PDecayManager</a>.
+
+  template&lt;class T&gt; class PNextList
+    It implements a linked list of pointers to object T. All elements
+    of this templates are public. The destructor does not imply a
+    delete of the object T itself. If this is wanted -&gt; use member
+    function <a href="./#TObject:Delete" title="void TObject::Delete(Option_t* option = &quot;&quot;)">Delete</a>().
+
+    T 	 *Curr;		// pointer to object T
+    PNextList  *Next;		// pointer to next list node
+
+    PNextList();		// standard constructor
+    PNextList(T*);		// initalized with object T
+    ~PNextList();		// standard destructor
+
+    <a href="./ListOfTypes.html#void">void</a> Add(T*);		// add object T to list
+    <a href="./ListOfTypes.html#void">void</a> <a href="./#TObject:Delete" title="void TObject::Delete(Option_t* option = &quot;&quot;)">Delete</a>();            // delete the objects T in the list
+
+
+  template&lt;class T&gt; class PStack
+    It implements a last-in-first-out standard stack via a single linked
+    list. Additionally the number of objects is counted. All elements
+    are public.
+
+    PNextList&lt;T&gt;	*top;	// pointer to top node
+    <a href="./ListOfTypes.html#Int_t">Int_t</a>		Count;	// number of elements in the stack
+
+    PStack();			// standarad constructor
+    ~PStack();		// the destructor deletes the nodes
+				// starting at top node, but not the
+				// objects T itself.
+
+    <a href="./ListOfTypes.html#void">void</a> Push(T*);
+    T *<a href="./#TObject:Pop" title="void TObject::Pop()">Pop</a>();			// standard stack operators
+
+    PStack&lt;T&gt; *<a href="./#TObject:Clone" title="TObject* TObject::Clone(const char* newname = &quot;&quot;) const">Clone</a>(PStack&lt;T&gt; *UseThis);
+				// returns a pointer to a clone of the stack.
+ 				// either an existing, empty stack is used
+				// (giving UseThis as an optional argument)
+				// or a new stack is constructed internally.
+
+
+  class PReactionList
+    It implements two connected stacks of <a href="./PChannel.html">PChannel</a> objects to organize
+    the already processed decay channels and the work to do.
+    'Processed' means that all possible decay channels of the daughter
+    particles have been put on the ToDo stack.
+    The variable ReactionWeight contains the overall weight of
+    this specific channel. All elements of this class are public.
+
+    PStack&lt;<a href="./PChannel.html">PChannel</a>&gt; 	*Finished;	// channels already looked at
+    PStack&lt;<a href="./PChannel.html">PChannel</a>&gt; 	*ToDo;		// decays to be done
+    <a href="./ListOfTypes.html#Double_t">Double_t</a>		ReactionWeight;	// overall branching ratio
+    <a href="./ListOfTypes.html#Int_t">Int_t</a>		ID;		// serial number of this object
+    static <a href="./ListOfTypes.html#Int_t">Int_t</a>	maxID;		// maximum serial number
+
+    PReactionList();
+    ~PReactionList(); 		// again: deletes only the stacks,
+					// not the objects in it.
+    PReactionList *<a href="./#TObject:Clone" title="TObject* TObject::Clone(const char* newname = &quot;&quot;) const">Clone</a>(); 		// doubles the whole PReactionList
+					// returning a pointer to the
+					// new one.
+
+
+
+</pre></div>
+</div></div>
+
+<div id="functions">
+<h2><a id="PDecayManager:Function_Members"></a>Function Members (Methods)</h2>
+<div class="access" id="funcpubl"><b>public:</b>
+<table class="func" id="tabfuncpubl" cellspacing="0">
+<tr class="func"><td class="funcret"> virtual</td><td class="funcname"><a class="funcname" href="#PDecayManager:_PDecayManager">~PDecayManager</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:AbstractMethod"><span class="baseclass">TObject::</span>AbstractMethod</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#PDecayManager:AddBulk">AddBulk</a>(<a href="./PBulkInterface.html">PBulkInterface</a>* mybulk)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PDecayManager:AddChannel">AddChannel</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> id, <a href="./PDecayChannel.html">PDecayChannel</a>* n)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PDecayManager:AddChannel@1">AddChannel</a>(<a href="./PParticle.html">PParticle</a>* p, <a href="./PDecayChannel.html">PDecayChannel</a>* n)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PDecayManager:AddChannel@2">AddChannel</a>(<span class="keyword">const</span> <span class="keyword">char</span>* p, <a href="./PDecayChannel.html">PDecayChannel</a>* n)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#PDecayManager:AddFileOutput">AddFileOutput</a>(<a href="./PFileOutput.html">PFileOutput</a>* file)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#PDecayManager:AddPrologueBulk">AddPrologueBulk</a>(<a href="./PBulkInterface.html">PBulkInterface</a>* mybulk)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:AppendPad"><span class="baseclass">TObject::</span>AppendPad</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Browse"><span class="baseclass">TObject::</span>Browse</a>(TBrowser* b)</td></tr>
+<tr class="func"><td class="funcret">static TClass*</td><td class="funcname"><a class="funcname" href="#PDecayManager:Class">Class</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#TObject:ClassName"><span class="baseclass">TObject::</span>ClassName</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PDecayManager:Clear">Clear</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> id)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PDecayManager:Clear@1">Clear</a>(<a href="./PParticle.html">PParticle</a>* p)</td></tr>
+<tr class="func"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PDecayManager:Clear@2">Clear</a>(<span class="keyword">const</span> <a href="./ListOfTypes.html#Option_t">Option_t</a>* delme = __null)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>*</td><td class="funcname"><a class="funcname" href="#TObject:Clone"><span class="baseclass">TObject::</span>Clone</a>(<span class="keyword">const</span> <span class="keyword">char</span>* newname = <span class="string">""</span>) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Compare"><span class="baseclass">TObject::</span>Compare</a>(<span class="keyword">const</span> <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>* obj) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Copy"><span class="baseclass">TObject::</span>Copy</a>(<a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>&amp; object) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Delete"><span class="baseclass">TObject::</span>Delete</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)<span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PDecayManager:DisableHelicityAngle">DisableHelicityAngle</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:DistancetoPrimitive"><span class="baseclass">TObject::</span>DistancetoPrimitive</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> px, <a href="./ListOfTypes.html#Int_t">Int_t</a> py)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#PDecayManager:Do">Do</a>(<span class="keyword">const</span> <span class="keyword">char</span>* command)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#PDecayManager:Do@1">Do</a>(TH1F* f, <span class="keyword">char</span>* command)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#PDecayManager:Do@2">Do</a>(TH2F* f, <span class="keyword">char</span>* command)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Draw"><span class="baseclass">TObject::</span>Draw</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:DrawClass"><span class="baseclass">TObject::</span>DrawClass</a>() <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>*</td><td class="funcname"><a class="funcname" href="#TObject:DrawClone"><span class="baseclass">TObject::</span>DrawClone</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>) <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Dump"><span class="baseclass">TObject::</span>Dump</a>() <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Error"><span class="baseclass">TObject::</span>Error</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Execute"><span class="baseclass">TObject::</span>Execute</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* params, <a href="./ListOfTypes.html#Int_t">Int_t</a>* error = 0)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Execute@1"><span class="baseclass">TObject::</span>Execute</a>(TMethod* method, TObjArray* params, <a href="./ListOfTypes.html#Int_t">Int_t</a>* error = 0)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:ExecuteEvent"><span class="baseclass">TObject::</span>ExecuteEvent</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> event, <a href="./ListOfTypes.html#Int_t">Int_t</a> px, <a href="./ListOfTypes.html#Int_t">Int_t</a> py)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Fatal"><span class="baseclass">TObject::</span>Fatal</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>*</td><td class="funcname"><a class="funcname" href="#TObject:FindObject"><span class="baseclass">TObject::</span>FindObject</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>*</td><td class="funcname"><a class="funcname" href="#TObject:FindObject@1"><span class="baseclass">TObject::</span>FindObject</a>(<span class="keyword">const</span> <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>* obj) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./PDecayChannel.html">PDecayChannel</a>*</td><td class="funcname"><a class="funcname" href="#PDecayManager:GetChannel">GetChannel</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> id) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./PDecayChannel.html">PDecayChannel</a>*</td><td class="funcname"><a class="funcname" href="#PDecayManager:GetChannel@1">GetChannel</a>(<a href="./PParticle.html">PParticle</a>* p) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./PDecayChannel.html">PDecayChannel</a>*</td><td class="funcname"><a class="funcname" href="#PDecayManager:GetChannel@2">GetChannel</a>(<span class="keyword">char</span>* n) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./PProjector.html">PProjector</a>*</td><td class="funcname"><a class="funcname" href="#PDecayManager:GetCurrentProjector">GetCurrentProjector</a>()</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Double_t">Double_t</a></td><td class="funcname"><a class="funcname" href="#PDecayManager:GetCurrentWeight">GetCurrentWeight</a>()</td></tr>
+<tr class="func"><td class="funcret"><a href="./PDistributionManager.html">PDistributionManager</a>*</td><td class="funcname"><a class="funcname" href="#PDecayManager:GetDistributionManager">GetDistributionManager</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Option_t">Option_t</a>*</td><td class="funcname"><a class="funcname" href="#TObject:GetDrawOption"><span class="baseclass">TObject::</span>GetDrawOption</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">static <a href="./ListOfTypes.html#Long_t">Long_t</a></td><td class="funcname"><a class="funcname" href="#TObject:GetDtorOnly"><span class="baseclass">TObject::</span>GetDtorOnly</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#TObject:GetIconName"><span class="baseclass">TObject::</span>GetIconName</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./PReaction.html">PReaction</a>*</td><td class="funcname"><a class="funcname" href="#PDecayManager:GetNextReaction@1">GetNextReaction</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name, <span class="keyword">int</span> f0 = 0, <span class="keyword">int</span> f1 = 0, <span class="keyword">int</span> f2 = 0, <span class="keyword">int</span> f3 = 0, TTree* tt = __null)</td></tr>
+<tr class="func"><td class="funcret"><a href="./PReaction.html">PReaction</a>*</td><td class="funcname"><a class="funcname" href="#PDecayManager:GetNextReaction">GetNextReaction</a>(<span class="keyword">int</span> wf, <span class="keyword">const</span> <span class="keyword">char</span>* name, <span class="keyword">int</span> f0 = 0, <span class="keyword">int</span> f1 = 0, <span class="keyword">int</span> f2 = 0, <span class="keyword">int</span> f3 = 0, TTree* tt = __null)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#TObject:GetObjectInfo"><span class="baseclass">TObject::</span>GetObjectInfo</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> px, <a href="./ListOfTypes.html#Int_t">Int_t</a> py) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">static <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:GetObjectStat"><span class="baseclass">TObject::</span>GetObjectStat</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Option_t">Option_t</a>*</td><td class="funcname"><a class="funcname" href="#TObject:GetOption"><span class="baseclass">TObject::</span>GetOption</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#TObject:GetTitle"><span class="baseclass">TObject::</span>GetTitle</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#UInt_t">UInt_t</a></td><td class="funcname"><a class="funcname" href="#TObject:GetUniqueID"><span class="baseclass">TObject::</span>GetUniqueID</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:HandleTimer"><span class="baseclass">TObject::</span>HandleTimer</a>(TTimer* timer)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#ULong_t">ULong_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Hash"><span class="baseclass">TObject::</span>Hash</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Info"><span class="baseclass">TObject::</span>Info</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:InheritsFrom"><span class="baseclass">TObject::</span>InheritsFrom</a>(<span class="keyword">const</span> <span class="keyword">char</span>* classname) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:InheritsFrom@1"><span class="baseclass">TObject::</span>InheritsFrom</a>(<span class="keyword">const</span> TClass* cl) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PDecayManager:InitReaction">InitReaction</a>(<a href="./PParticle.html">PParticle</a>* start, <a href="./PDecayChannel.html">PDecayChannel</a>* c1 = __null)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#PDecayManager:Input">Input</a>(TNtuple* f)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Inspect"><span class="baseclass">TObject::</span>Inspect</a>() <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:InvertBit"><span class="baseclass">TObject::</span>InvertBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f)</td></tr>
+<tr class="func"><td class="funcret">virtual TClass*</td><td class="funcname"><a class="funcname" href="#PDecayManager:IsA">IsA</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:IsEqual"><span class="baseclass">TObject::</span>IsEqual</a>(<span class="keyword">const</span> <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>* obj) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:IsFolder"><span class="baseclass">TObject::</span>IsFolder</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:IsOnHeap"><span class="baseclass">TObject::</span>IsOnHeap</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:IsSortable"><span class="baseclass">TObject::</span>IsSortable</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:IsZombie"><span class="baseclass">TObject::</span>IsZombie</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#PDecayManager:Loop">Loop</a>(<span class="keyword">int</span> num, <span class="keyword">int</span> wf, <span class="keyword">const</span> <span class="keyword">char</span>* name, <span class="keyword">int</span> f0 = 0, <span class="keyword">int</span> f1 = 0, <span class="keyword">int</span> f2 = 0, <span class="keyword">int</span> f3 = 0, <span class="keyword">int</span> rf = 0)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#PDecayManager:loop">loop</a>(<span class="keyword">int</span> num, <span class="keyword">int</span> wf, <span class="keyword">const</span> <span class="keyword">char</span>* name, <span class="keyword">int</span> f0 = 0, <span class="keyword">int</span> f1 = 0, <span class="keyword">int</span> f2 = 0, <span class="keyword">int</span> f3 = 0, <span class="keyword">int</span> rf = 0)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:ls"><span class="baseclass">TObject::</span>ls</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:MayNotUse"><span class="baseclass">TObject::</span>MayNotUse</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PDecayManager:MyClear">MyClear</a>(<span class="keyword">char</span>*)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PDecayManager:MyPrint">MyPrint</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PDecayManager:MyPrint@1">MyPrint</a>(<span class="keyword">char</span>* name) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Notify"><span class="baseclass">TObject::</span>Notify</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Obsolete"><span class="baseclass">TObject::</span>Obsolete</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* asOfVers, <span class="keyword">const</span> <span class="keyword">char</span>* removedFromVers) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:operator_delete"><span class="baseclass">TObject::</span>operator delete</a>(<span class="keyword">void</span>* ptr)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:operator_delete@1"><span class="baseclass">TObject::</span>operator delete</a>(<span class="keyword">void</span>* ptr, <span class="keyword">void</span>* vp)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:operator_delete[]"><span class="baseclass">TObject::</span>operator delete[]</a>(<span class="keyword">void</span>* ptr)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:operator_delete[]@1"><span class="baseclass">TObject::</span>operator delete[]</a>(<span class="keyword">void</span>* ptr, <span class="keyword">void</span>* vp)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span>*</td><td class="funcname"><a class="funcname" href="#TObject:operator_new"><span class="baseclass">TObject::</span>operator new</a>(<a href="./ListOfTypes.html#size_t">size_t</a> sz)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span>*</td><td class="funcname"><a class="funcname" href="#TObject:operator_new@1"><span class="baseclass">TObject::</span>operator new</a>(<a href="./ListOfTypes.html#size_t">size_t</a> sz, <span class="keyword">void</span>* vp)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span>*</td><td class="funcname"><a class="funcname" href="#TObject:operator_new[]"><span class="baseclass">TObject::</span>operator new[]</a>(<a href="./ListOfTypes.html#size_t">size_t</a> sz)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span>*</td><td class="funcname"><a class="funcname" href="#TObject:operator_new[]@1"><span class="baseclass">TObject::</span>operator new[]</a>(<a href="./ListOfTypes.html#size_t">size_t</a> sz, <span class="keyword">void</span>* vp)</td></tr>
+<tr class="func"><td class="funcret"><a href="./PDecayManager.html">PDecayManager</a>&amp;</td><td class="funcname"><a class="funcname" href="#PDecayManager:operator_">operator=</a>(<span class="keyword">const</span> <a href="./PDecayManager.html">PDecayManager</a>&amp;)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#PDecayManager:Output">Output</a>(TNtuple* f, <span class="keyword">char</span>* command = (<span class="keyword">char</span> *)<span class="string">""</span>)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Paint"><span class="baseclass">TObject::</span>Paint</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)</td></tr>
+<tr class="func"><td class="funcret"></td><td class="funcname"><a class="funcname" href="#PDecayManager:PDecayManager">PDecayManager</a>()</td></tr>
+<tr class="func"><td class="funcret"></td><td class="funcname"><a class="funcname" href="#PDecayManager:PDecayManager@1">PDecayManager</a>(<span class="keyword">const</span> <a href="./PDecayManager.html">PDecayManager</a>&amp;)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Pop"><span class="baseclass">TObject::</span>Pop</a>()</td></tr>
+<tr class="func"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PDecayManager:Print">Print</a>(<span class="keyword">const</span> <a href="./ListOfTypes.html#Option_t">Option_t</a>* delme = __null) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PDecayManager:Print@1">Print</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> id) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PDecayManager:Print@2">Print</a>(<a href="./PParticle.html">PParticle</a>* p) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PDecayManager:PrintReactionList">PrintReactionList</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Read"><span class="baseclass">TObject::</span>Read</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:RecursiveRemove"><span class="baseclass">TObject::</span>RecursiveRemove</a>(<a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>* obj)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:ResetBit"><span class="baseclass">TObject::</span>ResetBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SaveAs"><span class="baseclass">TObject::</span>SaveAs</a>(<span class="keyword">const</span> <span class="keyword">char</span>* filename = <span class="string">""</span>, <a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>) <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SavePrimitive"><span class="baseclass">TObject::</span>SavePrimitive</a>(<a href="./ListOfTypes.html#ostream">ostream</a>&amp; out, <a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetBit@1"><span class="baseclass">TObject::</span>SetBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetBit"><span class="baseclass">TObject::</span>SetBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f, <a href="./ListOfTypes.html#Bool_t">Bool_t</a> set)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PDecayManager:SetDecayAll">SetDecayAll</a>(<a href="./ListOfTypes.html#Float_t">Float_t</a> tau = 1.)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PDecayManager:SetDefault">SetDefault</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> id, <a href="./ListOfTypes.html#Int_t">Int_t</a> recursive = 0)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PDecayManager:SetDefault@1">SetDefault</a>(<a href="./PParticle.html">PParticle</a>* p, <a href="./ListOfTypes.html#Int_t">Int_t</a> recursive = 0)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PDecayManager:SetDefault@2">SetDefault</a>(<span class="keyword">const</span> <span class="keyword">char</span>* p, <a href="./ListOfTypes.html#Int_t">Int_t</a> recursive = 0)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetDrawOption"><span class="baseclass">TObject::</span>SetDrawOption</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)<span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetDtorOnly"><span class="baseclass">TObject::</span>SetDtorOnly</a>(<span class="keyword">void</span>* obj)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PDecayManager:SetHGeant">SetHGeant</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> fH)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PDecayManager:SetMaxFileSize">SetMaxFileSize</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> bytes)</td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetObjectStat"><span class="baseclass">TObject::</span>SetObjectStat</a>(<a href="./ListOfTypes.html#Bool_t">Bool_t</a> stat)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PDecayManager:SetPythia">SetPythia</a>(TPythia6* p)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PDecayManager:SetTrigCond">SetTrigCond</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> n)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetUniqueID"><span class="baseclass">TObject::</span>SetUniqueID</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> uid)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PDecayManager:SetUserSelection">SetUserSelection</a>(<span class="keyword">void</span>* f)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PDecayManager:SetUserSelection@1">SetUserSelection</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a>(*)(<a href="./PParticle.html">PParticle</a>*) f)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PDecayManager:SetVerbose">SetVerbose</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> v = 1)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PDecayManager:SetWriteIndex">SetWriteIndex</a>(<a href="./ListOfTypes.html#Bool_t">Bool_t</a> flag)</td></tr>
+<tr class="func"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PDecayManager:ShowMembers">ShowMembers</a>(TMemberInspector&amp; insp) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PDecayManager:Streamer">Streamer</a>(TBuffer&amp;)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PDecayManager:StreamerNVirtual">StreamerNVirtual</a>(TBuffer&amp; ClassDef_StreamerNVirtual_b)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SysError"><span class="baseclass">TObject::</span>SysError</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:TestBit"><span class="baseclass">TObject::</span>TestBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:TestBits"><span class="baseclass">TObject::</span>TestBits</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:UseCurrentStyle"><span class="baseclass">TObject::</span>UseCurrentStyle</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Warning"><span class="baseclass">TObject::</span>Warning</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Write"><span class="baseclass">TObject::</span>Write</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> option = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> bufsize = 0)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Write@1"><span class="baseclass">TObject::</span>Write</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> option = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> bufsize = 0) <span class="keyword">const</span></td></tr>
+
+</table></div>
+<div class="access" id="funcprot"><b>protected:</b>
+<table class="func" id="tabfuncprot" cellspacing="0">
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:DoError"><span class="baseclass">TObject::</span>DoError</a>(<span class="keyword">int</span> level, <span class="keyword">const</span> <span class="keyword">char</span>* location, <span class="keyword">const</span> <span class="keyword">char</span>* fmt, <a href="./ListOfTypes.html#va_list">va_list</a> va) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:MakeZombie"><span class="baseclass">TObject::</span>MakeZombie</a>()</td></tr>
+
+</table></div>
+<div class="access" id="funcpriv"><b>private:</b>
+<table class="func" id="tabfuncpriv" cellspacing="0">
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PDecayManager:ConstructPChannel">ConstructPChannel</a>(<a href="./PParticle.html">PParticle</a>* p, <a href="./PDecayChannel.html">PDecayChannel</a>* c1, PReactionList* RL, <a href="./ListOfTypes.html#Int_t">Int_t</a> CopyFlag = 0)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#PDecayManager:GetName">GetName</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> id) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PDecayManager:PrintChain">PrintChain</a>(<a href="./PParticle.html">PParticle</a>* p, <a href="./PChannel.html">PChannel</a>** l, <a href="./ListOfTypes.html#Int_t">Int_t</a> c, <a href="./ListOfTypes.html#ostream">ostream</a>&amp; os) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PDecayManager:PrintReactionListEntry">PrintReactionListEntry</a>(PReactionList*, <a href="./ListOfTypes.html#ostream">ostream</a>&amp; os) <span class="keyword">const</span></td></tr>
+
+</table></div>
+</div>
+
+<div id="datamembers">
+<h2><a name="PDecayManager:Data_Members"></a>Data Members</h2>
+<div class="access" id="datapubl"><b>public:</b>
+<table class="data" id="tabdatapubl" cellspacing="0">
+<tr class="datainh"><td class="datatype">static <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>::(anonymous)</td><td class="dataname"><a href="#TObject:kBitMask"><span class="baseclass">TObject::</span>kBitMask</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>::EStatusBits</td><td class="dataname"><a href="#TObject:kCanDelete"><span class="baseclass">TObject::</span>kCanDelete</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>::EStatusBits</td><td class="dataname"><a href="#TObject:kCannotPick"><span class="baseclass">TObject::</span>kCannotPick</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>::EStatusBits</td><td class="dataname"><a href="#TObject:kHasUUID"><span class="baseclass">TObject::</span>kHasUUID</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>::EStatusBits</td><td class="dataname"><a href="#TObject:kInvalidObject"><span class="baseclass">TObject::</span>kInvalidObject</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>::(anonymous)</td><td class="dataname"><a href="#TObject:kIsOnHeap"><span class="baseclass">TObject::</span>kIsOnHeap</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>::EStatusBits</td><td class="dataname"><a href="#TObject:kIsReferenced"><span class="baseclass">TObject::</span>kIsReferenced</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>::EStatusBits</td><td class="dataname"><a href="#TObject:kMustCleanup"><span class="baseclass">TObject::</span>kMustCleanup</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>::EStatusBits</td><td class="dataname"><a href="#TObject:kNoContextMenu"><span class="baseclass">TObject::</span>kNoContextMenu</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>::(anonymous)</td><td class="dataname"><a href="#TObject:kNotDeleted"><span class="baseclass">TObject::</span>kNotDeleted</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>::EStatusBits</td><td class="dataname"><a href="#TObject:kObjInCanvas"><span class="baseclass">TObject::</span>kObjInCanvas</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>::(anonymous)</td><td class="dataname"><a href="#TObject:kOverwrite"><span class="baseclass">TObject::</span>kOverwrite</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>::(anonymous)</td><td class="dataname"><a href="#TObject:kSingleKey"><span class="baseclass">TObject::</span>kSingleKey</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>::(anonymous)</td><td class="dataname"><a href="#TObject:kWriteDelete"><span class="baseclass">TObject::</span>kWriteDelete</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>::(anonymous)</td><td class="dataname"><a href="#TObject:kZombie"><span class="baseclass">TObject::</span>kZombie</a></td><td></td></tr>
+
+</table></div>
+<div class="access" id="datapriv"><b>private:</b>
+<table class="data" id="tabdatapriv" cellspacing="0">
+<tr class="data"><td class="datatype"><a href="./PReaction.html">PReaction</a>*</td><td class="dataname"><a name="PDecayManager:CurrentReaction"></a>CurrentReaction</td><td class="datadesc">pointer to currently used PReaction</td></tr>
+<tr class="data"><td class="datatype">PNextList&lt;PReactionList&gt;*</td><td class="dataname"><a name="PDecayManager:CurrentReactionListPointer"></a>CurrentReactionListPointer</td><td class="datadesc">pointer to the currently active decay branch</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PDecayManager:CurrentReactionNumber"></a>CurrentReactionNumber</td><td class="datadesc">serial number of currently active reaction</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Double_t">Double_t</a></td><td class="dataname"><a name="PDecayManager:CurrentWeight"></a>CurrentWeight</td><td class="datadesc">weight of currently active reaction</td></tr>
+<tr class="data"><td class="datatype"><a href="./PChannel.html">PChannel</a>**</td><td class="dataname"><a name="PDecayManager:ListForReaction"></a>ListForReaction</td><td class="datadesc">used for PReaction</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PDecayManager:NumberOfReactions"></a>NumberOfReactions</td><td class="datadesc">nb of reactions in ReactionList</td></tr>
+<tr class="data"><td class="datatype">PNextList&lt;PReactionList&gt;*</td><td class="dataname"><a name="PDecayManager:ReactionList"></a>ReactionList</td><td class="datadesc">collection of all possible decay branches</td></tr>
+<tr class="data"><td class="datatype">PNextList&lt;<a href="./PChannel.html">PChannel</a>&gt;*</td><td class="dataname"><a name="PDecayManager:UsedChannels"></a>UsedChannels</td><td class="datadesc">same for used channels</td></tr>
+<tr class="data"><td class="datatype">PNextList&lt;<a href="./PParticle.html">PParticle</a>*&gt;*</td><td class="dataname"><a name="PDecayManager:UsedParticleArrays"></a>UsedParticleArrays</td><td class="datadesc">same for particle arrays</td></tr>
+<tr class="data"><td class="datatype">PNextList&lt;<a href="./PParticle.html">PParticle</a>&gt;*</td><td class="dataname"><a name="PDecayManager:UsedParticles"></a>UsedParticles</td><td class="datadesc">collection of used particles to delete them later on</td></tr>
+<tr class="data"><td class="datatype"><a href="./PBulkInterface.html">PBulkInterface</a>*</td><td class="dataname"><a name="PDecayManager:bulk"></a>bulk[5]</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">int</span></td><td class="dataname"><a name="PDecayManager:bulkdecay_pos"></a>bulkdecay_pos</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./PProjector.html">PProjector</a>*</td><td class="dataname"><a name="PDecayManager:current_projector"></a>current_projector</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PDecayManager:decaychannel_param"></a>decaychannel_param</td><td class="datadesc">param for all known particle decay modes</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="dataname"><a name="PDecayManager:fHGeant"></a>fHGeant</td><td class="datadesc">set if PLUTO runs in HGeant</td></tr>
+<tr class="data"><td class="datatype">TPythia6*</td><td class="dataname"><a name="PDecayManager:fPythia"></a>fPythia</td><td class="datadesc">pointer to Pythia object</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="dataname"><a name="PDecayManager:fWriteIndex"></a>fWriteIndex</td><td class="datadesc">write parent indices out, if set</td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">int</span></td><td class="dataname"><a name="PDecayManager:fileoutput_pos"></a>fileoutput_pos</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./PFileOutput.html">PFileOutput</a>*</td><td class="dataname"><a name="PDecayManager:files"></a>files[5]</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PDecayManager:maxFileSize"></a>maxFileSize</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PDecayManager:nTrigCond"></a>nTrigCond</td><td class="datadesc">trigger multiplicity</td></tr>
+<tr class="data"><td class="datatype"><a href="./PDistributionManager.html">PDistributionManager</a>*</td><td class="dataname"><a name="PDecayManager:pdist"></a>pdist</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./PBulkInterface.html">PBulkInterface</a>*</td><td class="dataname"><a name="PDecayManager:pro_bulk"></a>pro_bulk[5]</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">int</span></td><td class="dataname"><a name="PDecayManager:pro_bulkdecay_pos"></a>pro_bulkdecay_pos</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="PDecayManager:tauMax"></a>tauMax</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">void</span>*</td><td class="dataname"><a name="PDecayManager:userSelection"></a>userSelection</td><td class="datadesc">selection function</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PDecayManager:verbose"></a>verbose</td><td class="datadesc">verbose flag (0/1)</td></tr>
+
+</table></div>
+</div>
+<h2><a id="PDecayManager:Class_Charts"></a>Class Charts</h2>
+<map name="MapPDecayManager_Lib" id="MapPDecayManager_Lib">
+<area shape="rect" id="node1" href="LibraryDependencies.html" title="All Libraries" alt="" coords="340,44,454,92"/>
+</map>
+<div class="tabs">
+<a id="imgPDecayManager_Inh" class="tabsel" href="inh/PDecayManager_Inh.png" onclick="javascript:return SetImg('Charts','inh/PDecayManager_Inh.png');">Inheritance</a>
+<a id="imgPDecayManager_InhMem" class="tab" href="inhmem/PDecayManager_InhMem.png" onclick="javascript:return SetImg('Charts','inhmem/PDecayManager_InhMem.png');">Inherited Members</a>
+<a id="imgPDecayManager_Incl" class="tab" href="incl/PDecayManager_Incl.png" onclick="javascript:return SetImg('Charts','incl/PDecayManager_Incl.png');">Includes</a>
+<a id="imgPDecayManager_Lib" class="tab" href="lib/PDecayManager_Lib.png" onclick="javascript:return SetImg('Charts','lib/PDecayManager_Lib.png');">Libraries</a><br/>
+</div><div class="classcharts"><div class="classchartswidth"></div>
+<img id="Charts" alt="Class Charts" class="classcharts" usemap="#MapPDecayManager_Inh" src="inh/PDecayManager_Inh.png"/></div>
+<h2>Function documentation</h2>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="PDecayManager:PDecayManager" href="src/PDecayManager.cxx.html#AhnmFB">PDecayManager</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="PDecayManager:_PDecayManager" href="src/PDecayManager.cxx.html#vsRROC">~PDecayManager</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PDecayManager:SetVerbose" href="src/PDecayManager.cxx.html#Rx83ZE">SetVerbose</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> v = 1)</span><br />
+<div class="funccomm"><pre> Setting <a href="./PDecayManager.html#PDecayManager:verbose" title="Int_t PDecayManager::verbose">verbose</a> flag to optional parameter v. Omitting <span class="string">'v'</span> switches
+ on <a href="./PDecayManager.html#PDecayManager:verbose" title="Int_t PDecayManager::verbose">verbose</a> option.
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PDecayManager:AddChannel" href="src/PDecayManager.cxx.html#z6t91B">AddChannel</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> id, <a href="./PDecayChannel.html">PDecayChannel</a>* n)</span><br />
+<div class="funccomm"><pre> Adds a specific <a href="./PDecayChannel.html">PDecayChannel</a> <span class="string">'n'</span> to the particle with ID 'id'.
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PDecayManager:AddChannel@1" href="src/PDecayManager.cxx.html#hq8I2B">AddChannel</a>(<a href="./PParticle.html">PParticle</a>* p, <a href="./PDecayChannel.html">PDecayChannel</a>* n)</span><br />
+<div class="funccomm"><pre> Adds a specific <a href="./PDecayChannel.html">PDecayChannel</a> <span class="string">'n'</span> to the particle represented by a
+ pointer to a <a href="./PParticle.html">PParticle</a> object.
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PDecayManager:AddChannel@2" href="src/PDecayManager.cxx.html#dPW3JD">AddChannel</a>(<span class="keyword">const</span> <span class="keyword">char</span>* p, <a href="./PDecayChannel.html">PDecayChannel</a>* n)</span><br />
+<div class="funccomm"><pre> Adds a specific <a href="./PDecayChannel.html">PDecayChannel</a> <span class="string">'n'</span> to the particle represented just
+ by its name.
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./PDecayChannel.html">PDecayChannel</a> * <a class="funcname" name="PDecayManager:GetChannel" href="src/PDecayManager.cxx.html#UvASjD">GetChannel</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> id) const</span><br />
+<div class="funccomm"><pre> Returns a pointer to <a href="./PDecayChannel.html">PDecayChannel</a> for the particle with the ID 'id.'
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./PDecayChannel.html">PDecayChannel</a> * <a class="funcname" name="PDecayManager:GetChannel@1" href="src/PDecayManager.cxx.html#tMk6qE">GetChannel</a>(<a href="./PParticle.html">PParticle</a>* p) const</span><br />
+<div class="funccomm"><pre> Returns a pointer to <a href="./PDecayChannel.html">PDecayChannel</a> for the particle represented by a
+ pointer to a <a href="./PParticle.html">PParticle</a> object.
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./PDecayChannel.html">PDecayChannel</a> * <a class="funcname" name="PDecayManager:GetChannel@2" href="src/PDecayManager.cxx.html#gLTcqD">GetChannel</a>(<span class="keyword">char</span>* n) const</span><br />
+<div class="funccomm"><pre> Returns a pointer to <a href="./PDecayChannel.html">PDecayChannel</a> for the particle represented
+ by its name.
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PDecayManager:SetDefault" href="src/PDecayManager.cxx.html#f.IBiD">SetDefault</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> id, <a href="./ListOfTypes.html#Int_t">Int_t</a> recursive = 0)</span><br />
+<div class="funccomm"><pre> Sets the default decay branches for the particle with ID 'id'.
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PDecayManager:SetDefault@1" href="src/PDecayManager.cxx.html#TzcqDD">SetDefault</a>(<a href="./PParticle.html">PParticle</a>* p, <a href="./ListOfTypes.html#Int_t">Int_t</a> recursive = 0)</span><br />
+<div class="funccomm"><pre> Sets the default decay branches for the particle represented by a
+ a pointer to a <a href="./PParticle.html">PParticle</a> object.
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PDecayManager:SetDefault@2" href="src/PDecayManager.cxx.html#EYO1jD">SetDefault</a>(<span class="keyword">const</span> <span class="keyword">char</span>* p, <a href="./ListOfTypes.html#Int_t">Int_t</a> recursive = 0)</span><br />
+<div class="funccomm"><pre> Sets the default decay branches for the particle represented by its
+ name.
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PDecayManager:Clear" href="src/PDecayManager.cxx.html#q2N8Z">Clear</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> id)</span><br />
+<div class="funccomm"><pre> Deletes the current list of decay branches for the particle with the
+ ID 'id'. This is necessary when one wants to introduce a new set
+ of branches to a particle. The <a href="./PDecayManager.html#PDecayManager:SetDefault" title="void PDecayManager::SetDefault(Int_t id, Int_t recursive = 0) or overloads">SetDefault</a>() functions are calling
+ this function automatically.
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PDecayManager:Clear@1" href="src/PDecayManager.cxx.html#odRUnC">Clear</a>(<a href="./PParticle.html">PParticle</a>* p)</span><br />
+<div class="funccomm"><pre> Deletes the current list of decay branches for the particle represented
+ by a pointer to a <a href="./PParticle.html">PParticle</a> object.
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PDecayManager:MyClear" href="src/PDecayManager.cxx.html#feXFDD">MyClear</a>(<span class="keyword">char</span>* )</span><br />
+<div class="funccomm"><pre> Deletes the current list of decay branches for the particle represented
+ by its name.
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PDecayManager:InitReaction" href="src/PDecayManager.cxx.html#E7bL4C">InitReaction</a>(<a href="./PParticle.html">PParticle</a>* start, <a href="./PDecayChannel.html">PDecayChannel</a>* c1 = __null)</span><br />
+<div class="funccomm"><pre> This function calculates the whole tree of decay branches of particle
+ 'start'. If there is a 'CurrentChannel' given, the initial branches
+ are fetched from this <a href="./PDecayChannel.html">PDecayChannel</a>. Otherwise the information is
+ used, which has been added by <a href="./PDecayManager.html#PDecayManager:AddChannel" title="void PDecayManager::AddChannel(Int_t id, PDecayChannel* n) or overloads">AddChannel</a>() or <a href="./PDecayManager.html#PDecayManager:SetDefault" title="void PDecayManager::SetDefault(Int_t id, Int_t recursive = 0) or overloads">SetDefault</a>() calls.
+ Calling this function is mandatory as an initialization step
+ before producing any data.
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PDecayManager:ConstructPChannel" href="src/PDecayManager.cxx.html#O0GhWE">ConstructPChannel</a>(<a href="./PParticle.html">PParticle</a>* p, <a href="./PDecayChannel.html">PDecayChannel</a>* c1, PReactionList* RL, <a href="./ListOfTypes.html#Int_t">Int_t</a> CopyFlag = 0)</span><br />
+<div class="funccomm"><pre> This function is used internally inside <a href="./PDecayManager.html#PDecayManager:InitReaction" title="void PDecayManager::InitReaction(PParticle* start, PDecayChannel* c1 = __null)">InitReaction</a>(). For one
+ given parent particle <span class="string">'p'</span> and <a href="./PDecayChannel.html">PDecayChannel</a> 'c1' it constructs
+ a <a href="./PChannel.html">PChannel</a> and puts it in the ToDo stack of the PReactionList *RL.
+    cout &lt;&lt; <span class="string">"***enter for  "</span> &lt;&lt; p-&gt;ID() &lt;&lt; endl;
+ multiplying all the channel weights
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./PReaction.html">PReaction</a> * <a class="funcname" name="PDecayManager:GetNextReaction" href="src/PDecayManager.cxx.html#Hq4JPB">GetNextReaction</a>(<span class="keyword">int</span> wf, <span class="keyword">const</span> <span class="keyword">char</span>* name, <span class="keyword">int</span> f0 = 0, <span class="keyword">int</span> f1 = 0, <span class="keyword">int</span> f2 = 0, <span class="keyword">int</span> f3 = 0, TTree* tt = __null)</span><br />
+<div class="funccomm"><pre> <a href="./PDecayManager.html#PDecayManager:GetNextReaction" title="PReaction* PDecayManager::GetNextReaction(int wf, const char* name, int f0 = 0, int f1 = 0, int f2 = 0, int f3 = 0, TTree* tt = __null) or overloads">GetNextReaction</a>() looks for the next decay tree in '<a href="./PDecayManager.html#PDecayManager:ReactionList" title="PNextList&lt;PReactionList&gt;* PDecayManager::ReactionList">ReactionList</a>'
+ and constructs a new <a href="./PReaction.html">PReaction</a>. If the weight flag 'wf' is set,
+ the channel weight is copied to the parent particle of the first
+ <a href="./PChannel.html">PChannel</a>. This results in equal statistics of all channels.
+ The options are passed to the appropriate <a href="./PReaction.html">PReaction</a> constructor.
+
+ Normally this routine is called internally from the <a href="./PDecayManager.html#PDecayManager:loop" title="Int_t PDecayManager::loop(int num, int wf, const char* name, int f0 = 0, int f1 = 0, int f2 = 0, int f3 = 0, int rf = 0)">loop</a>() function.
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./PReaction.html">PReaction</a> * <a class="funcname" name="PDecayManager:GetNextReaction@1" href="src/PDecayManager.cxx.html#EJsc6D">GetNextReaction</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name, <span class="keyword">int</span> f0 = 0, <span class="keyword">int</span> f1 = 0, <span class="keyword">int</span> f2 = 0, <span class="keyword">int</span> f3 = 0, TTree* tt = __null)</span><br />
+<div class="funccomm"><pre> This call sets the weight flag to zero and is obsolete.
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Int_t">Int_t</a> <a class="funcname" name="PDecayManager:Loop" href="src/PDecayManager.cxx.html#g_YlrD">Loop</a>(<span class="keyword">int</span> num, <span class="keyword">int</span> wf, <span class="keyword">const</span> <span class="keyword">char</span>* name, <span class="keyword">int</span> f0 = 0, <span class="keyword">int</span> f1 = 0, <span class="keyword">int</span> f2 = 0, <span class="keyword">int</span> f3 = 0, <span class="keyword">int</span> rf = 0)</span><br />
+<div class="funccomm"><pre> This is the standard call to process all possible reaction channels
+ of the reaction set up before.
+ The total number of events given as the first argument are used
+ as a 'equivalent number'. It reflects the sum of weights to
+ get a proper normalization between the single channels. If the
+ weight flag 'wf' is set, the channel probability is also put
+ into this weight. This results in equal statistics for each channel.
+ The other parameters are the same as for the <a href="./PReaction.html">PReaction</a>::<a href="./PReaction.html#PReaction:loop" title="int PReaction::loop(int i = -1, int wf = 0, int verbose = 1)">loop</a>() call.
+ The real number of events is returned.
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Double_t">Double_t</a> <a class="funcname" name="PDecayManager:GetCurrentWeight" href="src/PDecayManager.cxx.html#pKdWLB">GetCurrentWeight</a>()</span><br />
+<div class="funccomm"><pre> Returns the weight of the current reaction channel.
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PDecayManager:MyPrint" href="src/PDecayManager.cxx.html#VD1YZD">MyPrint</a>() const</span><br />
+<div class="funccomm"><pre> Prints the particle decay list.
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PDecayManager:Print@1" href="src/PDecayManager.cxx.html#M2kG5C">Print</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> id) const</span><br />
+<div class="funccomm"><pre> Prints the decay channels of the given particle (specified by its id).
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PDecayManager:Print@2" href="src/PDecayManager.cxx.html#nagUhD">Print</a>(<a href="./PParticle.html">PParticle</a>* p) const</span><br />
+<div class="funccomm"><pre> Prints the decay channels of the given particle (specified by a pointer
+ to a <a href="./PParticle.html">PParticle</a>).
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PDecayManager:MyPrint@1" href="src/PDecayManager.cxx.html#WXhtX">MyPrint</a>(<span class="keyword">char</span>* name) const</span><br />
+<div class="funccomm"><pre> Prints the decay channels of the given particle (specified by its name).
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PDecayManager:PrintReactionList" href="src/PDecayManager.cxx.html#jI2PfB">PrintReactionList</a>() const</span><br />
+<div class="funccomm"><pre> Prints the current reaction list
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PDecayManager:PrintReactionListEntry" href="src/PDecayManager.cxx.html#A._XDC">PrintReactionListEntry</a>(PReactionList* , <a href="./ListOfTypes.html#ostream">ostream</a>&amp; os) const</span><br />
+<div class="funccomm"><pre> Prints one entry of the reaction list (used internally).
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PDecayManager:PrintChain" href="src/PDecayManager.cxx.html#PLKGQB">PrintChain</a>(<a href="./PParticle.html">PParticle</a>* p, <a href="./PChannel.html">PChannel</a>** l, <a href="./ListOfTypes.html#Int_t">Int_t</a> c, <a href="./ListOfTypes.html#ostream">ostream</a>&amp; os) const</span><br />
+<div class="funccomm"><pre> Prints one reaction chain (used internally).
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">const</span> <span class="keyword">char</span> * <a class="funcname" name="PDecayManager:GetName" href="src/PDecayManager.cxx.html#HsXg_C">GetName</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> id) const</span><br />
+<div class="funccomm"><pre> Returns the name of a particle (specified by its id).
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Bool_t">Bool_t</a> <a class="funcname" name="PDecayManager:AddBulk" href="src/PDecayManager.cxx.html#Oruzo">AddBulk</a>(<a href="./PBulkInterface.html">PBulkInterface</a>* mybulk)</span><br />
+<div class="funccomm"><pre>Add a <a href="./PDecayManager.html#PDecayManager:bulk" title="PBulkInterface* PDecayManager::bulk">bulk</a> interface to the list
+Each <a href="./PDecayManager.html#PDecayManager:bulk" title="PBulkInterface* PDecayManager::bulk">bulk</a> object will be executed during the event <a href="./PDecayManager.html#PDecayManager:loop" title="Int_t PDecayManager::loop(int num, int wf, const char* name, int f0 = 0, int f1 = 0, int f2 = 0, int f3 = 0, int rf = 0)">loop</a>
+after the normal decay
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Bool_t">Bool_t</a> <a class="funcname" name="PDecayManager:AddPrologueBulk" href="src/PDecayManager.cxx.html#AeoNt">AddPrologueBulk</a>(<a href="./PBulkInterface.html">PBulkInterface</a>* mybulk)</span><br />
+<div class="funccomm"><pre>Add a <a href="./PDecayManager.html#PDecayManager:bulk" title="PBulkInterface* PDecayManager::bulk">bulk</a> interface to the list
+Each <a href="./PDecayManager.html#PDecayManager:bulk" title="PBulkInterface* PDecayManager::bulk">bulk</a> object will be executed during the event <a href="./PDecayManager.html#PDecayManager:loop" title="Int_t PDecayManager::loop(int num, int wf, const char* name, int f0 = 0, int f1 = 0, int f2 = 0, int f3 = 0, int rf = 0)">loop</a>
+before the normal decay
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="PDecayManager:PDecayManager" href="src/PDecayManager.h.html#NbcRB">PDecayManager</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PDecayManager:Clear" href="src/PDecayManager.h.html#YfTjvE">Clear</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> id)</span><br />
+<div class="funccomm"><pre> clear the channel
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Int_t">Int_t</a> <a class="funcname" name="PDecayManager:loop" href="src/PDecayManager.h.html#CiR9iE">loop</a>(<span class="keyword">int</span> num, <span class="keyword">int</span> wf, <span class="keyword">const</span> <span class="keyword">char</span>* name, <span class="keyword">int</span> f0 = 0, <span class="keyword">int</span> f1 = 0, <span class="keyword">int</span> f2 = 0, <span class="keyword">int</span> f3 = 0, <span class="keyword">int</span> rf = 0)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PDecayManager:Print" href="src/PDecayManager.h.html#dxWKa">Print</a>(<span class="keyword">const</span> <a href="./ListOfTypes.html#Option_t">Option_t</a>* delme = __null) const</span><br />
+<div class="funccomm"><pre> prints out the decay channel list
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PDecayManager:SetHGeant" href="src/PDecayManager.h.html#s_6wwD">SetHGeant</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> fH)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PDecayManager:SetUserSelection" href="src/PDecayManager.h.html#V7hSAD">SetUserSelection</a>(<span class="keyword">void</span>* f)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PDecayManager:SetUserSelection@1" href="src/PDecayManager.h.html#KFi90D">SetUserSelection</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a>(*)(<a href="./PParticle.html">PParticle</a>*) f)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PDecayManager:SetTrigCond" href="src/PDecayManager.h.html#oj4GgD">SetTrigCond</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> n)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PDecayManager:SetPythia" href="src/PDecayManager.h.html#q4KGAC">SetPythia</a>(TPythia6* p)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PDecayManager:SetMaxFileSize" href="src/PDecayManager.h.html#CeZPbC">SetMaxFileSize</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> bytes)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PDecayManager:SetDecayAll" href="src/PDecayManager.h.html#YLqxsB">SetDecayAll</a>(<a href="./ListOfTypes.html#Float_t">Float_t</a> tau = 1.)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PDecayManager:DisableHelicityAngle" href="src/PDecayManager.h.html#igoK1D">DisableHelicityAngle</a>(<span class="keyword">void</span>)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./PDistributionManager.html">PDistributionManager</a> * <a class="funcname" name="PDecayManager:GetDistributionManager" href="src/PDecayManager.h.html#mfZ6xB">GetDistributionManager</a>(<span class="keyword">void</span>)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PDecayManager:SetWriteIndex" href="src/PDecayManager.h.html#XSsrpE">SetWriteIndex</a>(<a href="./ListOfTypes.html#Bool_t">Bool_t</a> flag)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Bool_t">Bool_t</a> <a class="funcname" name="PDecayManager:AddFileOutput" href="src/PDecayManager.h.html#Amx0QC">AddFileOutput</a>(<a href="./PFileOutput.html">PFileOutput</a>* file)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Bool_t">Bool_t</a> <a class="funcname" name="PDecayManager:Do" href="src/PDecayManager.h.html#XQTNHE">Do</a>(<span class="keyword">const</span> <span class="keyword">char</span>* command)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">return</span> <a class="funcname" name="PDecayManager:GetCurrentProjector" href="src/PDecayManager.h.html#jT3Gc">GetCurrentProjector</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Bool_t">Bool_t</a> <a class="funcname" name="PDecayManager:Do@1" href="src/PDecayManager.h.html#s3FoFB">Do</a>(TH1F* f, <span class="keyword">char</span>* command)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Bool_t">Bool_t</a> <a class="funcname" name="PDecayManager:Do@2" href="src/PDecayManager.h.html#YQtANB">Do</a>(TH2F* f, <span class="keyword">char</span>* command)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Bool_t">Bool_t</a> <a class="funcname" name="PDecayManager:Output" href="src/PDecayManager.h.html#eX0fw">Output</a>(TNtuple* f, <span class="keyword">char</span>* command = (<span class="keyword">char</span> *)<span class="string">""</span>)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Bool_t">Bool_t</a> <a class="funcname" name="PDecayManager:Input" href="src/PDecayManager.h.html#HHuw2C">Input</a>(TNtuple* f)</span><br />
+</div>
+
+<br />
+<!--SIGNATURE-->
+<div id="footer">
+
+<em>&raquo; Last changed: Tue May  2 17:42:20 2017 </em><em>&raquo; Last generated: 2017-05-02 17:42</em><br />
+<em>This page has been automatically generated. For comments or suggestions regarding the documentation or ROOT in general please send a mail to <a href="mailto:rootdev@cern.ch">ROOT support</a>.</em>
+</div>
+</div>
+</body>
+</html>
