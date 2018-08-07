@@ -1,0 +1,581 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!--                                             -->
+<!-- Author: ROOT team (rootdev@cern.ch)         -->
+<!--                                             -->
+<!--   Date: Tue Aug  7 10:55:11 2018            -->
+<!--                                             -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>PReaction</title>
+<meta name="rating" content="General" />
+<meta name="objecttype" content="Manual" />
+<meta name="keywords" content="software development, oo, object oriented, unix, x11, windows, c++, html, rene brun, fons rademakers, cern" />
+<meta name="description" content="ROOT - An Object Oriented Framework For Large Scale Data Analysis." />
+<link rel="stylesheet" type="text/css" href="ROOT.css" id="ROOTstyle" />
+<script type="text/javascript" src="ROOT.js"></script>
+</head>
+<body  onload="javascript:SetValuesFromCookie();"><div id="body_content">
+<div id="root_header"></div>
+<a name="TopOfPage"></a>
+<script type="text/javascript">WriteFollowPageBox('class PReaction','','Pluto/PReaction.h');</script>
+<div id="toplinks">
+<div class="descrhead"><div class="descrheadcontent">
+<span class="descrtitle">Quick Links:</span>
+<a class="descrheadentry" href="http://root.cern.ch">ROOT Homepage</a>
+<a class="descrheadentry" href="./ClassIndex.html">Class Index</a>
+<a class="descrheadentry" href="./ClassHierarchy.html">Class Hierarchy</a></div>
+<script type="text/javascript">
+function onSearch() {
+var s='http://www.google.com/search?q=%s+site%3A%u+-site%3A%u%2Fsrc%2F+-site%3A%u%2Fexamples%2F';
+var ref=String(document.location.href).replace(/https?:\/\//,'').replace(/\/[^\/]*$/,'').replace(/\//g,'%2F');
+window.location.href=s.replace(/%u/ig,ref).replace(/%s/ig,escape(document.searchform.t.value));
+return false;}
+</script>
+<form id="searchform" name="searchform" onsubmit="return onSearch()" action="javascript:onSearch();" method="post">
+<input name="t" size="30" value="Search documentation..." onfocus="if (document.searchform.t.value=='Search documentation...') document.searchform.t.value='';"></input>
+<a id="searchlink"  title="www.google.com"  href="javascript:onSearch();" onclick="return onSearch()">Search</a></form>
+</div>
+<div class="descrhead"><div class="descrheadcontent">
+<span class="descrtitle">Source:</span>
+<a class="descrheadentry" href="src/PReaction.h.html">header file</a>
+<a class="descrheadentry"> </a>
+
+</div></div>
+<div class="descrhead"><div class="descrheadcontent">
+<span class="descrtitle">Sections:</span>
+<a class="descrheadentry" href="#PReaction:description">class description</a> 
+<a class="descrheadentry" href="#PReaction:Function_Members">function members</a>
+<a class="descrheadentry" href="#PReaction:Data_Members">data members</a>
+<a class="descrheadentry" href="#PReaction:Class_Charts">class charts</a>
+</div></div>
+</div>
+<div class="location">
+<a class="locationlevel" href="index.html">Pluto</a>
+ &#187; <a class="locationlevel" href="./PLUTO_Index.html">PLUTO</a>
+ &#187; <a class="locationlevel" href="#TopOfPage">PReaction</a>
+</div>
+<div class="dropshadow"><div class="withshadow"><h1><a name="PReaction:description"></a>class PReaction: public <a href="./TObject.html">TObject</a></h1>
+<div class="classdescr">
+</div>
+</div></div>
+
+<div id="functions">
+<h2><a id="PReaction:Function_Members"></a>Function Members (Methods)</h2>
+<div class="access" id="funcpubl"><b>public:</b>
+<table class="func" id="tabfuncpubl" cellspacing="0">
+<tr class="func"><td class="funcret"> virtual</td><td class="funcname"><a class="funcname" href="#PReaction:_PReaction">~PReaction</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:AbstractMethod"><span class="baseclass">TObject::</span>AbstractMethod</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#PReaction:AddBulk">AddBulk</a>(<a href="./PBulkInterface.html">PBulkInterface</a>* mybulk)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#PReaction:AddFileOutput">AddFileOutput</a>(<a href="./PFileOutput.html">PFileOutput</a>* file)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#PReaction:AddPrologueBulk">AddPrologueBulk</a>(<a href="./PBulkInterface.html">PBulkInterface</a>* mybulk)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PReaction:AddReaction">AddReaction</a>(<span class="keyword">const</span> <span class="keyword">char</span>* reaction)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PReaction:allParticles">allParticles</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:AppendPad"><span class="baseclass">TObject::</span>AppendPad</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PReaction:asciiNo">asciiNo</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PReaction:asciiYes">asciiYes</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:Browse"><span class="baseclass">TObject::</span>Browse</a>(<a href="./TBrowser.html">TBrowser</a>* b)</td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#ULong_t">ULong_t</a></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:CheckedHash"><span class="baseclass">TObject::</span>CheckedHash</a>()</td></tr>
+<tr class="func"><td class="funcret">static <a href="./TClass.html">TClass</a>*</td><td class="funcname"><a class="funcname" href="#PReaction:Class">Class</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:ClassName"><span class="baseclass">TObject::</span>ClassName</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:Clear"><span class="baseclass">TObject::</span>Clear</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* = <span class="string">""</span>)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./TObject.html">TObject</a>*</td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:Clone"><span class="baseclass">TObject::</span>Clone</a>(<span class="keyword">const</span> <span class="keyword">char</span>* newname = <span class="string">""</span>) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PReaction:Close">Close</a>()</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#PReaction:CloseFile">CloseFile</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:Compare"><span class="baseclass">TObject::</span>Compare</a>(<span class="keyword">const</span> <a href="./TObject.html">TObject</a>* obj) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:Copy"><span class="baseclass">TObject::</span>Copy</a>(<a href="./TObject.html">TObject</a>&amp; object) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:Delete"><span class="baseclass">TObject::</span>Delete</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)<span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PReaction:DisableWeightReset">DisableWeightReset</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:DistancetoPrimitive"><span class="baseclass">TObject::</span>DistancetoPrimitive</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> px, <a href="./ListOfTypes.html#Int_t">Int_t</a> py)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#PReaction:Do">Do</a>(<span class="keyword">const</span> <span class="keyword">char</span>* command)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#PReaction:Do@1">Do</a>(<a href="./TH1.html">TH1</a>* f, <span class="keyword">const</span> <span class="keyword">char</span>* command, <a href="./ListOfTypes.html#Int_t">Int_t</a> flag = 1)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#PReaction:Do@2">Do</a>(<a href="./TH2.html">TH2</a>* f, <span class="keyword">const</span> <span class="keyword">char</span>* command, <a href="./ListOfTypes.html#Int_t">Int_t</a> flag = 1)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#PReaction:Do@3">Do</a>(<a href="./TH3.html">TH3</a>* f, <span class="keyword">const</span> <span class="keyword">char</span>* command, <a href="./ListOfTypes.html#Int_t">Int_t</a> flag = 1)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:Draw"><span class="baseclass">TObject::</span>Draw</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:DrawClass"><span class="baseclass">TObject::</span>DrawClass</a>() <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./TObject.html">TObject</a>*</td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:DrawClone"><span class="baseclass">TObject::</span>DrawClone</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>) <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:Dump"><span class="baseclass">TObject::</span>Dump</a>() <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:Error"><span class="baseclass">TObject::</span>Error</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:Execute"><span class="baseclass">TObject::</span>Execute</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* params, <a href="./ListOfTypes.html#Int_t">Int_t</a>* error = 0)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:Execute@1"><span class="baseclass">TObject::</span>Execute</a>(<a href="./TMethod.html">TMethod</a>* method, <a href="./TObjArray.html">TObjArray</a>* params, <a href="./ListOfTypes.html#Int_t">Int_t</a>* error = 0)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:ExecuteEvent"><span class="baseclass">TObject::</span>ExecuteEvent</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> event, <a href="./ListOfTypes.html#Int_t">Int_t</a> px, <a href="./ListOfTypes.html#Int_t">Int_t</a> py)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:Fatal"><span class="baseclass">TObject::</span>Fatal</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./TObject.html">TObject</a>*</td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:FindObject"><span class="baseclass">TObject::</span>FindObject</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./TObject.html">TObject</a>*</td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:FindObject@1"><span class="baseclass">TObject::</span>FindObject</a>(<span class="keyword">const</span> <a href="./TObject.html">TObject</a>* obj) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span>*</td><td class="funcname"><a class="funcname" href="#PReaction:GetCIndex">GetCIndex</a>()</td></tr>
+<tr class="func"><td class="funcret"><a href="./PProjector.html">PProjector</a>*</td><td class="funcname"><a class="funcname" href="#PReaction:GetCurrentProjector">GetCurrentProjector</a>()</td></tr>
+<tr class="func"><td class="funcret"><a href="./PDistributionManager.html">PDistributionManager</a>*</td><td class="funcname"><a class="funcname" href="#PReaction:GetDistributionManager">GetDistributionManager</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Option_t">Option_t</a>*</td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:GetDrawOption"><span class="baseclass">TObject::</span>GetDrawOption</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">static <a href="./ListOfTypes.html#Long_t">Long_t</a></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:GetDtorOnly"><span class="baseclass">TObject::</span>GetDtorOnly</a>()</td></tr>
+<tr class="func"><td class="funcret"><a href="./PFilter.html">PFilter</a>**</td><td class="funcname"><a class="funcname" href="#PReaction:GetFilter">GetFilter</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:GetIconName"><span class="baseclass">TObject::</span>GetIconName</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:GetName"><span class="baseclass">TObject::</span>GetName</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#PReaction:GetNumAll">GetNumAll</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:GetObjectInfo"><span class="baseclass">TObject::</span>GetObjectInfo</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> px, <a href="./ListOfTypes.html#Int_t">Int_t</a> py) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">static <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:GetObjectStat"><span class="baseclass">TObject::</span>GetObjectStat</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Option_t">Option_t</a>*</td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:GetOption"><span class="baseclass">TObject::</span>GetOption</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./PParticle.html">PParticle</a>**</td><td class="funcname"><a class="funcname" href="#PReaction:GetProducts">GetProducts</a>()</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#PReaction:GetReactionId">GetReactionId</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:GetTitle"><span class="baseclass">TObject::</span>GetTitle</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#UInt_t">UInt_t</a></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:GetUniqueID"><span class="baseclass">TObject::</span>GetUniqueID</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:HandleTimer"><span class="baseclass">TObject::</span>HandleTimer</a>(<a href="./TTimer.html">TTimer</a>* timer)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#ULong_t">ULong_t</a></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:Hash"><span class="baseclass">TObject::</span>Hash</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:HasInconsistentHash"><span class="baseclass">TObject::</span>HasInconsistentHash</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:Info"><span class="baseclass">TObject::</span>Info</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:InheritsFrom"><span class="baseclass">TObject::</span>InheritsFrom</a>(<span class="keyword">const</span> <span class="keyword">char</span>* classname) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:InheritsFrom@1"><span class="baseclass">TObject::</span>InheritsFrom</a>(<span class="keyword">const</span> <a href="./TClass.html">TClass</a>* cl) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PReaction:InitChannels">InitChannels</a>()</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#PReaction:Input">Input</a>(<a href="./TNtuple.html">TNtuple</a>* f)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#PReaction:Input@1">Input</a>(<span class="keyword">const</span> <span class="keyword">char</span>* f, <span class="keyword">const</span> <span class="keyword">char</span>* command = <span class="string">""</span>)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:Inspect"><span class="baseclass">TObject::</span>Inspect</a>() <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:InvertBit"><span class="baseclass">TObject::</span>InvertBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f)</td></tr>
+<tr class="func"><td class="funcret">virtual <a href="./TClass.html">TClass</a>*</td><td class="funcname"><a class="funcname" href="#PReaction:IsA">IsA</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:IsEqual"><span class="baseclass">TObject::</span>IsEqual</a>(<span class="keyword">const</span> <a href="./TObject.html">TObject</a>* obj) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:IsFolder"><span class="baseclass">TObject::</span>IsFolder</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PReaction:IsInline">IsInline</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:IsOnHeap"><span class="baseclass">TObject::</span>IsOnHeap</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:IsSortable"><span class="baseclass">TObject::</span>IsSortable</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:IsZombie"><span class="baseclass">TObject::</span>IsZombie</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#PReaction:loop">loop</a>(<span class="keyword">int</span> i = -1, <span class="keyword">int</span> wf = 0, <span class="keyword">int</span> verbose = 1)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#PReaction:Loop">Loop</a>(<span class="keyword">int</span> i = -1, <span class="keyword">int</span> wf = 0, <span class="keyword">int</span> verbose = 1)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:ls"><span class="baseclass">TObject::</span>ls</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:MayNotUse"><span class="baseclass">TObject::</span>MayNotUse</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:Notify"><span class="baseclass">TObject::</span>Notify</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:Obsolete"><span class="baseclass">TObject::</span>Obsolete</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* asOfVers, <span class="keyword">const</span> <span class="keyword">char</span>* removedFromVers) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:operator_delete"><span class="baseclass">TObject::</span>operator delete</a>(<span class="keyword">void</span>* ptr)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:operator_delete@1"><span class="baseclass">TObject::</span>operator delete</a>(<span class="keyword">void</span>* ptr, <span class="keyword">void</span>* vp)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:operator_delete[]"><span class="baseclass">TObject::</span>operator delete[]</a>(<span class="keyword">void</span>* ptr)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:operator_delete[]@1"><span class="baseclass">TObject::</span>operator delete[]</a>(<span class="keyword">void</span>* ptr, <span class="keyword">void</span>* vp)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span>*</td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:operator_new"><span class="baseclass">TObject::</span>operator new</a>(<a href="./ListOfTypes.html#size_t">size_t</a> sz)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span>*</td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:operator_new@1"><span class="baseclass">TObject::</span>operator new</a>(<a href="./ListOfTypes.html#size_t">size_t</a> sz, <span class="keyword">void</span>* vp)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span>*</td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:operator_new[]"><span class="baseclass">TObject::</span>operator new[]</a>(<a href="./ListOfTypes.html#size_t">size_t</a> sz)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span>*</td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:operator_new[]@1"><span class="baseclass">TObject::</span>operator new[]</a>(<a href="./ListOfTypes.html#size_t">size_t</a> sz, <span class="keyword">void</span>* vp)</td></tr>
+<tr class="func"><td class="funcret"><a href="./PReaction.html">PReaction</a>&amp;</td><td class="funcname"><a class="funcname" href="#PReaction:operator_">operator=</a>(<span class="keyword">const</span> <a href="./PReaction.html">PReaction</a>&amp;)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#PReaction:Output">Output</a>(<a href="./TNtuple.html">TNtuple</a>* f, <span class="keyword">const</span> <span class="keyword">char</span>* command = (<span class="keyword">char</span> *)<span class="string">""</span>)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#PReaction:Output@1">Output</a>(<span class="keyword">const</span> <span class="keyword">char</span>* f, <span class="keyword">const</span> <span class="keyword">char</span>* command = <span class="string">""</span>)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:Paint"><span class="baseclass">TObject::</span>Paint</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:Pop"><span class="baseclass">TObject::</span>Pop</a>()</td></tr>
+<tr class="func"><td class="funcret"></td><td class="funcname"><a class="funcname" href="#PReaction:PReaction">PReaction</a>()</td></tr>
+<tr class="func"><td class="funcret"></td><td class="funcname"><a class="funcname" href="#PReaction:PReaction@1">PReaction</a>(<span class="keyword">const</span> <span class="keyword">char</span>* <a href="./PReaction.html#PReaction:filename" title="TString PReaction::filename">filename</a>)</td></tr>
+<tr class="func"><td class="funcret"></td><td class="funcname"><a class="funcname" href="#PReaction:PReaction@7">PReaction</a>(<span class="keyword">const</span> <a href="./PReaction.html">PReaction</a>&amp;)</td></tr>
+<tr class="func"><td class="funcret"></td><td class="funcname"><a class="funcname" href="#PReaction:PReaction@3">PReaction</a>(<a href="./PChannel.html">PChannel</a>**, <span class="keyword">int</span> n = 2, <span class="keyword">unsigned</span> <span class="keyword">int</span> ff = 0, <a href="./TTree.html">TTree</a>* ttree = __null, <span class="keyword">const</span> <span class="keyword">char</span>* <a href="./PReaction.html#PReaction:filename" title="TString PReaction::filename">filename</a> = __null)</td></tr>
+<tr class="func"><td class="funcret"></td><td class="funcname"><a class="funcname" href="#PReaction:PReaction@2">PReaction</a>(<a href="./PChannel.html">PChannel</a>**, <span class="keyword">const</span> <span class="keyword">char</span>*, <span class="keyword">int</span> n = 2, <span class="keyword">int</span> f0 = 1, <span class="keyword">int</span> f1 = 0, <span class="keyword">int</span> f2 = 0, <span class="keyword">int</span> f3 = 0, <a href="./TTree.html">TTree</a>* ttree = __null)</td></tr>
+<tr class="func"><td class="funcret"></td><td class="funcname"><a class="funcname" href="#PReaction:PReaction@6">PReaction</a>(<a href="./PParticle.html">PParticle</a>*, <span class="keyword">const</span> <span class="keyword">char</span>* reaction, <span class="keyword">const</span> <span class="keyword">char</span>* file_name = __null, <a href="./ListOfTypes.html#Int_t">Int_t</a> f0 = 1, <a href="./ListOfTypes.html#Int_t">Int_t</a> f1 = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> f2 = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> f3 = 0, <a href="./TTree.html">TTree</a>* ttree = __null)</td></tr>
+<tr class="func"><td class="funcret"></td><td class="funcname"><a class="funcname" href="#PReaction:PReaction@4">PReaction</a>(<a href="./ListOfTypes.html#Double_t">Double_t</a> momentum, <span class="keyword">const</span> <span class="keyword">char</span>* beam, <span class="keyword">const</span> <span class="keyword">char</span>* target, <span class="keyword">const</span> <span class="keyword">char</span>* reaction, <span class="keyword">const</span> <span class="keyword">char</span>* file_name = __null, <a href="./ListOfTypes.html#Int_t">Int_t</a> f0 = 1, <a href="./ListOfTypes.html#Int_t">Int_t</a> f1 = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> f2 = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> f3 = 0, <a href="./TTree.html">TTree</a>* ttree = __null)</td></tr>
+<tr class="func"><td class="funcret"></td><td class="funcname"><a class="funcname" href="#PReaction:PReaction@5">PReaction</a>(<span class="keyword">const</span> <span class="keyword">char</span>* command, <span class="keyword">const</span> <span class="keyword">char</span>* beam, <span class="keyword">const</span> <span class="keyword">char</span>* target, <span class="keyword">const</span> <span class="keyword">char</span>* reaction, <span class="keyword">const</span> <span class="keyword">char</span>* file_name = __null, <a href="./ListOfTypes.html#Int_t">Int_t</a> f0 = 1, <a href="./ListOfTypes.html#Int_t">Int_t</a> f1 = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> f2 = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> f3 = 0, <a href="./TTree.html">TTree</a>* ttree = __null)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PReaction:Preheating">Preheating</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> num)</td></tr>
+<tr class="func"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PReaction:Print">Print</a>(<span class="keyword">const</span> <a href="./ListOfTypes.html#Option_t">Option_t</a>* delme = __null) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PReaction:PrintReport">PrintReport</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:Read"><span class="baseclass">TObject::</span>Read</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:RecursiveRemove"><span class="baseclass">TObject::</span>RecursiveRemove</a>(<a href="./TObject.html">TObject</a>* obj)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:ResetBit"><span class="baseclass">TObject::</span>ResetBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:SaveAs"><span class="baseclass">TObject::</span>SaveAs</a>(<span class="keyword">const</span> <span class="keyword">char</span>* <a href="./PReaction.html#PReaction:filename" title="TString PReaction::filename">filename</a> = <span class="string">""</span>, <a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>) <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:SavePrimitive"><span class="baseclass">TObject::</span>SavePrimitive</a>(<a href="./ListOfTypes.html#ostream">ostream</a>&amp; out, <a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:SetBit@1"><span class="baseclass">TObject::</span>SetBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:SetBit"><span class="baseclass">TObject::</span>SetBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f, <a href="./ListOfTypes.html#Bool_t">Bool_t</a> set)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PReaction:setDecayAll">setDecayAll</a>(<a href="./ListOfTypes.html#Float_t">Float_t</a> tau = 1.)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PReaction:SetDecayAll">SetDecayAll</a>(<a href="./ListOfTypes.html#Float_t">Float_t</a> tau = 1.)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:SetDrawOption"><span class="baseclass">TObject::</span>SetDrawOption</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)<span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:SetDtorOnly"><span class="baseclass">TObject::</span>SetDtorOnly</a>(<span class="keyword">void</span>* obj)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PReaction:SetFilter">SetFilter</a>(<span class="keyword">int</span> ch_id, <a href="./PFilter.html">PFilter</a>* filter)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PReaction:SetHGeant">SetHGeant</a>(<span class="keyword">int</span> flag)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PReaction:setHGeant">setHGeant</a>(<span class="keyword">int</span> flag)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PReaction:SetMaxFileSize">SetMaxFileSize</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> bytes)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PReaction:SetName">SetName</a>(<span class="keyword">const</span> <span class="keyword">char</span>*)</td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:SetObjectStat"><span class="baseclass">TObject::</span>SetObjectStat</a>(<a href="./ListOfTypes.html#Bool_t">Bool_t</a> stat)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PReaction:SetPythia">SetPythia</a>(TPythia6* p)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PReaction:SetTrigCond">SetTrigCond</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> n)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:SetUniqueID"><span class="baseclass">TObject::</span>SetUniqueID</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> uid)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PReaction:SetUserAnalysis">SetUserAnalysis</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a>(*)(<a href="./PParticle.html">PParticle</a>**,<a href="./ListOfTypes.html#Int_t">Int_t</a>) f)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PReaction:SetUserAnalysis@1">SetUserAnalysis</a>(<span class="keyword">void</span>* f)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PReaction:SetUserSelection">SetUserSelection</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a>(*)(<a href="./PParticle.html">PParticle</a>*) f)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PReaction:SetUserSelection@1">SetUserSelection</a>(<span class="keyword">void</span>* f)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PReaction:SetWriteIndex">SetWriteIndex</a>(<a href="./ListOfTypes.html#Bool_t">Bool_t</a> flag)</td></tr>
+<tr class="func"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PReaction:ShowMembers">ShowMembers</a>(<a href="./TMemberInspector.html">TMemberInspector</a>&amp; insp) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PReaction:Streamer">Streamer</a>(<a href="./TBuffer.html">TBuffer</a>&amp;)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PReaction:StreamerNVirtual">StreamerNVirtual</a>(<a href="./TBuffer.html">TBuffer</a>&amp; ClassDef_StreamerNVirtual_b)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:SysError"><span class="baseclass">TObject::</span>SysError</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:TestBit"><span class="baseclass">TObject::</span>TestBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:TestBits"><span class="baseclass">TObject::</span>TestBits</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PReaction:trackedParticles">trackedParticles</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:UseCurrentStyle"><span class="baseclass">TObject::</span>UseCurrentStyle</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PReaction:VertexNo">VertexNo</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PReaction:VertexYes">VertexYes</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:Warning"><span class="baseclass">TObject::</span>Warning</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:Write"><span class="baseclass">TObject::</span>Write</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> option = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> bufsize = 0)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:Write@1"><span class="baseclass">TObject::</span>Write</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> option = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> bufsize = 0) <span class="keyword">const</span></td></tr>
+
+</table></div>
+<div class="access" id="funcprot"><b>protected:</b>
+<table class="func" id="tabfuncprot" cellspacing="0">
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:DoError"><span class="baseclass">TObject::</span>DoError</a>(<span class="keyword">int</span> level, <span class="keyword">const</span> <span class="keyword">char</span>* location, <span class="keyword">const</span> <span class="keyword">char</span>* fmt, <a href="./ListOfTypes.html#va_list">va_list</a> va) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:MakeZombie"><span class="baseclass">TObject::</span>MakeZombie</a>()</td></tr>
+
+</table></div>
+<div class="access" id="funcpriv"><b>private:</b>
+<table class="func" id="tabfuncpriv" cellspacing="0">
+<tr class="func"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#PReaction:CheckTObjectHashConsistency">CheckTObjectHashConsistency</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PReaction:ConvertFilename">ConvertFilename</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PReaction:InitLoop">InitLoop</a>()</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#PReaction:IsExtTree">IsExtTree</a>()</td></tr>
+<tr class="func"><td class="funcret"><a href="./PParticle.html">PParticle</a>*</td><td class="funcname"><a class="funcname" href="#PReaction:MakeParticle">MakeParticle</a>(<span class="keyword">char</span>* name)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#PReaction:parse_script">parse_script</a>(<span class="keyword">const</span> <span class="keyword">char</span>* e, <span class="keyword">const</span> <span class="keyword">char</span>* beam, <span class="keyword">const</span> <span class="keyword">char</span>* target, <span class="keyword">const</span> <span class="keyword">char</span>* reaction, <span class="keyword">const</span> <span class="keyword">char</span>* file_name = __null, <a href="./ListOfTypes.html#Int_t">Int_t</a> f0 = 1, <a href="./ListOfTypes.html#Int_t">Int_t</a> f1 = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> f2 = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> f3 = 0, <a href="./TTree.html">TTree</a>* ttree = __null)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#PReaction:ParseChannel">ParseChannel</a>(<a href="./PParticle.html">PParticle</a>* parent, <span class="keyword">const</span> <span class="keyword">char</span>* <a href="./PReaction.html#PReaction:channel" title="PChannel** PReaction::channel">channel</a>, <a href="./TList.html">TList</a>&amp; plutoList, <a href="./ListOfTypes.html#Int_t">Int_t</a>&amp; numChannels)</td></tr>
+<tr class="func"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PReaction:passEvent">passEvent</a>(<span class="keyword">float</span>, <span class="keyword">float</span>, <span class="keyword">float</span>, <span class="keyword">int</span>, <span class="keyword">int</span>*, <span class="keyword">int</span>*, <span class="keyword">int</span>*, <span class="keyword">int</span>*, <span class="keyword">float</span>*, <span class="keyword">float</span>*, <span class="keyword">float</span>*, <span class="keyword">float</span>*, <span class="keyword">float</span>*, <span class="keyword">float</span>*, <span class="keyword">float</span>*, <span class="keyword">float</span>*)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PReaction:SetReactionId">SetReactionId</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PReaction:SetUp">SetUp</a>(<a href="./PChannel.html">PChannel</a>**)</td></tr>
+
+</table></div>
+</div>
+
+<div id="datamembers">
+<h2><a name="PReaction:Data_Members"></a>Data Members</h2>
+<div class="access" id="datapubl"><b>public:</b>
+<table class="data" id="tabdatapubl" cellspacing="0">
+<tr class="datainh"><td class="datatype">static <a href="./TObject.html">TObject</a>::(anonymous)</td><td class="dataname"><a href="./TObject.html#TObject:kBitMask"><span class="baseclass">TObject::</span>kBitMask</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./TObject.html">TObject</a>::EStatusBits</td><td class="dataname"><a href="./TObject.html#TObject:kCanDelete"><span class="baseclass">TObject::</span>kCanDelete</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./TObject.html">TObject</a>::EStatusBits</td><td class="dataname"><a href="./TObject.html#TObject:kCannotPick"><span class="baseclass">TObject::</span>kCannotPick</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./TObject.html">TObject</a>::EStatusBits</td><td class="dataname"><a href="./TObject.html#TObject:kHasUUID"><span class="baseclass">TObject::</span>kHasUUID</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./TObject.html">TObject</a>::(anonymous)</td><td class="dataname"><a href="./TObject.html#TObject:kInconsistent"><span class="baseclass">TObject::</span>kInconsistent</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./TObject.html">TObject</a>::EStatusBits</td><td class="dataname"><a href="./TObject.html#TObject:kInvalidObject"><span class="baseclass">TObject::</span>kInvalidObject</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./TObject.html">TObject</a>::(anonymous)</td><td class="dataname"><a href="./TObject.html#TObject:kIsOnHeap"><span class="baseclass">TObject::</span>kIsOnHeap</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./TObject.html">TObject</a>::EStatusBits</td><td class="dataname"><a href="./TObject.html#TObject:kIsReferenced"><span class="baseclass">TObject::</span>kIsReferenced</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./TObject.html">TObject</a>::EStatusBits</td><td class="dataname"><a href="./TObject.html#TObject:kMustCleanup"><span class="baseclass">TObject::</span>kMustCleanup</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./TObject.html">TObject</a>::EStatusBits</td><td class="dataname"><a href="./TObject.html#TObject:kNoContextMenu"><span class="baseclass">TObject::</span>kNoContextMenu</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./TObject.html">TObject</a>::(anonymous)</td><td class="dataname"><a href="./TObject.html#TObject:kNotDeleted"><span class="baseclass">TObject::</span>kNotDeleted</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./TObject.html">TObject</a>::EDeprecatedStatusBits</td><td class="dataname"><a href="./TObject.html#TObject:kObjInCanvas"><span class="baseclass">TObject::</span>kObjInCanvas</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./TObject.html">TObject</a>::(anonymous)</td><td class="dataname"><a href="./TObject.html#TObject:kOverwrite"><span class="baseclass">TObject::</span>kOverwrite</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./TObject.html">TObject</a>::(anonymous)</td><td class="dataname"><a href="./TObject.html#TObject:kSingleKey"><span class="baseclass">TObject::</span>kSingleKey</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./TObject.html">TObject</a>::(anonymous)</td><td class="dataname"><a href="./TObject.html#TObject:kWriteDelete"><span class="baseclass">TObject::</span>kWriteDelete</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./TObject.html">TObject</a>::(anonymous)</td><td class="dataname"><a href="./TObject.html#TObject:kZombie"><span class="baseclass">TObject::</span>kZombie</a></td><td></td></tr>
+
+</table></div>
+<div class="access" id="datapriv"><b>private:</b>
+<table class="data" id="tabdatapriv" cellspacing="0">
+<tr class="data"><td class="datatype"><span class="keyword">unsigned</span> <span class="keyword">int</span></td><td class="dataname"><a name="PReaction:HGeant"></a>HGeant</td><td></td></tr>
+<tr class="data"><td class="datatype">static <span class="keyword">int</span></td><td class="dataname"><a name="PReaction:activeCnt"></a>activeCnt</td><td class="datadesc">number of clones for root branches,</td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">unsigned</span> <span class="keyword">int</span></td><td class="dataname"><a name="PReaction:allPARTICLES"></a>allPARTICLES</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">unsigned</span> <span class="keyword">int</span></td><td class="dataname"><a name="PReaction:asciiOUTPUT"></a>asciiOUTPUT</td><td></td></tr>
+<tr class="data"><td class="datatype">static <a href="./ListOfTypes.html#FILE">FILE</a>*</td><td class="dataname"><a name="PReaction:asciif"></a>asciif</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./PBulkInterface.html">PBulkInterface</a>*</td><td class="dataname"><a name="PReaction:bulk"></a>bulk[5]</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">int</span></td><td class="dataname"><a name="PReaction:bulkdecay_pos"></a>bulkdecay_pos</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./PChannel.html">PChannel</a>**</td><td class="dataname"><a name="PReaction:channel"></a>channel</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./TArrayI.html">TArrayI</a></td><td class="dataname"><a name="PReaction:cindex"></a>cindex</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./PProjector.html">PProjector</a>*</td><td class="dataname"><a name="PReaction:current_projector"></a>current_projector</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">unsigned</span> <span class="keyword">int</span></td><td class="dataname"><a name="PReaction:decayALL"></a>decayALL</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">int</span></td><td class="dataname"><a name="PReaction:decay_done"></a>decay_done[10000]</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./TArrayI.html">TArrayI</a></td><td class="dataname"><a name="PReaction:dindex"></a>dindex</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">int</span></td><td class="dataname"><a name="PReaction:doonce"></a>doonce</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Double_t">Double_t</a>*</td><td class="dataname"><a name="PReaction:event_impact_param"></a>event_impact_param</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Double_t">Double_t</a>*</td><td class="dataname"><a name="PReaction:event_plane"></a>event_plane</td><td></td></tr>
+<tr class="data"><td class="datatype">static <a href="./TClonesArray.html">TClonesArray</a>*</td><td class="dataname"><a name="PReaction:evt"></a>evt[11]</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">unsigned</span> <span class="keyword">int</span></td><td class="dataname"><a name="PReaction:extTREE"></a>extTREE</td><td></td></tr>
+<tr class="data"><td class="datatype">TPythia6*</td><td class="dataname"><a name="PReaction:fPythia"></a>fPythia</td><td class="datadesc">! pointer to Pythia object</td></tr>
+<tr class="data"><td class="datatype">static <span class="keyword">const</span> <span class="keyword">unsigned</span> <span class="keyword">int</span></td><td class="dataname"><a name="PReaction:ff0"></a>ff0</td><td></td></tr>
+<tr class="data"><td class="datatype">static <span class="keyword">const</span> <span class="keyword">unsigned</span> <span class="keyword">int</span></td><td class="dataname"><a name="PReaction:ff1"></a>ff1</td><td></td></tr>
+<tr class="data"><td class="datatype">static <span class="keyword">const</span> <span class="keyword">unsigned</span> <span class="keyword">int</span></td><td class="dataname"><a name="PReaction:ff2"></a>ff2</td><td></td></tr>
+<tr class="data"><td class="datatype">static <span class="keyword">const</span> <span class="keyword">unsigned</span> <span class="keyword">int</span></td><td class="dataname"><a name="PReaction:ff3"></a>ff3</td><td></td></tr>
+<tr class="data"><td class="datatype">static <span class="keyword">const</span> <span class="keyword">unsigned</span> <span class="keyword">int</span></td><td class="dataname"><a name="PReaction:ff4"></a>ff4</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./TString.html">TString</a></td><td class="dataname"><a name="PReaction:file1"></a>file1</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./TString.html">TString</a></td><td class="dataname"><a name="PReaction:file2"></a>file2</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./TString.html">TString</a></td><td class="dataname"><a name="PReaction:filename"></a>filename</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">int</span></td><td class="dataname"><a name="PReaction:fileoutput_pos"></a>fileoutput_pos</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./PFileOutput.html">PFileOutput</a>*</td><td class="dataname"><a name="PReaction:files"></a>files[5]</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PReaction:filter_counter"></a>filter_counter[100]</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PReaction:filter_keys"></a>filter_keys[100]</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Double_t">Double_t</a>*</td><td class="dataname"><a name="PReaction:filter_values"></a>filter_values[100]</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./TArrayI.html">TArrayI</a></td><td class="dataname"><a name="PReaction:ftrack"></a>ftrack</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">unsigned</span> <span class="keyword">int</span></td><td class="dataname"><a name="PReaction:getVERTEX"></a>getVERTEX</td><td></td></tr>
+<tr class="data"><td class="datatype">static <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PReaction:globalEventCounter"></a>globalEventCounter</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">unsigned</span> <span class="keyword">int</span></td><td class="dataname"><a name="PReaction:inactivate_decayed_particles"></a>inactivate_decayed_particles</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PReaction:is_inline"></a>is_inline</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">int</span></td><td class="dataname"><a name="PReaction:key_branches"></a>key_branches[10]</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">int</span></td><td class="dataname"><a name="PReaction:loop_count"></a>loop_count</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PReaction:nMaxBytes"></a>nMaxBytes</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PReaction:nTrigCond"></a>nTrigCond</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">int</span></td><td class="dataname"><a name="PReaction:nchan"></a>nchan</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">int</span></td><td class="dataname"><a name="PReaction:nclones"></a>nclones</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">int</span></td><td class="dataname"><a name="PReaction:ndpar"></a>ndpar</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">int</span></td><td class="dataname"><a name="PReaction:ntpar"></a>ntpar</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PReaction:num_filters"></a>num_filters</td><td class="datadesc">! Filters from PBatch commands</td></tr>
+<tr class="data"><td class="datatype"><a href="./TString.html">TString</a></td><td class="dataname"><a name="PReaction:original_filename"></a>original_filename</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./PParticle.html">PParticle</a>**</td><td class="dataname"><a name="PReaction:particle"></a>particle</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./PParticle.html">PParticle</a>**</td><td class="dataname"><a name="PReaction:particle_stack"></a>particle_stack</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PReaction:pre_heating"></a>pre_heating</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./PBulkInterface.html">PBulkInterface</a>*</td><td class="dataname"><a name="PReaction:pro_bulk"></a>pro_bulk[5]</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">int</span></td><td class="dataname"><a name="PReaction:pro_bulkdecay_pos"></a>pro_bulkdecay_pos</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="dataname"><a name="PReaction:r_beam"></a>r_beam</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="dataname"><a name="PReaction:r_target"></a>r_target</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PReaction:reactionId"></a>reactionId</td><td class="datadesc">reaction identifier</td></tr>
+<tr class="data"><td class="datatype"><a href="./TString.html">TString</a></td><td class="dataname"><a name="PReaction:reaction_string"></a>reaction_string</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">unsigned</span> <span class="keyword">int</span></td><td class="dataname"><a name="PReaction:resetCHANNELS"></a>resetCHANNELS</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">int</span></td><td class="dataname"><a name="PReaction:reset_count"></a>reset_count</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./TFile.html">TFile</a>*</td><td class="dataname"><a name="PReaction:rootfile"></a>rootfile</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">unsigned</span> <span class="keyword">int</span></td><td class="dataname"><a name="PReaction:ropt"></a>ropt</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">int</span></td><td class="dataname"><a name="PReaction:size_branches"></a>size_branches</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">int</span></td><td class="dataname"><a name="PReaction:stacksize"></a>stacksize</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">int</span></td><td class="dataname"><a name="PReaction:status"></a>status</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./PReaction.html">PReaction</a>*</td><td class="dataname"><a name="PReaction:sub_reaction"></a>sub_reaction</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="PReaction:tauMax"></a>tauMax</td><td class="datadesc">max lifetime for decay (see decayALL option)</td></tr>
+<tr class="data"><td class="datatype"><a href="./TTree.html">TTree</a>*</td><td class="dataname"><a name="PReaction:tree"></a>tree</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a>(*)(<a href="./PParticle.html">PParticle</a>**,<a href="./ListOfTypes.html#Int_t">Int_t</a>)</td><td class="dataname"><a name="PReaction:userAnalysis"></a>userAnalysis</td><td class="datadesc">! pointer to analysis function</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a>(*)(<a href="./PParticle.html">PParticle</a>*)</td><td class="dataname"><a name="PReaction:userSelection"></a>userSelection</td><td class="datadesc">! pointer to selection function</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Double_t">Double_t</a>*</td><td class="dataname"><a name="PReaction:vertex_x"></a>vertex_x</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Double_t">Double_t</a>*</td><td class="dataname"><a name="PReaction:vertex_y"></a>vertex_y</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Double_t">Double_t</a>*</td><td class="dataname"><a name="PReaction:vertex_z"></a>vertex_z</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PReaction:weight_reset"></a>weight_reset</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Double_t">Double_t</a>*</td><td class="dataname"><a name="PReaction:weight_version"></a>weight_version</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">unsigned</span> <span class="keyword">int</span></td><td class="dataname"><a name="PReaction:writeINDEX"></a>writeINDEX</td><td></td></tr>
+
+</table></div>
+</div>
+<h2><a id="PReaction:Class_Charts"></a>Class Charts</h2>
+<map name="MapPReaction_Inh" id="MapPReaction_Inh">
+<area shape="rect" id="node2" href="./TObject.html" title="TObject" alt="" coords="4,15,308,71"/>
+</map>
+<map name="MapPReaction_InhMem" id="MapPReaction_InhMem">
+<area shape="rect" id="clust12" href="./TObject.html" alt="" coords="93,47,160,160"/>
+<area shape="rect" id="clust11" href="./TObject.html" alt="" coords="171,47,237,160"/>
+<area shape="rect" id="clust13" href="./TObject.html" alt="" coords="16,47,83,160"/>
+<area shape="rect" id="clust14" href="./TObject.html" alt="" coords="203,161,205,164"/>
+<area shape="rect" id="clust15" href="./TObject.html" alt="" coords="171,165,237,627"/>
+<area shape="rect" id="clust16" href="./TObject.html" alt="" coords="93,165,160,627"/>
+<area shape="rect" id="clust17" href="./TObject.html" alt="" coords="16,165,83,627"/>
+<area shape="rect" id="clust10" href="./TObject.html" title="TObject" alt="" coords="16,16,237,627"/>
+</map>
+<map name="MapPReaction_Lib" id="MapPReaction_Lib">
+<area shape="rect" id="node1" href="LibraryDependencies.html" title="All Libraries" alt="" coords="126,237,243,285"/>
+</map>
+<div class="tabs">
+<a id="imgPReaction_Inh" class="tabsel" href="inh/PReaction_Inh.png" onclick="javascript:return SetImg('Charts','inh/PReaction_Inh.png');">Inheritance</a>
+<a id="imgPReaction_InhMem" class="tab" href="inhmem/PReaction_InhMem.png" onclick="javascript:return SetImg('Charts','inhmem/PReaction_InhMem.png');">Inherited Members</a>
+<a id="imgPReaction_Incl" class="tab" href="incl/PReaction_Incl.png" onclick="javascript:return SetImg('Charts','incl/PReaction_Incl.png');">Includes</a>
+<a id="imgPReaction_Lib" class="tab" href="lib/PReaction_Lib.png" onclick="javascript:return SetImg('Charts','lib/PReaction_Lib.png');">Libraries</a><br/>
+</div><div class="classcharts"><div class="classchartswidth"></div>
+<img id="Charts" alt="Class Charts" class="classcharts" usemap="#MapPReaction_Inh" src="inh/PReaction_Inh.png"/></div>
+<h2>Function documentation</h2>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="PReaction:PReaction" href="src/PReaction.h.html#i99zSB">PReaction</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="PReaction:PReaction@1" href="src/PReaction.h.html#s.a2">PReaction</a>(<span class="keyword">const</span> <span class="keyword">char</span>* <a href="./PReaction.html#PReaction:filename" title="TString PReaction::filename">filename</a>)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="PReaction:PReaction@2" href="src/PReaction.h.html#nwu0i">PReaction</a>(<a href="./PChannel.html">PChannel</a>** , <span class="keyword">const</span> <span class="keyword">char</span>* , <span class="keyword">int</span> n = 2, <span class="keyword">int</span> f0 = 1, <span class="keyword">int</span> f1 = 0, <span class="keyword">int</span> f2 = 0, <span class="keyword">int</span> f3 = 0, <a href="./TTree.html">TTree</a>* ttree = __null)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="PReaction:PReaction@3" href="src/PReaction.h.html#NVmYrB">PReaction</a>(<a href="./PChannel.html">PChannel</a>** , <span class="keyword">int</span> n = 2, <span class="keyword">unsigned</span> <span class="keyword">int</span> ff = 0, <a href="./TTree.html">TTree</a>* ttree = __null, <span class="keyword">const</span> <span class="keyword">char</span>* <a href="./PReaction.html#PReaction:filename" title="TString PReaction::filename">filename</a> = __null)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="PReaction:PReaction@4" href="src/PReaction.h.html#EAYUm">PReaction</a>(<a href="./ListOfTypes.html#Double_t">Double_t</a> momentum, <span class="keyword">const</span> <span class="keyword">char</span>* beam, <span class="keyword">const</span> <span class="keyword">char</span>* target, <span class="keyword">const</span> <span class="keyword">char</span>* reaction, <span class="keyword">const</span> <span class="keyword">char</span>* file_name = __null, <a href="./ListOfTypes.html#Int_t">Int_t</a> f0 = 1, <a href="./ListOfTypes.html#Int_t">Int_t</a> f1 = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> f2 = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> f3 = 0, <a href="./TTree.html">TTree</a>* ttree = __null)</span><br />
+<div class="funccomm"><pre> build reaction from a descriptor string
+ build reaction from a descriptor string but uses energy parser
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="PReaction:PReaction@6" href="src/PReaction.h.html#XtdHCE">PReaction</a>(<a href="./PParticle.html">PParticle</a>* , <span class="keyword">const</span> <span class="keyword">char</span>* reaction, <span class="keyword">const</span> <span class="keyword">char</span>* file_name = __null, <a href="./ListOfTypes.html#Int_t">Int_t</a> f0 = 1, <a href="./ListOfTypes.html#Int_t">Int_t</a> f1 = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> f2 = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> f3 = 0, <a href="./TTree.html">TTree</a>* ttree = __null)</span><br />
+<div class="funccomm"><pre> build reaction from a descriptor string but uses a seed <a href="./PReaction.html#PReaction:particle" title="PParticle** PReaction::particle">particle</a>
+add a reaction to the list
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="PReaction:_PReaction" href="src/PReaction.h.html#CEiTPE">~PReaction</a>()</span><br />
+<div class="funccomm"><pre> Reaction destructor
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PReaction:InitChannels" href="src/PReaction.h.html#aAeTkE">InitChannels</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="PReaction:loop" href="src/PReaction.h.html#w3BAjB">loop</a>(<span class="keyword">int</span> i = -1, <span class="keyword">int</span> wf = 0, <span class="keyword">int</span> verbose = 1)</span><br />
+<div class="funccomm"><pre>kept for backward compatibility
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">return</span> <a class="funcname" name="PReaction:Loop" href="src/PReaction.h.html#MdQk_D">Loop</a>(<span class="keyword">int</span> i = -1, <span class="keyword">int</span> wf = 0, <span class="keyword">int</span> verbose = 1)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="PReaction:GetNumAll" href="src/PReaction.h.html#QlAL6">GetNumAll</a>()</span><br />
+<div class="funccomm"><pre> number of events to simulate
+</pre></div>
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">return</span> <a href="./PReaction.html#PReaction:ndpar" title="int PReaction::ndpar">ndpar</a>; }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> * <a class="funcname" name="PReaction:GetCIndex" href="src/PReaction.h.html#Xtfm3E">GetCIndex</a>()</span><br />
+<div class="funccomm"><pre> returns number of all the particles in the reaction
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PReaction:VertexYes" href="src/PReaction.h.html#n2zhoD">VertexYes</a>()</span><br />
+<div class="funccomm"><pre> returns product <a href="./PReaction.html#PReaction:channel" title="PChannel** PReaction::channel">channel</a> index
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PReaction:VertexNo" href="src/PReaction.h.html#uJF9AD">VertexNo</a>()</span><br />
+<div class="funccomm"><pre> turn off vertex calculation after initialization
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PReaction:allParticles" href="src/PReaction.h.html#GSKYIB">allParticles</a>()</span><br />
+<div class="funccomm"><pre> put all particles on root file after initialization
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PReaction:trackedParticles" href="src/PReaction.h.html#YAIYiE">trackedParticles</a>()</span><br />
+<div class="funccomm"><pre> put tracked particles on root file file after initialization
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PReaction:asciiYes" href="src/PReaction.h.html#V0auG">asciiYes</a>()</span><br />
+<div class="funccomm"><pre> enable ascii output for GEANT after initialization
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="PReaction:SetName" href="src/PReaction.h.html#ydIOOE">SetName</a>(<span class="keyword">const</span> <span class="keyword">char</span>* )</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PReaction:asciiNo" href="src/PReaction.h.html#USEyfE">asciiNo</a>()</span><br />
+<div class="funccomm"><pre> disable ascii output for GEANT after initialization
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./PParticle.html">PParticle</a> ** <a class="funcname" name="PReaction:GetProducts" href="src/PReaction.h.html#lsQB4B">GetProducts</a>()</span><br />
+<div class="funccomm"><pre> sets up output file names
+</pre></div>
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">return</span> <a href="./PReaction.html#PReaction:particle_stack" title="PParticle** PReaction::particle_stack">particle_stack</a>; }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PReaction:SetFilter" href="src/PReaction.h.html#ITsMzB">SetFilter</a>(<span class="keyword">int</span> ch_id, <a href="./PFilter.html">PFilter</a>* filter)</span><br />
+<div class="funccomm"><pre> returns product pointer
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./PFilter.html">PFilter</a> ** <a class="funcname" name="PReaction:GetFilter" href="src/PReaction.h.html#byddwB">GetFilter</a>()</span><br />
+<div class="funccomm"><pre> This function is invoked by the Filter class. It directs <a href="./PReaction.html#PReaction:loop" title="int PReaction::loop(int i = -1, int wf = 0, int verbose = 1)">loop</a> to
+ impose a filter at address (*filter) following the decay represented
+ by the reaction Channel number ch_id. See also <a href="./PFilter.html">PFilter</a>.
+</pre></div>
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">return</span> NULL; }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PReaction:Print" href="src/PReaction.h.html#dBo2t">Print</a>(<span class="keyword">const</span> <a href="./ListOfTypes.html#Option_t">Option_t</a>* delme = __null) const</span><br />
+<div class="funccomm"><pre> returns pointer to array of existing filters
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PReaction:PrintReport" href="src/PReaction.h.html#rQfHpE">PrintReport</a>() const</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PReaction:Close" href="src/PReaction.h.html#nc4lr">Close</a>()</span><br />
+<div class="funccomm"><pre> close root output file
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PReaction:SetHGeant" href="src/PReaction.h.html#rhG0hB">SetHGeant</a>(<span class="keyword">int</span> flag)</span><br />
+<div class="funccomm"><pre> from the <a href="./PReaction.html#PReaction:HGeant" title="unsigned int PReaction::HGeant">HGeant</a> prompt
+</pre></div>
+
+<div class="code"><code class="inlinecode">{<a href="./PReaction.html#PReaction:HGeant" title="unsigned int PReaction::HGeant">HGeant</a> = (flag!=0);}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PReaction:setHGeant" href="src/PReaction.h.html#EzaZmD">setHGeant</a>(<span class="keyword">int</span> flag)</span><br />
+
+<div class="code"><code class="inlinecode">{<a href="./PReaction.html#PReaction:SetHGeant" title="void PReaction::SetHGeant(int flag)">SetHGeant</a>(flag);}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PReaction:SetUserSelection" href="src/PReaction.h.html#iI3NeE">SetUserSelection</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> (*f)(<a href="./PParticle.html">PParticle</a>*))</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="PReaction:SetUserSelection@1" href="src/PReaction.h.html#QROJoD">SetUserSelection</a>(<span class="keyword">void</span>* f)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PReaction:SetUserAnalysis" href="src/PReaction.h.html#c78r4E">SetUserAnalysis</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> (*f)(<a href="./PParticle.html">PParticle</a>**,<a href="./ListOfTypes.html#Int_t">Int_t</a>))</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="PReaction:SetUserAnalysis@1" href="src/PReaction.h.html#zMdXfE">SetUserAnalysis</a>(<span class="keyword">void</span>* f)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PReaction:SetTrigCond" href="src/PReaction.h.html#ehRmOC">SetTrigCond</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> n)</span><br />
+
+<div class="code"><code class="inlinecode">{<a href="./PReaction.html#PReaction:nTrigCond" title="Int_t PReaction::nTrigCond">nTrigCond</a> = n;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PReaction:setDecayAll" href="src/PReaction.h.html#IfWxsB">setDecayAll</a>(<a href="./ListOfTypes.html#Float_t">Float_t</a> tau = 1.)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="PReaction:SetDecayAll" href="src/PReaction.h.html#d.ZSuB">SetDecayAll</a>(<a href="./ListOfTypes.html#Float_t">Float_t</a> tau = 1.)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname">pl-&gt; <a class="funcname" name="PReaction:SetPythia" href="src/PReaction.h.html#guFm0E">SetPythia</a>(TPythia6* p)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="PReaction:AddBulk" href="src/PReaction.h.html#scqjOD">AddBulk</a>(<a href="./PBulkInterface.html">PBulkInterface</a>* mybulk)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PReaction:SetMaxFileSize" href="src/PReaction.h.html#pKRuUD">SetMaxFileSize</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> bytes)</span><br />
+
+<div class="code"><code class="inlinecode">{<a href="./PReaction.html#PReaction:nMaxBytes" title="Int_t PReaction::nMaxBytes">nMaxBytes</a> = bytes;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PReaction:SetWriteIndex" href="src/PReaction.h.html#XSsrpE">SetWriteIndex</a>(<a href="./ListOfTypes.html#Bool_t">Bool_t</a> flag)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PReaction:DisableWeightReset" href="src/PReaction.h.html#tuRluD">DisableWeightReset</a>()</span><br />
+
+<div class="code"><code class="inlinecode">{<a href="./PReaction.html#PReaction:weight_reset" title="Int_t PReaction::weight_reset">weight_reset</a>=0;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Int_t">Int_t</a> <a class="funcname" name="PReaction:GetReactionId" href="src/PReaction.h.html#amIO7">GetReactionId</a>()</span><br />
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">return</span> <a href="./PReaction.html#PReaction:reactionId" title="Int_t PReaction::reactionId">reactionId</a>; }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./PDistributionManager.html">PDistributionManager</a> * <a class="funcname" name="PReaction:GetDistributionManager" href="src/PReaction.h.html#HzF_w">GetDistributionManager</a>(<span class="keyword">void</span>)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Bool_t">Bool_t</a> <a class="funcname" name="PReaction:AddFileOutput" href="src/PReaction.h.html#Amx0QC">AddFileOutput</a>(<a href="./PFileOutput.html">PFileOutput</a>* file)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Bool_t">Bool_t</a> <a class="funcname" name="PReaction:AddPrologueBulk" href="src/PReaction.h.html#c7.2t">AddPrologueBulk</a>(<a href="./PBulkInterface.html">PBulkInterface</a>* mybulk)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Bool_t">Bool_t</a> <a class="funcname" name="PReaction:Do" href="src/PReaction.h.html#XQTNHE">Do</a>(<span class="keyword">const</span> <span class="keyword">char</span>* command)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">return</span> <a class="funcname" name="PReaction:GetCurrentProjector" href="src/PReaction.h.html#jT3Gc">GetCurrentProjector</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Bool_t">Bool_t</a> <a class="funcname" name="PReaction:Do@1" href="src/PReaction.h.html#uov49">Do</a>(<a href="./TH1.html">TH1</a>* f, <span class="keyword">const</span> <span class="keyword">char</span>* command, <a href="./ListOfTypes.html#Int_t">Int_t</a> flag = 1)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Bool_t">Bool_t</a> <a class="funcname" name="PReaction:Do@2" href="src/PReaction.h.html#i3g39">Do</a>(<a href="./TH2.html">TH2</a>* f, <span class="keyword">const</span> <span class="keyword">char</span>* command, <a href="./ListOfTypes.html#Int_t">Int_t</a> flag = 1)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Bool_t">Bool_t</a> <a class="funcname" name="PReaction:Do@3" href="src/PReaction.h.html#WGS29">Do</a>(<a href="./TH3.html">TH3</a>* f, <span class="keyword">const</span> <span class="keyword">char</span>* command, <a href="./ListOfTypes.html#Int_t">Int_t</a> flag = 1)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Bool_t">Bool_t</a> <a class="funcname" name="PReaction:Output" href="src/PReaction.h.html#L3Gz5E">Output</a>(<a href="./TNtuple.html">TNtuple</a>* f, <span class="keyword">const</span> <span class="keyword">char</span>* command = (<span class="keyword">char</span> *)<span class="string">""</span>)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Bool_t">Bool_t</a> <a class="funcname" name="PReaction:Input" href="src/PReaction.h.html#HHuw2C">Input</a>(<a href="./TNtuple.html">TNtuple</a>* f)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Bool_t">Bool_t</a> <a class="funcname" name="PReaction:Output@1" href="src/PReaction.h.html#Q9QW3E">Output</a>(<span class="keyword">const</span> <span class="keyword">char</span>* f, <span class="keyword">const</span> <span class="keyword">char</span>* command = <span class="string">""</span>)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Bool_t">Bool_t</a> <a class="funcname" name="PReaction:Input@1" href="src/PReaction.h.html#WzlEOE">Input</a>(<span class="keyword">const</span> <span class="keyword">char</span>* f, <span class="keyword">const</span> <span class="keyword">char</span>* command = <span class="string">""</span>)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Bool_t">Bool_t</a> <a class="funcname" name="PReaction:CloseFile" href="src/PReaction.h.html#SqvnzC">CloseFile</a>(<span class="keyword">void</span>)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PReaction:Preheating" href="src/PReaction.h.html#j.fMvB">Preheating</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> num)</span><br />
+
+<div class="code"><code class="inlinecode">{<a href="./PReaction.html#PReaction:pre_heating" title="Int_t PReaction::pre_heating">pre_heating</a>=num;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PReaction:IsInline" href="src/PReaction.h.html#he0LpB">IsInline</a>(<span class="keyword">void</span>)</span><br />
+<div class="funccomm"><pre>pure inline <a href="./PReaction.html">PReaction</a>, e.g. FAIRROOT
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PReaction:ConvertFilename" href="src/PReaction.h.html#slW6p">ConvertFilename</a>(<span class="keyword">void</span>)</span><br />
+<div class="funccomm"><pre> output file name, <a href="./PReaction.html#PReaction:filename" title="TString PReaction::filename">filename</a>.evt for (GEANT), <a href="./PReaction.html#PReaction:filename" title="TString PReaction::filename">filename</a>.root (<a href="./ROOT.html">ROOT</a>)
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PReaction:SetReactionId" href="src/PReaction.h.html#YbfUfD">SetReactionId</a>(<span class="keyword">void</span>)</span><br />
+<div class="funccomm"><pre> calculate reaction id from list of products of 1st <a href="./PReaction.html#PReaction:channel" title="PChannel** PReaction::channel">channel</a>
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PReaction:SetUp" href="src/PReaction.h.html#ec1spB">SetUp</a>(<a href="./PChannel.html">PChannel</a>** )</span><br />
+<div class="funccomm"><pre> get the channels and particles, identify the physics, set up the defaults.
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Bool_t">Bool_t</a> <a class="funcname" name="PReaction:parse_script" href="src/PReaction.h.html#OSCMUD">parse_script</a>(<span class="keyword">const</span> <span class="keyword">char</span>* e, <span class="keyword">const</span> <span class="keyword">char</span>* beam, <span class="keyword">const</span> <span class="keyword">char</span>* target, <span class="keyword">const</span> <span class="keyword">char</span>* reaction, <span class="keyword">const</span> <span class="keyword">char</span>* file_name = __null, <a href="./ListOfTypes.html#Int_t">Int_t</a> f0 = 1, <a href="./ListOfTypes.html#Int_t">Int_t</a> f1 = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> f2 = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> f3 = 0, <a href="./TTree.html">TTree</a>* ttree = __null)</span><br />
+<div class="funccomm"><pre> resets the dynamical objects of the reaction and opens <a href="./PReaction.html#PReaction:files" title="PFileOutput* PReaction::files">files</a>
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Int_t">Int_t</a> <a class="funcname" name="PReaction:IsExtTree" href="src/PReaction.h.html#ZJRxoC">IsExtTree</a>()</span><br />
+<div class="funccomm"><pre> check whether <a href="./PReaction.html#PReaction:tree" title="TTree* PReaction::tree">tree</a> is external
+</pre></div>
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">return</span> <a href="./PReaction.html#PReaction:extTREE" title="unsigned int PReaction::extTREE">extTREE</a>; }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Int_t">Int_t</a> <a class="funcname" name="PReaction:ParseChannel" href="src/PReaction.h.html#HBkQOC">ParseChannel</a>(<a href="./PParticle.html">PParticle</a>* parent, <span class="keyword">const</span> <span class="keyword">char</span>* <a href="./PReaction.html#PReaction:channel" title="PChannel** PReaction::channel">channel</a>, <a href="./TList.html">TList</a>&amp; plutoList, <a href="./ListOfTypes.html#Int_t">Int_t</a>&amp; numChannels)</span><br />
+<div class="funccomm"><pre> parse string describing reaction
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PReaction:passEvent" href="src/PReaction.h.html#VrzyBE">passEvent</a>(<span class="keyword">float</span> , <span class="keyword">float</span> , <span class="keyword">float</span> , <span class="keyword">int</span> , <span class="keyword">int</span>* , <span class="keyword">int</span>* , <span class="keyword">int</span>* , <span class="keyword">int</span>* , <span class="keyword">float</span>* , <span class="keyword">float</span>* , <span class="keyword">float</span>* , <span class="keyword">float</span>* , <span class="keyword">float</span>* , <span class="keyword">float</span>* , <span class="keyword">float</span>* , <span class="keyword">float</span>* )</span><br />
+<div class="funccomm"><pre> ascii file
+</pre></div>
+</div>
+
+<br />
+<!--SIGNATURE-->
+<div id="footer">
+
+<em>&raquo; Last changed: Tue Aug  7 10:55:12 2018 </em><em>&raquo; Last generated: 2018-08-07 10:55</em><br />
+<em>This page has been automatically generated. For comments or suggestions regarding the documentation or ROOT in general please send a mail to <a href="mailto:rootdev@cern.ch">ROOT support</a>.</em>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,106 @@
+ New t slope with PAnyDistribution
+   ------------------------------------------------------------
+  | Welcome to ROOT 6.12/04                http://root.cern.ch |
+  |                               (c) 1995-2017, The ROOT Team |
+  | Built for linuxx8664gcc                                    |
+  | From tag v6-12-04, 13 December 2017                        |
+  | Try '.help', '.demo', '.license', '.credits', '.quit'/'.q' |
+   ------------------------------------------------------------
+
+
+  *********************************************************
+  * The Pluto event generator                              
+  * Developed by HADES and all contributing AUTHORS        
+  * www-hades.gsi.de/computing/pluto/html/PlutoIndex.html  
+  * Version: 6.01
+  * Compiled on  7 August 2018
+  *********************************************************
+Shared library Pluto.so loaded
+
+Processing obl_test_t_slope.C...
+Info in <PStdData::PStdData()>: (CONSTRUCTOR)
+Info in <PDataBase::PDataBase()>: (CONSTRUCTOR)
+Info in <PDynamicData::PDynamicData()>: (CONSTRUCTOR)
+Info in <PStdModels::PStdModels()>: (CONSTRUCTOR), Standard model filler
+Info in <PStdModels::GetModels>: Read std models
+Info in <PDistributionManager::PDistributionManager>: Rare eta decays are enabled
+Info in <PDistributionManager::PDistributionManager>: Baryonic resonances with strangeness available
+Info in <PDistributionManager::PDistributionManager>: Pion beam plugin available
+Info in <PDistributionManager::PDistributionManager>: Beam line simulation classes available
+Info in <PDistributionManager::PDistributionManager>: PDG/UNIGEN classes available
+Info in <PDistributionManager::PDistributionManager>: Elementary plugin available
+Info in <PDistributionManager::PDistributionManager>: Plugin for Dalitz decay (generator & new D Dalitz) available
+Info in <PDistributionManager::PDistributionManager>: Dalitz decays of N* activated
+Info in <PDistributionManager::PDistributionManager>: HADES classes available
+Info in <PDistributionManager::PDistributionManager()>: (CONSTRUCTOR)
+Info in <PStaticData::AddDecay>: (ALLOCATION) Decay index 544: eta -> dilepton + dilepton
+Info in <PStaticData::AddDecay>: (ALLOCATION) Decay index 545: eta -> e+ + e- + pi+ + pi-
+Info in <PStaticData::AddDecay>: (ALLOCATION) Decay index 1248: N*(1520)+ -> p + dilepton
+Info in <PStaticData::AddDecay>: (ALLOCATION) Decay index 1216: N*(1440)+ -> p + dilepton
+Info in <PStaticData::AddDecay>: (ALLOCATION) Decay index 1280: N*(1535)+ -> p + dilepton
+Info in <PStaticData::AddDecay>: (ALLOCATION) Decay index 2080: N*(1520)0 -> n + dilepton
+Info in <PStaticData::AddDecay>: (ALLOCATION) Decay index 2048: N*(1440)0 -> n + dilepton
+Info in <PStaticData::AddDecay>: (ALLOCATION) Decay index 2112: N*(1535)0 -> n + dilepton
+<Beam>
+  g (0.000000,0.000000,3.500000;3.500000) wt = 1.000000, m = 0.000000 pid = 1
+  Vertex = 0.000000 0.000000 0.000000
+<Target>
+Info in <PParticle::operator+>: (ALLOCATION) Keeping beam and target particle for further reference
+Info in <PParticle::operator+>: (ALLOCATION) The composite g + p has been added
+Info in <PStaticData::AddDecay>: (ALLOCATION) Decay index 14001: g + p --> p + rho0
+Info in <PStdModels::GetModels>: Read std models
+Info in <PDistributionManager::Attach>: Re-iteration of std plugin done
+  p (0.000000,0.000000,0.000000;0.938272) wt = 1.000000, m = 0.938272 pid = 14
+  Vertex = 0.000000 0.000000 0.000000
+
+ Reaction of 5 Particles interacting via 2 Channels
+   Reaction Particles:
+     0. quasi-particle (g beam and p target)
+     1. p
+     2. rho0
+     3. pi+
+     4. pi-
+   Reaction Channels:
+     1. g + p --> p + rho0
+        Interaction model(s):
+        [t_slope] A function to add a new t-slope
+        [g + p_m1_p_rho0] 1 unstable hadron (2-body ps) {/} rho0
+        [g + p_genbod_p_rho0] Pluto build-in genbod {/genbod}
+     2. rho0 --> pi+ + pi-
+        Interaction model(s):
+        [rho0_fix_pi-_pi+] 2-body fixed mass, partial width {/}
+        [rho0_genbod_pi-_pi+] Pluto build-in genbod {/genbod}
+   Bulk Classes:
+     Epilogue: <PProjector> 
+Info in <PUtilsREngine::PUtilsREngine>: Random seed set to 747940000
+Info in <PBreitWigner::GetWidth>: Width 1st call for rho0, mass range 0.001022 GeV to 2.276900 GeV
+Info in <PEEDirectDecay::GetWidth>: Creating mesh in rho0 --> e+ + e-
+Info in <PEEDirectDecay::GetWidth>: Creating mesh in rho0 --> mu+ + mu-
+Warning in <PAnyDistribution::IsNotRejected>: Factor > max, increased (0.000001)
+Warning in <PAnyDistribution::IsNotRejected>: Factor > max, increased (0.000009)
+Warning in <PAnyDistribution::IsNotRejected>: Factor > max, increased (0.012076)
+Warning in <PAnyDistribution::IsNotRejected>: Factor > max, increased (0.046007)
+Warning in <PAnyDistribution::IsNotRejected>: Factor > max, increased (0.072070)
+Warning in <PAnyDistribution::IsNotRejected>: Factor > max, increased (0.086323)
+Warning in <PAnyDistribution::IsNotRejected>: Factor > max, increased (0.326009)
+Warning in <PAnyDistribution::IsNotRejected>: Factor > max, increased (0.570706)
+Warning in <PAnyDistribution::IsNotRejected>: Factor > max, increased (1.194971)
+Warning in <PAnyDistribution::IsNotRejected>: Factor > max, increased (2.358860)
+Warning in <PAnyDistribution::IsNotRejected>: Factor > max, increased (4.181555)
+Info in <PReaction::Loop()>: Preheating done
+Warning in <PAnyDistribution::IsNotRejected>: Factor > max, increased (4.712785)
+Warning in <PAnyDistribution::IsNotRejected>: Factor > max, increased (6.751515)
+Warning in <PAnyDistribution::IsNotRejected>: Factor > max, increased (7.510314)
+Warning in <PAnyDistribution::IsNotRejected>: Factor > max, increased (8.314234)
+Info in <TCanvas::Print>: png file obl_test_t_slope@T_slope.png has been created
+   *NO* output File
+PReaction: calculating widths in PData...
+ 20% done in 1.431872 sec
+ 40% done in 1.770851 sec
+ 60% done in 2.193367 sec
+ 80% done in 2.563922 sec
+ 100% done in 2.945685 sec
+ Event loop finished after 2.945706 sec
+ CPU time 1.940000 sec
+ 10928 aborted events were repeated, error codes:
+ 10=10928 

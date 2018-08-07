@@ -1,0 +1,462 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!--                                             -->
+<!-- Author: ROOT team (rootdev@cern.ch)         -->
+<!--                                             -->
+<!--   Date: Tue Aug  7 10:55:26 2018            -->
+<!--                                             -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>PBatch</title>
+<meta name="rating" content="General" />
+<meta name="objecttype" content="Manual" />
+<meta name="keywords" content="software development, oo, object oriented, unix, x11, windows, c++, html, rene brun, fons rademakers, cern" />
+<meta name="description" content="ROOT - An Object Oriented Framework For Large Scale Data Analysis." />
+<link rel="stylesheet" type="text/css" href="ROOT.css" id="ROOTstyle" />
+<script type="text/javascript" src="ROOT.js"></script>
+</head>
+<body  onload="javascript:SetValuesFromCookie();"><div id="body_content">
+<div id="root_header"></div>
+<a name="TopOfPage"></a>
+<script type="text/javascript">WriteFollowPageBox('class PBatch','','Pluto/PBatch.h');</script>
+<div id="toplinks">
+<div class="descrhead"><div class="descrheadcontent">
+<span class="descrtitle">Quick Links:</span>
+<a class="descrheadentry" href="http://root.cern.ch">ROOT Homepage</a>
+<a class="descrheadentry" href="./ClassIndex.html">Class Index</a>
+<a class="descrheadentry" href="./ClassHierarchy.html">Class Hierarchy</a></div>
+<script type="text/javascript">
+function onSearch() {
+var s='http://www.google.com/search?q=%s+site%3A%u+-site%3A%u%2Fsrc%2F+-site%3A%u%2Fexamples%2F';
+var ref=String(document.location.href).replace(/https?:\/\//,'').replace(/\/[^\/]*$/,'').replace(/\//g,'%2F');
+window.location.href=s.replace(/%u/ig,ref).replace(/%s/ig,escape(document.searchform.t.value));
+return false;}
+</script>
+<form id="searchform" name="searchform" onsubmit="return onSearch()" action="javascript:onSearch();" method="post">
+<input name="t" size="30" value="Search documentation..." onfocus="if (document.searchform.t.value=='Search documentation...') document.searchform.t.value='';"></input>
+<a id="searchlink"  title="www.google.com"  href="javascript:onSearch();" onclick="return onSearch()">Search</a></form>
+</div>
+<div class="descrhead"><div class="descrheadcontent">
+<span class="descrtitle">Source:</span>
+<a class="descrheadentry" href="src/PBatch.h.html">header file</a>
+<a class="descrheadentry"> </a>
+
+</div></div>
+<div class="descrhead"><div class="descrheadcontent">
+<span class="descrtitle">Sections:</span>
+<a class="descrheadentry" href="#PBatch:description">class description</a> 
+<a class="descrheadentry" href="#PBatch:Function_Members">function members</a>
+<a class="descrheadentry" href="#PBatch:Data_Members">data members</a>
+<a class="descrheadentry" href="#PBatch:Class_Charts">class charts</a>
+</div></div>
+</div>
+<div class="location">
+<a class="locationlevel" href="index.html">Pluto</a>
+ &#187; <a class="locationlevel" href="./PLUTO_Index.html">PLUTO</a>
+ &#187; <a class="locationlevel" href="#TopOfPage">PBatch</a>
+</div>
+<div class="dropshadow"><div class="withshadow"><h1><a name="PBatch:description"></a>class PBatch: public <a href="./TObject.html">TObject</a></h1>
+<div class="classdescr">
+</div>
+</div></div>
+
+<div id="functions">
+<h2><a id="PBatch:Function_Members"></a>Function Members (Methods)</h2>
+<div class="access" id="funcpubl"><b>public:</b>
+<table class="func" id="tabfuncpubl" cellspacing="0">
+<tr class="func"><td class="funcret"> virtual</td><td class="funcname"><a class="funcname" href="#PBatch:_PBatch">~PBatch</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:AbstractMethod"><span class="baseclass">TObject::</span>AbstractMethod</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#PBatch:AddCommand">AddCommand</a>(<span class="keyword">const</span> <span class="keyword">char</span>* command)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#PBatch:AddCommand@1">AddCommand</a>(<span class="keyword">char</span> command, <span class="keyword">int</span> key_a, <span class="keyword">int</span> key1, <span class="keyword">int</span> key2, <span class="keyword">int</span> key3 = -1, <span class="keyword">int</span> key4 = -1, <span class="keyword">int</span> key5 = -1)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:AppendPad"><span class="baseclass">TObject::</span>AppendPad</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:Browse"><span class="baseclass">TObject::</span>Browse</a>(<a href="./TBrowser.html">TBrowser</a>* b)</td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#ULong_t">ULong_t</a></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:CheckedHash"><span class="baseclass">TObject::</span>CheckedHash</a>()</td></tr>
+<tr class="func"><td class="funcret">static <a href="./TClass.html">TClass</a>*</td><td class="funcname"><a class="funcname" href="#PBatch:Class">Class</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:ClassName"><span class="baseclass">TObject::</span>ClassName</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:Clear"><span class="baseclass">TObject::</span>Clear</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* = <span class="string">""</span>)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./TObject.html">TObject</a>*</td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:Clone"><span class="baseclass">TObject::</span>Clone</a>(<span class="keyword">const</span> <span class="keyword">char</span>* newname = <span class="string">""</span>) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:Compare"><span class="baseclass">TObject::</span>Compare</a>(<span class="keyword">const</span> <a href="./TObject.html">TObject</a>* obj) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:Copy"><span class="baseclass">TObject::</span>Copy</a>(<a href="./TObject.html">TObject</a>&amp; object) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:Delete"><span class="baseclass">TObject::</span>Delete</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)<span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:DistancetoPrimitive"><span class="baseclass">TObject::</span>DistancetoPrimitive</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> px, <a href="./ListOfTypes.html#Int_t">Int_t</a> py)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:Draw"><span class="baseclass">TObject::</span>Draw</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:DrawClass"><span class="baseclass">TObject::</span>DrawClass</a>() <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./TObject.html">TObject</a>*</td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:DrawClone"><span class="baseclass">TObject::</span>DrawClone</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>) <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:Dump"><span class="baseclass">TObject::</span>Dump</a>() <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:Error"><span class="baseclass">TObject::</span>Error</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#PBatch:Execute@1">Execute</a>(<span class="keyword">const</span> <span class="keyword">char</span>* command)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#PBatch:Execute">Execute</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> command_pos = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> retval = <a href="./ListOfTypes.html#Bool_t">kFALSE</a>)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:ExecuteEvent"><span class="baseclass">TObject::</span>ExecuteEvent</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> event, <a href="./ListOfTypes.html#Int_t">Int_t</a> px, <a href="./ListOfTypes.html#Int_t">Int_t</a> py)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#PBatch:ExecuteLastLine">ExecuteLastLine</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:Fatal"><span class="baseclass">TObject::</span>Fatal</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./TObject.html">TObject</a>*</td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:FindObject"><span class="baseclass">TObject::</span>FindObject</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./TObject.html">TObject</a>*</td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:FindObject@1"><span class="baseclass">TObject::</span>FindObject</a>(<span class="keyword">const</span> <a href="./TObject.html">TObject</a>* obj) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#PBatch:GetBranch">GetBranch</a>()</td></tr>
+<tr class="func"><td class="funcret"><a href="./PParticle.html">PParticle</a>*</td><td class="funcname"><a class="funcname" href="#PBatch:GetCurrentParticle">GetCurrentParticle</a>()</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#PBatch:GetCurrentPosition">GetCurrentPosition</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Option_t">Option_t</a>*</td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:GetDrawOption"><span class="baseclass">TObject::</span>GetDrawOption</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">static <a href="./ListOfTypes.html#Long_t">Long_t</a></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:GetDtorOnly"><span class="baseclass">TObject::</span>GetDtorOnly</a>()</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#PBatch:GetElsePosition">GetElsePosition</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:GetIconName"><span class="baseclass">TObject::</span>GetIconName</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:GetName"><span class="baseclass">TObject::</span>GetName</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#PBatch:GetNewBatch">GetNewBatch</a>()</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#PBatch:GetNewBulk">GetNewBulk</a>()</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#PBatch:GetNewCommand">GetNewCommand</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:GetObjectInfo"><span class="baseclass">TObject::</span>GetObjectInfo</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> px, <a href="./ListOfTypes.html#Int_t">Int_t</a> py) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">static <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:GetObjectStat"><span class="baseclass">TObject::</span>GetObjectStat</a>()</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#PBatch:GetOldCommand">GetOldCommand</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Option_t">Option_t</a>*</td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:GetOption"><span class="baseclass">TObject::</span>GetOption</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:GetTitle"><span class="baseclass">TObject::</span>GetTitle</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./TTree.html">TTree</a>*</td><td class="funcname"><a class="funcname" href="#PBatch:GetTree">GetTree</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#UInt_t">UInt_t</a></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:GetUniqueID"><span class="baseclass">TObject::</span>GetUniqueID</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:HandleTimer"><span class="baseclass">TObject::</span>HandleTimer</a>(<a href="./TTimer.html">TTimer</a>* timer)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#ULong_t">ULong_t</a></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:Hash"><span class="baseclass">TObject::</span>Hash</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:HasInconsistentHash"><span class="baseclass">TObject::</span>HasInconsistentHash</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:Info"><span class="baseclass">TObject::</span>Info</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:InheritsFrom"><span class="baseclass">TObject::</span>InheritsFrom</a>(<span class="keyword">const</span> <span class="keyword">char</span>* classname) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:InheritsFrom@1"><span class="baseclass">TObject::</span>InheritsFrom</a>(<span class="keyword">const</span> <a href="./TClass.html">TClass</a>* cl) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:Inspect"><span class="baseclass">TObject::</span>Inspect</a>() <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:InvertBit"><span class="baseclass">TObject::</span>InvertBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f)</td></tr>
+<tr class="func"><td class="funcret">virtual <a href="./TClass.html">TClass</a>*</td><td class="funcname"><a class="funcname" href="#PBatch:IsA">IsA</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:IsEqual"><span class="baseclass">TObject::</span>IsEqual</a>(<span class="keyword">const</span> <a href="./TObject.html">TObject</a>* obj) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:IsFolder"><span class="baseclass">TObject::</span>IsFolder</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:IsOnHeap"><span class="baseclass">TObject::</span>IsOnHeap</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#PBatch:IsReadonly">IsReadonly</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:IsSortable"><span class="baseclass">TObject::</span>IsSortable</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:IsZombie"><span class="baseclass">TObject::</span>IsZombie</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:ls"><span class="baseclass">TObject::</span>ls</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:MayNotUse"><span class="baseclass">TObject::</span>MayNotUse</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:Notify"><span class="baseclass">TObject::</span>Notify</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:Obsolete"><span class="baseclass">TObject::</span>Obsolete</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* asOfVers, <span class="keyword">const</span> <span class="keyword">char</span>* removedFromVers) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:operator_delete"><span class="baseclass">TObject::</span>operator delete</a>(<span class="keyword">void</span>* ptr)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:operator_delete@1"><span class="baseclass">TObject::</span>operator delete</a>(<span class="keyword">void</span>* ptr, <span class="keyword">void</span>* vp)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:operator_delete[]"><span class="baseclass">TObject::</span>operator delete[]</a>(<span class="keyword">void</span>* ptr)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:operator_delete[]@1"><span class="baseclass">TObject::</span>operator delete[]</a>(<span class="keyword">void</span>* ptr, <span class="keyword">void</span>* vp)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span>*</td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:operator_new"><span class="baseclass">TObject::</span>operator new</a>(<a href="./ListOfTypes.html#size_t">size_t</a> sz)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span>*</td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:operator_new@1"><span class="baseclass">TObject::</span>operator new</a>(<a href="./ListOfTypes.html#size_t">size_t</a> sz, <span class="keyword">void</span>* vp)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span>*</td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:operator_new[]"><span class="baseclass">TObject::</span>operator new[]</a>(<a href="./ListOfTypes.html#size_t">size_t</a> sz)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span>*</td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:operator_new[]@1"><span class="baseclass">TObject::</span>operator new[]</a>(<a href="./ListOfTypes.html#size_t">size_t</a> sz, <span class="keyword">void</span>* vp)</td></tr>
+<tr class="func"><td class="funcret"><a href="./PBatch.html">PBatch</a>&amp;</td><td class="funcname"><a class="funcname" href="#PBatch:operator_">operator=</a>(<span class="keyword">const</span> <a href="./PBatch.html">PBatch</a>&amp;)</td></tr>
+<tr class="func"><td class="funcret"><a href="./PBatch.html">PBatch</a>&amp;</td><td class="funcname"><a class="funcname" href="#PBatch:operator_@1">operator=</a>(<a href="./PBatch.html">PBatch</a>&amp;&amp;)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:Paint"><span class="baseclass">TObject::</span>Paint</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)</td></tr>
+<tr class="func"><td class="funcret"></td><td class="funcname"><a class="funcname" href="#PBatch:PBatch">PBatch</a>()</td></tr>
+<tr class="func"><td class="funcret"></td><td class="funcname"><a class="funcname" href="#PBatch:PBatch@1">PBatch</a>(<span class="keyword">const</span> <a href="./PBatch.html">PBatch</a>&amp;)</td></tr>
+<tr class="func"><td class="funcret"></td><td class="funcname"><a class="funcname" href="#PBatch:PBatch@2">PBatch</a>(<a href="./PBatch.html">PBatch</a>&amp;&amp;)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:Pop"><span class="baseclass">TObject::</span>Pop</a>()</td></tr>
+<tr class="func"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PBatch:Print">Print</a>(<span class="keyword">const</span> <a href="./ListOfTypes.html#Option_t">Option_t</a>* delme = __null) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:Read"><span class="baseclass">TObject::</span>Read</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:RecursiveRemove"><span class="baseclass">TObject::</span>RecursiveRemove</a>(<a href="./TObject.html">TObject</a>* obj)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PBatch:ReplaceAll">ReplaceAll</a>(<a href="./TString.html">TString</a>* op, <span class="keyword">const</span> <span class="keyword">char</span>* oldstring, <span class="keyword">const</span> <span class="keyword">char</span>* newstring)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:ResetBit"><span class="baseclass">TObject::</span>ResetBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:SaveAs"><span class="baseclass">TObject::</span>SaveAs</a>(<span class="keyword">const</span> <span class="keyword">char</span>* filename = <span class="string">""</span>, <a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>) <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:SavePrimitive"><span class="baseclass">TObject::</span>SavePrimitive</a>(<a href="./ListOfTypes.html#ostream">ostream</a>&amp; out, <a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:SetBit@1"><span class="baseclass">TObject::</span>SetBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:SetBit"><span class="baseclass">TObject::</span>SetBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f, <a href="./ListOfTypes.html#Bool_t">Bool_t</a> set)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:SetDrawOption"><span class="baseclass">TObject::</span>SetDrawOption</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)<span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:SetDtorOnly"><span class="baseclass">TObject::</span>SetDtorOnly</a>(<span class="keyword">void</span>* obj)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PBatch:SetKeysBranches">SetKeysBranches</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a>* my_key_branches)</td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:SetObjectStat"><span class="baseclass">TObject::</span>SetObjectStat</a>(<a href="./ListOfTypes.html#Bool_t">Bool_t</a> stat)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PBatch:SetPosition">SetPosition</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> my_num_batch, <a href="./ListOfTypes.html#Int_t">Int_t</a> my_num_bulk)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PBatch:SetSizeBranches">SetSizeBranches</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a>* my_size_branches)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PBatch:SetToolObject">SetToolObject</a>(<a href="./TH1.html">TH1</a>* Histo1)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PBatch:SetToolObject@1">SetToolObject</a>(<a href="./TH2.html">TH2</a>* Histo2)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PBatch:SetToolObject@2">SetToolObject</a>(<a href="./TH3.html">TH3</a>* Histo3)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PBatch:SetToolObject@3">SetToolObject</a>(<a href="./TGraph.html">TGraph</a>* Graph)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PBatch:SetToolObject@4">SetToolObject</a>(<a href="./TGraph2D.html">TGraph2D</a>* Graph2D)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PBatch:SetToolObject@5">SetToolObject</a>(<a href="./ListOfTypes.html#FILE">FILE</a>* f)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PBatch:SetToolObjectTmp">SetToolObjectTmp</a>(<a href="./ListOfTypes.html#FILE">FILE</a>* f)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PBatch:SetTree">SetTree</a>(<a href="./TTree.html">TTree</a>* my_tree)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:SetUniqueID"><span class="baseclass">TObject::</span>SetUniqueID</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> uid)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PBatch:SetVarList">SetVarList</a>(<span class="keyword">char</span>* my_x)</td></tr>
+<tr class="func"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PBatch:ShowMembers">ShowMembers</a>(<a href="./TMemberInspector.html">TMemberInspector</a>&amp; insp) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#PBatch:Status">Status</a>()</td></tr>
+<tr class="func"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PBatch:Streamer">Streamer</a>(<a href="./TBuffer.html">TBuffer</a>&amp;)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PBatch:StreamerNVirtual">StreamerNVirtual</a>(<a href="./TBuffer.html">TBuffer</a>&amp; ClassDef_StreamerNVirtual_b)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:SysError"><span class="baseclass">TObject::</span>SysError</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:TestBit"><span class="baseclass">TObject::</span>TestBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:TestBits"><span class="baseclass">TObject::</span>TestBits</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:UseCurrentStyle"><span class="baseclass">TObject::</span>UseCurrentStyle</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:Warning"><span class="baseclass">TObject::</span>Warning</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:Write"><span class="baseclass">TObject::</span>Write</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> option = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> bufsize = 0)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:Write@1"><span class="baseclass">TObject::</span>Write</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> option = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> bufsize = 0) <span class="keyword">const</span></td></tr>
+
+</table></div>
+<div class="access" id="funcprot"><b>protected:</b>
+<table class="func" id="tabfuncprot" cellspacing="0">
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:DoError"><span class="baseclass">TObject::</span>DoError</a>(<span class="keyword">int</span> level, <span class="keyword">const</span> <span class="keyword">char</span>* location, <span class="keyword">const</span> <span class="keyword">char</span>* fmt, <a href="./ListOfTypes.html#va_list">va_list</a> va) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:MakeZombie"><span class="baseclass">TObject::</span>MakeZombie</a>()</td></tr>
+
+</table></div>
+<div class="access" id="funcpriv"><b>private:</b>
+<table class="func" id="tabfuncpriv" cellspacing="0">
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PBatch:AddSpacePlaceholder">AddSpacePlaceholder</a>(<span class="keyword">char</span>* command)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#PBatch:CheckAndSplit">CheckAndSplit</a>(<span class="keyword">char</span>* arg, <span class="keyword">char</span> delim, <span class="keyword">int</span>* key1, <span class="keyword">int</span>* key2)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#PBatch:CheckObjectType">CheckObjectType</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> key)</td></tr>
+<tr class="func"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#PBatch:CheckTObjectHashConsistency">CheckTObjectHashConsistency</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#PBatch:CrackMethodArgs">CrackMethodArgs</a>(<span class="keyword">char</span>* name)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#PBatch:EvalPFormula">EvalPFormula</a>(<span class="keyword">char</span>* command)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#PBatch:GetArguments">GetArguments</a>(<span class="keyword">const</span> <span class="keyword">char</span>* a, <span class="keyword">char</span>* name, <span class="keyword">char</span>** function, <span class="keyword">char</span>** <a href="./PBatch.html#PBatch:arg1" title="Int_t PBatch::arg1">arg1</a>, <span class="keyword">char</span>** <a href="./PBatch.html#PBatch:arg2" title="Int_t PBatch::arg2">arg2</a>)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#PBatch:GetDelimPosition">GetDelimPosition</a>(<span class="keyword">char</span>* arg, <span class="keyword">char</span> delim, <a href="./ListOfTypes.html#Int_t">Int_t</a>* yes = __null)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#PBatch:GetKey">GetKey</a>(<span class="keyword">char</span>* name, <span class="keyword">int</span> fl, <span class="keyword">int</span> makeflag)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#PBatch:GetMethodHandle">GetMethodHandle</a>(<span class="keyword">char</span>* name, <a href="./ListOfTypes.html#Int_t">Int_t</a> flag = 0)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PBatch:RemoveSpacePlaceholder">RemoveSpacePlaceholder</a>(<span class="keyword">char</span>* command)</td></tr>
+
+</table></div>
+</div>
+
+<div id="datamembers">
+<h2><a name="PBatch:Data_Members"></a>Data Members</h2>
+<div class="access" id="datapubl"><b>public:</b>
+<table class="data" id="tabdatapubl" cellspacing="0">
+<tr class="datainh"><td class="datatype">static <a href="./TObject.html">TObject</a>::(anonymous)</td><td class="dataname"><a href="./TObject.html#TObject:kBitMask"><span class="baseclass">TObject::</span>kBitMask</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./TObject.html">TObject</a>::EStatusBits</td><td class="dataname"><a href="./TObject.html#TObject:kCanDelete"><span class="baseclass">TObject::</span>kCanDelete</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./TObject.html">TObject</a>::EStatusBits</td><td class="dataname"><a href="./TObject.html#TObject:kCannotPick"><span class="baseclass">TObject::</span>kCannotPick</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./TObject.html">TObject</a>::EStatusBits</td><td class="dataname"><a href="./TObject.html#TObject:kHasUUID"><span class="baseclass">TObject::</span>kHasUUID</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./TObject.html">TObject</a>::(anonymous)</td><td class="dataname"><a href="./TObject.html#TObject:kInconsistent"><span class="baseclass">TObject::</span>kInconsistent</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./TObject.html">TObject</a>::EStatusBits</td><td class="dataname"><a href="./TObject.html#TObject:kInvalidObject"><span class="baseclass">TObject::</span>kInvalidObject</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./TObject.html">TObject</a>::(anonymous)</td><td class="dataname"><a href="./TObject.html#TObject:kIsOnHeap"><span class="baseclass">TObject::</span>kIsOnHeap</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./TObject.html">TObject</a>::EStatusBits</td><td class="dataname"><a href="./TObject.html#TObject:kIsReferenced"><span class="baseclass">TObject::</span>kIsReferenced</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./TObject.html">TObject</a>::EStatusBits</td><td class="dataname"><a href="./TObject.html#TObject:kMustCleanup"><span class="baseclass">TObject::</span>kMustCleanup</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./TObject.html">TObject</a>::EStatusBits</td><td class="dataname"><a href="./TObject.html#TObject:kNoContextMenu"><span class="baseclass">TObject::</span>kNoContextMenu</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./TObject.html">TObject</a>::(anonymous)</td><td class="dataname"><a href="./TObject.html#TObject:kNotDeleted"><span class="baseclass">TObject::</span>kNotDeleted</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./TObject.html">TObject</a>::EDeprecatedStatusBits</td><td class="dataname"><a href="./TObject.html#TObject:kObjInCanvas"><span class="baseclass">TObject::</span>kObjInCanvas</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./TObject.html">TObject</a>::(anonymous)</td><td class="dataname"><a href="./TObject.html#TObject:kOverwrite"><span class="baseclass">TObject::</span>kOverwrite</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./TObject.html">TObject</a>::(anonymous)</td><td class="dataname"><a href="./TObject.html#TObject:kSingleKey"><span class="baseclass">TObject::</span>kSingleKey</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./TObject.html">TObject</a>::(anonymous)</td><td class="dataname"><a href="./TObject.html#TObject:kWriteDelete"><span class="baseclass">TObject::</span>kWriteDelete</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./TObject.html">TObject</a>::(anonymous)</td><td class="dataname"><a href="./TObject.html#TObject:kZombie"><span class="baseclass">TObject::</span>kZombie</a></td><td></td></tr>
+
+</table></div>
+<div class="access" id="datapriv"><b>private:</b>
+<table class="data" id="tabdatapriv" cellspacing="0">
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PBatch:arg1"></a>arg1</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PBatch:arg2"></a>arg2</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PBatch:arg3"></a>arg3</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PBatch:arg4"></a>arg4</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PBatch:batch_histogram_param"></a>batch_histogram_param</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PBatch:batch_models_param"></a>batch_models_param</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PBatch:batch_particle_param"></a>batch_particle_param</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PBatch:batch_update_param"></a>batch_update_param</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PBatch:batch_value_param"></a>batch_value_param</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PBatch:command_pointer"></a>command_pointer</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./PParticle.html">PParticle</a>*</td><td class="dataname"><a name="PBatch:current_particle"></a>current_particle</td><td class="datadesc">For push command</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PBatch:current_position"></a>current_position</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">char</span>*</td><td class="dataname"><a name="PBatch:echo_string"></a>echo_string[1000]</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PBatch:else_position"></a>else_position</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PBatch:error_flag"></a>error_flag[1000]</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PBatch:eval_err_dumped"></a>eval_err_dumped</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./TGraph.html">TGraph</a>*</td><td class="dataname"><a name="PBatch:fGraph"></a>fGraph</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./TGraph2D.html">TGraph2D</a>*</td><td class="dataname"><a name="PBatch:fGraph2D"></a>fGraph2D</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./TH1.html">TH1</a>*</td><td class="dataname"><a name="PBatch:fHisto1"></a>fHisto1</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./TH2.html">TH2</a>*</td><td class="dataname"><a name="PBatch:fHisto2"></a>fHisto2</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./TH3.html">TH3</a>*</td><td class="dataname"><a name="PBatch:fHisto3"></a>fHisto3</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#FILE">FILE</a>*</td><td class="dataname"><a name="PBatch:file"></a>file</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PBatch:flag_command_int"></a>flag_command_int[1000]</td><td class="datadesc">=0: PParticle, =1: PUtilsRengine</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PBatch:is_readonly"></a>is_readonly</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a>*</td><td class="dataname"><a name="PBatch:key_branches"></a>key_branches</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PBatch:last_command_pointer"></a>last_command_pointer</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PBatch:locnum_batch"></a>locnum_batch</td><td class="datadesc">Position in the projector &amp; reaction loop</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PBatch:locnum_branch"></a>locnum_branch</td><td class="datadesc">current branch number</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PBatch:locnum_bulk"></a>locnum_bulk</td><td class="datadesc">Position in the projector &amp; reaction loop</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PBatch:locnum_command"></a>locnum_command</td><td class="datadesc">Position in the projector &amp; reaction loop</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PBatch:locnum_old_command"></a>locnum_old_command</td><td class="datadesc">Position in the projector &amp; reaction loop</td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">char</span></td><td class="dataname"><a name="PBatch:lst_command"></a>lst_command[1000]</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PBatch:lst_command_int"></a>lst_command_int[1000]</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./PFormula.html">PFormula</a>*</td><td class="dataname"><a name="PBatch:lst_form"></a>lst_form[1000]</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PBatch:lst_key"></a>lst_key[10][1000]</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PBatch:lst_key_a"></a>lst_key_a[1000]</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PBatch:lst_options_counter"></a>lst_options_counter[1000]</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">char</span>*</td><td class="dataname"><a name="PBatch:method_name"></a>method_name[100]</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PBatch:method_pointer"></a>method_pointer</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./TMethodCall.html">TMethodCall</a>*</td><td class="dataname"><a name="PBatch:methods"></a>methods[100]</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PBatch:methods_arg_flags"></a>methods_arg_flags[4][100]</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PBatch:methods_flags"></a>methods_flags[100]</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PBatch:num_batch"></a>num_batch</td><td class="datadesc">Position in the projector &amp; reaction loop</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PBatch:num_batch_param"></a>num_batch_param</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PBatch:num_bulk"></a>num_bulk</td><td class="datadesc">Position in the projector &amp; reaction loop</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PBatch:num_bulk_param"></a>num_bulk_param</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PBatch:num_command_param"></a>num_command_param</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./PValues.html">PValues</a></td><td class="dataname"><a name="PBatch:pdummy"></a>pdummy</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PBatch:pid_param"></a>pid_param</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Double_t">Double_t</a>**</td><td class="dataname"><a name="PBatch:readline_args"></a>readline_args[1000]</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">char</span>*</td><td class="dataname"><a name="PBatch:readline_format_string"></a>readline_format_string[1000]</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">int</span></td><td class="dataname"><a name="PBatch:readline_num_args"></a>readline_num_args[1000]</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">char</span>*</td><td class="dataname"><a name="PBatch:readline_string"></a>readline_string[1000]</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a>*</td><td class="dataname"><a name="PBatch:size_branches"></a>size_branches</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./TH1D.html">TH1D</a>**</td><td class="dataname"><a name="PBatch:slicesx"></a>slicesx</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./TH1D.html">TH1D</a>**</td><td class="dataname"><a name="PBatch:slicesy"></a>slicesy</td><td></td></tr>
+<tr class="data"><td class="datatype">static <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PBatch:stack_num_batch"></a>stack_num_batch[20]</td><td></td></tr>
+<tr class="data"><td class="datatype">static <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PBatch:stack_num_bulk"></a>stack_num_bulk[20]</td><td></td></tr>
+<tr class="data"><td class="datatype">static <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PBatch:stack_num_command"></a>stack_num_command[20]</td><td></td></tr>
+<tr class="data"><td class="datatype">static <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PBatch:stack_num_pos"></a>stack_num_pos</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PBatch:status"></a>status</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PBatch:stream_default_pos_param"></a>stream_default_pos_param</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PBatch:stream_max_pos_param"></a>stream_max_pos_param</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#FILE">FILE</a>*</td><td class="dataname"><a name="PBatch:tmp_file"></a>tmp_file</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./TTree.html">TTree</a>*</td><td class="dataname"><a name="PBatch:tree"></a>tree</td><td class="datadesc">Pointer to storage tree</td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">char</span>*</td><td class="dataname"><a name="PBatch:varlist"></a>varlist</td><td class="datadesc">Allowed command for new variables</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Double_t">Double_t</a>*</td><td class="dataname"><a name="PBatch:x"></a>x</td><td class="datadesc">Axis values for _eval</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Double_t">Double_t</a>*</td><td class="dataname"><a name="PBatch:y"></a>y</td><td class="datadesc">Axis values for _eval</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Double_t">Double_t</a>*</td><td class="dataname"><a name="PBatch:z"></a>z</td><td class="datadesc">Axis values for _eval</td></tr>
+
+</table></div>
+</div>
+<h2><a id="PBatch:Class_Charts"></a>Class Charts</h2>
+<map name="MapPBatch_Inh" id="MapPBatch_Inh">
+<area shape="rect" id="node2" href="./TObject.html" title="TObject" alt="" coords="4,15,308,71"/>
+</map>
+<map name="MapPBatch_InhMem" id="MapPBatch_InhMem">
+<area shape="rect" id="clust12" href="./TObject.html" alt="" coords="93,47,160,160"/>
+<area shape="rect" id="clust11" href="./TObject.html" alt="" coords="171,47,237,160"/>
+<area shape="rect" id="clust13" href="./TObject.html" alt="" coords="16,47,83,160"/>
+<area shape="rect" id="clust14" href="./TObject.html" alt="" coords="203,161,205,164"/>
+<area shape="rect" id="clust15" href="./TObject.html" alt="" coords="171,165,237,627"/>
+<area shape="rect" id="clust16" href="./TObject.html" alt="" coords="93,165,160,627"/>
+<area shape="rect" id="clust17" href="./TObject.html" alt="" coords="16,165,83,627"/>
+<area shape="rect" id="clust10" href="./TObject.html" title="TObject" alt="" coords="16,16,237,627"/>
+</map>
+<map name="MapPBatch_Lib" id="MapPBatch_Lib">
+<area shape="rect" id="node1" href="LibraryDependencies.html" title="All Libraries" alt="" coords="126,237,243,285"/>
+</map>
+<div class="tabs">
+<a id="imgPBatch_Inh" class="tabsel" href="inh/PBatch_Inh.png" onclick="javascript:return SetImg('Charts','inh/PBatch_Inh.png');">Inheritance</a>
+<a id="imgPBatch_InhMem" class="tab" href="inhmem/PBatch_InhMem.png" onclick="javascript:return SetImg('Charts','inhmem/PBatch_InhMem.png');">Inherited Members</a>
+<a id="imgPBatch_Incl" class="tab" href="incl/PBatch_Incl.png" onclick="javascript:return SetImg('Charts','incl/PBatch_Incl.png');">Includes</a>
+<a id="imgPBatch_Lib" class="tab" href="lib/PBatch_Lib.png" onclick="javascript:return SetImg('Charts','lib/PBatch_Lib.png');">Libraries</a><br/>
+</div><div class="classcharts"><div class="classchartswidth"></div>
+<img id="Charts" alt="Class Charts" class="classcharts" usemap="#MapPBatch_Inh" src="inh/PBatch_Inh.png"/></div>
+<h2>Function documentation</h2>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Bool_t">Bool_t</a> <a class="funcname" name="PBatch:CheckAndSplit" href="src/PBatch.h.html#OKCYQD">CheckAndSplit</a>(<span class="keyword">char</span>* arg, <span class="keyword">char</span> delim, <span class="keyword">int</span>* key1, <span class="keyword">int</span>* key2)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Bool_t">Bool_t</a> <a class="funcname" name="PBatch:GetArguments" href="src/PBatch.h.html#jOHF_">GetArguments</a>(<span class="keyword">const</span> <span class="keyword">char</span> *a, <span class="comment">/* const <a href="./ListOfTypes.html#char">char</a> *b, */</span> 			<span class="keyword">char</span> *name, <span class="keyword">char</span> **function, <span class="keyword">char</span> **<a href="./PBatch.html#PBatch:arg1" title="Int_t PBatch::arg1">arg1</a>, <span class="keyword">char</span> **<a href="./PBatch.html#PBatch:arg2" title="Int_t PBatch::arg2">arg2</a>)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Int_t">Int_t</a> <a class="funcname" name="PBatch:GetKey" href="src/PBatch.h.html#g_ENUD">GetKey</a>(<span class="keyword">char</span>* name, <span class="keyword">int</span> fl, <span class="keyword">int</span> makeflag)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Int_t">Int_t</a> <a class="funcname" name="PBatch:GetDelimPosition" href="src/PBatch.h.html#t0QupE">GetDelimPosition</a>(<span class="keyword">char</span>* arg, <span class="keyword">char</span> delim, <a href="./ListOfTypes.html#Int_t">Int_t</a>* yes = __null)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Int_t">Int_t</a> <a class="funcname" name="PBatch:GetMethodHandle" href="src/PBatch.h.html#xSwkmB">GetMethodHandle</a>(<span class="keyword">char</span>* name, <a href="./ListOfTypes.html#Int_t">Int_t</a> flag = 0)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Int_t">Int_t</a> <a class="funcname" name="PBatch:CrackMethodArgs" href="src/PBatch.h.html#GexlTC">CrackMethodArgs</a>(<span class="keyword">char</span>* name)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PBatch:AddSpacePlaceholder" href="src/PBatch.h.html#GOGbKB">AddSpacePlaceholder</a>(<span class="keyword">char</span>* command)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PBatch:RemoveSpacePlaceholder" href="src/PBatch.h.html#G6pqGE">RemoveSpacePlaceholder</a>(<span class="keyword">char</span>* command)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Int_t">Int_t</a> <a class="funcname" name="PBatch:EvalPFormula" href="src/PBatch.h.html#Zlx.0B">EvalPFormula</a>(<span class="keyword">char</span>* command)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="PBatch:PBatch" href="src/PBatch.h.html#DvU7ED">PBatch</a>()</span><br />
+<div class="funccomm"><pre>constructor
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PBatch:Print" href="src/PBatch.h.html#pyWKa">Print</a>(<span class="keyword">const</span> <a href="./ListOfTypes.html#Option_t">Option_t</a>* delme = __null) const</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Bool_t">Bool_t</a> <a class="funcname" name="PBatch:AddCommand" href="src/PBatch.h.html#S_f4.">AddCommand</a>(<span class="keyword">const</span> <span class="keyword">char</span>* command)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Bool_t">Bool_t</a> <a class="funcname" name="PBatch:AddCommand@1" href="src/PBatch.h.html#MFTmaC">AddCommand</a>(<span class="keyword">char</span> command, <span class="keyword">int</span> key_a, <span class="keyword">int</span> key1, <span class="keyword">int</span> key2, <span class="keyword">int</span> key3 = -1, <span class="keyword">int</span> key4 = -1, <span class="keyword">int</span> key5 = -1)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PBatch:SetPosition" href="src/PBatch.h.html#SLOnUD">SetPosition</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> my_num_batch, <a href="./ListOfTypes.html#Int_t">Int_t</a> my_num_bulk)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Int_t">Int_t</a> <a class="funcname" name="PBatch:GetNewBatch" href="src/PBatch.h.html#u.DejE">GetNewBatch</a>()</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> <a href="./PBatch.html#PBatch:locnum_batch" title="Int_t PBatch::locnum_batch">locnum_batch</a>;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Int_t">Int_t</a> <a class="funcname" name="PBatch:GetNewBulk" href="src/PBatch.h.html#B1EoO">GetNewBulk</a>()</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> <a href="./PBatch.html#PBatch:locnum_bulk" title="Int_t PBatch::locnum_bulk">locnum_bulk</a>;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Int_t">Int_t</a> <a class="funcname" name="PBatch:GetNewCommand" href="src/PBatch.h.html#JUCryD">GetNewCommand</a>()</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> <a href="./PBatch.html#PBatch:locnum_command" title="Int_t PBatch::locnum_command">locnum_command</a>;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Int_t">Int_t</a> <a class="funcname" name="PBatch:GetOldCommand" href="src/PBatch.h.html#mkhIRD">GetOldCommand</a>()</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> <a href="./PBatch.html#PBatch:locnum_old_command" title="Int_t PBatch::locnum_old_command">locnum_old_command</a>;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Int_t">Int_t</a> <a class="funcname" name="PBatch:GetBranch" href="src/PBatch.h.html#fCPIOD">GetBranch</a>()</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> <a href="./PBatch.html#PBatch:locnum_branch" title="Int_t PBatch::locnum_branch">locnum_branch</a>;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Int_t">Int_t</a> <a class="funcname" name="PBatch:GetElsePosition" href="src/PBatch.h.html#i88qpD">GetElsePosition</a>()</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> <a href="./PBatch.html#PBatch:else_position" title="Int_t PBatch::else_position">else_position</a>;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Int_t">Int_t</a> <a class="funcname" name="PBatch:GetCurrentPosition" href="src/PBatch.h.html#XBvon">GetCurrentPosition</a>()</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> <a href="./PBatch.html#PBatch:current_position" title="Int_t PBatch::current_position">current_position</a>;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Int_t">Int_t</a> <a class="funcname" name="PBatch:Execute" href="src/PBatch.h.html#nwCw8B">Execute</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> command_pos = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> retval = <a href="./ListOfTypes.html#Bool_t">kFALSE</a>)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Int_t">Int_t</a> <a class="funcname" name="PBatch:ExecuteLastLine" href="src/PBatch.h.html#ryyl0C">ExecuteLastLine</a>(<span class="keyword">void</span>)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Bool_t">Bool_t</a> <a class="funcname" name="PBatch:Execute@1" href="src/PBatch.h.html#zMLR_">Execute</a>(<span class="keyword">const</span> <span class="keyword">char</span>* command)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PBatch:SetToolObject" href="src/PBatch.h.html#TDHtLE">SetToolObject</a>(<a href="./TH1.html">TH1</a>* Histo1)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PBatch:SetToolObject@1" href="src/PBatch.h.html#rlE3JE">SetToolObject</a>(<a href="./TH2.html">TH2</a>* Histo2)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PBatch:SetToolObject@2" href="src/PBatch.h.html#jvaeKE">SetToolObject</a>(<a href="./TH3.html">TH3</a>* Histo3)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PBatch:SetToolObject@3" href="src/PBatch.h.html#bEpPb">SetToolObject</a>(<a href="./TGraph.html">TGraph</a>* Graph)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PBatch:SetToolObject@4" href="src/PBatch.h.html#a6U3WB">SetToolObject</a>(<a href="./TGraph2D.html">TGraph2D</a>* Graph2D)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PBatch:SetToolObject@5" href="src/PBatch.h.html#ll1d7C">SetToolObject</a>(<a href="./ListOfTypes.html#FILE">FILE</a>* f)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PBatch:SetToolObjectTmp" href="src/PBatch.h.html#XuDVYD">SetToolObjectTmp</a>(<a href="./ListOfTypes.html#FILE">FILE</a>* f)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Int_t">Int_t</a> <a class="funcname" name="PBatch:IsReadonly" href="src/PBatch.h.html#QNluwC">IsReadonly</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./PParticle.html">PParticle</a> * <a class="funcname" name="PBatch:GetCurrentParticle" href="src/PBatch.h.html#NtR_ND">GetCurrentParticle</a>(<span class="keyword">void</span>)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Int_t">Int_t</a> <a class="funcname" name="PBatch:Status" href="src/PBatch.h.html#z_4TTE">Status</a>(<span class="keyword">void</span>)</span><br />
+<div class="funccomm"><pre>workaround to check for a <span class="string">"[+]"</span>
+=1 for such a case
+=0 in all other cases
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PBatch:SetVarList" href="src/PBatch.h.html#AhMTHD">SetVarList</a>(<span class="keyword">char</span>* my_x)</span><br />
+<div class="funccomm"><pre>Allowed commands for new variables
+Format must be <span class="string">"a;b;c;"</span> with trailing ;'s
+If NULL don't care!
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PBatch:ReplaceAll" href="src/PBatch.h.html#vlhx0">ReplaceAll</a>(<a href="./TString.html">TString</a>* op, <span class="keyword">const</span> <span class="keyword">char</span>* oldstring, <span class="keyword">const</span> <span class="keyword">char</span>* newstring)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PBatch:SetTree" href="src/PBatch.h.html#DucYPE">SetTree</a>(<a href="./TTree.html">TTree</a>* my_tree)</span><br />
+
+<div class="code"><code class="inlinecode">{<a href="./PBatch.html#PBatch:tree" title="TTree* PBatch::tree">tree</a> = my_tree;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./TTree.html">TTree</a> * <a class="funcname" name="PBatch:GetTree" href="src/PBatch.h.html#hd1fS">GetTree</a>(<span class="keyword">void</span>)</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> <a href="./PBatch.html#PBatch:tree" title="TTree* PBatch::tree">tree</a>;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PBatch:SetSizeBranches" href="src/PBatch.h.html#nNL1OC">SetSizeBranches</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a>* my_size_branches)</span><br />
+
+<div class="code"><code class="inlinecode">{<a href="./PBatch.html#PBatch:size_branches" title="Int_t* PBatch::size_branches">size_branches</a> = my_size_branches;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PBatch:SetKeysBranches" href="src/PBatch.h.html#vlkCbB">SetKeysBranches</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a>* my_key_branches)</span><br />
+
+<div class="code"><code class="inlinecode">{<a href="./PBatch.html#PBatch:key_branches" title="Int_t* PBatch::key_branches">key_branches</a> = my_key_branches;}</code></div>
+<div style="clear:both;"></div>
+</div>
+
+<br />
+<!--SIGNATURE-->
+<div id="footer">
+
+<em>&raquo; Last changed: Tue Aug  7 10:55:27 2018 </em><em>&raquo; Last generated: 2018-08-07 10:55</em><br />
+<em>This page has been automatically generated. For comments or suggestions regarding the documentation or ROOT in general please send a mail to <a href="mailto:rootdev@cern.ch">ROOT support</a>.</em>
+</div>
+</div>
+</body>
+</html>

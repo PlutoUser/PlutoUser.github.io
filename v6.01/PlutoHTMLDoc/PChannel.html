@@ -1,0 +1,474 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!--                                             -->
+<!-- Author: ROOT team (rootdev@cern.ch)         -->
+<!--                                             -->
+<!--   Date: Tue Aug  7 10:55:11 2018            -->
+<!--                                             -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>PChannel</title>
+<meta name="rating" content="General" />
+<meta name="objecttype" content="Manual" />
+<meta name="keywords" content="software development, oo, object oriented, unix, x11, windows, c++, html, rene brun, fons rademakers, cern" />
+<meta name="description" content="ROOT - An Object Oriented Framework For Large Scale Data Analysis." />
+<link rel="stylesheet" type="text/css" href="ROOT.css" id="ROOTstyle" />
+<script type="text/javascript" src="ROOT.js"></script>
+</head>
+<body  onload="javascript:SetValuesFromCookie();"><div id="body_content">
+<div id="root_header"></div>
+<a name="TopOfPage"></a>
+<script type="text/javascript">WriteFollowPageBox('class PChannel','','Pluto/PChannel.h');</script>
+<div id="toplinks">
+<div class="descrhead"><div class="descrheadcontent">
+<span class="descrtitle">Quick Links:</span>
+<a class="descrheadentry" href="http://root.cern.ch">ROOT Homepage</a>
+<a class="descrheadentry" href="./ClassIndex.html">Class Index</a>
+<a class="descrheadentry" href="./ClassHierarchy.html">Class Hierarchy</a></div>
+<script type="text/javascript">
+function onSearch() {
+var s='http://www.google.com/search?q=%s+site%3A%u+-site%3A%u%2Fsrc%2F+-site%3A%u%2Fexamples%2F';
+var ref=String(document.location.href).replace(/https?:\/\//,'').replace(/\/[^\/]*$/,'').replace(/\//g,'%2F');
+window.location.href=s.replace(/%u/ig,ref).replace(/%s/ig,escape(document.searchform.t.value));
+return false;}
+</script>
+<form id="searchform" name="searchform" onsubmit="return onSearch()" action="javascript:onSearch();" method="post">
+<input name="t" size="30" value="Search documentation..." onfocus="if (document.searchform.t.value=='Search documentation...') document.searchform.t.value='';"></input>
+<a id="searchlink"  title="www.google.com"  href="javascript:onSearch();" onclick="return onSearch()">Search</a></form>
+</div>
+<div class="descrhead"><div class="descrheadcontent">
+<span class="descrtitle">Source:</span>
+<a class="descrheadentry" href="src/PChannel.h.html">header file</a>
+<a class="descrheadentry"> </a>
+
+</div></div>
+<div class="descrhead"><div class="descrheadcontent">
+<span class="descrtitle">Sections:</span>
+<a class="descrheadentry" href="#PChannel:description">class description</a> 
+<a class="descrheadentry" href="#PChannel:Function_Members">function members</a>
+<a class="descrheadentry" href="#PChannel:Data_Members">data members</a>
+<a class="descrheadentry" href="#PChannel:Class_Charts">class charts</a>
+</div></div>
+</div>
+<div class="location">
+<a class="locationlevel" href="index.html">Pluto</a>
+ &#187; <a class="locationlevel" href="./PLUTO_Index.html">PLUTO</a>
+ &#187; <a class="locationlevel" href="#TopOfPage">PChannel</a>
+</div>
+<div class="dropshadow"><div class="withshadow"><h1><a name="PChannel:description"></a>class PChannel: public <a href="./TObject.html">TObject</a></h1>
+<div class="classdescr">
+</div>
+</div></div>
+
+<div id="functions">
+<h2><a id="PChannel:Function_Members"></a>Function Members (Methods)</h2>
+<div class="access" id="funcpubl"><b>public:</b>
+<table class="func" id="tabfuncpubl" cellspacing="0">
+<tr class="func"><td class="funcret"> virtual</td><td class="funcname"><a class="funcname" href="#PChannel:_PChannel">~PChannel</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:AbstractMethod"><span class="baseclass">TObject::</span>AbstractMethod</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#PChannel:AddBulk">AddBulk</a>(<a href="./PBulkInterface.html">PBulkInterface</a>* mybulk)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#PChannel:AddPrologueBulk">AddPrologueBulk</a>(<a href="./PBulkInterface.html">PBulkInterface</a>* mybulk)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:AppendPad"><span class="baseclass">TObject::</span>AppendPad</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:Browse"><span class="baseclass">TObject::</span>Browse</a>(<a href="./TBrowser.html">TBrowser</a>* b)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PChannel:CheckDecayKey">CheckDecayKey</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#ULong_t">ULong_t</a></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:CheckedHash"><span class="baseclass">TObject::</span>CheckedHash</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#PChannel:CheckSiblings">CheckSiblings</a>(<a href="./PParticle.html">PParticle</a>* p, <a href="./PDistribution.html">PDistribution</a>* <a href="./PChannel.html#PChannel:dist" title="PDistribution* PChannel::dist">dist</a>, <span class="keyword">int</span> flag)</td></tr>
+<tr class="func"><td class="funcret">static <a href="./TClass.html">TClass</a>*</td><td class="funcname"><a class="funcname" href="#PChannel:Class">Class</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:ClassName"><span class="baseclass">TObject::</span>ClassName</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:Clear"><span class="baseclass">TObject::</span>Clear</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* = <span class="string">""</span>)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PChannel:ClearQuasi">ClearQuasi</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./TObject.html">TObject</a>*</td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:Clone"><span class="baseclass">TObject::</span>Clone</a>(<span class="keyword">const</span> <span class="keyword">char</span>* newname = <span class="string">""</span>) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:Compare"><span class="baseclass">TObject::</span>Compare</a>(<span class="keyword">const</span> <a href="./TObject.html">TObject</a>* obj) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:Copy"><span class="baseclass">TObject::</span>Copy</a>(<a href="./TObject.html">TObject</a>&amp; object) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#PChannel:Decay">Decay</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#PChannel:decay">decay</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:Delete"><span class="baseclass">TObject::</span>Delete</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)<span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PChannel:DisableHelicityAngle">DisableHelicityAngle</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:DistancetoPrimitive"><span class="baseclass">TObject::</span>DistancetoPrimitive</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> px, <a href="./ListOfTypes.html#Int_t">Int_t</a> py)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#PChannel:Do">Do</a>(<span class="keyword">const</span> <span class="keyword">char</span>* command)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#PChannel:Do@1">Do</a>(<a href="./TH1F.html">TH1F</a>* f, <span class="keyword">const</span> <span class="keyword">char</span>* command, <a href="./ListOfTypes.html#Int_t">Int_t</a> flag = 1)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#PChannel:Do@2">Do</a>(<a href="./TH2F.html">TH2F</a>* f, <span class="keyword">const</span> <span class="keyword">char</span>* command, <a href="./ListOfTypes.html#Int_t">Int_t</a> flag = 1)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#PChannel:Do@3">Do</a>(<a href="./TH3F.html">TH3F</a>* f, <span class="keyword">const</span> <span class="keyword">char</span>* command, <a href="./ListOfTypes.html#Int_t">Int_t</a> flag = 1)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:Draw"><span class="baseclass">TObject::</span>Draw</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:DrawClass"><span class="baseclass">TObject::</span>DrawClass</a>() <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./TObject.html">TObject</a>*</td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:DrawClone"><span class="baseclass">TObject::</span>DrawClone</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>) <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:Dump"><span class="baseclass">TObject::</span>Dump</a>() <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:Error"><span class="baseclass">TObject::</span>Error</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:Execute"><span class="baseclass">TObject::</span>Execute</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* params, <a href="./ListOfTypes.html#Int_t">Int_t</a>* error = 0)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:Execute@1"><span class="baseclass">TObject::</span>Execute</a>(<a href="./TMethod.html">TMethod</a>* method, <a href="./TObjArray.html">TObjArray</a>* params, <a href="./ListOfTypes.html#Int_t">Int_t</a>* error = 0)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:ExecuteEvent"><span class="baseclass">TObject::</span>ExecuteEvent</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> event, <a href="./ListOfTypes.html#Int_t">Int_t</a> px, <a href="./ListOfTypes.html#Int_t">Int_t</a> py)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:Fatal"><span class="baseclass">TObject::</span>Fatal</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./TObject.html">TObject</a>*</td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:FindObject"><span class="baseclass">TObject::</span>FindObject</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./TObject.html">TObject</a>*</td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:FindObject@1"><span class="baseclass">TObject::</span>FindObject</a>(<span class="keyword">const</span> <a href="./TObject.html">TObject</a>* obj) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">double</span></td><td class="funcname"><a class="funcname" href="#PChannel:GetBT">GetBT</a>()</td></tr>
+<tr class="func"><td class="funcret"><a href="./PDistribution.html">PDistribution</a>*</td><td class="funcname"><a class="funcname" href="#PChannel:GetDistributionNotFinalized">GetDistributionNotFinalized</a>(<span class="keyword">int</span> i)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#PChannel:GetDMIndex">GetDMIndex</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Option_t">Option_t</a>*</td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:GetDrawOption"><span class="baseclass">TObject::</span>GetDrawOption</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">static <a href="./ListOfTypes.html#Long_t">Long_t</a></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:GetDtorOnly"><span class="baseclass">TObject::</span>GetDtorOnly</a>()</td></tr>
+<tr class="func"><td class="funcret">static <span class="keyword">double</span></td><td class="funcname"><a class="funcname" href="#PChannel:GetGlobalWeight">GetGlobalWeight</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:GetIconName"><span class="baseclass">TObject::</span>GetIconName</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PChannel:GetMessage">GetMessage</a>()</td></tr>
+<tr class="func"><td class="funcret">virtual <span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#PChannel:GetName">GetName</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#PChannel:GetNumNotFinalized">GetNumNotFinalized</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#PChannel:GetNumPar">GetNumPar</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:GetObjectInfo"><span class="baseclass">TObject::</span>GetObjectInfo</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> px, <a href="./ListOfTypes.html#Int_t">Int_t</a> py) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">static <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:GetObjectStat"><span class="baseclass">TObject::</span>GetObjectStat</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Option_t">Option_t</a>*</td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:GetOption"><span class="baseclass">TObject::</span>GetOption</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#PChannel:GetParentSize">GetParentSize</a>()</td></tr>
+<tr class="func"><td class="funcret"><a href="./PParticle.html">PParticle</a>**</td><td class="funcname"><a class="funcname" href="#PChannel:GetParticles">GetParticles</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span>*</td><td class="funcname"><a class="funcname" href="#PChannel:GetPids">GetPids</a>()</td></tr>
+<tr class="func"><td class="funcret"><a href="./PChannel.html">PChannel</a>*</td><td class="funcname"><a class="funcname" href="#PChannel:GetQuasi">GetQuasi</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:GetTitle"><span class="baseclass">TObject::</span>GetTitle</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#UInt_t">UInt_t</a></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:GetUniqueID"><span class="baseclass">TObject::</span>GetUniqueID</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:HandleTimer"><span class="baseclass">TObject::</span>HandleTimer</a>(<a href="./TTimer.html">TTimer</a>* timer)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#ULong_t">ULong_t</a></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:Hash"><span class="baseclass">TObject::</span>Hash</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:HasInconsistentHash"><span class="baseclass">TObject::</span>HasInconsistentHash</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:Info"><span class="baseclass">TObject::</span>Info</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:InheritsFrom"><span class="baseclass">TObject::</span>InheritsFrom</a>(<span class="keyword">const</span> <span class="keyword">char</span>* classname) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:InheritsFrom@1"><span class="baseclass">TObject::</span>InheritsFrom</a>(<span class="keyword">const</span> <a href="./TClass.html">TClass</a>* cl) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#PChannel:Init">Init</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:Inspect"><span class="baseclass">TObject::</span>Inspect</a>() <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:InvertBit"><span class="baseclass">TObject::</span>InvertBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f)</td></tr>
+<tr class="func"><td class="funcret">virtual <a href="./TClass.html">TClass</a>*</td><td class="funcname"><a class="funcname" href="#PChannel:IsA">IsA</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:IsEqual"><span class="baseclass">TObject::</span>IsEqual</a>(<span class="keyword">const</span> <a href="./TObject.html">TObject</a>* obj) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:IsFolder"><span class="baseclass">TObject::</span>IsFolder</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:IsOnHeap"><span class="baseclass">TObject::</span>IsOnHeap</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:IsSortable"><span class="baseclass">TObject::</span>IsSortable</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:IsZombie"><span class="baseclass">TObject::</span>IsZombie</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:ls"><span class="baseclass">TObject::</span>ls</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:MayNotUse"><span class="baseclass">TObject::</span>MayNotUse</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:Notify"><span class="baseclass">TObject::</span>Notify</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:Obsolete"><span class="baseclass">TObject::</span>Obsolete</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* asOfVers, <span class="keyword">const</span> <span class="keyword">char</span>* removedFromVers) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:operator_delete"><span class="baseclass">TObject::</span>operator delete</a>(<span class="keyword">void</span>* ptr)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:operator_delete@1"><span class="baseclass">TObject::</span>operator delete</a>(<span class="keyword">void</span>* ptr, <span class="keyword">void</span>* vp)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:operator_delete[]"><span class="baseclass">TObject::</span>operator delete[]</a>(<span class="keyword">void</span>* ptr)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:operator_delete[]@1"><span class="baseclass">TObject::</span>operator delete[]</a>(<span class="keyword">void</span>* ptr, <span class="keyword">void</span>* vp)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span>*</td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:operator_new"><span class="baseclass">TObject::</span>operator new</a>(<a href="./ListOfTypes.html#size_t">size_t</a> sz)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span>*</td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:operator_new@1"><span class="baseclass">TObject::</span>operator new</a>(<a href="./ListOfTypes.html#size_t">size_t</a> sz, <span class="keyword">void</span>* vp)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span>*</td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:operator_new[]"><span class="baseclass">TObject::</span>operator new[]</a>(<a href="./ListOfTypes.html#size_t">size_t</a> sz)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span>*</td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:operator_new[]@1"><span class="baseclass">TObject::</span>operator new[]</a>(<a href="./ListOfTypes.html#size_t">size_t</a> sz, <span class="keyword">void</span>* vp)</td></tr>
+<tr class="func"><td class="funcret"><a href="./PChannel.html">PChannel</a>&amp;</td><td class="funcname"><a class="funcname" href="#PChannel:operator_">operator=</a>(<span class="keyword">const</span> <a href="./PChannel.html">PChannel</a>&amp;)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:Paint"><span class="baseclass">TObject::</span>Paint</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)</td></tr>
+<tr class="func"><td class="funcret"></td><td class="funcname"><a class="funcname" href="#PChannel:PChannel@3">PChannel</a>(<span class="keyword">const</span> <a href="./PChannel.html">PChannel</a>&amp;)</td></tr>
+<tr class="func"><td class="funcret"></td><td class="funcname"><a class="funcname" href="#PChannel:PChannel">PChannel</a>(<a href="./PParticle.html">PParticle</a>**, <span class="keyword">int</span> nt = 2, <span class="keyword">int</span> mf = 0, <span class="keyword">int</span> af = 0, <span class="keyword">int</span> bf = 0)</td></tr>
+<tr class="func"><td class="funcret"></td><td class="funcname"><a class="funcname" href="#PChannel:PChannel@1">PChannel</a>(<span class="keyword">int</span> idx, <a href="./PParticle.html">PParticle</a>** particles = __null, <span class="keyword">int</span> mf = 0, <span class="keyword">int</span> af = 0, <span class="keyword">int</span> bf = 0)</td></tr>
+<tr class="func"><td class="funcret"></td><td class="funcname"><a class="funcname" href="#PChannel:PChannel@2">PChannel</a>(<span class="keyword">int</span> idx, <a href="./PParticle.html">PParticle</a>&amp; <a href="./PChannel.html#PChannel:parent" title="PParticle* PChannel::parent">parent</a>, <span class="keyword">int</span> mf = 0, <span class="keyword">int</span> af = 0, <span class="keyword">int</span> bf = 0)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:Pop"><span class="baseclass">TObject::</span>Pop</a>()</td></tr>
+<tr class="func"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PChannel:Print">Print</a>(<span class="keyword">const</span> <a href="./ListOfTypes.html#Option_t">Option_t</a>* delme = <span class="string">""</span>) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PChannel:PrintNew">PrintNew</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PChannel:PrintReaction">PrintReaction</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> check_key = 1) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PChannel:PrintReport">PrintReport</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:Read"><span class="baseclass">TObject::</span>Read</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:RecursiveRemove"><span class="baseclass">TObject::</span>RecursiveRemove</a>(<a href="./TObject.html">TObject</a>* obj)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#PChannel:Reset">Reset</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:ResetBit"><span class="baseclass">TObject::</span>ResetBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:SaveAs"><span class="baseclass">TObject::</span>SaveAs</a>(<span class="keyword">const</span> <span class="keyword">char</span>* filename = <span class="string">""</span>, <a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>) <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:SavePrimitive"><span class="baseclass">TObject::</span>SavePrimitive</a>(<a href="./ListOfTypes.html#ostream">ostream</a>&amp; out, <a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:SetBit@1"><span class="baseclass">TObject::</span>SetBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:SetBit"><span class="baseclass">TObject::</span>SetBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f, <a href="./ListOfTypes.html#Bool_t">Bool_t</a> set)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#PChannel:SetDaughters">SetDaughters</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#PChannel:SetDistribution">SetDistribution</a>(<a href="./PDistribution.html">PDistribution</a>* distribution)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:SetDrawOption"><span class="baseclass">TObject::</span>SetDrawOption</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)<span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:SetDtorOnly"><span class="baseclass">TObject::</span>SetDtorOnly</a>(<span class="keyword">void</span>* obj)</td></tr>
+<tr class="func"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PChannel:SetGlobalWeight">SetGlobalWeight</a>(<span class="keyword">double</span> <a href="./PChannel.html#PChannel:w" title="double PChannel::w">w</a>)</td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:SetObjectStat"><span class="baseclass">TObject::</span>SetObjectStat</a>(<a href="./ListOfTypes.html#Bool_t">Bool_t</a> stat)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PChannel:SetPrintTentative">SetPrintTentative</a>(<span class="keyword">bool</span> t)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PChannel:SetSourceId">SetSourceId</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> mysourceid)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:SetUniqueID"><span class="baseclass">TObject::</span>SetUniqueID</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> uid)</td></tr>
+<tr class="func"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PChannel:ShowMembers">ShowMembers</a>(<a href="./TMemberInspector.html">TMemberInspector</a>&amp; insp) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PChannel:Streamer">Streamer</a>(<a href="./TBuffer.html">TBuffer</a>&amp;)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PChannel:StreamerNVirtual">StreamerNVirtual</a>(<a href="./TBuffer.html">TBuffer</a>&amp; ClassDef_StreamerNVirtual_b)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:SysError"><span class="baseclass">TObject::</span>SysError</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:TestBit"><span class="baseclass">TObject::</span>TestBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:TestBits"><span class="baseclass">TObject::</span>TestBits</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:UseCurrentStyle"><span class="baseclass">TObject::</span>UseCurrentStyle</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:Warning"><span class="baseclass">TObject::</span>Warning</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:Write"><span class="baseclass">TObject::</span>Write</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> option = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> bufsize = 0)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:Write@1"><span class="baseclass">TObject::</span>Write</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> option = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> bufsize = 0) <span class="keyword">const</span></td></tr>
+
+</table></div>
+<div class="access" id="funcprot"><b>protected:</b>
+<table class="func" id="tabfuncprot" cellspacing="0">
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:DoError"><span class="baseclass">TObject::</span>DoError</a>(<span class="keyword">int</span> level, <span class="keyword">const</span> <span class="keyword">char</span>* location, <span class="keyword">const</span> <span class="keyword">char</span>* fmt, <a href="./ListOfTypes.html#va_list">va_list</a> va) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:MakeZombie"><span class="baseclass">TObject::</span>MakeZombie</a>()</td></tr>
+
+</table></div>
+<div class="access" id="funcpriv"><b>private:</b>
+<table class="func" id="tabfuncpriv" cellspacing="0">
+<tr class="func"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#PChannel:CheckTObjectHashConsistency">CheckTObjectHashConsistency</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#PChannel:Genbod">Genbod</a>(<span class="keyword">int</span>)</td></tr>
+<tr class="func"><td class="funcret"><a href="./PProjector.html">PProjector</a>*</td><td class="funcname"><a class="funcname" href="#PChannel:GetCurrentProjector">GetCurrentProjector</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PChannel:IdChannel">IdChannel</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PChannel:IsReaction">IsReaction</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PChannel:MakeDilepton">MakeDilepton</a>()</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#PChannel:ReadFileInput">ReadFileInput</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PChannel:ThermalSampling">ThermalSampling</a>()</td></tr>
+
+</table></div>
+</div>
+
+<div id="datamembers">
+<h2><a name="PChannel:Data_Members"></a>Data Members</h2>
+<div class="access" id="datapubl"><b>public:</b>
+<table class="data" id="tabdatapubl" cellspacing="0">
+<tr class="datainh"><td class="datatype">static <a href="./TObject.html">TObject</a>::(anonymous)</td><td class="dataname"><a href="./TObject.html#TObject:kBitMask"><span class="baseclass">TObject::</span>kBitMask</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./TObject.html">TObject</a>::EStatusBits</td><td class="dataname"><a href="./TObject.html#TObject:kCanDelete"><span class="baseclass">TObject::</span>kCanDelete</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./TObject.html">TObject</a>::EStatusBits</td><td class="dataname"><a href="./TObject.html#TObject:kCannotPick"><span class="baseclass">TObject::</span>kCannotPick</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./TObject.html">TObject</a>::EStatusBits</td><td class="dataname"><a href="./TObject.html#TObject:kHasUUID"><span class="baseclass">TObject::</span>kHasUUID</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./TObject.html">TObject</a>::(anonymous)</td><td class="dataname"><a href="./TObject.html#TObject:kInconsistent"><span class="baseclass">TObject::</span>kInconsistent</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./TObject.html">TObject</a>::EStatusBits</td><td class="dataname"><a href="./TObject.html#TObject:kInvalidObject"><span class="baseclass">TObject::</span>kInvalidObject</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./TObject.html">TObject</a>::(anonymous)</td><td class="dataname"><a href="./TObject.html#TObject:kIsOnHeap"><span class="baseclass">TObject::</span>kIsOnHeap</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./TObject.html">TObject</a>::EStatusBits</td><td class="dataname"><a href="./TObject.html#TObject:kIsReferenced"><span class="baseclass">TObject::</span>kIsReferenced</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./TObject.html">TObject</a>::EStatusBits</td><td class="dataname"><a href="./TObject.html#TObject:kMustCleanup"><span class="baseclass">TObject::</span>kMustCleanup</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./TObject.html">TObject</a>::EStatusBits</td><td class="dataname"><a href="./TObject.html#TObject:kNoContextMenu"><span class="baseclass">TObject::</span>kNoContextMenu</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./TObject.html">TObject</a>::(anonymous)</td><td class="dataname"><a href="./TObject.html#TObject:kNotDeleted"><span class="baseclass">TObject::</span>kNotDeleted</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./TObject.html">TObject</a>::EDeprecatedStatusBits</td><td class="dataname"><a href="./TObject.html#TObject:kObjInCanvas"><span class="baseclass">TObject::</span>kObjInCanvas</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./TObject.html">TObject</a>::(anonymous)</td><td class="dataname"><a href="./TObject.html#TObject:kOverwrite"><span class="baseclass">TObject::</span>kOverwrite</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./TObject.html">TObject</a>::(anonymous)</td><td class="dataname"><a href="./TObject.html#TObject:kSingleKey"><span class="baseclass">TObject::</span>kSingleKey</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./TObject.html">TObject</a>::(anonymous)</td><td class="dataname"><a href="./TObject.html#TObject:kWriteDelete"><span class="baseclass">TObject::</span>kWriteDelete</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./TObject.html">TObject</a>::(anonymous)</td><td class="dataname"><a href="./TObject.html#TObject:kZombie"><span class="baseclass">TObject::</span>kZombie</a></td><td></td></tr>
+
+</table></div>
+<div class="access" id="datapriv"><b>private:</b>
+<table class="data" id="tabdatapriv" cellspacing="0">
+<tr class="data"><td class="datatype"><span class="keyword">int</span></td><td class="dataname"><a name="PChannel:DMIndex"></a>DMIndex</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">int</span></td><td class="dataname"><a name="PChannel:bid"></a>bid</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./PBulkInterface.html">PBulkInterface</a>*</td><td class="dataname"><a name="PChannel:bulk"></a>bulk[5]</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">int</span></td><td class="dataname"><a name="PChannel:bulkdecay_pos"></a>bulkdecay_pos</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./PProjector.html">PProjector</a>*</td><td class="dataname"><a name="PChannel:current_projector"></a>current_projector</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">int</span></td><td class="dataname"><a name="PChannel:decay_key"></a>decay_key</td><td class="datadesc">! Key to data base entry</td></tr>
+<tr class="data"><td class="datatype"><a href="./TString.html">TString</a></td><td class="dataname"><a name="PChannel:decay_string"></a>decay_string</td><td class="datadesc">! For parsing the decay string</td></tr>
+<tr class="data"><td class="datatype"><a href="./TString.html">TString</a></td><td class="dataname"><a name="PChannel:decay_string2"></a>decay_string2</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./PDistribution.html">PDistribution</a>*</td><td class="dataname"><a name="PChannel:dist"></a>dist[10]</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Double_t">Double_t</a></td><td class="dataname"><a name="PChannel:dist_counter"></a>dist_counter[10]</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Double_t">Double_t</a></td><td class="dataname"><a name="PChannel:dist_weight"></a>dist_weight[10]</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Double_t">Double_t</a></td><td class="dataname"><a name="PChannel:dist_weight_sum"></a>dist_weight_sum[10]</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./PDistribution.html">PDistribution</a>*</td><td class="dataname"><a name="PChannel:distribution_not_finalized"></a>distribution_not_finalized[5]</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PChannel:distribution_position"></a>distribution_position</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">int</span></td><td class="dataname"><a name="PChannel:dlSrc"></a>dlSrc</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">double</span></td><td class="dataname"><a name="PChannel:e_cm"></a>e_cm</td><td class="datadesc">used to save parameters between calls of ds_dt()</td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">double</span></td><td class="dataname"><a name="PChannel:ecm"></a>ecm</td><td class="datadesc">invariant mass, weight of decay, energy threshold</td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">double</span></td><td class="dataname"><a name="PChannel:emin"></a>emin</td><td class="datadesc">invariant mass, weight of decay, energy threshold</td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">double</span>*</td><td class="dataname"><a name="PChannel:event_impact_param"></a>event_impact_param</td><td class="datadesc">from batch system</td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">double</span>*</td><td class="dataname"><a name="PChannel:event_plane"></a>event_plane</td><td class="datadesc">from batch system</td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">double</span>*</td><td class="dataname"><a name="PChannel:events"></a>events</td><td class="datadesc">from batch system</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Long_t">Long_t</a></td><td class="dataname"><a name="PChannel:fEnablePattern"></a>fEnablePattern</td><td></td></tr>
+<tr class="data"><td class="datatype">static <span class="keyword">double</span></td><td class="dataname"><a name="PChannel:globalWeight"></a>globalWeight</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./PParticle.html">PParticle</a>*</td><td class="dataname"><a name="PChannel:grandgrandparent"></a>grandgrandparent</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./PParticle.html">PParticle</a>*</td><td class="dataname"><a name="PChannel:grandparent"></a>grandparent</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">bool</span></td><td class="dataname"><a name="PChannel:init_done"></a>init_done</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./TArrayI.html">TArrayI</a></td><td class="dataname"><a name="PChannel:ipid"></a>ipid</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">int</span></td><td class="dataname"><a name="PChannel:n"></a>n</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">int</span></td><td class="dataname"><a name="PChannel:num_not_finalized"></a>num_not_finalized</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./PParticle.html">PParticle</a>*</td><td class="dataname"><a name="PChannel:orig_parent"></a>orig_parent</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./PParticle.html">PParticle</a>*</td><td class="dataname"><a name="PChannel:parent"></a>parent</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./PParticle.html">PParticle</a>*</td><td class="dataname"><a name="PChannel:participant"></a>participant</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">bool</span></td><td class="dataname"><a name="PChannel:print_tentative"></a>print_tentative</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./PBulkInterface.html">PBulkInterface</a>*</td><td class="dataname"><a name="PChannel:pro_bulk"></a>pro_bulk[5]</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">int</span></td><td class="dataname"><a name="PChannel:pro_bulkdecay_pos"></a>pro_bulkdecay_pos</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./PParticle.html">PParticle</a>**</td><td class="dataname"><a name="PChannel:ptcls"></a>ptcls</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">int</span></td><td class="dataname"><a name="PChannel:ptcls_extern"></a>ptcls_extern</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./PParticle.html">PParticle</a>*</td><td class="dataname"><a name="PChannel:quasi_composite"></a>quasi_composite</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./PChannel.html">PChannel</a>*</td><td class="dataname"><a name="PChannel:quasi_pchannel"></a>quasi_pchannel</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">int</span></td><td class="dataname"><a name="PChannel:sourceid"></a>sourceid</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./PParticle.html">PParticle</a>*</td><td class="dataname"><a name="PChannel:spectator"></a>spectator</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">int</span></td><td class="dataname"><a name="PChannel:status"></a>status</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">int</span></td><td class="dataname"><a name="PChannel:tcSrc"></a>tcSrc</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">int</span></td><td class="dataname"><a name="PChannel:thSrc"></a>thSrc</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">bool</span></td><td class="dataname"><a name="PChannel:thermal_disable_didx"></a>thermal_disable_didx</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">int</span></td><td class="dataname"><a name="PChannel:tid"></a>tid</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">double</span></td><td class="dataname"><a name="PChannel:w"></a>w</td><td class="datadesc">invariant mass, weight of decay, energy threshold</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Double_t">Double_t</a></td><td class="dataname"><a name="PChannel:weight_sum"></a>weight_sum</td><td class="datadesc">Sum of all weights for debugging</td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">double</span>*</td><td class="dataname"><a name="PChannel:weight_version"></a>weight_version</td><td class="datadesc">from batch system</td></tr>
+
+</table></div>
+</div>
+<h2><a id="PChannel:Class_Charts"></a>Class Charts</h2>
+<map name="MapPChannel_Inh" id="MapPChannel_Inh">
+<area shape="rect" id="node2" href="./TObject.html" title="TObject" alt="" coords="4,15,308,71"/>
+</map>
+<map name="MapPChannel_InhMem" id="MapPChannel_InhMem">
+<area shape="rect" id="clust12" href="./TObject.html" alt="" coords="93,47,160,160"/>
+<area shape="rect" id="clust11" href="./TObject.html" alt="" coords="171,47,237,160"/>
+<area shape="rect" id="clust13" href="./TObject.html" alt="" coords="16,47,83,160"/>
+<area shape="rect" id="clust14" href="./TObject.html" alt="" coords="203,161,205,164"/>
+<area shape="rect" id="clust15" href="./TObject.html" alt="" coords="171,165,237,627"/>
+<area shape="rect" id="clust16" href="./TObject.html" alt="" coords="93,165,160,627"/>
+<area shape="rect" id="clust17" href="./TObject.html" alt="" coords="16,165,83,627"/>
+<area shape="rect" id="clust10" href="./TObject.html" title="TObject" alt="" coords="16,16,237,627"/>
+</map>
+<map name="MapPChannel_Lib" id="MapPChannel_Lib">
+<area shape="rect" id="node1" href="LibraryDependencies.html" title="All Libraries" alt="" coords="126,237,243,285"/>
+</map>
+<div class="tabs">
+<a id="imgPChannel_Inh" class="tabsel" href="inh/PChannel_Inh.png" onclick="javascript:return SetImg('Charts','inh/PChannel_Inh.png');">Inheritance</a>
+<a id="imgPChannel_InhMem" class="tab" href="inhmem/PChannel_InhMem.png" onclick="javascript:return SetImg('Charts','inhmem/PChannel_InhMem.png');">Inherited Members</a>
+<a id="imgPChannel_Incl" class="tab" href="incl/PChannel_Incl.png" onclick="javascript:return SetImg('Charts','incl/PChannel_Incl.png');">Includes</a>
+<a id="imgPChannel_Lib" class="tab" href="lib/PChannel_Lib.png" onclick="javascript:return SetImg('Charts','lib/PChannel_Lib.png');">Libraries</a><br/>
+</div><div class="classcharts"><div class="classchartswidth"></div>
+<img id="Charts" alt="Class Charts" class="classcharts" usemap="#MapPChannel_Inh" src="inh/PChannel_Inh.png"/></div>
+<h2>Function documentation</h2>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="PChannel:PChannel" href="src/PChannel.h.html#keaAF">PChannel</a>(<a href="./PParticle.html">PParticle</a>** , <span class="keyword">int</span> nt = 2, <span class="keyword">int</span> mf = 0, <span class="keyword">int</span> af = 0, <span class="keyword">int</span> bf = 0)</span><br />
+<div class="funccomm"><pre> Channel constructor by particle array
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="PChannel:PChannel@1" href="src/PChannel.h.html#zxkZsD">PChannel</a>(<span class="keyword">int</span> idx, <a href="./PParticle.html">PParticle</a>** particles = __null, <span class="keyword">int</span> mf = 0, <span class="keyword">int</span> af = 0, <span class="keyword">int</span> bf = 0)</span><br />
+<div class="funccomm"><pre> Channel constructor by <a href="./PChannel.html#PChannel:decay" title="int PChannel::decay()">decay</a>-mode index
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="PChannel:PChannel@2" href="src/PChannel.h.html#NHleZ">PChannel</a>(<span class="keyword">int</span> idx, <a href="./PParticle.html">PParticle</a>&amp; <a href="./PChannel.html#PChannel:parent" title="PParticle* PChannel::parent">parent</a>, <span class="keyword">int</span> mf = 0, <span class="keyword">int</span> af = 0, <span class="keyword">int</span> bf = 0)</span><br />
+<div class="funccomm"><pre> Channel constructor by <a href="./PChannel.html#PChannel:decay" title="int PChannel::decay()">decay</a>-mode index and <a href="./PChannel.html#PChannel:parent" title="PParticle* PChannel::parent">parent</a> reference
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="PChannel:_PChannel" href="src/PChannel.h.html#nt.KZ">~PChannel</a>()</span><br />
+<div class="funccomm"><pre> Channel destructor
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Bool_t">Bool_t</a> <a class="funcname" name="PChannel:Init" href="src/PChannel.h.html#ZJGEFB">Init</a>()</span><br />
+<div class="funccomm"><pre> sets on the first call all <a href="./PChannel.html#PChannel:parent" title="PParticle* PChannel::parent">parent</a>, siblings etc IDs. This
+ has to be done only once per <a href="./PReaction.html">PReaction</a>
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Bool_t">Bool_t</a> <a class="funcname" name="PChannel:Reset" href="src/PChannel.h.html#SO88kD">Reset</a>()</span><br />
+<div class="funccomm"><pre> cleans the channel, so an init will be done in the next <a href="./PChannel.html#PChannel:decay" title="int PChannel::decay()">decay</a>()
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Bool_t">Bool_t</a> <a class="funcname" name="PChannel:SetDaughters" href="src/PChannel.h.html#Ze_DGE">SetDaughters</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PChannel:SetSourceId" href="src/PChannel.h.html#Bsc60C">SetSourceId</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> mysourceid)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="PChannel:Decay" href="src/PChannel.h.html#kkR50D">Decay</a>()</span><br />
+<div class="funccomm"><pre> N-body phase-space <a href="./PChannel.html#PChannel:decay" title="int PChannel::decay()">decay</a> function based on the CERNLIB routine
+ GENBOD. Resonance and dilepton masses (for Dalitz decays)
+ are sampled in <a href="./PData.html">PData</a>. Scattering angles are sampled here, for
+ selected channels (see idChannel).
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="PChannel:decay" href="src/PChannel.h.html#AYyerD">decay</a>()</span><br />
+<div class="funccomm"><pre>kept for comp.
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./PParticle.html">PParticle</a> ** <a class="funcname" name="PChannel:GetParticles" href="src/PChannel.h.html#hLOkI">GetParticles</a>()</span><br />
+<div class="funccomm"><pre> address of array of pointers to the channel particles
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> * <a class="funcname" name="PChannel:GetPids" href="src/PChannel.h.html#tIdLeD">GetPids</a>()</span><br />
+<div class="funccomm"><pre> address of array of channel-particle ids
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="PChannel:GetNumPar" href="src/PChannel.h.html#qDn2bD">GetNumPar</a>()</span><br />
+<div class="funccomm"><pre> number of <a href="./PChannel.html#PChannel:decay" title="int PChannel::decay()">decay</a> products
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="PChannel:SetDistribution" href="src/PChannel.h.html#w8l09C">SetDistribution</a>(<a href="./PDistribution.html">PDistribution</a>* distribution)</span><br />
+<div class="funccomm"><pre>******for distribution handling:
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="PChannel:CheckSiblings" href="src/PChannel.h.html#LZs8EB">CheckSiblings</a>(<a href="./PParticle.html">PParticle</a>* p, <a href="./PDistribution.html">PDistribution</a>* <a href="./PChannel.html#PChannel:dist" title="PDistribution* PChannel::dist">dist</a>, <span class="keyword">int</span> flag)</span><br />
+<div class="funccomm"><pre> return -1 if distribution does not match the channel
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">double</span> <a class="funcname" name="PChannel:GetBT" href="src/PChannel.h.html#cqRlxD">GetBT</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./PChannel.html">PChannel</a> * <a class="funcname" name="PChannel:GetQuasi" href="src/PChannel.h.html#OadkSB">GetQuasi</a>(<span class="keyword">void</span>)</span><br />
+<div class="funccomm"><pre>******for quasi-elastic handling:
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PChannel:ClearQuasi" href="src/PChannel.h.html#FDERwC">ClearQuasi</a>(<span class="keyword">void</span>)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="PChannel:GetParentSize" href="src/PChannel.h.html#rMP.SE">GetParentSize</a>()</span><br />
+<div class="funccomm"><pre> 1 or 2 for elementary or quasi particles respectively
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PChannel:SetGlobalWeight" href="src/PChannel.h.html#unjnSC">SetGlobalWeight</a>(<span class="keyword">double</span> <a href="./PChannel.html#PChannel:w" title="double PChannel::w">w</a>)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">double</span> <a class="funcname" name="PChannel:GetGlobalWeight" href="src/PChannel.h.html#AKHzvC">GetGlobalWeight</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="PChannel:GetDMIndex" href="src/PChannel.h.html#vFnDFC">GetDMIndex</a>()</span><br />
+<div class="funccomm"><pre>returns the <a href="./PChannel.html#PChannel:decay" title="int PChannel::decay()">decay</a> mode index of this channel
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PChannel:GetMessage" href="src/PChannel.h.html#T9A2aD">GetMessage</a>()</span><br />
+<div class="funccomm"><pre> <a href="./PChannel.html#PChannel:status" title="int PChannel::status">status</a> message
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PChannel:Print" href="src/PChannel.h.html#fdkelB">Print</a>(<span class="keyword">const</span> <a href="./ListOfTypes.html#Option_t">Option_t</a>* delme = <span class="string">""</span>) const</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PChannel:PrintReaction" href="src/PChannel.h.html#rgXJvE">PrintReaction</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> check_key = 1) const</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PChannel:PrintNew" href="src/PChannel.h.html#Cy80jE">PrintNew</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PChannel:PrintReport" href="src/PChannel.h.html#rQfHpE">PrintReport</a>() const</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PChannel:CheckDecayKey" href="src/PChannel.h.html#bE2hcD">CheckDecayKey</a>() const</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">char</span> <span class="keyword">const</span> * <a class="funcname" name="PChannel:GetName" href="src/PChannel.h.html#Dl8jfD">GetName</a>(<span class="keyword">void</span>)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PChannel:SetPrintTentative" href="src/PChannel.h.html#rLXEVB">SetPrintTentative</a>(<span class="keyword">bool</span> t)</span><br />
+<div class="funccomm"><pre>  <a href="./ListOfTypes.html#double">double</a> ds_dt(<a href="./ListOfTypes.html#double">double</a>);
+ ...&gt; moved to <a href="./PParticle.html">PParticle</a> (IF)
+ ds/dt(cos_th_cm) in the cm for N+N-&gt;N+Delta. With the mass of Delta
+ sampled independently in <a href="./PData.html">PData</a>, the simulated <a href="./PChannel.html#PChannel:events" title="double* PChannel::events">events</a> are distributed
+ as ds/dOmega (normalized). Ref: NPA459 (1986) 503
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PChannel:DisableHelicityAngle" href="src/PChannel.h.html#FC8TH">DisableHelicityAngle</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="PChannel:GetNumNotFinalized" href="src/PChannel.h.html#F4G79">GetNumNotFinalized</a>()</span><br />
+<div class="funccomm"><pre>this is for envelope distributions:
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./PDistribution.html">PDistribution</a> * <a class="funcname" name="PChannel:GetDistributionNotFinalized" href="src/PChannel.h.html#i750hD">GetDistributionNotFinalized</a>(<span class="keyword">int</span> i)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Bool_t">Bool_t</a> <a class="funcname" name="PChannel:AddBulk" href="src/PChannel.h.html#eH5GlC">AddBulk</a>(<a href="./PBulkInterface.html">PBulkInterface</a>* mybulk)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Bool_t">Bool_t</a> <a class="funcname" name="PChannel:AddPrologueBulk" href="src/PChannel.h.html#c7.2t">AddPrologueBulk</a>(<a href="./PBulkInterface.html">PBulkInterface</a>* mybulk)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Bool_t">Bool_t</a> <a class="funcname" name="PChannel:Do" href="src/PChannel.h.html#XQTNHE">Do</a>(<span class="keyword">const</span> <span class="keyword">char</span>* command)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">return</span> <a class="funcname" name="PChannel:GetCurrentProjector" href="src/PChannel.h.html#jT3Gc">GetCurrentProjector</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Bool_t">Bool_t</a> <a class="funcname" name="PChannel:Do@1" href="src/PChannel.h.html#hctfvE">Do</a>(<a href="./TH1F.html">TH1F</a>* f, <span class="keyword">const</span> <span class="keyword">char</span>* command, <a href="./ListOfTypes.html#Int_t">Int_t</a> flag = 1)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Bool_t">Bool_t</a> <a class="funcname" name="PChannel:Do@2" href="src/PChannel.h.html#tN8gvE">Do</a>(<a href="./TH2F.html">TH2F</a>* f, <span class="keyword">const</span> <span class="keyword">char</span>* command, <a href="./ListOfTypes.html#Int_t">Int_t</a> flag = 1)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Bool_t">Bool_t</a> <a class="funcname" name="PChannel:Do@3" href="src/PChannel.h.html#F.KivE">Do</a>(<a href="./TH3F.html">TH3F</a>* f, <span class="keyword">const</span> <span class="keyword">char</span>* command, <a href="./ListOfTypes.html#Int_t">Int_t</a> flag = 1)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PChannel:IsReaction" href="src/PChannel.h.html#cVi6wE">IsReaction</a>()</span><br />
+<div class="funccomm"><pre> if a reaction channel identify beam, target, and <a href="./PChannel.html#PChannel:decay" title="int PChannel::decay()">decay</a> mode
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PChannel:IdChannel" href="src/PChannel.h.html#zEtwGC">IdChannel</a>()</span><br />
+<div class="funccomm"><pre> identify reaction channel of known angular distribution
+ these are: p+p-&gt;p+p (elastic), N+N-&gt;N+Delta, pi+N-&gt;N+<a href="./PChannel.html#PChannel:w" title="double PChannel::w">w</a>, pi+ + P -&gt; pi+ + P + <a href="./PChannel.html#PChannel:w" title="double PChannel::w">w</a>
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PChannel:ThermalSampling" href="src/PChannel.h.html#kx1pdC">ThermalSampling</a>()</span><br />
+<div class="funccomm"><pre> <a href="./PChannel.html#PChannel:parent" title="PParticle* PChannel::parent">parent</a> is midrapidity thermal source
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Int_t">Int_t</a> <a class="funcname" name="PChannel:ReadFileInput" href="src/PChannel.h.html#fwOyP">ReadFileInput</a>()</span><br />
+<div class="funccomm"><pre> <a href="./PChannel.html#PChannel:parent" title="PParticle* PChannel::parent">parent</a> is file input interface
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PChannel:MakeDilepton" href="src/PChannel.h.html#QV2YL">MakeDilepton</a>()</span><br />
+<div class="funccomm"><pre> <a href="./PChannel.html#PChannel:parent" title="PParticle* PChannel::parent">parent</a> is a sampled dilepton
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="PChannel:Genbod" href="src/PChannel.h.html#IySGzC">Genbod</a>(<span class="keyword">int</span> )</span><br />
+<div class="funccomm"><pre> N-body phase-space <a href="./PChannel.html#PChannel:decay" title="int PChannel::decay()">decay</a> of a particle in its rest frame.
+ This follows the CERNLIB routine GENBOD, in C++
+</pre></div>
+</div>
+
+<br />
+<!--SIGNATURE-->
+<div id="footer">
+
+<em>&raquo; Last changed: Tue Aug  7 10:55:11 2018 </em><em>&raquo; Last generated: 2018-08-07 10:55</em><br />
+<em>This page has been automatically generated. For comments or suggestions regarding the documentation or ROOT in general please send a mail to <a href="mailto:rootdev@cern.ch">ROOT support</a>.</em>
+</div>
+</div>
+</body>
+</html>

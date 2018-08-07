@@ -1,0 +1,443 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!--                                             -->
+<!-- Author: ROOT team (rootdev@cern.ch)         -->
+<!--                                             -->
+<!--   Date: Tue Aug  7 10:55:13 2018            -->
+<!--                                             -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>PDataBase</title>
+<meta name="rating" content="General" />
+<meta name="objecttype" content="Manual" />
+<meta name="keywords" content="software development, oo, object oriented, unix, x11, windows, c++, html, rene brun, fons rademakers, cern" />
+<meta name="description" content="ROOT - An Object Oriented Framework For Large Scale Data Analysis." />
+<link rel="stylesheet" type="text/css" href="ROOT.css" id="ROOTstyle" />
+<script type="text/javascript" src="ROOT.js"></script>
+</head>
+<body  onload="javascript:SetValuesFromCookie();"><div id="body_content">
+<div id="root_header"></div>
+<a name="TopOfPage"></a>
+<script type="text/javascript">WriteFollowPageBox('class PDataBase','','Pluto/PDataBase.h');</script>
+<div id="toplinks">
+<div class="descrhead"><div class="descrheadcontent">
+<span class="descrtitle">Quick Links:</span>
+<a class="descrheadentry" href="http://root.cern.ch">ROOT Homepage</a>
+<a class="descrheadentry" href="./ClassIndex.html">Class Index</a>
+<a class="descrheadentry" href="./ClassHierarchy.html">Class Hierarchy</a></div>
+<script type="text/javascript">
+function onSearch() {
+var s='http://www.google.com/search?q=%s+site%3A%u+-site%3A%u%2Fsrc%2F+-site%3A%u%2Fexamples%2F';
+var ref=String(document.location.href).replace(/https?:\/\//,'').replace(/\/[^\/]*$/,'').replace(/\//g,'%2F');
+window.location.href=s.replace(/%u/ig,ref).replace(/%s/ig,escape(document.searchform.t.value));
+return false;}
+</script>
+<form id="searchform" name="searchform" onsubmit="return onSearch()" action="javascript:onSearch();" method="post">
+<input name="t" size="30" value="Search documentation..." onfocus="if (document.searchform.t.value=='Search documentation...') document.searchform.t.value='';"></input>
+<a id="searchlink"  title="www.google.com"  href="javascript:onSearch();" onclick="return onSearch()">Search</a></form>
+</div>
+<div class="descrhead"><div class="descrheadcontent">
+<span class="descrtitle">Source:</span>
+<a class="descrheadentry" href="src/PDataBase.h.html">header file</a>
+<a class="descrheadentry"> </a>
+
+</div></div>
+<div class="descrhead"><div class="descrheadcontent">
+<span class="descrtitle">Sections:</span>
+<a class="descrheadentry" href="#PDataBase:description">class description</a> 
+<a class="descrheadentry" href="#PDataBase:Function_Members">function members</a>
+<a class="descrheadentry" href="#PDataBase:Data_Members">data members</a>
+<a class="descrheadentry" href="#PDataBase:Class_Charts">class charts</a>
+</div></div>
+</div>
+<div class="location">
+<a class="locationlevel" href="index.html">Pluto</a>
+ &#187; <a class="locationlevel" href="./PLUTO_Index.html">PLUTO</a>
+ &#187; <a class="locationlevel" href="#TopOfPage">PDataBase</a>
+</div>
+<div class="dropshadow"><div class="withshadow"><h1><a name="PDataBase:description"></a>class PDataBase: public <a href="./TObject.html">TObject</a></h1>
+<div class="classdescr">
+</div>
+</div></div>
+
+<div id="functions">
+<h2><a id="PDataBase:Function_Members"></a>Function Members (Methods)</h2>
+<div class="access" id="funcpubl"><b>public:</b>
+<table class="func" id="tabfuncpubl" cellspacing="0">
+<tr class="func"><td class="funcret"> virtual</td><td class="funcname"><a class="funcname" href="#PDataBase:_PDataBase">~PDataBase</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:AbstractMethod"><span class="baseclass">TObject::</span>AbstractMethod</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#PDataBase:AddEntry@1">AddEntry</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#PDataBase:AddEntry">AddEntry</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> key, <span class="keyword">const</span> <span class="keyword">char</span>* name)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#PDataBase:AddListEntry">AddListEntry</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name, <span class="keyword">const</span> <span class="keyword">char</span>* count, <span class="keyword">const</span> <span class="keyword">char</span>* link, <span class="keyword">const</span> <span class="keyword">char</span>* newname)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:AppendPad"><span class="baseclass">TObject::</span>AppendPad</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:Browse"><span class="baseclass">TObject::</span>Browse</a>(<a href="./TBrowser.html">TBrowser</a>* b)</td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#ULong_t">ULong_t</a></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:CheckedHash"><span class="baseclass">TObject::</span>CheckedHash</a>()</td></tr>
+<tr class="func"><td class="funcret">static <a href="./TClass.html">TClass</a>*</td><td class="funcname"><a class="funcname" href="#PDataBase:Class">Class</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:ClassName"><span class="baseclass">TObject::</span>ClassName</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:Clear"><span class="baseclass">TObject::</span>Clear</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* = <span class="string">""</span>)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./TObject.html">TObject</a>*</td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:Clone"><span class="baseclass">TObject::</span>Clone</a>(<span class="keyword">const</span> <span class="keyword">char</span>* newname = <span class="string">""</span>) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:Compare"><span class="baseclass">TObject::</span>Compare</a>(<span class="keyword">const</span> <a href="./TObject.html">TObject</a>* obj) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:Copy"><span class="baseclass">TObject::</span>Copy</a>(<a href="./TObject.html">TObject</a>&amp; object) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:Delete"><span class="baseclass">TObject::</span>Delete</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)<span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:DistancetoPrimitive"><span class="baseclass">TObject::</span>DistancetoPrimitive</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> px, <a href="./ListOfTypes.html#Int_t">Int_t</a> py)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:Draw"><span class="baseclass">TObject::</span>Draw</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:DrawClass"><span class="baseclass">TObject::</span>DrawClass</a>() <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./TObject.html">TObject</a>*</td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:DrawClone"><span class="baseclass">TObject::</span>DrawClone</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>) <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:Dump"><span class="baseclass">TObject::</span>Dump</a>() <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:Error"><span class="baseclass">TObject::</span>Error</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:Execute"><span class="baseclass">TObject::</span>Execute</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* params, <a href="./ListOfTypes.html#Int_t">Int_t</a>* error = 0)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:Execute@1"><span class="baseclass">TObject::</span>Execute</a>(<a href="./TMethod.html">TMethod</a>* method, <a href="./TObjArray.html">TObjArray</a>* params, <a href="./ListOfTypes.html#Int_t">Int_t</a>* error = 0)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:ExecuteEvent"><span class="baseclass">TObject::</span>ExecuteEvent</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> event, <a href="./ListOfTypes.html#Int_t">Int_t</a> px, <a href="./ListOfTypes.html#Int_t">Int_t</a> py)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:Fatal"><span class="baseclass">TObject::</span>Fatal</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./TObject.html">TObject</a>*</td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:FindObject"><span class="baseclass">TObject::</span>FindObject</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./TObject.html">TObject</a>*</td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:FindObject@1"><span class="baseclass">TObject::</span>FindObject</a>(<span class="keyword">const</span> <a href="./TObject.html">TObject</a>* obj) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#PDataBase:GetDescription">GetDescription</a>(<span class="keyword">const</span> <span class="keyword">char</span>* paramname)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Option_t">Option_t</a>*</td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:GetDrawOption"><span class="baseclass">TObject::</span>GetDrawOption</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">static <a href="./ListOfTypes.html#Long_t">Long_t</a></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:GetDtorOnly"><span class="baseclass">TObject::</span>GetDtorOnly</a>()</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#PDataBase:GetEntry">GetEntry</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#PDataBase:GetEntryInt">GetEntryInt</a>(<span class="keyword">const</span> <span class="keyword">char</span>* paramname, <a href="./ListOfTypes.html#Int_t">Int_t</a> value)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#PDataBase:GetEntryInt@1">GetEntryInt</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> pkey, <a href="./ListOfTypes.html#Int_t">Int_t</a> value)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PDataBase:GetFastParamDouble">GetFastParamDouble</a>(<span class="keyword">const</span> <span class="keyword">char</span>* paramname, <a href="./ListOfTypes.html#Int_t">Int_t</a>* pkey)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PDataBase:GetFastParamInt">GetFastParamInt</a>(<span class="keyword">const</span> <span class="keyword">char</span>* paramname, <a href="./ListOfTypes.html#Int_t">Int_t</a>* pkey)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PDataBase:GetFastParamString">GetFastParamString</a>(<span class="keyword">const</span> <span class="keyword">char</span>* paramname, <a href="./ListOfTypes.html#Int_t">Int_t</a>* pkey)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PDataBase:GetFastParamTObj">GetFastParamTObj</a>(<span class="keyword">const</span> <span class="keyword">char</span>* paramname, <a href="./ListOfTypes.html#Int_t">Int_t</a>* pkey)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:GetIconName"><span class="baseclass">TObject::</span>GetIconName</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#PDataBase:GetName">GetName</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> key)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:GetObjectInfo"><span class="baseclass">TObject::</span>GetObjectInfo</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> px, <a href="./ListOfTypes.html#Int_t">Int_t</a> py) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">static <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:GetObjectStat"><span class="baseclass">TObject::</span>GetObjectStat</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Option_t">Option_t</a>*</td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:GetOption"><span class="baseclass">TObject::</span>GetOption</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#PDataBase:GetParamDouble">GetParamDouble</a>(<span class="keyword">const</span> <span class="keyword">char</span>* paramname)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#PDataBase:GetParamDouble@1">GetParamDouble</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> key, <span class="keyword">const</span> <span class="keyword">char</span>* paramname, <a href="./ListOfTypes.html#Double_t">Double_t</a>** result)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#PDataBase:GetParamDouble@2">GetParamDouble</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> key, <a href="./ListOfTypes.html#Int_t">Int_t</a> pkey, <a href="./ListOfTypes.html#Double_t">Double_t</a>** result)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#PDataBase:GetParamDouble@3">GetParamDouble</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name, <span class="keyword">const</span> <span class="keyword">char</span>* paramname, <a href="./ListOfTypes.html#Double_t">Double_t</a>** result)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#PDataBase:GetParamDouble@4">GetParamDouble</a>(<span class="keyword">const</span> <span class="keyword">char</span>* paramname1, <a href="./ListOfTypes.html#Int_t">Int_t</a> value1, <span class="keyword">const</span> <span class="keyword">char</span>* paramname2, <a href="./ListOfTypes.html#Double_t">Double_t</a>** result)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#PDataBase:GetParamDouble@5">GetParamDouble</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> pkey1, <a href="./ListOfTypes.html#Int_t">Int_t</a> value1, <a href="./ListOfTypes.html#Int_t">Int_t</a> pkey2, <a href="./ListOfTypes.html#Double_t">Double_t</a>** result)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#PDataBase:GetParamInt">GetParamInt</a>(<span class="keyword">const</span> <span class="keyword">char</span>* paramname, <a href="./ListOfTypes.html#Int_t">Int_t</a> length = -1)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#PDataBase:GetParamInt@2">GetParamInt</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> key, <a href="./ListOfTypes.html#Int_t">Int_t</a> pkey, <a href="./ListOfTypes.html#Int_t">Int_t</a>** result)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#PDataBase:GetParamInt@3">GetParamInt</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> key, <a href="./ListOfTypes.html#Int_t">Int_t</a> pkey, <a href="./ListOfTypes.html#Int_t">Int_t</a>* result)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#PDataBase:GetParamInt@4">GetParamInt</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name, <span class="keyword">const</span> <span class="keyword">char</span>* paramname, <a href="./ListOfTypes.html#Int_t">Int_t</a>** result)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#PDataBase:GetParamInt@1">GetParamInt</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> key, <span class="keyword">const</span> <span class="keyword">char</span>* paramname, <a href="./ListOfTypes.html#Int_t">Int_t</a>** result, <a href="./ListOfTypes.html#Int_t">Int_t</a> length = -1)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#PDataBase:GetParamInt@5">GetParamInt</a>(<span class="keyword">const</span> <span class="keyword">char</span>* paramname1, <a href="./ListOfTypes.html#Int_t">Int_t</a> value1, <span class="keyword">const</span> <span class="keyword">char</span>* paramname2, <a href="./ListOfTypes.html#Int_t">Int_t</a>** result)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#PDataBase:GetParamInt@6">GetParamInt</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> pkey1, <a href="./ListOfTypes.html#Int_t">Int_t</a> value1, <a href="./ListOfTypes.html#Int_t">Int_t</a> pkey2, <a href="./ListOfTypes.html#Int_t">Int_t</a>** result)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#PDataBase:GetParamString">GetParamString</a>(<span class="keyword">const</span> <span class="keyword">char</span>* paramname)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#PDataBase:GetParamString@1">GetParamString</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> key, <span class="keyword">const</span> <span class="keyword">char</span>* paramname, <span class="keyword">const</span> <span class="keyword">char</span>** result)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#PDataBase:GetParamString@2">GetParamString</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> key, <a href="./ListOfTypes.html#Int_t">Int_t</a> pkey, <span class="keyword">const</span> <span class="keyword">char</span>** result)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#PDataBase:GetParamString@3">GetParamString</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name, <span class="keyword">const</span> <span class="keyword">char</span>* paramname, <span class="keyword">const</span> <span class="keyword">char</span>** result)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#PDataBase:GetParamString@4">GetParamString</a>(<span class="keyword">const</span> <span class="keyword">char</span>* paramname1, <a href="./ListOfTypes.html#Int_t">Int_t</a> value1, <span class="keyword">const</span> <span class="keyword">char</span>* paramname2, <span class="keyword">const</span> <span class="keyword">char</span>** result)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#PDataBase:GetParamString@5">GetParamString</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> pkey1, <a href="./ListOfTypes.html#Int_t">Int_t</a> value1, <a href="./ListOfTypes.html#Int_t">Int_t</a> pkey2, <span class="keyword">const</span> <span class="keyword">char</span>** result)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#PDataBase:GetParamTObj">GetParamTObj</a>(<span class="keyword">const</span> <span class="keyword">char</span>* paramname)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#PDataBase:GetParamTObj@1">GetParamTObj</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> key, <span class="keyword">const</span> <span class="keyword">char</span>* paramname, <a href="./TObject.html">TObject</a>** result)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#PDataBase:GetParamTObj@2">GetParamTObj</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> key, <a href="./ListOfTypes.html#Int_t">Int_t</a> pkey, <a href="./TObject.html">TObject</a>** result)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#PDataBase:GetParamTObj@3">GetParamTObj</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name, <span class="keyword">const</span> <span class="keyword">char</span>* paramname, <a href="./TObject.html">TObject</a>** result)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#PDataBase:GetParamTObj@4">GetParamTObj</a>(<span class="keyword">const</span> <span class="keyword">char</span>* paramname1, <a href="./ListOfTypes.html#Int_t">Int_t</a> value1, <span class="keyword">const</span> <span class="keyword">char</span>* paramname2, <a href="./TObject.html">TObject</a>** result)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#PDataBase:GetParamTObj@5">GetParamTObj</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> pkey1, <a href="./ListOfTypes.html#Int_t">Int_t</a> value1, <a href="./ListOfTypes.html#Int_t">Int_t</a> pkey2, <a href="./TObject.html">TObject</a>** result)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:GetTitle"><span class="baseclass">TObject::</span>GetTitle</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#UInt_t">UInt_t</a></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:GetUniqueID"><span class="baseclass">TObject::</span>GetUniqueID</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:HandleTimer"><span class="baseclass">TObject::</span>HandleTimer</a>(<a href="./TTimer.html">TTimer</a>* timer)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#ULong_t">ULong_t</a></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:Hash"><span class="baseclass">TObject::</span>Hash</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:HasInconsistentHash"><span class="baseclass">TObject::</span>HasInconsistentHash</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:Info"><span class="baseclass">TObject::</span>Info</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:InheritsFrom"><span class="baseclass">TObject::</span>InheritsFrom</a>(<span class="keyword">const</span> <span class="keyword">char</span>* classname) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:InheritsFrom@1"><span class="baseclass">TObject::</span>InheritsFrom</a>(<span class="keyword">const</span> <a href="./TClass.html">TClass</a>* cl) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:Inspect"><span class="baseclass">TObject::</span>Inspect</a>() <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:InvertBit"><span class="baseclass">TObject::</span>InvertBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f)</td></tr>
+<tr class="func"><td class="funcret">virtual <a href="./TClass.html">TClass</a>*</td><td class="funcname"><a class="funcname" href="#PDataBase:IsA">IsA</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:IsEqual"><span class="baseclass">TObject::</span>IsEqual</a>(<span class="keyword">const</span> <a href="./TObject.html">TObject</a>* obj) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:IsFolder"><span class="baseclass">TObject::</span>IsFolder</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:IsOnHeap"><span class="baseclass">TObject::</span>IsOnHeap</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:IsSortable"><span class="baseclass">TObject::</span>IsSortable</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:IsZombie"><span class="baseclass">TObject::</span>IsZombie</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#PDataBase:ListEntries">ListEntries</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> key = -1, <a href="./ListOfTypes.html#Int_t">Int_t</a> option = 0, <span class="keyword">const</span> <span class="keyword">char</span>* pattern = __null)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:ls"><span class="baseclass">TObject::</span>ls</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#PDataBase:MakeListIterator">MakeListIterator</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> key, <span class="keyword">const</span> <span class="keyword">char</span>* count, <span class="keyword">const</span> <span class="keyword">char</span>* link, <a href="./ListOfTypes.html#Int_t">Int_t</a>* listkey)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#PDataBase:MakeListIterator@1">MakeListIterator</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> key, <a href="./ListOfTypes.html#Int_t">Int_t</a> count, <a href="./ListOfTypes.html#Int_t">Int_t</a> link, <a href="./ListOfTypes.html#Int_t">Int_t</a>* listkey)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#PDataBase:MakeParamDouble">MakeParamDouble</a>(<span class="keyword">const</span> <span class="keyword">char</span>* paramname, <span class="keyword">const</span> <span class="keyword">char</span>* descr)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#PDataBase:MakeParamInt">MakeParamInt</a>(<span class="keyword">const</span> <span class="keyword">char</span>* paramname, <span class="keyword">const</span> <span class="keyword">char</span>* descr)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#PDataBase:MakeParamString">MakeParamString</a>(<span class="keyword">const</span> <span class="keyword">char</span>* paramname, <span class="keyword">const</span> <span class="keyword">char</span>* descr)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#PDataBase:MakeParamTObj">MakeParamTObj</a>(<span class="keyword">const</span> <span class="keyword">char</span>* paramname, <span class="keyword">const</span> <span class="keyword">char</span>* descr)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:MayNotUse"><span class="baseclass">TObject::</span>MayNotUse</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:Notify"><span class="baseclass">TObject::</span>Notify</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:Obsolete"><span class="baseclass">TObject::</span>Obsolete</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* asOfVers, <span class="keyword">const</span> <span class="keyword">char</span>* removedFromVers) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:operator_delete"><span class="baseclass">TObject::</span>operator delete</a>(<span class="keyword">void</span>* ptr)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:operator_delete@1"><span class="baseclass">TObject::</span>operator delete</a>(<span class="keyword">void</span>* ptr, <span class="keyword">void</span>* vp)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:operator_delete[]"><span class="baseclass">TObject::</span>operator delete[]</a>(<span class="keyword">void</span>* ptr)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:operator_delete[]@1"><span class="baseclass">TObject::</span>operator delete[]</a>(<span class="keyword">void</span>* ptr, <span class="keyword">void</span>* vp)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span>*</td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:operator_new"><span class="baseclass">TObject::</span>operator new</a>(<a href="./ListOfTypes.html#size_t">size_t</a> sz)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span>*</td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:operator_new@1"><span class="baseclass">TObject::</span>operator new</a>(<a href="./ListOfTypes.html#size_t">size_t</a> sz, <span class="keyword">void</span>* vp)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span>*</td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:operator_new[]"><span class="baseclass">TObject::</span>operator new[]</a>(<a href="./ListOfTypes.html#size_t">size_t</a> sz)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span>*</td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:operator_new[]@1"><span class="baseclass">TObject::</span>operator new[]</a>(<a href="./ListOfTypes.html#size_t">size_t</a> sz, <span class="keyword">void</span>* vp)</td></tr>
+<tr class="func"><td class="funcret"><a href="./PDataBase.html">PDataBase</a>&amp;</td><td class="funcname"><a class="funcname" href="#PDataBase:operator_">operator=</a>(<span class="keyword">const</span> <a href="./PDataBase.html">PDataBase</a>&amp;)</td></tr>
+<tr class="func"><td class="funcret"><a href="./PDataBase.html">PDataBase</a>&amp;</td><td class="funcname"><a class="funcname" href="#PDataBase:operator_@1">operator=</a>(<a href="./PDataBase.html">PDataBase</a>&amp;&amp;)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:Paint"><span class="baseclass">TObject::</span>Paint</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)</td></tr>
+<tr class="func"><td class="funcret"></td><td class="funcname"><a class="funcname" href="#PDataBase:PDataBase">PDataBase</a>()</td></tr>
+<tr class="func"><td class="funcret"></td><td class="funcname"><a class="funcname" href="#PDataBase:PDataBase@1">PDataBase</a>(<span class="keyword">const</span> <a href="./PDataBase.html">PDataBase</a>&amp;)</td></tr>
+<tr class="func"><td class="funcret"></td><td class="funcname"><a class="funcname" href="#PDataBase:PDataBase@2">PDataBase</a>(<a href="./PDataBase.html">PDataBase</a>&amp;&amp;)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PDataBase:Performance">Performance</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:Pop"><span class="baseclass">TObject::</span>Pop</a>()</td></tr>
+<tr class="func"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PDataBase:Print">Print</a>(<span class="keyword">const</span> <a href="./ListOfTypes.html#Option_t">Option_t</a>* delme = __null) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:Read"><span class="baseclass">TObject::</span>Read</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:RecursiveRemove"><span class="baseclass">TObject::</span>RecursiveRemove</a>(<a href="./TObject.html">TObject</a>* obj)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:ResetBit"><span class="baseclass">TObject::</span>ResetBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:SaveAs"><span class="baseclass">TObject::</span>SaveAs</a>(<span class="keyword">const</span> <span class="keyword">char</span>* filename = <span class="string">""</span>, <a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>) <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:SavePrimitive"><span class="baseclass">TObject::</span>SavePrimitive</a>(<a href="./ListOfTypes.html#ostream">ostream</a>&amp; out, <a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:SetBit@1"><span class="baseclass">TObject::</span>SetBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:SetBit"><span class="baseclass">TObject::</span>SetBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f, <a href="./ListOfTypes.html#Bool_t">Bool_t</a> set)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:SetDrawOption"><span class="baseclass">TObject::</span>SetDrawOption</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)<span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:SetDtorOnly"><span class="baseclass">TObject::</span>SetDtorOnly</a>(<span class="keyword">void</span>* obj)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PDataBase:SetFastKey">SetFastKey</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> pkey, <a href="./ListOfTypes.html#Int_t">Int_t</a> maxkey)</td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:SetObjectStat"><span class="baseclass">TObject::</span>SetObjectStat</a>(<a href="./ListOfTypes.html#Bool_t">Bool_t</a> stat)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#PDataBase:SetParamDouble">SetParamDouble</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> key, <span class="keyword">const</span> <span class="keyword">char</span>* paramname, <a href="./ListOfTypes.html#Double_t">Double_t</a>* result)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#PDataBase:SetParamDouble@1">SetParamDouble</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name, <span class="keyword">const</span> <span class="keyword">char</span>* paramname, <a href="./ListOfTypes.html#Double_t">Double_t</a> result)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#PDataBase:SetParamInt">SetParamInt</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> key, <span class="keyword">const</span> <span class="keyword">char</span>* paramname, <a href="./ListOfTypes.html#Int_t">Int_t</a>* result)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#PDataBase:SetParamInt@1">SetParamInt</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name, <span class="keyword">const</span> <span class="keyword">char</span>* paramname, <a href="./ListOfTypes.html#Int_t">Int_t</a> result)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#PDataBase:SetParamString">SetParamString</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> key, <span class="keyword">const</span> <span class="keyword">char</span>* paramname, <span class="keyword">char</span>* result)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#PDataBase:SetParamString@1">SetParamString</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name, <span class="keyword">const</span> <span class="keyword">char</span>* paramname, <span class="keyword">char</span>* result)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#PDataBase:SetParamTObj">SetParamTObj</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> key, <span class="keyword">const</span> <span class="keyword">char</span>* paramname, <a href="./TObject.html">TObject</a>* result)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#PDataBase:SetParamTObj@1">SetParamTObj</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> key, <a href="./ListOfTypes.html#Int_t">Int_t</a> pp, <a href="./TObject.html">TObject</a>* result)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#PDataBase:SetParamTObj@2">SetParamTObj</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name, <span class="keyword">const</span> <span class="keyword">char</span>* paramname, <a href="./TObject.html">TObject</a>* result)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:SetUniqueID"><span class="baseclass">TObject::</span>SetUniqueID</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> uid)</td></tr>
+<tr class="func"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PDataBase:ShowMembers">ShowMembers</a>(<a href="./TMemberInspector.html">TMemberInspector</a>&amp; insp) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PDataBase:Streamer">Streamer</a>(<a href="./TBuffer.html">TBuffer</a>&amp;)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#PDataBase:StreamerNVirtual">StreamerNVirtual</a>(<a href="./TBuffer.html">TBuffer</a>&amp; ClassDef_StreamerNVirtual_b)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:SysError"><span class="baseclass">TObject::</span>SysError</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:TestBit"><span class="baseclass">TObject::</span>TestBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:TestBits"><span class="baseclass">TObject::</span>TestBits</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:UseCurrentStyle"><span class="baseclass">TObject::</span>UseCurrentStyle</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:Warning"><span class="baseclass">TObject::</span>Warning</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:Write"><span class="baseclass">TObject::</span>Write</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> option = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> bufsize = 0)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:Write@1"><span class="baseclass">TObject::</span>Write</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> option = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> bufsize = 0) <span class="keyword">const</span></td></tr>
+
+</table></div>
+<div class="access" id="funcprot"><b>protected:</b>
+<table class="func" id="tabfuncprot" cellspacing="0">
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:DoError"><span class="baseclass">TObject::</span>DoError</a>(<span class="keyword">int</span> level, <span class="keyword">const</span> <span class="keyword">char</span>* location, <span class="keyword">const</span> <span class="keyword">char</span>* fmt, <a href="./ListOfTypes.html#va_list">va_list</a> va) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./TObject.html#TObject:MakeZombie"><span class="baseclass">TObject::</span>MakeZombie</a>()</td></tr>
+
+</table></div>
+<div class="access" id="funcpriv"><b>private:</b>
+<table class="func" id="tabfuncpriv" cellspacing="0">
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#PDataBase:CheckEntry">CheckEntry</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> key)</td></tr>
+<tr class="func"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#PDataBase:CheckTObjectHashConsistency">CheckTObjectHashConsistency</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#PDataBase:ConvertParamKey">ConvertParamKey</a>(<span class="keyword">const</span> <span class="keyword">char</span>*&amp; newparamname, <a href="./ListOfTypes.html#Int_t">Int_t</a> key)</td></tr>
+
+</table></div>
+</div>
+
+<div id="datamembers">
+<h2><a name="PDataBase:Data_Members"></a>Data Members</h2>
+<div class="access" id="datapubl"><b>public:</b>
+<table class="data" id="tabdatapubl" cellspacing="0">
+<tr class="datainh"><td class="datatype">static <a href="./TObject.html">TObject</a>::(anonymous)</td><td class="dataname"><a href="./TObject.html#TObject:kBitMask"><span class="baseclass">TObject::</span>kBitMask</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./TObject.html">TObject</a>::EStatusBits</td><td class="dataname"><a href="./TObject.html#TObject:kCanDelete"><span class="baseclass">TObject::</span>kCanDelete</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./TObject.html">TObject</a>::EStatusBits</td><td class="dataname"><a href="./TObject.html#TObject:kCannotPick"><span class="baseclass">TObject::</span>kCannotPick</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./TObject.html">TObject</a>::EStatusBits</td><td class="dataname"><a href="./TObject.html#TObject:kHasUUID"><span class="baseclass">TObject::</span>kHasUUID</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./TObject.html">TObject</a>::(anonymous)</td><td class="dataname"><a href="./TObject.html#TObject:kInconsistent"><span class="baseclass">TObject::</span>kInconsistent</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./TObject.html">TObject</a>::EStatusBits</td><td class="dataname"><a href="./TObject.html#TObject:kInvalidObject"><span class="baseclass">TObject::</span>kInvalidObject</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./TObject.html">TObject</a>::(anonymous)</td><td class="dataname"><a href="./TObject.html#TObject:kIsOnHeap"><span class="baseclass">TObject::</span>kIsOnHeap</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./TObject.html">TObject</a>::EStatusBits</td><td class="dataname"><a href="./TObject.html#TObject:kIsReferenced"><span class="baseclass">TObject::</span>kIsReferenced</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./TObject.html">TObject</a>::EStatusBits</td><td class="dataname"><a href="./TObject.html#TObject:kMustCleanup"><span class="baseclass">TObject::</span>kMustCleanup</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./TObject.html">TObject</a>::EStatusBits</td><td class="dataname"><a href="./TObject.html#TObject:kNoContextMenu"><span class="baseclass">TObject::</span>kNoContextMenu</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./TObject.html">TObject</a>::(anonymous)</td><td class="dataname"><a href="./TObject.html#TObject:kNotDeleted"><span class="baseclass">TObject::</span>kNotDeleted</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./TObject.html">TObject</a>::EDeprecatedStatusBits</td><td class="dataname"><a href="./TObject.html#TObject:kObjInCanvas"><span class="baseclass">TObject::</span>kObjInCanvas</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./TObject.html">TObject</a>::(anonymous)</td><td class="dataname"><a href="./TObject.html#TObject:kOverwrite"><span class="baseclass">TObject::</span>kOverwrite</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./TObject.html">TObject</a>::(anonymous)</td><td class="dataname"><a href="./TObject.html#TObject:kSingleKey"><span class="baseclass">TObject::</span>kSingleKey</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./TObject.html">TObject</a>::(anonymous)</td><td class="dataname"><a href="./TObject.html#TObject:kWriteDelete"><span class="baseclass">TObject::</span>kWriteDelete</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">static <a href="./TObject.html">TObject</a>::(anonymous)</td><td class="dataname"><a href="./TObject.html#TObject:kZombie"><span class="baseclass">TObject::</span>kZombie</a></td><td></td></tr>
+
+</table></div>
+<div class="access" id="datapriv"><b>private:</b>
+<table class="data" id="tabdatapriv" cellspacing="0">
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Double_t">Double_t</a>*</td><td class="dataname"><a name="PDataBase:doubles"></a>doubles[5000][20]</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a>*</td><td class="dataname"><a name="PDataBase:ints"></a>ints[5000][150]</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PDataBase:lastkey"></a>lastkey</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="dataname"><a name="PDataBase:param_double_descr"></a>param_double_descr[20]</td><td class="datadesc">the parameter long description</td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="dataname"><a name="PDataBase:param_double_name"></a>param_double_name[20]</td><td class="datadesc">the parameter name matching the ID</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PDataBase:param_double_pointer"></a>param_double_pointer</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="dataname"><a name="PDataBase:param_int_descr"></a>param_int_descr[150]</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a>*</td><td class="dataname"><a name="PDataBase:param_int_key"></a>param_int_key[150]</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PDataBase:param_int_key_max"></a>param_int_key_max[150]</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="dataname"><a name="PDataBase:param_int_name"></a>param_int_name[150]</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PDataBase:param_int_pointer"></a>param_int_pointer</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="dataname"><a name="PDataBase:param_string_descr"></a>param_string_descr[20]</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="dataname"><a name="PDataBase:param_string_name"></a>param_string_name[20]</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PDataBase:param_string_pointer"></a>param_string_pointer</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="dataname"><a name="PDataBase:param_tobj_descr"></a>param_tobj_descr[150]</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="dataname"><a name="PDataBase:param_tobj_name"></a>param_tobj_name[150]</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="PDataBase:param_tobj_pointer"></a>param_tobj_pointer</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="dataname"><a name="PDataBase:strings"></a>strings[5000][20]</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./TObject.html">TObject</a>*</td><td class="dataname"><a name="PDataBase:tobjs"></a>tobjs[5000][10]</td><td></td></tr>
+
+</table></div>
+</div>
+<h2><a id="PDataBase:Class_Charts"></a>Class Charts</h2>
+<map name="MapPDataBase_Inh" id="MapPDataBase_Inh">
+<area shape="rect" id="node2" href="./TObject.html" title="TObject" alt="" coords="4,15,308,71"/>
+</map>
+<map name="MapPDataBase_InhMem" id="MapPDataBase_InhMem">
+<area shape="rect" id="clust12" href="./TObject.html" alt="" coords="93,47,160,160"/>
+<area shape="rect" id="clust11" href="./TObject.html" alt="" coords="171,47,237,160"/>
+<area shape="rect" id="clust13" href="./TObject.html" alt="" coords="16,47,83,160"/>
+<area shape="rect" id="clust14" href="./TObject.html" alt="" coords="203,161,205,164"/>
+<area shape="rect" id="clust15" href="./TObject.html" alt="" coords="171,165,237,627"/>
+<area shape="rect" id="clust16" href="./TObject.html" alt="" coords="93,165,160,627"/>
+<area shape="rect" id="clust17" href="./TObject.html" alt="" coords="16,165,83,627"/>
+<area shape="rect" id="clust10" href="./TObject.html" title="TObject" alt="" coords="16,16,237,627"/>
+</map>
+<map name="MapPDataBase_Lib" id="MapPDataBase_Lib">
+<area shape="rect" id="node1" href="LibraryDependencies.html" title="All Libraries" alt="" coords="126,237,243,285"/>
+</map>
+<div class="tabs">
+<a id="imgPDataBase_Inh" class="tabsel" href="inh/PDataBase_Inh.png" onclick="javascript:return SetImg('Charts','inh/PDataBase_Inh.png');">Inheritance</a>
+<a id="imgPDataBase_InhMem" class="tab" href="inhmem/PDataBase_InhMem.png" onclick="javascript:return SetImg('Charts','inhmem/PDataBase_InhMem.png');">Inherited Members</a>
+<a id="imgPDataBase_Incl" class="tab" href="incl/PDataBase_Incl.png" onclick="javascript:return SetImg('Charts','incl/PDataBase_Incl.png');">Includes</a>
+<a id="imgPDataBase_Lib" class="tab" href="lib/PDataBase_Lib.png" onclick="javascript:return SetImg('Charts','lib/PDataBase_Lib.png');">Libraries</a><br/>
+</div><div class="classcharts"><div class="classchartswidth"></div>
+<img id="Charts" alt="Class Charts" class="classcharts" usemap="#MapPDataBase_Inh" src="inh/PDataBase_Inh.png"/></div>
+<h2>Function documentation</h2>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Bool_t">Bool_t</a> <a class="funcname" name="PDataBase:CheckEntry" href="src/PDataBase.h.html#KSRWO">CheckEntry</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> key)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Int_t">Int_t</a> <a class="funcname" name="PDataBase:ConvertParamKey" href="src/PDataBase.h.html#BBKPE">ConvertParamKey</a>(<span class="keyword">const</span> <span class="keyword">char</span>*&amp; newparamname, <a href="./ListOfTypes.html#Int_t">Int_t</a> key)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="PDataBase:PDataBase" href="src/PDataBase.h.html#WlWkCE">PDataBase</a>()</span><br />
+<div class="funccomm"><pre>constructor
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PDataBase:Performance" href="src/PDataBase.h.html#zuSX4">Performance</a>(<span class="keyword">void</span>)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PDataBase:SetFastKey" href="src/PDataBase.h.html#XTOdjB">SetFastKey</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> pkey, <a href="./ListOfTypes.html#Int_t">Int_t</a> maxkey)</span><br />
+<div class="funccomm"><pre>return value of the makeParam's: the param_id of -1 on failure
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Int_t">Int_t</a> <a class="funcname" name="PDataBase:MakeParamDouble" href="src/PDataBase.h.html#m.80cE">MakeParamDouble</a>(<span class="keyword">const</span> <span class="keyword">char</span>* paramname, <span class="keyword">const</span> <span class="keyword">char</span>* descr)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Int_t">Int_t</a> <a class="funcname" name="PDataBase:MakeParamInt" href="src/PDataBase.h.html#RaXmg">MakeParamInt</a>(<span class="keyword">const</span> <span class="keyword">char</span>* paramname, <span class="keyword">const</span> <span class="keyword">char</span>* descr)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Int_t">Int_t</a> <a class="funcname" name="PDataBase:GetParamDouble" href="src/PDataBase.h.html#ewtY1B">GetParamDouble</a>(<span class="keyword">const</span> <span class="keyword">char</span>* paramname)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Int_t">Int_t</a> <a class="funcname" name="PDataBase:GetParamString" href="src/PDataBase.h.html#MQ7YHB">GetParamString</a>(<span class="keyword">const</span> <span class="keyword">char</span>* paramname)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Int_t">Int_t</a> <a class="funcname" name="PDataBase:GetParamInt" href="src/PDataBase.h.html#lqldN">GetParamInt</a>(<span class="keyword">const</span> <span class="keyword">char</span>* paramname, <a href="./ListOfTypes.html#Int_t">Int_t</a> length = -1)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Int_t">Int_t</a> <a class="funcname" name="PDataBase:GetParamTObj" href="src/PDataBase.h.html#cpKsEB">GetParamTObj</a>(<span class="keyword">const</span> <span class="keyword">char</span>* paramname)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">char</span>   * <a class="funcname" name="PDataBase:GetDescription" href="src/PDataBase.h.html#isnb2E">GetDescription</a>(<span class="keyword">const</span> <span class="keyword">char</span>* paramname)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PDataBase:GetFastParamInt" href="src/PDataBase.h.html#YUhJnC">GetFastParamInt</a>(<span class="keyword">const</span> <span class="keyword">char</span>* paramname, <a href="./ListOfTypes.html#Int_t">Int_t</a>* pkey)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PDataBase:GetFastParamString" href="src/PDataBase.h.html#nStayC">GetFastParamString</a>(<span class="keyword">const</span> <span class="keyword">char</span>* paramname, <a href="./ListOfTypes.html#Int_t">Int_t</a>* pkey)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PDataBase:GetFastParamDouble" href="src/PDataBase.h.html#fhCS3E">GetFastParamDouble</a>(<span class="keyword">const</span> <span class="keyword">char</span>* paramname, <a href="./ListOfTypes.html#Int_t">Int_t</a>* pkey)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PDataBase:GetFastParamTObj" href="src/PDataBase.h.html#wPIzKC">GetFastParamTObj</a>(<span class="keyword">const</span> <span class="keyword">char</span>* paramname, <a href="./ListOfTypes.html#Int_t">Int_t</a>* pkey)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">const</span> <span class="keyword">char</span> * <a class="funcname" name="PDataBase:GetName" href="src/PDataBase.h.html#w3adQE">GetName</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> key)</span><br />
+<div class="funccomm"><pre>getting particle/decay properties from data base
+return <a href="./ListOfTypes.html#Bool_t">kFALSE</a> if 1.) key not existing or 2.) Param not existing or 3.) Param not used for entry
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Bool_t">Bool_t</a> <a class="funcname" name="PDataBase:GetParamDouble@1" href="src/PDataBase.h.html#G.fN7B">GetParamDouble</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> key, <span class="keyword">const</span> <span class="keyword">char</span>* paramname, <a href="./ListOfTypes.html#Double_t">Double_t</a>** result)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Bool_t">Bool_t</a> <a class="funcname" name="PDataBase:GetParamString@1" href="src/PDataBase.h.html#eCTJ0B">GetParamString</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> key, <span class="keyword">const</span> <span class="keyword">char</span>* paramname, <span class="keyword">const</span> <span class="keyword">char</span>** result)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Bool_t">Bool_t</a> <a class="funcname" name="PDataBase:GetParamInt@1" href="src/PDataBase.h.html#vEmTP">GetParamInt</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> key, <span class="keyword">const</span> <span class="keyword">char</span>* paramname, <a href="./ListOfTypes.html#Int_t">Int_t</a>** result, <a href="./ListOfTypes.html#Int_t">Int_t</a> length = -1)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Bool_t">Bool_t</a> <a class="funcname" name="PDataBase:GetParamTObj@1" href="src/PDataBase.h.html#gk6cOB">GetParamTObj</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> key, <span class="keyword">const</span> <span class="keyword">char</span>* paramname, <a href="./TObject.html">TObject</a>** result)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Bool_t">Bool_t</a> <a class="funcname" name="PDataBase:GetParamInt@2" href="src/PDataBase.h.html#vHNMhC">GetParamInt</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> key, <a href="./ListOfTypes.html#Int_t">Int_t</a> pkey, <a href="./ListOfTypes.html#Int_t">Int_t</a>** result)</span><br />
+<div class="funccomm"><pre>same as above but with the pkey as obtained by the getFastParam's
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Bool_t">Bool_t</a> <a class="funcname" name="PDataBase:GetParamString@2" href="src/PDataBase.h.html#q.pSEB">GetParamString</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> key, <a href="./ListOfTypes.html#Int_t">Int_t</a> pkey, <span class="keyword">const</span> <span class="keyword">char</span>** result)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Bool_t">Bool_t</a> <a class="funcname" name="PDataBase:GetParamDouble@2" href="src/PDataBase.h.html#XZs2RD">GetParamDouble</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> key, <a href="./ListOfTypes.html#Int_t">Int_t</a> pkey, <a href="./ListOfTypes.html#Double_t">Double_t</a>** result)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Bool_t">Bool_t</a> <a class="funcname" name="PDataBase:GetParamTObj@2" href="src/PDataBase.h.html#eAzxAC">GetParamTObj</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> key, <a href="./ListOfTypes.html#Int_t">Int_t</a> pkey, <a href="./TObject.html">TObject</a>** result)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Bool_t">Bool_t</a> <a class="funcname" name="PDataBase:GetParamInt@3" href="src/PDataBase.h.html#V8plVE">GetParamInt</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> key, <a href="./ListOfTypes.html#Int_t">Int_t</a> pkey, <a href="./ListOfTypes.html#Int_t">Int_t</a>* result)</span><br />
+<div class="funccomm"><pre>setting value instead of pointer
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Bool_t">Bool_t</a> <a class="funcname" name="PDataBase:GetParamInt@4" href="src/PDataBase.h.html#PS.KKC">GetParamInt</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name, <span class="keyword">const</span> <span class="keyword">char</span>* paramname, <a href="./ListOfTypes.html#Int_t">Int_t</a>** result)</span><br />
+<div class="funccomm"><pre>getting param by primary name
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">return</span> <a class="funcname" name="PDataBase:GetParamInt" href="src/PDataBase.h.html#cymLCC">GetParamInt</a>(<a href="./PDataBase.html#PDataBase:GetEntry" title="Int_t PDataBase::GetEntry(const char* name)">GetEntry</a>(name), paramname, result)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Bool_t">Bool_t</a> <a class="funcname" name="PDataBase:GetParamDouble@3" href="src/PDataBase.h.html#VT9BKD">GetParamDouble</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name, <span class="keyword">const</span> <span class="keyword">char</span>* paramname, <a href="./ListOfTypes.html#Double_t">Double_t</a>** result)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">return</span> <a class="funcname" name="PDataBase:GetParamDouble" href="src/PDataBase.h.html#GYH7h">GetParamDouble</a>(<a href="./PDataBase.html#PDataBase:GetEntry" title="Int_t PDataBase::GetEntry(const char* name)">GetEntry</a>(name), paramname, result)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Bool_t">Bool_t</a> <a class="funcname" name="PDataBase:GetParamString@3" href="src/PDataBase.h.html#C5K9DE">GetParamString</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name, <span class="keyword">const</span> <span class="keyword">char</span>* paramname, <span class="keyword">const</span> <span class="keyword">char</span>** result)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">return</span> <a class="funcname" name="PDataBase:GetParamString" href="src/PDataBase.h.html#mNpzJ">GetParamString</a>(<a href="./PDataBase.html#PDataBase:GetEntry" title="Int_t PDataBase::GetEntry(const char* name)">GetEntry</a>(name), paramname, result)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Bool_t">Bool_t</a> <a class="funcname" name="PDataBase:GetParamTObj@3" href="src/PDataBase.h.html#utpM6D">GetParamTObj</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name, <span class="keyword">const</span> <span class="keyword">char</span>* paramname, <a href="./TObject.html">TObject</a>** result)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">return</span> <a class="funcname" name="PDataBase:GetParamTObj" href="src/PDataBase.h.html#LzFstE">GetParamTObj</a>(<a href="./PDataBase.html#PDataBase:GetEntry" title="Int_t PDataBase::GetEntry(const char* name)">GetEntry</a>(name), paramname, result)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Bool_t">Bool_t</a> <a class="funcname" name="PDataBase:GetParamInt@5" href="src/PDataBase.h.html#EMHw6C">GetParamInt</a>(<span class="keyword">const</span> <span class="keyword">char</span>* paramname1, <a href="./ListOfTypes.html#Int_t">Int_t</a> value1, <span class="keyword">const</span> <span class="keyword">char</span>* paramname2, <a href="./ListOfTypes.html#Int_t">Int_t</a>** result)</span><br />
+<div class="funccomm"><pre>Getting param by matching integer value
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Bool_t">Bool_t</a> <a class="funcname" name="PDataBase:GetParamDouble@4" href="src/PDataBase.h.html#Y05CEB">GetParamDouble</a>(<span class="keyword">const</span> <span class="keyword">char</span>* paramname1, <a href="./ListOfTypes.html#Int_t">Int_t</a> value1, <span class="keyword">const</span> <span class="keyword">char</span>* paramname2, <a href="./ListOfTypes.html#Double_t">Double_t</a>** result)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Bool_t">Bool_t</a> <a class="funcname" name="PDataBase:GetParamString@4" href="src/PDataBase.h.html#I4qBW">GetParamString</a>(<span class="keyword">const</span> <span class="keyword">char</span>* paramname1, <a href="./ListOfTypes.html#Int_t">Int_t</a> value1, <span class="keyword">const</span> <span class="keyword">char</span>* paramname2, <span class="keyword">const</span> <span class="keyword">char</span>** result)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Bool_t">Bool_t</a> <a class="funcname" name="PDataBase:GetParamTObj@4" href="src/PDataBase.h.html#rtHnLE">GetParamTObj</a>(<span class="keyword">const</span> <span class="keyword">char</span>* paramname1, <a href="./ListOfTypes.html#Int_t">Int_t</a> value1, <span class="keyword">const</span> <span class="keyword">char</span>* paramname2, <a href="./TObject.html">TObject</a>** result)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Bool_t">Bool_t</a> <a class="funcname" name="PDataBase:SetParamDouble" href="src/PDataBase.h.html#ianlS">SetParamDouble</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> key, <span class="keyword">const</span> <span class="keyword">char</span>* paramname, <a href="./ListOfTypes.html#Double_t">Double_t</a>* result)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Bool_t">Bool_t</a> <a class="funcname" name="PDataBase:SetParamString" href="src/PDataBase.h.html#ONB4oB">SetParamString</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> key, <span class="keyword">const</span> <span class="keyword">char</span>* paramname, <span class="keyword">char</span>* result)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Bool_t">Bool_t</a> <a class="funcname" name="PDataBase:SetParamInt" href="src/PDataBase.h.html#XrHXq">SetParamInt</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> key, <span class="keyword">const</span> <span class="keyword">char</span>* paramname, <a href="./ListOfTypes.html#Int_t">Int_t</a>* result)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Bool_t">Bool_t</a> <a class="funcname" name="PDataBase:SetParamTObj" href="src/PDataBase.h.html#fkOHhE">SetParamTObj</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> key, <span class="keyword">const</span> <span class="keyword">char</span>* paramname, <a href="./TObject.html">TObject</a>* result)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Bool_t">Bool_t</a> <a class="funcname" name="PDataBase:SetParamTObj@1" href="src/PDataBase.h.html#YXRSj">SetParamTObj</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> key, <a href="./ListOfTypes.html#Int_t">Int_t</a> pp, <a href="./TObject.html">TObject</a>* result)</span><br />
+<div class="funccomm"><pre>faster:
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Bool_t">Bool_t</a> <a class="funcname" name="PDataBase:SetParamDouble@1" href="src/PDataBase.h.html#Du6xr">SetParamDouble</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name, <span class="keyword">const</span> <span class="keyword">char</span>* paramname, <a href="./ListOfTypes.html#Double_t">Double_t</a> result)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Bool_t">Bool_t</a> <a class="funcname" name="PDataBase:SetParamInt@1" href="src/PDataBase.h.html#XSZe">SetParamInt</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name, <span class="keyword">const</span> <span class="keyword">char</span>* paramname, <a href="./ListOfTypes.html#Int_t">Int_t</a> result)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Bool_t">Bool_t</a> <a class="funcname" name="PDataBase:SetParamString@1" href="src/PDataBase.h.html#F7EqhD">SetParamString</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name, <span class="keyword">const</span> <span class="keyword">char</span>* paramname, <span class="keyword">char</span>* result)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Bool_t">Bool_t</a> <a class="funcname" name="PDataBase:SetParamTObj@2" href="src/PDataBase.h.html#nPV7DE">SetParamTObj</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name, <span class="keyword">const</span> <span class="keyword">char</span>* paramname, <a href="./TObject.html">TObject</a>* result)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Bool_t">Bool_t</a> <a class="funcname" name="PDataBase:AddEntry" href="src/PDataBase.h.html#XmYB6C">AddEntry</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> key, <span class="keyword">const</span> <span class="keyword">char</span>* name)</span><br />
+<div class="funccomm"><pre>Dealing with the entries
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Int_t">Int_t</a> <a class="funcname" name="PDataBase:AddEntry@1" href="src/PDataBase.h.html#fWoP4C">AddEntry</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Int_t">Int_t</a> <a class="funcname" name="PDataBase:GetEntry" href="src/PDataBase.h.html#emZua">GetEntry</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Int_t">Int_t</a> <a class="funcname" name="PDataBase:GetEntryInt" href="src/PDataBase.h.html#pD4GqD">GetEntryInt</a>(<span class="keyword">const</span> <span class="keyword">char</span>* paramname, <a href="./ListOfTypes.html#Int_t">Int_t</a> value)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Int_t">Int_t</a> <a class="funcname" name="PDataBase:GetEntryInt@1" href="src/PDataBase.h.html#bNqPq">GetEntryInt</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> pkey, <a href="./ListOfTypes.html#Int_t">Int_t</a> value)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Int_t">Int_t</a> <a class="funcname" name="PDataBase:AddListEntry" href="src/PDataBase.h.html#pvA6zB">AddListEntry</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name, <span class="keyword">const</span> <span class="keyword">char</span>* count, <span class="keyword">const</span> <span class="keyword">char</span>* link, <span class="keyword">const</span> <span class="keyword">char</span>* newname)</span><br />
+<div class="funccomm"><pre>listings
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Bool_t">Bool_t</a> <a class="funcname" name="PDataBase:MakeListIterator" href="src/PDataBase.h.html#GibJgB">MakeListIterator</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> key, <span class="keyword">const</span> <span class="keyword">char</span>* count, <span class="keyword">const</span> <span class="keyword">char</span>* link, <a href="./ListOfTypes.html#Int_t">Int_t</a>* listkey)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Bool_t">Bool_t</a> <a class="funcname" name="PDataBase:MakeListIterator@1" href="src/PDataBase.h.html#HxSA1B">MakeListIterator</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> key, <a href="./ListOfTypes.html#Int_t">Int_t</a> count, <a href="./ListOfTypes.html#Int_t">Int_t</a> link, <a href="./ListOfTypes.html#Int_t">Int_t</a>* listkey)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Bool_t">Bool_t</a> <a class="funcname" name="PDataBase:ListEntries" href="src/PDataBase.h.html#qOgnpD">ListEntries</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> key = -1, <a href="./ListOfTypes.html#Int_t">Int_t</a> option = 0, <span class="keyword">const</span> <span class="keyword">char</span>* pattern = __null)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="PDataBase:Print" href="src/PDataBase.h.html#BVYKa">Print</a>(<span class="keyword">const</span> <a href="./ListOfTypes.html#Option_t">Option_t</a>* delme = __null) const</span><br />
+</div>
+
+<br />
+<!--SIGNATURE-->
+<div id="footer">
+
+<em>&raquo; Last changed: Tue Aug  7 10:55:13 2018 </em><em>&raquo; Last generated: 2018-08-07 10:55</em><br />
+<em>This page has been automatically generated. For comments or suggestions regarding the documentation or ROOT in general please send a mail to <a href="mailto:rootdev@cern.ch">ROOT support</a>.</em>
+</div>
+</div>
+</body>
+</html>
