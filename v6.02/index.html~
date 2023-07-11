@@ -1,0 +1,23 @@
+<HTML>
+<HEAD>
+   <TITLE>PLUTO Download</TITLE>
+   <META NAME="rating" CONTENT="General">
+   <META NAME="objecttype" CONTENT="Manual">
+   <META NAME="keywords" CONTENT="plut event generator">
+   <META NAME="description" CONTENT="A Monte Carlo simulation tool for hadronic physics">
+</HEAD>
+
+<BODY TEXT="#000000" BGCOLOR="#FFFFFF" LINK="#0000FF" VLINK="#551A8B" ALINK="#FF0000">
+
+<H1>PLUTO Version 6.02</H1>
+
+Download <a href="pluto_v6.02.tar.gz">Version 6.02 of 11/07/2023</a><p>
+<a href="spectra.html">QA-plots</a><p>
+<a href="PlutoHTMLDoc/examples/index.html">Tutorials</a><p>
+<strong>News (since v5.xx):</strong>&nbsp;
+(for details see&nbsp;<a href="README">Release notes</a>)</p>
+<ul>
+<li>Changed to ROOT6</li>
+<li>Switched to cmake</li>
+<li>New directory structure and code cleanup</li>
+</ul>

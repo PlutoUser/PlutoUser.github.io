@@ -1,0 +1,27 @@
+ Test the 2-dimensional Pluto functions
+   ------------------------------------------------------------------
+  | Welcome to ROOT 6.24/08                        https://root.cern |
+  | (c) 1995-2021, The ROOT Team; conception: R. Brun, F. Rademakers |
+  | Built for linuxx8664gcc on Sep 29 2022, 13:04:57                 |
+  | From tags/v6-24-08@v6-24-08                                      |
+  | With                                                             |
+  | Try '.help', '.demo', '.license', '.credits', '.quit'/'.q'       |
+   ------------------------------------------------------------------
+
+
+  *********************************************************
+  * The Pluto event generator                              
+  * Developed by HADES and all contributing AUTHORS        
+  * https://hades.gsi.de/?q=pluto                          
+  * Version: 6.02
+  * Compiled on 11 Juli 2023
+  *********************************************************
+Shared library Pluto.so loaded
+
+Processing obl_test_pf2.C...
+Info in <PStdData::PStdData()>: (CONSTRUCTOR)
+Info in <PDataBase::PDataBase()>: (CONSTRUCTOR)
+Info in <TCanvas::Print>: png file obl_test_pf2@pf2_test:Only_TGraph2D.png has been created
+Info in <TCanvas::Print>: png file obl_test_pf2@pf2_test:TGraph2D_mixed_with_a_TH1.png has been created
+Info in <TCanvas::Print>: png file obl_test_pf2@pf2_test:TGraph2D_mixed_with_a_TH1_and_some_dummy_calculations.png has been created
+Info in <TCanvas::Print>: png file obl_test_pf2@pf2_test:TGraph2D_merged_with_a_TH2.png has been created

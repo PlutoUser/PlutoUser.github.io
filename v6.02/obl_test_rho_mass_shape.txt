@@ -1,0 +1,115 @@
+
+   ------------------------------------------------------------------
+  | Welcome to ROOT 6.24/08                        https://root.cern |
+  | (c) 1995-2021, The ROOT Team; conception: R. Brun, F. Rademakers |
+  | Built for linuxx8664gcc on Sep 29 2022, 13:04:57                 |
+  | From tags/v6-24-08@v6-24-08                                      |
+  | With                                                             |
+  | Try '.help', '.demo', '.license', '.credits', '.quit'/'.q'       |
+   ------------------------------------------------------------------
+
+
+  *********************************************************
+  * The Pluto event generator                              
+  * Developed by HADES and all contributing AUTHORS        
+  * https://hades.gsi.de/?q=pluto                          
+  * Version: 6.02
+  * Compiled on 11 Juli 2023
+  *********************************************************
+Shared library Pluto.so loaded
+
+Processing obl_test_rho_mass_shape.C...
+Info in <PStdData::PStdData()>: (CONSTRUCTOR)
+Info in <PDataBase::PDataBase()>: (CONSTRUCTOR)
+Info in <PStdModels::PStdModels()>: (CONSTRUCTOR), Standard model filler
+Info in <PDynamicData::PDynamicData()>: (CONSTRUCTOR)
+Info in <PStdModels::GetModels>: Read std models
+Info in <PDistributionManager::PDistributionManager>: Rare eta decays are enabled
+Info in <PDistributionManager::PDistributionManager>: Baryonic resonances with strangeness available
+Info in <PDistributionManager::PDistributionManager>: Pion beam plugin available
+Info in <PDistributionManager::PDistributionManager>: Beam line simulation classes available
+Info in <PDistributionManager::PDistributionManager>: PDG/UNIGEN classes available
+Info in <PDistributionManager::PDistributionManager>: Elementary plugin available
+Info in <PDistributionManager::PDistributionManager>: Plugin for Dalitz decay (generator & new D Dalitz) available
+Info in <PDistributionManager::PDistributionManager>: Dalitz decays of N* activated
+Info in <PDistributionManager::PDistributionManager>: HADES classes available
+Info in <PDistributionManager::PDistributionManager()>: (CONSTRUCTOR)
+Info in <PStaticData::AddDecay>: (ALLOCATION) Decay index 544: eta -> dilepton + dilepton
+Info in <PStaticData::AddDecay>: (ALLOCATION) Decay index 545: eta -> e+ + e- + pi+ + pi-
+Info in <PStaticData::AddDecay>: (ALLOCATION) Decay index 1248: N*(1520)+ -> p + dilepton
+Info in <PStaticData::AddDecay>: (ALLOCATION) Decay index 1216: N*(1440)+ -> p + dilepton
+Info in <PStaticData::AddDecay>: (ALLOCATION) Decay index 1280: N*(1535)+ -> p + dilepton
+Info in <PStaticData::AddDecay>: (ALLOCATION) Decay index 2080: N*(1520)0 -> n + dilepton
+Info in <PStaticData::AddDecay>: (ALLOCATION) Decay index 2048: N*(1440)0 -> n + dilepton
+Info in <PStaticData::AddDecay>: (ALLOCATION) Decay index 2112: N*(1535)0 -> n + dilepton
+<Beam>
+  p (0.000000,0.000000,4.337961;4.438272) wt = 1.000000, m = 0.938272 pid = 14
+  Vertex = 0.000000 0.000000 0.000000
+<Target>
+Info in <PParticle::operator+>: (ALLOCATION) Keeping beam and target particle for further reference
+Info in <PParticle::operator+>: (ALLOCATION) The composite p + p has been added
+Info in <PStaticData::AddDecay>: (ALLOCATION) Decay index 14014: p + p --> p + p + rho0
+Info in <PStdModels::GetModels>: Read std models
+Info in <PDistributionManager::Attach>: Re-iteration of std plugin done
+  p (0.000000,0.000000,0.000000;0.938272) wt = 1.000000, m = 0.938272 pid = 14
+  Vertex = 0.000000 0.000000 0.000000
+
+ Reaction of 4 Particles interacting via 1 Channels
+   Reaction Particles:
+     0. quasi-particle (p beam and p target)
+     1. p
+     2. p
+     3. rho0
+   Reaction Channels:
+     1. p + p --> p + p + rho0
+        Interaction model(s):
+        [p + p_m3_p_p_rho0] 3-body phase space {/} rho0
+        [p + p_genbod_p_p_rho0] Pluto build-in genbod {/genbod}
+   Bulk Classes:
+     Epilogue: <PProjector> 
+Info in <PUtilsREngine::PUtilsREngine>: Random seed set to -1972134945
+Info in <PBreitWigner::GetWidth>: Width 1st call for rho0, mass range 0.001022 GeV to 2.276900 GeV
+Info in <PEEDirectDecay::GetWidth>: Creating mesh in rho0 --> e+ + e-
+Info in <PEEDirectDecay::GetWidth>: Creating mesh in rho0 --> mu+ + mu-
+   *NO* output File
+PReaction: calculating widths in PData...
+ 20% done in 1.244236 sec
+ 40% done in 1.397876 sec
+ 60% done in 1.553707 sec
+ 80% done in 1.711154 sec
+ 100% done in 1.867764 sec
+ Event loop finished after 1.867775 sec
+ CPU time 0.860000 sec
+<Beam>
+  p (0.000000,0.000000,4.337961;4.438272) wt = 1.000000, m = 0.938272 pid = 14
+  Vertex = 0.000000 0.000000 0.000000
+<Target>
+Info in <PParticle::operator+>: (ALLOCATION) Keeping beam and target particle for further reference
+  p (0.000000,0.000000,0.000000;0.938272) wt = 1.000000, m = 0.938272 pid = 14
+  Vertex = 0.000000 0.000000 0.000000
+
+ Reaction of 6 Particles interacting via 2 Channels
+   Reaction Particles:
+     0. quasi-particle (p beam and p target)
+     1. p
+     2. p
+     3. rho0
+     4. e+
+     5. e-
+   Reaction Channels:
+     1. p + p --> p + p + rho0
+        Interaction model(s):
+        [p + p_m3_p_p_rho0] 3-body phase space {/} rho0
+        [p + p_genbod_p_p_rho0] Pluto build-in genbod {/genbod}
+     2. rho0 --> e+ + e-
+        Interaction model(s):
+        [rho0_genbod_e-_e+] Pluto build-in genbod {/genbod}
+        [rho_hardpicutoff_e-_e+] Dilepton direct decay with pion cutoff (step function) {/}
+   Bulk Classes:
+     Epilogue: <PProjector> 
+   *NO* output File
+PReaction: calculating widths in PData...
+ Event loop finished after 1.694991 sec
+ CPU time 0.690000 sec
+Info in <TCanvas::Print>: png file obl_test_rho_mass_shape@Rho_mass_shape.png has been created
+double free or corruption (fasttop)
