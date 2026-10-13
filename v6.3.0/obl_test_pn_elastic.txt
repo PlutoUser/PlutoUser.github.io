@@ -1,0 +1,151 @@
+ pn elastic
+   --------------------------------------------------------------------------------------------
+  | Welcome to ROOT 6.36.10                                                  https://root.cern |
+  | (c) 1995-2025, The ROOT Team; conception: R. Brun, F. Rademakers                           |
+  | Built for linuxx8664gcc on Mar 26 2026, 15:42:31                                           |
+  | From tags/6-36-10@6-36-10                                                                  |
+  | With c++ (SUSE Linux) 13.3.1 20250313 [revision 4ef1d8c84faeebffeb0cc01ee22e891b41e5c4e0]  |
+  | Try '.help'/'.?', '.demo', '.license', '.credits', '.quit'/'.q'                            |
+   --------------------------------------------------------------------------------------------
+
+/bin/ldd: line 159: /lib/ld-linux.so.2: cannot execute binary file: Exec format error
+  *********************************************************
+  * The Pluto event generator                              
+  * Developed by HADES and all contributing AUTHORS        
+  * https://hades.gsi.de/pluto                             
+  * Version: 6.3.0
+  * Compiled on 13 October 2026
+  *********************************************************
+Shared library Pluto.so loaded
+
+Processing obl_test_pn_elastic.C...
+Info in <PStaticData::PStaticModels()>: (CONSTRUCTOR)
+Info in <PStdData::PStdData()>: (CONSTRUCTOR)
+Info in <PDataBase::PDataBase()>: (CONSTRUCTOR)
+Info in <PStdModels::PStdModels()>: (CONSTRUCTOR)
+Info in <PDynamicData::PDynamicData()>: (CONSTRUCTOR)
+Info in <PStdModels::GetModels>: Read std models
+Info in <PDistributionManager::PDistributionManager>: Beam line simulation classes available
+Info in <PDistributionManager::PDistributionManager>: Plugin for Dalitz decay (generator & new D Dalitz) available
+Info in <PDistributionManager::PDistributionManager>: Dalitz decays of N* activated
+Info in <PDistributionManager::PDistributionManager>: Elementary plugin available
+Info in <PDistributionManager::PDistributionManager>: Rare eta decays are enabled
+Info in <PDistributionManager::PDistributionManager>: Exotic particles available
+Info in <PDistributionManager::PDistributionManager>: HADES classes available
+Info in <PDistributionManager::PDistributionManager>: Various mesons available
+Info in <PDistributionManager::PDistributionManager>: PDG/UNIGEN classes available
+Info in <PDistributionManager::PDistributionManager>: Pion beam plugin available
+Info in <PDistributionManager::PDistributionManager>: Baryonic resonances with strangeness + K* enabled
+Info in <PDistributionManager::PDistributionManager()>: (CONSTRUCTOR)
+Info in <PStaticData::AddDecay>: (ALLOCATION) Decay index 1248: N*(1520)+ -> p + dilepton
+Info in <PStaticData::AddDecay>: (ALLOCATION) Decay index 1216: N*(1440)+ -> p + dilepton
+Info in <PStaticData::AddDecay>: (ALLOCATION) Decay index 1280: N*(1535)+ -> p + dilepton
+Info in <PStaticData::AddDecay>: (ALLOCATION) Decay index 2080: N*(1520)0 -> n + dilepton
+Info in <PStaticData::AddDecay>: (ALLOCATION) Decay index 2048: N*(1440)0 -> n + dilepton
+Info in <PStaticData::AddDecay>: (ALLOCATION) Decay index 2112: N*(1535)0 -> n + dilepton
+Info in <PStaticData::AddDecay>: (ALLOCATION) Decay index 544: eta -> dilepton + dilepton
+Info in <PStaticData::AddDecay>: (ALLOCATION) Decay index 545: eta -> e+ + e- + pi+ + pi-
+<Beam>
+  p (0.000000,0.000000,0.137352;0.948272) wt = 1.000000, m = 0.938272 pid = 14
+  Vertex = 0.000000 0.000000 0.000000
+<Target>
+Info in <PParticle::operator+>: (ALLOCATION) Keeping beam and target particle for further reference
+Info in <PParticle::operator+>: (ALLOCATION) The composite p + n has been added
+Info in <PStaticData::AddDecay>: (ALLOCATION) Decay index 13014: p + n --> p + n
+Info in <PStdModels::GetModels>: Read std models
+Info in <PDistributionManager::Attach>: Re-iteration of std plugin done
+  n (0.000000,0.000000,0.000000;0.939566) wt = 1.000000, m = 0.939566 pid = 13
+  Vertex = 0.000000 0.000000 0.000000
+
+ Reaction of 3 Particles interacting via 1 Channels
+   Reaction Particles:
+     0. quasi-particle (p beam and n target)
+     1. p
+     2. n
+   Reaction Channels:
+     1. p + n --> p + n
+        Interaction model(s):
+        [pn_elastic] p+n scattering <scatter_mod> <PSaidPN>
+        [p + n_fix_p_n] 2-body fixed mass, partial width {/} <PHadronDecay>
+        [p + n_genbod_p_n] Pluto build-in genbod {/genbod} <PGenBod>
+Info in <PUtilsREngine::PUtilsREngine>: Random seed set to 1484090545
+   *NO* output File
+PReaction: calculating widths in PData...
+ 20% done in 1.055991 sec
+ 40% done in 1.107716 sec
+ 60% done in 1.159990 sec
+ 80% done in 1.211530 sec
+ 100% done in 1.262964 sec
+ Event loop finished after 1.262975 sec
+ CPU time 0.260000 sec
+<Beam>
+  p (0.000000,0.000000,0.568904;1.097272) wt = 1.000000, m = 0.938272 pid = 14
+  Vertex = 0.000000 0.000000 0.000000
+<Target>
+Info in <PParticle::operator+>: (ALLOCATION) Keeping beam and target particle for further reference
+  n (0.000000,0.000000,0.000000;0.939566) wt = 1.000000, m = 0.939566 pid = 13
+  Vertex = 0.000000 0.000000 0.000000
+
+ Reaction of 3 Particles interacting via 1 Channels
+   Reaction Particles:
+     0. quasi-particle (p beam and n target)
+     1. p
+     2. n
+   Reaction Channels:
+     1. p + n --> p + n
+        Interaction model(s):
+        [pn_elastic] p+n scattering <scatter_mod> <PSaidPN>
+        [p + n_fix_p_n] 2-body fixed mass, partial width {/} <PHadronDecay>
+        [p + n_genbod_p_n] Pluto build-in genbod {/genbod} <PGenBod>
+   *NO* output File
+PReaction: calculating widths in PData...
+ Event loop finished after 1.259954 sec
+ CPU time 0.260000 sec
+<Beam>
+  p (0.000000,0.000000,0.911714;1.308272) wt = 1.000000, m = 0.938272 pid = 14
+  Vertex = 0.000000 0.000000 0.000000
+<Target>
+Info in <PParticle::operator+>: (ALLOCATION) Keeping beam and target particle for further reference
+  n (0.000000,0.000000,0.000000;0.939566) wt = 1.000000, m = 0.939566 pid = 13
+  Vertex = 0.000000 0.000000 0.000000
+
+ Reaction of 3 Particles interacting via 1 Channels
+   Reaction Particles:
+     0. quasi-particle (p beam and n target)
+     1. p
+     2. n
+   Reaction Channels:
+     1. p + n --> p + n
+        Interaction model(s):
+        [pn_elastic] p+n scattering <scatter_mod> <PSaidPN>
+        [p + n_fix_p_n] 2-body fixed mass, partial width {/} <PHadronDecay>
+        [p + n_genbod_p_n] Pluto build-in genbod {/genbod} <PGenBod>
+   *NO* output File
+PReaction: calculating widths in PData...
+ Event loop finished after 1.259154 sec
+ CPU time 0.260000 sec
+<Beam>
+  p (0.000000,0.000000,2.784437;2.938272) wt = 1.000000, m = 0.938272 pid = 14
+  Vertex = 0.000000 0.000000 0.000000
+<Target>
+Info in <PParticle::operator+>: (ALLOCATION) Keeping beam and target particle for further reference
+  n (0.000000,0.000000,0.000000;0.939566) wt = 1.000000, m = 0.939566 pid = 13
+  Vertex = 0.000000 0.000000 0.000000
+
+ Reaction of 3 Particles interacting via 1 Channels
+   Reaction Particles:
+     0. quasi-particle (p beam and n target)
+     1. p
+     2. n
+   Reaction Channels:
+     1. p + n --> p + n
+        Interaction model(s):
+        [pn_elastic] p+n scattering <scatter_mod> <PSaidPN>
+        [p + n_fix_p_n] 2-body fixed mass, partial width {/} <PHadronDecay>
+        [p + n_genbod_p_n] Pluto build-in genbod {/genbod} <PGenBod>
+   *NO* output File
+PReaction: calculating widths in PData...
+ Event loop finished after 1.262312 sec
+ CPU time 0.270000 sec
+Info in <TCanvas::Print>: png file obl_test_pn_elastic@Elastic_pn_scattering:_polar_angle.png has been created
+free(): double free detected in tcache 2

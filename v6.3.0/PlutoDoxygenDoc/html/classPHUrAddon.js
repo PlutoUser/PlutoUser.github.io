@@ -1,0 +1,26 @@
+var classPHUrAddon =
+[
+    [ "PHUrAddon", "classPHUrAddon.html#a523611d0cd5fb76917e950fc369ca412", null ],
+    [ "~PHUrAddon", "classPHUrAddon.html#aa5a08754510ebd20b09085f1b2e3ad08", null ],
+    [ "Clear", "classPHUrAddon.html#ad5d651a0efe2c317f8f20d47dc02df19", null ],
+    [ "IsAnnihilation", "classPHUrAddon.html#a150bf270e040784d7ed26b7d2faf7843", null ],
+    [ "IsDecay", "classPHUrAddon.html#a2d73f00a7111900436371301091fab65", null ],
+    [ "IsPauliBlockedCollision", "classPHUrAddon.html#a6376f40d07336e34d447b4af7d6abc55", null ],
+    [ "IsPauliBlockedDecay", "classPHUrAddon.html#af38ba107f273295fc7dfcaae85ffdf80", null ],
+    [ "IsScattering", "classPHUrAddon.html#a174fe357107e419cd2b666e3fc628369", null ],
+    [ "IsStringDecay5", "classPHUrAddon.html#ae3b27efbef2e4e3001d282791a7ec507", null ],
+    [ "dens_abs", "classPHUrAddon.html#a712bead011386f23c339f7e5b6c70b23", null ],
+    [ "dens_cre", "classPHUrAddon.html#aba8cbdcc633a29b5ec92193fc9aff6a3", null ],
+    [ "first", "classPHUrAddon.html#ae0aa2a3eb028e3a8ce0d866a2519294e", null ],
+    [ "fr_abs", "classPHUrAddon.html#a18242da89a5c3e4694f79588956e34df", null ],
+    [ "fr_cre", "classPHUrAddon.html#ab43d37206447ecabde11004ae9cdffb2", null ],
+    [ "instance", "classPHUrAddon.html#a59dd2a7d24bf29f11208640e1aa7f8be", null ],
+    [ "last", "classPHUrAddon.html#ad5869b7f32e14b5d98a5c857a5b242f2", null ],
+    [ "n_collision", "classPHUrAddon.html#afe4fe566abb54cbb9cee1da80ab0f18b", null ],
+    [ "n_in", "classPHUrAddon.html#a2c00d0c63c406bc09a3cd8c2b72ac079", null ],
+    [ "n_out", "classPHUrAddon.html#af5b19188a833632d7e03e6663c0a559e", null ],
+    [ "process_id", "classPHUrAddon.html#a3a513a19dce310b79dc30a63eea29261", null ],
+    [ "stable", "classPHUrAddon.html#a50bc5bc6571da8c5126a92196b272f94", null ],
+    [ "t_abs", "classPHUrAddon.html#aa15ea2d3792d605b5e968cfd170153ce", null ],
+    [ "t_cre", "classPHUrAddon.html#aead0c98a32fead48442e0586e48dc2a8", null ]
+];

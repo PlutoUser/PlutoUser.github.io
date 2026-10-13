@@ -1,0 +1,26 @@
+var classPScatterCrossSection =
+[
+    [ "PScatterCrossSection", "classPScatterCrossSection.html#a18275a0e9a1faad3ef58456c98404fe0", null ],
+    [ "PScatterCrossSection", "classPScatterCrossSection.html#af0047ba8a63dcc7d69fbfe0bc20a06e4", null ],
+    [ "AddEquation", "classPScatterCrossSection.html#aefaa94f548a9a15698c58193fc898923", null ],
+    [ "AddHistogram", "classPScatterCrossSection.html#ab336587678abe8cbfd87de0967d98cd6", null ],
+    [ "AddHistogram", "classPScatterCrossSection.html#a9ac696d24cf39a92754b9436aea8f1d9", null ],
+    [ "Clone", "classPScatterCrossSection.html#ad667b31294f289ee845097f249eac397", null ],
+    [ "GetFunction", "classPScatterCrossSection.html#a04e62dae4308cf3c7894eb7d0db07ca9", null ],
+    [ "Init", "classPScatterCrossSection.html#ae555c00a0d15bb5b69d39ca203a51e9c", null ],
+    [ "MakeVars", "classPScatterCrossSection.html#a460ce93529bfc7ca8fd31daa8b854e94", null ],
+    [ "Prepare", "classPScatterCrossSection.html#a5e730b5216aeb0c189c580e94e2a0a99", null ],
+    [ "SamplePolarAngle", "classPScatterCrossSection.html#aa0a02737e01e5cd6fbcb6fd707a2355a", null ],
+    [ "SetNpx", "classPScatterCrossSection.html#a0de5ce58778adc7aaca3a0ec25c3cfbb", null ],
+    [ "SetNpy", "classPScatterCrossSection.html#a28fbcc8e38714e36b3fc3e4426b1c16e", null ],
+    [ "SetRange", "classPScatterCrossSection.html#a2414081d0c3c45453b9b5cc33f850696", null ],
+    [ "costheta", "classPScatterCrossSection.html#ae45c3c88dded8e8fb934a4539feb7e20", null ],
+    [ "npx", "classPScatterCrossSection.html#aa7d1c90aefe21033e74901d7104ff139", null ],
+    [ "npy", "classPScatterCrossSection.html#a07f32b36901e66c856fa993f746f53e9", null ],
+    [ "pf2", "classPScatterCrossSection.html#a23d99b9c680baf39a19c794f346f2c12", null ],
+    [ "q", "classPScatterCrossSection.html#ad9b65fe9c87e3cd75b33d4294433e6ca", null ],
+    [ "qmax", "classPScatterCrossSection.html#aca457b464caea3490afae20f9962b8d4", null ],
+    [ "qmin", "classPScatterCrossSection.html#a8cd8a3f50143127dfde9302d9398c292", null ],
+    [ "vf", "classPScatterCrossSection.html#aec0eaec42feb5f944eb13b56ae9ce093", null ],
+    [ "vprimary", "classPScatterCrossSection.html#a72ee8f28fa6d70c9ba3d9e0ed5f91b4d", null ]
+];

@@ -1,0 +1,38 @@
+The package at a glance
+-----------------------
+
+Pluto is a simulation framework for heavy ion and hadronic-physics
+reactions. It provides a library of C++ classes such as particles,
+reactions but also interface classes. The reactions can be set up with
+a few lines of ROOT macro code without detailed knowledge of
+programming. Different physics models can be selected via a manager
+class, while experts can use various template classes (see ./macros)
+for defining and attaching their own models. A build-in scripting
+language (see ./doc/script_manual.pdf) which was in particular designed
+for this purpose can handle in-line histogram filling, event filtering
+and particle modifications. The input and output file format can be
+adjusted which allows for a smooth inclusion in 3rd party code.
+
+
+Installation
+____________
+
+Out-of-source installation
+--------------------------
+Installation:
+export PLUTO_DIR=/path/to/pluto_installation
+mkdir builddir && cd builddir
+cmake .. -DCMAKE_INSTALL_PREFIX=$PLUTO_DIR
+make install
+
+Usage:
+export PLUTO_DIR=/path/to/pluto_installation
+export ROOT_INCLUDE_PATH=$PLUTO_DIR/include
+export LD_LIBRARY_PATH=$PLUTO_DIR/lib64:$LD_LIBRARY_PATH
+
+In-source installation
+----------------------
+mkdir builddir && cd builddir
+cmake ..
+make
+

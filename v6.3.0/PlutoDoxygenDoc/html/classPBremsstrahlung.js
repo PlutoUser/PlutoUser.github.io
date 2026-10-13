@@ -1,0 +1,25 @@
+var classPBremsstrahlung =
+[
+    [ "PBremsstrahlung", "classPBremsstrahlung.html#aeb6580599ef1d6f12840900234dbef70", null ],
+    [ "Clone", "classPBremsstrahlung.html#a0cafa9f84026a064dd73241d76134fa8", null ],
+    [ "Eval", "classPBremsstrahlung.html#afe72be43f58a19c16b94a8ccdff842b5", null ],
+    [ "EvalPar", "classPBremsstrahlung.html#a4bda7242576cde74ab5310b14b21cec3", null ],
+    [ "GetWeight", "classPBremsstrahlung.html#a40350916305e65c54dd8f97acf2cbea6", null ],
+    [ "GetWeight", "classPBremsstrahlung.html#a3a3af46e8518a0e729d57f2203746d82", null ],
+    [ "GetWeight", "classPBremsstrahlung.html#a0eae85b5a64e20ae6896bfbcdd4c39da", null ],
+    [ "GetWeight", "classPBremsstrahlung.html#a75e74ad71b25a2dd83aca01e40cb8f7c", null ],
+    [ "GetWeight", "classPBremsstrahlung.html#af0387b67044090cc5b96f8f6b6cbb6cf", null ],
+    [ "GetWeight", "classPBremsstrahlung.html#ab76bb53c046c050657849168f7a7842b", null ],
+    [ "GetWeight", "classPBremsstrahlung.html#a730cb1e7f557f9445257b32d66796301", null ],
+    [ "Init", "classPBremsstrahlung.html#a26a0b16e942432ea7956457028707577", null ],
+    [ "SampleMass", "classPBremsstrahlung.html#a3e4ac17dff01bea5c0c13d17f0ae654d", null ],
+    [ "SampleMass", "classPBremsstrahlung.html#ae8aef1c859f5d0d9880603ecfb8ac8f1", null ],
+    [ "SampleMass", "classPBremsstrahlung.html#a88bfcbc444702305a48eda8cca434fb5", null ],
+    [ "SetAuthor", "classPBremsstrahlung.html#a10b8f3998eca3e8f89cab8f52d4ea111", null ],
+    [ "SetFunc", "classPBremsstrahlung.html#a7b8716ec64f1736b4e72aa4e83f166c2", null ],
+    [ "SetFunc", "classPBremsstrahlung.html#a69e56fd0205e5478ff38306c8398b76b", null ],
+    [ "SetMode", "classPBremsstrahlung.html#a93ba7e7df78d5395286adf5864f519a1", null ],
+    [ "SetNeutron", "classPBremsstrahlung.html#a57233638d622082de619faf5d646211c", null ],
+    [ "SetP2E", "classPBremsstrahlung.html#a1592f9263638714e398c9bebb636a4ba", null ],
+    [ "SetSqrtS", "classPBremsstrahlung.html#a3203cece8decf7dfe88c0ceb9a90a05c", null ]
+];

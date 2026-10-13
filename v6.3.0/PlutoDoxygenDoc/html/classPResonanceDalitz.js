@@ -1,0 +1,27 @@
+var classPResonanceDalitz =
+[
+    [ "PResonanceDalitz", "classPResonanceDalitz.html#ab6bbcea32b99e71c334abc0f2e8f2df8", null ],
+    [ "Clone", "classPResonanceDalitz.html#a1e5db6a1a216c9884a65e49be45e8305", null ],
+    [ "dGdM", "classPResonanceDalitz.html#a83c69053de63d2b7654ac8b866e85e7b", null ],
+    [ "getLambda", "classPResonanceDalitz.html#a3695b77350299f11ada3c75e445f1c79", null ],
+    [ "GetMatrixL", "classPResonanceDalitz.html#ae1053952c188c568ba1e5aa7e4dd6034", null ],
+    [ "GetMatrixT", "classPResonanceDalitz.html#ad1069e050cd714c1f9cffffbd6f012b7", null ],
+    [ "GetWeight", "classPResonanceDalitz.html#a65b7da9bb000bc4622505eb2cce4da5b", null ],
+    [ "GetWeight", "classPResonanceDalitz.html#ad8424de9238aa1bab6183d84811cc732", null ],
+    [ "setGm", "classPResonanceDalitz.html#a462a535b4b4b984bdc07023f092f2a80", null ],
+    [ "charge", "classPResonanceDalitz.html#a68c6ebe6546c620371476f360542a6a5", null ],
+    [ "ecm2", "classPResonanceDalitz.html#acf5c3e51d4fee0ef33a4762d5fa0a3e6", null ],
+    [ "ecm3", "classPResonanceDalitz.html#a8c18ad65b513ec8c1639a198f51f5d70", null ],
+    [ "ecm4", "classPResonanceDalitz.html#a9c586d5822ae3aff81b7321cc67b656c", null ],
+    [ "ecmMmn2", "classPResonanceDalitz.html#a994d81a47321da304e2491b5ec1ca493", null ],
+    [ "ecmPmn2", "classPResonanceDalitz.html#ad897f62e85fac54269c79005f0bc0884", null ],
+    [ "g_Em", "classPResonanceDalitz.html#a4e1a6c9ed009b3a12c92daf0d5319afc", null ],
+    [ "M2", "classPResonanceDalitz.html#ab1c37bde3b8e7d9cc0393fd52ae1c740", null ],
+    [ "M4", "classPResonanceDalitz.html#a76511358ff3b3b998e3b4084187f28fe", null ],
+    [ "mn", "classPResonanceDalitz.html#a04157ffb4aa3236ff8a6bb98881e9c76", null ],
+    [ "mn2", "classPResonanceDalitz.html#ac8aa8c61bc4e88df2979a04df0317454", null ],
+    [ "mn3", "classPResonanceDalitz.html#a7339f56952d19fe3d9ab634486a94036", null ],
+    [ "mn4", "classPResonanceDalitz.html#a85b5410b70063779d2ed7197ae70dd3f", null ],
+    [ "par", "classPResonanceDalitz.html#ae9ed5f5e6a3304ffef88efe0cdfed9ff", null ],
+    [ "spin", "classPResonanceDalitz.html#a7a67f2d0f04e9fada6dce0f36b57d31b", null ]
+];

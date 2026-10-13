@@ -1,0 +1,106 @@
+ Batch filter
+   --------------------------------------------------------------------------------------------
+  | Welcome to ROOT 6.36.10                                                  https://root.cern |
+  | (c) 1995-2025, The ROOT Team; conception: R. Brun, F. Rademakers                           |
+  | Built for linuxx8664gcc on Mar 26 2026, 15:42:31                                           |
+  | From tags/6-36-10@6-36-10                                                                  |
+  | With c++ (SUSE Linux) 13.3.1 20250313 [revision 4ef1d8c84faeebffeb0cc01ee22e891b41e5c4e0]  |
+  | Try '.help'/'.?', '.demo', '.license', '.credits', '.quit'/'.q'                            |
+   --------------------------------------------------------------------------------------------
+
+/bin/ldd: line 159: /lib/ld-linux.so.2: cannot execute binary file: Exec format error
+  *********************************************************
+  * The Pluto event generator                              
+  * Developed by HADES and all contributing AUTHORS        
+  * https://hades.gsi.de/pluto                             
+  * Version: 6.3.0
+  * Compiled on 13 October 2026
+  *********************************************************
+Shared library Pluto.so loaded
+
+Processing obl_test_batch.C...
+Info in <PStaticData::PStaticModels()>: (CONSTRUCTOR)
+Info in <PStdData::PStdData()>: (CONSTRUCTOR)
+Info in <PDataBase::PDataBase()>: (CONSTRUCTOR)
+Info in <PStdModels::PStdModels()>: (CONSTRUCTOR)
+Info in <PDynamicData::PDynamicData()>: (CONSTRUCTOR)
+Info in <PStdModels::GetModels>: Read std models
+Info in <PDistributionManager::PDistributionManager>: Beam line simulation classes available
+Info in <PDistributionManager::PDistributionManager>: Plugin for Dalitz decay (generator & new D Dalitz) available
+Info in <PDistributionManager::PDistributionManager>: Dalitz decays of N* activated
+Info in <PDistributionManager::PDistributionManager>: Elementary plugin available
+Info in <PDistributionManager::PDistributionManager>: Rare eta decays are enabled
+Info in <PDistributionManager::PDistributionManager>: Exotic particles available
+Info in <PDistributionManager::PDistributionManager>: HADES classes available
+Info in <PDistributionManager::PDistributionManager>: Various mesons available
+Info in <PDistributionManager::PDistributionManager>: PDG/UNIGEN classes available
+Info in <PDistributionManager::PDistributionManager>: Pion beam plugin available
+Info in <PDistributionManager::PDistributionManager>: Baryonic resonances with strangeness + K* enabled
+Info in <PDistributionManager::PDistributionManager()>: (CONSTRUCTOR)
+Info in <PStaticData::AddDecay>: (ALLOCATION) Decay index 1248: N*(1520)+ -> p + dilepton
+Info in <PStaticData::AddDecay>: (ALLOCATION) Decay index 1216: N*(1440)+ -> p + dilepton
+Info in <PStaticData::AddDecay>: (ALLOCATION) Decay index 1280: N*(1535)+ -> p + dilepton
+Info in <PStaticData::AddDecay>: (ALLOCATION) Decay index 2080: N*(1520)0 -> n + dilepton
+Info in <PStaticData::AddDecay>: (ALLOCATION) Decay index 2048: N*(1440)0 -> n + dilepton
+Info in <PStaticData::AddDecay>: (ALLOCATION) Decay index 2112: N*(1535)0 -> n + dilepton
+Info in <PStaticData::AddDecay>: (ALLOCATION) Decay index 544: eta -> dilepton + dilepton
+Info in <PStaticData::AddDecay>: (ALLOCATION) Decay index 545: eta -> e+ + e- + pi+ + pi-
+<Beam>
+  p (0.000000,0.000000,4.337961;4.438272) wt = 1.000000, m = 0.938272 pid = 14
+  Vertex = 0.000000 0.000000 0.000000
+<Target>
+Info in <PParticle::operator+>: (ALLOCATION) Keeping beam and target particle for further reference
+Info in <PParticle::operator+>: (ALLOCATION) The composite p + p has been added
+Info in <PStaticData::AddDecay>: (ALLOCATION) Decay index 14014: p + p --> p + p + eta
+Info in <PStdModels::GetModels>: Read std models
+Info in <PDistributionManager::Attach>: Re-iteration of std plugin done
+  p (0.000000,0.000000,0.000000;0.938272) wt = 1.000000, m = 0.938272 pid = 14
+  Vertex = 0.000000 0.000000 0.000000
+
+ Reaction of 8 Particles interacting via 3 Channels
+   Reaction Particles:
+     0. quasi-particle (p beam and p target)
+     1. p
+     2. p
+     3. eta
+     4. g
+     5. dilepton
+     6. e+
+     7. e-
+   Reaction Channels:
+     1. p + p --> p + p + eta
+        Interaction model(s):
+        [pp_eta_prod_angle] Eta polar angles in pp reactions for direct production <PAngularDistribution>
+        [pp_eta_pp_align] pp alignment in pp reactions for direct eta production <PAngularDistribution>
+        [p + p_fixed_p_p_eta] Fixed product masses {/} <PFixedDecay>
+        [p + p_genbod_p_p_eta] Pluto build-in genbod {/genbod} <PGenBod>
+     2. eta --> dilepton + photon (Dalitz)
+        Interaction model(s):
+        [eta_dalitz] Dalitz decay {/} <PDalitzDecay>
+        [eta_genbod_g_dilepton] Pluto build-in genbod {/genbod} <PGenBod>
+     3. dilepton --> e+ + e-
+        Interaction model(s):
+        [dilepton_fixed_e-_e+] Fixed product masses {/} <PFixedDecay>
+        [dilepton_genbod_e-_e+] Pluto build-in genbod {/genbod} <PGenBod>
+        [eta_dilepton_helicity] Helicity angle of the dilepton decay of eta <PAngularDistribution>
+   Bulk Classes:
+     Epilogue: <PProjector> 
+Warning in <TTree::Bronch>: Using split mode on a class: PParticle with a custom Streamer
+   Output File(s):
+     Root : 'eta_dalitz.root', all particles on file.
+Found filter variable #filter
+Info in <PUtilsREngine::PUtilsREngine>: Random seed set to -1679496757
+PReaction: calculating widths in PData...
+ 20% done in 3.811882 sec
+ 40% done in 6.614621 sec
+ 60% done in 9.405608 sec
+ 80% done in 12.217123 sec
+ 100% done in 15.017827 sec
+ Event loop finished after 15.017852 sec
+ CPU time 14.010000 sec
+ 5967 aborted events were repeated, error codes:
+ 10=5967 
+ 41645 events failed filter #filter
+Info in <TCanvas::Print>: png file obl_test_batch@batch_test:_ee_invariant_mass_with_opang_cut.png has been created
+Info in <TCanvas::Print>: png file obl_test_batch@batch_test:_pp_missing_mass.png has been created
+free(): double free detected in tcache 2

@@ -1,0 +1,28 @@
+ Test the 2-dimensional Pluto functions
+   --------------------------------------------------------------------------------------------
+  | Welcome to ROOT 6.36.10                                                  https://root.cern |
+  | (c) 1995-2025, The ROOT Team; conception: R. Brun, F. Rademakers                           |
+  | Built for linuxx8664gcc on Mar 26 2026, 15:42:31                                           |
+  | From tags/6-36-10@6-36-10                                                                  |
+  | With c++ (SUSE Linux) 13.3.1 20250313 [revision 4ef1d8c84faeebffeb0cc01ee22e891b41e5c4e0]  |
+  | Try '.help'/'.?', '.demo', '.license', '.credits', '.quit'/'.q'                            |
+   --------------------------------------------------------------------------------------------
+
+/bin/ldd: line 159: /lib/ld-linux.so.2: cannot execute binary file: Exec format error
+  *********************************************************
+  * The Pluto event generator                              
+  * Developed by HADES and all contributing AUTHORS        
+  * https://hades.gsi.de/pluto                             
+  * Version: 6.3.0
+  * Compiled on 13 October 2026
+  *********************************************************
+Shared library Pluto.so loaded
+
+Processing obl_test_pf2.C...
+Info in <PStaticData::PStaticModels()>: (CONSTRUCTOR)
+Info in <PStdData::PStdData()>: (CONSTRUCTOR)
+Info in <PDataBase::PDataBase()>: (CONSTRUCTOR)
+Info in <TCanvas::Print>: png file obl_test_pf2@pf2_test:Only_TGraph2D.png has been created
+Info in <TCanvas::Print>: png file obl_test_pf2@pf2_test:TGraph2D_mixed_with_a_TH1.png has been created
+Info in <TCanvas::Print>: png file obl_test_pf2@pf2_test:TGraph2D_mixed_with_a_TH1_and_some_dummy_calculations.png has been created
+Info in <TCanvas::Print>: png file obl_test_pf2@pf2_test:TGraph2D_merged_with_a_TH2.png has been created

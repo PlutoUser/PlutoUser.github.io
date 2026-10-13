@@ -1,0 +1,117 @@
+ Angles
+   --------------------------------------------------------------------------------------------
+  | Welcome to ROOT 6.36.10                                                  https://root.cern |
+  | (c) 1995-2025, The ROOT Team; conception: R. Brun, F. Rademakers                           |
+  | Built for linuxx8664gcc on Mar 26 2026, 15:42:31                                           |
+  | From tags/6-36-10@6-36-10                                                                  |
+  | With c++ (SUSE Linux) 13.3.1 20250313 [revision 4ef1d8c84faeebffeb0cc01ee22e891b41e5c4e0]  |
+  | Try '.help'/'.?', '.demo', '.license', '.credits', '.quit'/'.q'                            |
+   --------------------------------------------------------------------------------------------
+
+/bin/ldd: line 159: /lib/ld-linux.so.2: cannot execute binary file: Exec format error
+  *********************************************************
+  * The Pluto event generator                              
+  * Developed by HADES and all contributing AUTHORS        
+  * https://hades.gsi.de/pluto                             
+  * Version: 6.3.0
+  * Compiled on 13 October 2026
+  *********************************************************
+Shared library Pluto.so loaded
+
+Processing obl_test_helicity.C...
+Info in <PStaticData::PStaticModels()>: (CONSTRUCTOR)
+Info in <PStdData::PStdData()>: (CONSTRUCTOR)
+Info in <PDataBase::PDataBase()>: (CONSTRUCTOR)
+Info in <PStdModels::PStdModels()>: (CONSTRUCTOR)
+Info in <PDynamicData::PDynamicData()>: (CONSTRUCTOR)
+Info in <PStdModels::GetModels>: Read std models
+Info in <PDistributionManager::PDistributionManager>: Beam line simulation classes available
+Info in <PDistributionManager::PDistributionManager>: Plugin for Dalitz decay (generator & new D Dalitz) available
+Info in <PDistributionManager::PDistributionManager>: Dalitz decays of N* activated
+Info in <PDistributionManager::PDistributionManager>: Elementary plugin available
+Info in <PDistributionManager::PDistributionManager>: Rare eta decays are enabled
+Info in <PDistributionManager::PDistributionManager>: Exotic particles available
+Info in <PDistributionManager::PDistributionManager>: HADES classes available
+Info in <PDistributionManager::PDistributionManager>: Various mesons available
+Info in <PDistributionManager::PDistributionManager>: PDG/UNIGEN classes available
+Info in <PDistributionManager::PDistributionManager>: Pion beam plugin available
+Info in <PDistributionManager::PDistributionManager>: Baryonic resonances with strangeness + K* enabled
+Info in <PDistributionManager::PDistributionManager()>: (CONSTRUCTOR)
+Info in <PStaticData::AddDecay>: (ALLOCATION) Decay index 1248: N*(1520)+ -> p + dilepton
+Info in <PStaticData::AddDecay>: (ALLOCATION) Decay index 1216: N*(1440)+ -> p + dilepton
+Info in <PStaticData::AddDecay>: (ALLOCATION) Decay index 1280: N*(1535)+ -> p + dilepton
+Info in <PStaticData::AddDecay>: (ALLOCATION) Decay index 2080: N*(1520)0 -> n + dilepton
+Info in <PStaticData::AddDecay>: (ALLOCATION) Decay index 2048: N*(1440)0 -> n + dilepton
+Info in <PStaticData::AddDecay>: (ALLOCATION) Decay index 2112: N*(1535)0 -> n + dilepton
+Info in <PStaticData::AddDecay>: (ALLOCATION) Decay index 544: eta -> dilepton + dilepton
+Info in <PStaticData::AddDecay>: (ALLOCATION) Decay index 545: eta -> e+ + e- + pi+ + pi-
+<Beam>
+  p (0.000000,0.000000,3.130000;3.267607) wt = 1.000000, m = 0.938272 pid = 14
+  Vertex = 0.000000 0.000000 0.000000
+<Target>
+Info in <PParticle::operator+>: (ALLOCATION) Keeping beam and target particle for further reference
+Info in <PParticle::operator+>: (ALLOCATION) The composite p + p has been added
+Info in <PStaticData::AddDecay>: (ALLOCATION) Decay index 14014: p + p --> p + D+
+Info in <PStdModels::GetModels>: Read std models
+Info in <PDistributionManager::Attach>: Re-iteration of std plugin done
+  p (0.000000,0.000000,0.000000;0.938272) wt = 1.000000, m = 0.938272 pid = 14
+  Vertex = 0.000000 0.000000 0.000000
+
+ Reaction of 9 Particles interacting via 4 Channels
+   Reaction Particles:
+     0. quasi-particle (p beam and p target)
+     1. p
+     2. D+
+     3. p
+     4. pi0
+     5. dilepton
+     6. g
+     7. e+
+     8. e-
+   Reaction Channels:
+     1. p + p --> p + D+
+        Interaction model(s):
+        [NN_delta+_angle] N+N->N+Delta angular distribution <PDeltaAngularDistribution>
+        [p + p_m1_p_D+] 1 unstable hadron (2-body ps) {/} <PHadronDecayM1 [D+]<PBreitWigner>>
+        [p + p_genbod_p_D+] Pluto build-in genbod {/genbod} <PGenBod>
+     2. Delta+ --> p + pi0
+        Interaction model(s):
+        [D+_fix_pi0_p] 2-body fixed mass, partial width {/} <PHadronDecay>
+        [D+_genbod_pi0_p] Pluto build-in genbod {/genbod} <PGenBod>
+        [pp_delta_waves1] Delta+ PW pi0 scattering <PScatterDistribution>
+     3. pi0 --> dilepton + photon (Dalitz)
+        Interaction model(s):
+        [pi0_dalitz] Dalitz decay {/} <PDalitzDecay>
+        [pi0_genbod_g_dilepton] Pluto build-in genbod {/genbod} <PGenBod>
+     4. dilepton --> e+ + e-
+        Interaction model(s):
+        [dilepton_fixed_e-_e+] Fixed product masses {/} <PFixedDecay>
+        [dilepton_genbod_e-_e+] Pluto build-in genbod {/genbod} <PGenBod>
+        [pi0_dilepton_helicity] Helicity angle of the dilepton decay of pi0 <PAngularDistribution>
+   Bulk Classes:
+     Epilogue: <PProjector> 
+Info in <PUtilsREngine::PUtilsREngine>: Random seed set to -149889481
+Info in <PBreitWigner::GetWidth>: Width 1st call for D+, mass range 1.000000 GeV to 3.000000 GeV
+Info in <PDalitzDecay::GetWidth>: Creating mesh in Delta+ --> dilepton + p (Dalitz) (0.001021,0.937334)
+   *NO* output File
+PReaction: calculating widths in PData...
+ 20% done in 2.804686 sec
+ 40% done in 4.447574 sec
+ 60% done in 6.072826 sec
+ 80% done in 7.683201 sec
+ 100% done in 9.289894 sec
+ Event loop finished after 9.289916 sec
+ CPU time 8.290000 sec
+ 10 aborted events were repeated, error codes:
+ 10=10 
+****************************************
+Minimizer is Minuit2 / Migrad
+Chi2                      =      36.9304
+NDf                       =           48
+Edm                       =  7.77801e-08
+NCalls                    =           73
+p0                        =  0.000118973   +/-   6.90881e-07 
+p1                        =      1.01073   +/-   0.0195339   
+Info in <TCanvas::Print>: png file obl_test_helicity@Angles:_Polar_angle_of_the_Delta+.png has been created
+Info in <TCanvas::Print>: png file obl_test_helicity@Angles:_Helicity_angle_of_eta.png has been created
+double free or corruption (fasttop)
